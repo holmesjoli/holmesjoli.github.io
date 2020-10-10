@@ -35,7 +35,7 @@
   }
 
   /* title styling */
-  .title {
+  .page-title {
       display: block;
       max-width: 500;
       font-family: "Open Sans", sans-serif;
@@ -47,3 +47,14 @@
       font-weight: 700;
       line-height: normal;
   }
+
+  body {
+    background: #ffffff;
+    color: #3e3e3e;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
