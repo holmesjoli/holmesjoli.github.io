@@ -58,3 +58,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.p-container,
+.img-container {
+  margin-bottom: 10px;
+  padding: 25px 100px 25px 100px;
+}
