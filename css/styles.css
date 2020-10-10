@@ -1,27 +1,49 @@
 /* Add a black background color to the top navigation */
 .nav {
-    background-color: #333;
+    background-color: #FFFFFF;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .nav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Quattrocento Sans', sans-serif;
+
+    color: #333333;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    font-weight: 400;
+    line-height: 19px;
   }
   
   /* Change the color of links on hover */
   .nav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: white;
+    color: #ee1d93;
   }
+  
   
   /* Add a color to the active/current link */
   .nav a.active {
-    background-color: #4CAF50;
-    color: white;
+      color: grey;
+  }
+
+  /* title styling */
+  .title {
+      display: block;
+      max-width: 500;
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+      vertical-align: top;
+      text-align: center;
+      color: #000000;
+      letter-spacing: .04em;
+      font-weight: 700;
+      line-height: normal;
   }
