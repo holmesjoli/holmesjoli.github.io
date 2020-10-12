@@ -21,11 +21,16 @@
     line-height: 19px;
     float:left;
   }
-  
+  .nav 
   /* Change the color of links on hover */
   .nav a:hover {
     background-color: white;
     color: #ee1d93;
+  }
+
+  .home,
+  .home.active {
+    padding-left: 0px;
   }
   
   
