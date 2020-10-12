@@ -27,18 +27,17 @@
     background-color: white;
     color: #ee1d93;
   }
-
-  .home,
-  .home.active {
-    padding-left: 0px;
-  }
-  
   
   /* Add a color to the active/current link */
   .nav a.active {
       color: grey;
   }
 
+  .home,
+  .home.active {
+    padding-left: 0px;
+  }
+  
   /* title styling */
   .page-title {
       display: block;
@@ -94,4 +93,8 @@
   float:left;
   width:180px;
   padding: 0px 15px 0px 15px;
+}
+
+.social-media {
+  margin: 5px;
 }
