@@ -4,64 +4,64 @@
     overflow: hidden;
   }
   
-  /* Style the links inside the navigation bar */
-  .nav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Quattrocento Sans', sans-serif;
-    color: #333333;
-    position: relative;
+/* Style the links inside the navigation bar */
+.nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #333333;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  font-weight: 400;
+  line-height: 19px;
+  float:left;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: white;
+  color: #ee1d93;
+}
+  
+/* Add a color to the active/current link */
+.nav a.active {
+    color: grey;
+}
+
+.home,
+.home.active {
+  padding-left: 0px;
+}
+  
+/* title styling */
+.page-title {
     display: block;
+    max-width: 500;
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    letter-spacing: .07em;
-    font-weight: 400;
-    line-height: 19px;
-    float:left;
-  }
-  .nav 
-  /* Change the color of links on hover */
-  .nav a:hover {
-    background-color: white;
-    color: #ee1d93;
-  }
-  
-  /* Add a color to the active/current link */
-  .nav a.active {
-      color: grey;
-  }
+    text-align: center;
+    color: #000000;
+    letter-spacing: .04em;
+    font-weight: 700;
+    line-height: normal;
+}
 
-  .home,
-  .home.active {
-    padding-left: 0px;
-  }
-  
-  /* title styling */
-  .page-title {
-      display: block;
-      max-width: 500;
-      font-family: "Open Sans", sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      color: #000000;
-      letter-spacing: .04em;
-      font-weight: 700;
-      line-height: normal;
-  }
-
-  body,
-  .grey-link {
-    background: #ffffff;
-    color: #3e3e3e;
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-decoration: none;
+body,
+.grey-link {
+  background: #ffffff;
+  color: #3e3e3e;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
 }
 
 .p-container,
