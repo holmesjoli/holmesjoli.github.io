@@ -98,3 +98,8 @@ body,
 .social-media {
   margin: 5px;
 }
+
+.img-wrap-left > img{ 
+  float: left;  
+  margin: 5px 20px 0 0; 
+}
