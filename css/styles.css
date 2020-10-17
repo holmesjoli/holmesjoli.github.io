@@ -90,9 +90,9 @@ body,
 }
 
 .portfolio-item {
-  float:left;
+  display: inline-block;
   width:180px;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 15px;
 }
 
 .social-media a {
@@ -104,4 +104,20 @@ body,
 .img-wrap-left > img{ 
   float: left;  
   margin: 5px 20px 0 0; 
+}
+
+.example {
+  background-color: #f7f7f7;
+  width: 400px;
+  float: right;
+  padding: 15px;
+  margin: 10px;
+}
+
+.example p {
+  font-size: 13px;
+}
+
+h4 {
+  margin: 0;
 }
