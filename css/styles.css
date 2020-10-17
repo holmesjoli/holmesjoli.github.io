@@ -52,7 +52,8 @@
 }
 
 body,
-.grey-link {
+.grey-link,
+.grey-link > a {
   background: #ffffff;
   color: #3e3e3e;
   font-family: 'Quattrocento Sans', sans-serif;
@@ -120,4 +121,8 @@ body,
 
 h4 {
   margin: 0;
+}
+
+.img-item {
+  display: inline-block;
 }
