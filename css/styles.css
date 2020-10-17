@@ -95,8 +95,10 @@ body,
   padding: 0px 15px 0px 15px;
 }
 
-.social-media {
-  margin: 5px;
+.social-media a {
+  padding: 5px;
+  color: grey;
+  text-decoration: none;
 }
 
 .img-wrap-left > img{ 
