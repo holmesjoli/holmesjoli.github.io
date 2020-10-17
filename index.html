@@ -25,20 +25,67 @@
                encoded in the data, in the collection process, in their general use. My goal as an artist is to
                complicate the notion of neutrality as it applies to data and technology more generally. 
             </p>
+            <p>Much of my interest the data being perceived as neutral stems from my work in social policy research.
+               Administrative data is frequently used in policy research because it is already collected and managed by
+               government agencies. The alternative way to access data for research is through primary data collection, 
+               which can be costly in time and resources. However, one large disadvantage of using administrative data is 
+               that is is not generally collected for research and may therefore be biased. 
+            </p>
             <div class = "example">
-                <h4>Encoded values</h3>
-                <p>There are countless examples of how societal values (e.g. heteronormativity, white supremacy, abelism)
-                   become encoded in sociotechnical systems. One that I came across in my recent work, in government data used by the 
-                   youth criminal justice system, was the treatment of race and ethnicity as the same variable. The categories encoded 
-                   in the variable were: White, Black, Asian, Hispanic, Other. The categorization of Hispanic in the race variable 
-                   as separate than White or Black indicates the data collectors were interested in capturing data on brown-Hispanic youth,
-                   but not White-Hispanic or Black-Hispanic youth.</p>
-                <p>Mistakes such as the example mentioned above are often seen as technological glitches instead of the physical hardcoding
-                   of societal values into data systems. Science and technology scholar, Ruha Benjamin writes about this phenomenon in her 
-                   book <em>Race After Technology</em> and coins the term the New Jim Code when this phenomenon is applied to racial 
-                   justice issues. Design justice scholar Sasha Costanza-Chock also writes extensively about this phenomenon in her book 
-                   <em>Design Justice</em> as it applies to trans, heteronormativity, settler colonialism, and abelism.
-                </p>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'encoded-values')">Encoded Values</button>
+                    <button class="tablinks" onclick="openCity(event, 'black-data')">Black Data</button>
+                  </div>
+                  
+                  <!-- Tab content -->
+                  <div id="encoded-values" class="tabcontent">
+                    <h4>Encoded values</h3>
+                        <p>There are countless examples of how societal values (e.g. heteronormativity, white supremacy, abelism)
+                           become encoded in sociotechnical systems. One that I came across in my recent work, in government data used by the 
+                           youth criminal justice system, was the treatment of race and ethnicity as the same variable. The categories encoded 
+                           in the variable were: White, Black, Asian, Hispanic, Other. The categorization of Hispanic in the race variable 
+                           as separate than White or Black indicates the data collectors were interested in capturing data on brown-Hispanic youth,
+                           but not White-Hispanic or Black-Hispanic youth.</p>
+                        <p>Mistakes such as the example mentioned above are often seen as technological glitches instead of the physical hardcoding
+                           of societal values into data systems. Science and technology scholar, Ruha Benjamin writes about this phenomenon in her 
+                           book <em>Race After Technology</em> and coins the term the New Jim Code when this phenomenon is applied to racial 
+                           justice issues. Design justice scholar Sasha Costanza-Chock also writes extensively about this phenomenon in her book 
+                           <em>Design Justice</em> as it applies to trans, heteronormativity, settler colonialism, and abelism.
+                        </p>        
+                  </div>
+
+                  <div id="black-data" class="tabcontent">
+                    <h4>Black data</h4>
+                    <p>Criminal justice research frequently relies on data administrative data from
+                       law enforcement agencies. Law enforcement agencies are widely recognized to have
+                       data which may be biased or can easily be interpreted in a biased way. For example, 
+                       the FBI reports on different types of crime in the UCR (Uniform Crime Reporting). In 2019,
+                       the FBI reported 29,296 white people were arrested for marijuana possession. 13,259 Black people were 
+                       arrested for the same crime. Using, 2018 census estimates, there was 1 arrest for every 
+                       779 white people in Texas, compared to 1 arrest for every 282 Black people in Texas. 
+                       The data clearly seem to indicate that Black people use more marijuana than white people, resulting in 
+                       higher arrest rate. However, research by the <a href="https://www.aclu.org/news/criminal-law-reform/a-tale-of-two-countries-racially-targeted-arrests-in-the-era-of-marijuana-reform/">ACLU</a>
+                       indicates that Black and white people used marijuana are relatively the same rate. The difference
+                       in the law enforcement database lies not differences in criminal behavior, but in the policing of
+                       criminal behavior.
+                       </p>
+                  </div>
+                  <script>
+                    function openCity(evt, cityName) {
+                      var i, tabcontent, tablinks;
+                      tabcontent = document.getElementsByClassName("tabcontent");
+                      for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                      }
+                      tablinks = document.getElementsByClassName("tablinks");
+                      for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                      }
+                      document.getElementById(cityName).style.display = "block";
+                      evt.currentTarget.className += " active";
+                    }
+                    </script>                    
+
             </div>
             <h3>Data and research background</h3>
             <p>I graduated from Wesleyan University with a Bachelors of Arts in Economics and
