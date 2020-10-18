@@ -111,15 +111,6 @@ body,
   background-color: #f7f7f7;
   width: 400px;
   padding: 15px;
-  margin: 10px;
-}
-
-.example-1 {
-  float: right;
-}
-
-.example-2 {
-  float: left;
 }
 
 .example p {
@@ -170,4 +161,8 @@ h4 {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+.tablinks {
+  font-weight: bold;
 }
