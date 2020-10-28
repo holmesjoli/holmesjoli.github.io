@@ -65,11 +65,19 @@ body,
   text-decoration: none;
 }
 
+.body {
+  display:inline-block;
+}
+
 .p-container,
 .img-container,
 .nav {
   margin-bottom: 10px;
   padding: 25px 100px 25px 100px;
+}
+
+.p-container p {
+  font-size: 15px;
 }
 
 .grey-link:hover {
@@ -165,4 +173,8 @@ h4 {
 
 .tablinks {
   font-weight: bold;
+}
+
+.ceramics-item {
+  width: 201px;
 }
