@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Joli Holmes</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+        <script>
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page-title">
+            <h1>Meta</h1>
+        </div>
+        <div id="header"></div>
+        <p class="p-container">
+        The installation pictured above explores the social construction of data
+        and how data can be manipulated through code. The installation shows a snippet 
+        of the physical code used to extract RGB values from a corpus of Georgia O'Keefe 
+        paintings. I downloaded 60 images of famous O'Keefe paintings and used R to extract 
+        the RGB values of each pixel in each painting. I visualized the values as histograms 
+        for each painting. The histograms and GIF displayed above were installed at 
+        Wesleyan University's Quantitative Analysis Center, the physical place where I 
+        utilized the universities resources to learn and practice quantitative analysis. 
+        The GIF plays off of a common programming technique known as a loop.
+        </p>
+        <img class="p-container" src="portfolio/meta/keyboardhands3_slow.gif" width=700 height=400/>
+        <span class="img-container">
+            <img class = "img-item" src="portfolio/meta/_MG_9069.jpg" width=340 height=200/>
+            <img class = "img-item" src="portfolio/meta/_MG_9072.jpg" width=340 height=200/>
+            <img class = "img-item" src="portfolio/meta/_MG_9075.jpg" width=340 height=200/>
+        </span>
+        <div id="footer"></div>
+    </body>
+</html>

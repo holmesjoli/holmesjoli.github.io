@@ -1,0 +1,183 @@
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+  
+/* Style the links inside the navigation bar */
+.nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #333333;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  font-weight: 400;
+  line-height: 19px;
+  float:left;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: white;
+  color: #ee1d93;
+}
+  
+/* Add a color to the active/current link */
+.nav a.active {
+    color: grey;
+}
+
+.home,
+.home.active {
+  padding-left: 0px;
+}
+  
+/* title styling */
+.page-title {
+    display: block;
+    max-width: 500;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    letter-spacing: .04em;
+    font-weight: 700;
+    line-height: normal;
+}
+
+body,
+.grey-link,
+.grey-link > a {
+  background: #ffffff;
+  color: #3e3e3e;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+}
+
+.body {
+  display:inline-block;
+}
+
+.p-container,
+.img-container,
+.nav {
+  margin-bottom: 10px;
+  padding: 25px 100px 25px 100px;
+}
+
+.p-container p {
+  font-size: 15px;
+}
+
+.grey-link:hover {
+  color: #887878;
+}
+
+#footer {
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 50px;
+  margin: -50px;
+  background-color: #FFFFFF;
+  color: white;
+  text-align: center;
+}
+
+.footer-icon a {
+  margin: 5px;
+}
+
+.portfolio-item {
+  display: inline-block;
+  width:180px;
+  padding: 0px 15px;
+}
+
+.social-media a {
+  padding: 5px;
+  color: grey;
+  text-decoration: none;
+}
+
+.img-wrap-left > img{ 
+  float: left;  
+  margin: 5px 20px 0 0; 
+}
+
+.example {
+  background-color: #f7f7f7;
+  width: 400px;
+  padding: 15px;
+}
+
+.example p {
+  font-size: 13px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.img-item,
+.portfolio-item > h3,
+.portfolio-item > a 
+{
+  display: inline-block;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tablinks {
+  font-weight: bold;
+}
+
+.ceramics-item,
+.drawings-item {
+  width: 201px;
+}
