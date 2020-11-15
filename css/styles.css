@@ -177,6 +177,7 @@ h4 {
   font-weight: bold;
 }
 
-.ceramics-item {
+.ceramics-item,
+.drawings-item {
   width: 201px;
 }
