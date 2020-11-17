@@ -196,6 +196,13 @@ h4 {
   height: 200px;
 }
 
+.portfolio-img:hover,
+.ceramics-item:hover,
+.drawings-item:hover,
+.meta-img:hover {
+  height: 450px;
+}
+
 .portfolio-item > h3 {
   display: block;
 }
