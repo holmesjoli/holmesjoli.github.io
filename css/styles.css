@@ -117,6 +117,8 @@ body,
   padding: 5px;
   color: grey;
   text-decoration: none;
+  position: fixed;
+  bottom: 0px;
 }
 
 .img-wrap-left > img { 
