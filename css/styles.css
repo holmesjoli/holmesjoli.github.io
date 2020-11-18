@@ -197,8 +197,7 @@ h4 {
 }
 
 .ceramics-item:hover,
-.drawings-item:hover,
-.meta-img:hover {
+.drawings-item:hover {
   height: 450px;
 }
 
