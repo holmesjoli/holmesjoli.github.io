@@ -191,12 +191,11 @@ h4 {
 .portfolio-img,
 .ceramics-item,
 .drawings-item,
-.meta-img  {
+.meta-img {
   max-width: 100%;
   height: 200px;
 }
 
-.portfolio-img:hover,
 .ceramics-item:hover,
 .drawings-item:hover,
 .meta-img:hover {
