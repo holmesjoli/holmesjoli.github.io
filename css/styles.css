@@ -46,16 +46,16 @@ img {
 }
   
 /* title styling */
-.page-title {
+h1 {
     display: block;
-    max-width: 500;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: #000000;
-    letter-spacing: .04em;
+    letter-spacing: .05em;
     font-weight: 700;
     line-height: normal;
+    font-size: 3em;
 }
 
 body,
