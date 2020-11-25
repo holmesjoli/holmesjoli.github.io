@@ -6,7 +6,6 @@ img {
   margin: 10px;
 }
 
-/* Add a black background color to the top navigation */
 .nav {
     background-color: #FFFFFF;
     overflow: hidden;
@@ -18,7 +17,7 @@ img {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   font-family: 'Quattrocento Sans', sans-serif;
   color: #333333;
   position: relative;
