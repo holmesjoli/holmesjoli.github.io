@@ -124,6 +124,10 @@ body,
   margin: 5px 20px 0 0; 
 }
 
+.img-wrap-center > img {
+  display: block;
+}
+
 .example {
   background-color: #f7f7f7;
   width: 400px;
