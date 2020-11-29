@@ -37,7 +37,7 @@ img {
   
 /* Add a color to the active/current link */
 .nav a.active {
-    color: grey;
+  color: grey;
 }
 
 .home,
@@ -46,16 +46,16 @@ img {
 }
   
 /* title styling */
-.page-title {
-    display: block;
-    max-width: 500;
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000000;
-    letter-spacing: .04em;
-    font-weight: 700;
-    line-height: normal;
+h1 {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  letter-spacing: .05em;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 3em;
 }
 
 body,
@@ -96,10 +96,10 @@ body,
   bottom: 0;
   width: 100%;
   max-height: 50px;
-  margin: -50px;
   background-color: #FFFFFF;
   color: white;
   text-align: center;
+  position: fixed;
 }
 
 .footer-icon a {
@@ -119,9 +119,14 @@ body,
   bottom: 0px;
 }
 
-.img-wrap-left > img { 
+.img-wrap-left { 
   float: left;  
   margin: 5px 20px 0 0; 
+}
+
+.img-wrap-center {
+  display: block;
+  text-align: center;
 }
 
 .example {
@@ -178,10 +183,11 @@ h4 {
 }
 
 .portfolio-item {
-  width: 23%;
+  width: 27%;
   display: inline-block;
   padding: 1em 0.4em;
-  vertical-align:top;
+  vertical-align: top;
+  text-align: center;
 }
 
 .portfolio .portfolio-item {
@@ -192,13 +198,18 @@ h4 {
 .ceramics-item,
 .drawings-item,
 .black-data-item,
-.meta-img {
+.meta-item {
   max-width: 100%;
   max-height: 200px;
 }
 
+.missingness-item {
+  max-width: 100%;
+  max-height: 400px;
+}
+
 .ceramics-item:hover,
-.drawings-item:hover,
+figure > .drawings-item:hover,
 .black-data-item:hover {
   height: 450px;
 }
