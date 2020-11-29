@@ -119,7 +119,7 @@ body,
   bottom: 0px;
 }
 
-.img-wrap-left > img { 
+.img-wrap-left { 
   float: left;  
   margin: 5px 20px 0 0; 
 }
