@@ -126,6 +126,7 @@ body,
 
 .img-wrap-center {
   display: block;
+  text-align: center;
 }
 
 .example {
