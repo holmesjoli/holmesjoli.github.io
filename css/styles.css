@@ -209,9 +209,12 @@ h4 {
 }
 
 .ceramics-item:hover,
-figure > .drawings-item:hover,
+.drawings-item:hover,
 .black-data-item:hover {
-  height: 450px;
+  transform: scale(2.0);
+  /* padding: 10px; */
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-item > h3 {
