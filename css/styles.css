@@ -71,6 +71,11 @@ body,
   text-decoration: none;
 }
 
+.grey-link,
+.grey-link > a {
+  color: #333333;
+}
+
 .body {
   display:inline-block;
 }
@@ -223,7 +228,7 @@ h4 {
   transform: scale(2.0);
   padding: 10px;
   margin: 0 auto;
-  
+
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
