@@ -62,7 +62,7 @@ body,
 .grey-link,
 .grey-link > a {
   background: #ffffff;
-  color: grey;
+  color: #3e3e3e;
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 400;
   line-height: 25px;
@@ -133,11 +133,6 @@ body,
   text-align: center;
 }
 
-/* .meta-item {
-  display: inline-block;
-  text-align: center;
-} */
-
 .example {
   background-color: #f7f7f7;
   width: 400px;
@@ -167,28 +162,6 @@ h4 {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-.tablinks {
-  font-weight: bold;
 }
 
 .portfolio-item {
@@ -223,8 +196,7 @@ h4 {
 
 .ceramics-item:hover,
 .drawings-item:hover,
-.black-data-item:hover,
-.meta-item:hover {
+.black-data-item:hover {
   transform: scale(2.0);
   padding: 10px;
   margin: 0 auto;
