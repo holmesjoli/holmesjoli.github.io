@@ -62,9 +62,8 @@ body,
 .grey-link,
 .grey-link > a {
   background: #ffffff;
-  color: #3e3e3e;
+  color: grey;
   font-family: 'Quattrocento Sans', sans-serif;
-  font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   -webkit-font-smoothing: antialiased;
@@ -128,6 +127,11 @@ body,
   display: block;
   text-align: center;
 }
+
+/* .meta-item {
+  display: inline-block;
+  text-align: center;
+} */
 
 .example {
   background-color: #f7f7f7;
@@ -197,10 +201,14 @@ h4 {
 .portfolio-img,
 .ceramics-item,
 .drawings-item,
-.black-data-item,
-.meta-item {
+.black-data-item {
   max-width: 100%;
   max-height: 200px;
+}
+
+.meta-item {
+  max-width: 30%;
+  padding: 10px;
 }
 
 .missingness-item {
@@ -210,11 +218,16 @@ h4 {
 
 .ceramics-item:hover,
 .drawings-item:hover,
-.black-data-item:hover {
+.black-data-item:hover,
+.meta-item:hover {
   transform: scale(2.0);
-  /* padding: 10px; */
+  padding: 10px;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.gif:hover {
+  transform: scale(1.50);
 }
 
 .portfolio-item > h3 {
