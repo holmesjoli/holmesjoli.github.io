@@ -64,12 +64,16 @@ body,
   background: #ffffff;
   color: #3e3e3e;
   font-family: 'Quattrocento Sans', sans-serif;
-  font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
+}
+
+.grey-link,
+.grey-link > a {
+  color: #333333;
 }
 
 .body {
@@ -113,7 +117,7 @@ body,
 }
 
 .social-media a {
-  padding: 5px;
+  padding: 10px;
   color: grey;
   text-decoration: none;
   bottom: 0px;
@@ -160,28 +164,6 @@ h4 {
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-.tablinks {
-  font-weight: bold;
-}
-
 .portfolio-item {
   width: 27%;
   display: inline-block;
@@ -197,10 +179,19 @@ h4 {
 .portfolio-img,
 .ceramics-item,
 .drawings-item,
-.black-data-item,
-.meta-item {
+.black-data-item {
   max-width: 100%;
   max-height: 200px;
+}
+
+.meta-item {
+  max-width: 30%;
+  padding: 10px;
+}
+
+.gif {
+  width: 700px;
+  height: 400px;
 }
 
 .missingness-item {
@@ -209,10 +200,18 @@ h4 {
 }
 
 .ceramics-item:hover,
-figure > .drawings-item:hover,
+.drawings-item:hover,
 .black-data-item:hover {
-  height: 450px;
+  transform: scale(2.0);
+  padding: 10px;
+  margin: 0 auto;
+
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
+
+/* .gif:hover {
+  transform: scale(1.5);
+} */
 
 .portfolio-item > h3 {
   display: block;
