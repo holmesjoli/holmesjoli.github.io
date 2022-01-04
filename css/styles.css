@@ -1,37 +1,31 @@
-body{
-  margin: 10px;
-}
-
-img {
-  margin: 10px;
+body {
+  margin: 0 100px;
+  background-color: #1E1E1E;
+  display: inline-block;
 }
 
 .nav {
-    background-color: #FFFFFF;
-    overflow: hidden;
-  }
-  
+  text-align: right;
+  margin-left: 250px;
+}
+
 /* Style the links inside the navigation bar */
 .nav a {
-  color: #f2f2f2;
-  text-align: center;
+  text-align: right;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Quattrocento Sans', sans-serif;
-  color: #333333;
-  position: relative;
-  display: block;
   text-transform: uppercase;
   letter-spacing: .07em;
   font-weight: 400;
   line-height: 19px;
-  float:left;
+  color: #ffffff;
+  display: block;
 }
 
 /* Change the color of links on hover */
 .nav a:hover {
-  background-color: white;
   color: #D21C1E;
 }
   
@@ -45,23 +39,9 @@ img {
   padding-left: 0px;
 }
   
-/* title styling */
-h1 {
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
-  letter-spacing: .05em;
-  font-weight: 700;
-  line-height: normal;
-  font-size: 3em;
-}
-
 body,
 .grey-link,
 .grey-link > a {
-  background: #ffffff;
   color: #3e3e3e;
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 400;
@@ -74,16 +54,6 @@ body,
 .grey-link,
 .grey-link > a {
   color: #333333;
-}
-
-.body {
-  display:inline-block;
-}
-
-.nav,
-.container {
-  margin-bottom: 10px;
-  padding: 25px 100px 25px 100px;
 }
 
 .container p {
@@ -100,7 +70,7 @@ body,
   bottom: 0;
   width: 100%;
   max-height: 50px;
-  background-color: #FFFFFF;
+  background-color: #1E1E1E;
   color: white;
   text-align: center;
   position: fixed;
@@ -112,13 +82,12 @@ body,
 
 .portfolio-item {
   display: inline-block;
-  width:180px;
-  padding: 0px 15px;
+  width: 180px;
 }
 
 .social-media a {
   padding: 10px;
-  color: grey;
+  color: #FF4081;
   text-decoration: none;
   bottom: 0px;
 }
@@ -167,8 +136,6 @@ h4 {
 .portfolio-item {
   width: 27%;
   display: inline-block;
-  padding: 1em 0.4em;
-  vertical-align: top;
   text-align: center;
 }
 
@@ -176,10 +143,7 @@ h4 {
   margin: 1.5%;
 }
 
-.portfolio-img,
-.ceramics-item,
-.drawings-item,
-.black-data-item {
+img {
   max-width: 100%;
   max-height: 200px;
 }
@@ -205,13 +169,7 @@ h4 {
   transform: scale(2.0);
   padding: 10px;
   margin: 0 auto;
-
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
-
-/* .gif:hover {
-  transform: scale(1.5);
-} */
 
 .portfolio-item > h3 {
   display: block;
@@ -220,5 +178,5 @@ h4 {
 .portfolio-item > h3 > a {
   font-weight: bold;
   text-transform: uppercase;
+  color: #569CCA;
 }
-
