@@ -7,6 +7,10 @@ html, body {
   line-height: 25px;
 }
 
+h4 {
+  margin: 0;
+}
+
 .nav {
   margin: 15px 0;
   display: inline-block;
@@ -14,15 +18,13 @@ html, body {
 }
 
 .nav a {
-  text-align: left;
   padding: 14px 23px;
   text-decoration: none;
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: .01em;
-  line-height: 19px;
   color: #FF4081;
-  font-family: source-sans-pro,sans-serif;
+  font-family: source-sans-pro, sans-serif;
   font-weight: 600;
   font-style: normal;
 }
@@ -43,8 +45,6 @@ body,
 }
 
 .portfolio-item {
-  display: inline-block;
-  width: 27%;
   margin: 1.5%;
   text-align: center;
 }
@@ -108,40 +108,18 @@ body,
   font-size: 13px;
 }
 
-h4 {
-  margin: 0;
-}
-
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
+#title {
+  max-height: 200px;
 }
 
 img {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 400px;
 }
 
-.meta-item {
+/* .meta-item {
   max-width: 30%;
   padding: 10px;
-}
-
-.gif {
-  width: 700px;
-  height: 400px;
 }
 
 .missingness-item {
@@ -155,4 +133,4 @@ img {
   transform: scale(2.0);
   padding: 10px;
   margin: 0 auto;
-}
+} */
