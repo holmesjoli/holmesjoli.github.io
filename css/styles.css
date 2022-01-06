@@ -16,7 +16,7 @@ body {
   letter-spacing: .07em;
   font-weight: 400;
   line-height: 19px;
-  color: #ffffff;
+  color: #FF4081;
   display: block;
 }
 
@@ -61,13 +61,9 @@ body,
 
 .portfolio-item {
   display: inline-block;
-  width: 180px;
   width: 27%;
-  text-align: center;
-}
-
-.portfolio-container .portfolio-item {
   margin: 1.5%;
+  text-align: center;
 }
 
 .portfolio-item > h3 {
@@ -92,17 +88,11 @@ body,
 
 #footer {
   display: block;
-  left: 0;
   bottom: 0;
   width: 100%;
   max-height: 50px;
-  color: white;
   text-align: center;
   position: fixed;
-}
-
-.footer-icon a {
-  margin: 5px;
 }
 
 .social-media a {
