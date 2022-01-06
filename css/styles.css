@@ -9,19 +9,22 @@ html, body {
 
 .nav {
   margin: 15px 0;
+  display: inline-block;
+  word-spacing: 0px;
 }
 
 .nav a {
   text-align: left;
-  padding: 14px 16px;
+  padding: 14px 23px;
   text-decoration: none;
   font-size: 30px;
-  font-family: 'Quattrocento Sans', sans-serif;
   text-transform: uppercase;
-  letter-spacing: .07em;
-  font-weight: 400;
+  letter-spacing: .01em;
   line-height: 19px;
   color: #FF4081;
+  font-family: source-sans-pro,sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
   
 body,
