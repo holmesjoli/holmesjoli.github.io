@@ -1,5 +1,4 @@
 html, body {
-  display: inline-block;
   margin: 0;
   padding: 0;
   font-family: 'Quattrocento Sans', sans-serif;
@@ -7,17 +6,37 @@ html, body {
   line-height: 25px;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 h4 {
   margin: 0;
 }
 
-.nav {
-  margin: 15px 0;
-  display: inline-block;
-  word-spacing: 0px;
+#header,
+#footer {
+  background-color: #8CDCFE;
+  width: 100%;
+  text-align: center;
 }
 
-.nav a {
+#footer {
+  bottom: 0;
+  max-height: 50px;
+  position: fixed;
+}
+
+#title {
+  max-height: 150px;
+  margin-top: 10px;
+}
+
+#nav {
+  padding: 15px 0;
+}
+
+#nav a {
   padding: 14px 23px;
   text-decoration: none;
   font-size: 30px;
@@ -27,13 +46,45 @@ h4 {
   font-family: source-sans-pro, sans-serif;
   font-weight: 600;
   font-style: normal;
+} 
+
+a {
+  text-decoration: none;
 }
-  
-body,
+
+.social-media a {
+  padding: 10px;
+  color: #FF4081;
+  bottom: 0px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.portfolio-container {
+  margin: 0 100px;
+  text-align: center;
+  /* display: inline-block; */
+}
+
+.portfolio-item > h3 > a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #569CCA;
+}
+
+/*
+
 .grey-link,
 .grey-link > a {
   color: #333333;
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.grey-link:hover {
+  color: #887878;
 }
 
 .portfolio-container {
@@ -59,35 +110,6 @@ body,
   color: #569CCA;
 }
 
-.grey-link:hover {
-  color: #887878;
-}
-
-#header {
-  text-align: center;
-}
-
-#footer {
-  display: block;
-  bottom: 0;
-  max-height: 50px;
-  position: fixed;
-  text-align: center;
-}
-
-#header,
-#footer {
-  background-color: #8CDCFE;
-  width: 100%;
-}
-
-.social-media a {
-  padding: 10px;
-  color: #FF4081;
-  text-decoration: none;
-  bottom: 0px;
-}
-
 .img-wrap-left { 
   float: left;  
   margin: 5px 20px 0 0; 
@@ -108,14 +130,7 @@ body,
   font-size: 13px;
 }
 
-#title {
-  max-height: 200px;
-}
-
-img {
-  max-width: 100%;
-  max-height: 400px;
-}
+ */
 
 /* .meta-item {
   max-width: 30%;
