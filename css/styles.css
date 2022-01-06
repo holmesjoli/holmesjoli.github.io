@@ -7,7 +7,10 @@ html, body {
   line-height: 25px;
 }
 
-/* Style the links inside the navigation bar */
+.nav {
+  margin: 15px 0;
+}
+
 .nav a {
   text-align: left;
   padding: 14px 16px;
@@ -19,18 +22,7 @@ html, body {
   font-weight: 400;
   line-height: 19px;
   color: #FF4081;
-  display: block;
 }
-
-/* Change the color of links on hover */
-.nav a:hover {
-  text-decoration: underline #FF4081;
-}
-  
-/* Add a color to the active/current link */
-/* .nav a.active {
-  color: #FF4081;
-} */
   
 body,
 .grey-link,
@@ -66,6 +58,10 @@ body,
 
 .grey-link:hover {
   color: #887878;
+}
+
+#header {
+  text-align: center;
 }
 
 #footer {
