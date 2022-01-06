@@ -1,8 +1,10 @@
-body {
-  /* background-color: #1E1E1E; */
+html, body {
   display: inline-block;
   margin: 0;
   padding: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 /* Style the links inside the navigation bar */
@@ -22,35 +24,21 @@ body {
 
 /* Change the color of links on hover */
 .nav a:hover {
-  color: #D21C1E;
+  text-decoration: underline #FF4081;
 }
   
 /* Add a color to the active/current link */
-.nav a.active {
-  color: grey;
-}
-
-.home,
-.home.active {
-  padding-left: 0px;
-}
+/* .nav a.active {
+  color: #FF4081;
+} */
   
 body,
 .grey-link,
 .grey-link > a {
-  color: #3e3e3e;
-  font-family: 'Quattrocento Sans', sans-serif;
-  font-weight: 400;
-  line-height: 25px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-decoration: none;
+  color: #333333;
+    text-decoration: none;
 }
 
-.grey-link,
-.grey-link > a {
-  color: #333333;
-}
 .portfolio-container {
   margin: 0 100px;
 }
@@ -80,19 +68,18 @@ body,
   color: #887878;
 }
 
-#header,
-#footer {
-  background-color: #8CDCFE;
-  width:"100%";
-}
-
 #footer {
   display: block;
   bottom: 0;
-  width: 100%;
   max-height: 50px;
-  text-align: center;
   position: fixed;
+  text-align: center;
+}
+
+#header,
+#footer {
+  background-color: #8CDCFE;
+  width: 100%;
 }
 
 .social-media a {
