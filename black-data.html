@@ -4,20 +4,20 @@
         <title>Joli Holmes</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzi8cbw.css">
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
         </script>
-        <script> 
-        $(function(){
-        $("#header").load("header.html"); 
-        $("#footer").load("footer.html"); 
-        });
-        </script>
+        <script src="js/page_elements.js"></script>
     </head>
     <body>
-        <h1 class="page-title">Black data</h1>
-        <div id="header">
+        <header>
+            <div id="title">
+                <img src="/images/SVG/lt.svg">
+                <span>Black Data</span>
+                <img src="images/SVG/gt.svg">
+            </div>
             <div id="nav"></div>
-        </div>
+        </header>
         <p class="container">In <em>Black Data</em>, I play with the idea of transparency and reproducibility in machine learning algorithms. 
            The juxtaposition of the black box in contrast to the white box is intended to make viewers 
            question what a white box algorithm would look like and what the research process would 
@@ -38,6 +38,6 @@
             <img class="black-data-item" src="portfolio/black data/20201122_142017.jpg" alt="Black cube with machine learning knitting pattern in rainbow yarn">
             <img class="black-data-item" src="portfolio/black data/20201124_173636 edited.jpg" alt="White cube with knitting pattern in white yarn">
         </div>
-        <div id="footer"></div>
+        <footer></footer>
     </body>
 </html>
