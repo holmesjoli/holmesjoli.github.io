@@ -36,14 +36,14 @@ h4 {
   margin: 0;
 }
 
-#header,
-#footer {
+header,
+footer {
   background-color: #8CDCFE;
   width: 100%;
   text-align: center;
 }
 
-#footer {
+footer {
   bottom: 0;
   max-height: 50px;
   position: fixed;
