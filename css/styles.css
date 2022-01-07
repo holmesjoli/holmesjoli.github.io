@@ -83,7 +83,11 @@ img {
 .portfolio-container {
   margin: 0 100px;
   text-align: center;
-  /* display: inline-block; */
+}
+
+.portfolio-item {
+  margin: 0 50px;
+  display: inline-block;
 }
 
 .portfolio-item > h3 > a {
