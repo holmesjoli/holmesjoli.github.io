@@ -6,6 +6,28 @@ html, body {
   line-height: 25px;
 }
 
+#title {
+  color: #1E1E1E;
+  font-size: 60pt;
+  font-family: source-code-pro, monospace;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  padding: 30px 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+#title > img {
+  margin: 0;
+  padding: 0;
+}
+
+h1 > span {
+  color: #FF4081;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -25,11 +47,6 @@ h4 {
   bottom: 0;
   max-height: 50px;
   position: fixed;
-}
-
-#title {
-  max-height: 150px;
-  margin-top: 10px;
 }
 
 #nav {
