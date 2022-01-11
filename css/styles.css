@@ -96,7 +96,6 @@ img {
   color: #569CCA;
 }
 
-/*
 
 .grey-link,
 .grey-link > a {
@@ -108,9 +107,7 @@ img {
   color: #887878;
 }
 
-.portfolio-container {
-  margin: 0 100px;
-}
+/*
 
 .portfolio-container p {
   font-size: 15px;
