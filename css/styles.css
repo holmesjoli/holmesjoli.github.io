@@ -117,15 +117,10 @@ img {
 }
 
 .img-container {
-  display: flex;
+  display: inline-bock;
   padding: 25px 0;
   width: 100%;
   text-align: center;
-  flex-direction: row;
-}
-
-.img-container > img {
-  display: inline-block;
 }
 
 .img-container > img,
