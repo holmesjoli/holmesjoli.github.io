@@ -6,6 +6,7 @@
             <link rel="stylesheet" href="css/styles.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://use.typekit.net/yzi8cbw.css">
+            <link rel="stylesheet" href="css/carousel.css">
             <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
             </script>
             <script src="js/page_elements.js"></script>
@@ -19,6 +20,68 @@
                 </div>
                 <div id="nav"></div>
             </header>
+            <div class="container">
+                <div class="text-container">
+                    <p>I created a <a href="https://xd.adobe.com/view/492f1a6e-ff1d-4297-baf2-bdc0b163db79-1c7c/">prototype</a> for a knitting website. The prototype explores what a website would look like if a website for finding new knitting patterns was combined with information design to show how to complete the stitches. Knitting patterns rarely show the stitches and content which explains how to perform a stitches is rarely combined with a pattern.</p>
+                    <p>The website is designed so that the user would select a pattern using a series of images and filters and then be follow the pattern using a traditional pattern description, as well as illustrated procedural instructions on how to complete each stitch. The goal is allow the user to be able to never need to navigate away from the site if they have questions on how to perform a stitch. The series of images shown below is one set of illustrations show in the website prototype.</p>
+                </div>
+            </div>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)" style="color: #707070"></span>
+                <span class="dot" onclick="currentSlide(2)" style="color: #707070"></span>
+                <span class="dot" onclick="currentSlide(3)" style="color: #707070"></span>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="portfolio/knitting-illustrated/co1.svg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="portfolio/knitting-illustrated/co2.svg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="portfolio/knitting-illustrated/co3.svg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)" style="color: #707070">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)" style="color: #707070">&#10095;</a>
+                </div>
+                <br>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                }
+            </script>
             <footer></footer>
         </body>
     </html>
