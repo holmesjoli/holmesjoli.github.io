@@ -107,14 +107,18 @@ img {
   color: #569CCA;
 }
 
+a,
 .grey-link,
 .grey-link > a {
-  color: #333333;
+  color: #FF4081;
   text-decoration: none;
+  font-weight: bold;
 }
 
+a:hover,
 .grey-link:hover {
-  color: #887878;
+  color: #FF4081;
+  text-decoration: 2px underline;
 }
 
 .img-container {
