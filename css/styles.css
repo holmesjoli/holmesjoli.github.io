@@ -93,11 +93,13 @@ img {
 .portfolio-container {
   margin: 0 100px;
   text-align: center;
+  /* display: inline-block; */
 }
 
 .portfolio-item {
   margin: 0 50px;
   display: inline-block;
+  vertical-align:top;
 }
 
 .portfolio-item > h3 > a {
@@ -125,8 +127,12 @@ img {
 
 .img-container > img,
 .img-wrap-left,
-.portfolio-item > img {
+.portfolio-item {
   max-width: 30%;
+}
+
+.portfolio-item > img {
+  padding: 0;
 }
 
 .img-wrap-left { 
