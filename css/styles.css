@@ -101,7 +101,8 @@ img {
   text-align: center;
 }
 
-.portfolio-item > h3 > a {
+.portfolio-item > h3 > a,
+h3 {
   font-weight: bold;
   text-transform: uppercase;
   color: #569CCA;
@@ -151,25 +152,6 @@ a:hover,
   display: flex;
   flex-direction: column;
 }
-
-/*
-
-.img-wrap-center {
-  display: block;
-  text-align: center;
-}
-
-.example {
-  background-color: #f7f7f7;
-  width: 400px;
-  padding: 15px;
-}
-
-.example p {
-  font-size: 13px;
-}
-
- */
 
 /*
 
