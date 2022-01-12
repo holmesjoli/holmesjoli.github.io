@@ -93,13 +93,13 @@ img {
 .portfolio-container {
   margin: 0 100px;
   text-align: center;
-  /* display: inline-block; */
 }
 
 .portfolio-item {
   margin: 0 50px;
   display: inline-block;
-  vertical-align:top;
+  vertical-align: top;
+  max-width: 40%;
 }
 
 .portfolio-item > h3 > a {
@@ -126,8 +126,7 @@ img {
 }
 
 .img-container > img,
-.img-wrap-left,
-.portfolio-item {
+.img-wrap-left {
   max-width: 30%;
 }
 
@@ -147,25 +146,6 @@ img {
 
 /*
 
-.portfolio-container p {
-  font-size: 15px;
-}
-
-.portfolio-item {
-  margin: 1.5%;
-  text-align: center;
-}
-
-.portfolio-item > h3 {
-  display: block;
-}
-
-.portfolio-item > h3 > a {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #569CCA;
-}
-
 .img-wrap-center {
   display: block;
   text-align: center;
@@ -183,14 +163,10 @@ img {
 
  */
 
-/* .meta-item {
-  max-width: 30%;
-  padding: 10px;
-}
+/*
 
 .ceramics-item:hover,
-.drawings-item:hover,
-.black-data-item:hover {
+.drawings-item:hover{
   transform: scale(2.0);
   padding: 10px;
   margin: 0 auto;
