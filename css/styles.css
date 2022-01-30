@@ -13,7 +13,7 @@ html, body {
   font-weight: 600;
   font-style: normal;
   margin: 0;
-  padding: 25px 0;
+  padding-top: 25px;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -60,7 +60,7 @@ footer > div > #footer{
 
 #nav a,
 .dropbtn {
-  padding: 14px 23px;
+  padding: 0 23px;
   text-decoration: none;
   font-size: 30px;
   letter-spacing: .01em;
