@@ -70,6 +70,10 @@ footer > div > #footer{
   font-style: normal;
 } 
 
+.dropdown-content a {
+  padding: 14px 23px!important;
+}
+
 a {
   text-decoration: none;
 }
