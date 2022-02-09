@@ -6,7 +6,7 @@ html, body {
   line-height: 25px;
 }
 
-#title {
+.title {
   color: #1E1E1E;
   font-size: 50pt;
   font-family: source-code-pro, monospace;
@@ -19,7 +19,7 @@ html, body {
   justify-content: center;
 }
 
-#title > img {
+.title > img {
   margin: 0;
   padding: 0;
 }
@@ -54,11 +54,11 @@ footer > div > #footer{
   position: fixed;
 }
 
-#nav {
+.nav {
   padding-bottom: 15px;
 }
 
-#nav a,
+.nav a,
 .dropbtn {
   padding: 0 23px;
   text-decoration: none;
@@ -210,4 +210,43 @@ a:hover,
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .title {
+    font-size: 24pt;
+    padding-bottom: 10px;
+  }
+
+  .title > img {
+    height: 50px;
+  }
+
+  .title span {
+    max-width: 70%;
+  }
+
+  .title > img:nth-child(1) {
+    padding-left: 10px;
+  }
+
+  .title > img:nth-child(2) {
+    padding-right: 10px;
+  }
+
+  .nav a, .dropbtn {
+    font-size: 18pt;
+  }
+
+  .portfolio-container {
+      flex-direction: column;
+      margin: 0;
+  }
+
+  .portfolio-item {
+    max-width: 100%;
+    margin: 0 30px;
+  }
+
 }
