@@ -263,4 +263,8 @@ a:hover,
     margin: 0 30px;
   }
 
+  .dropdown-content a {
+    font-size: 16pt;
+  }
+
 }
