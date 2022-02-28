@@ -6,6 +6,7 @@
             <link rel="stylesheet" href="css/styles.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://use.typekit.net/yzi8cbw.css">
+            <link rel="stylesheet" href="css/carousel.css">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
             </script>
@@ -15,6 +16,7 @@
                 $("footer").load("footer.html"); 
                 });
             </script>
+            <script src="js/moveCarousel.js"></script>
         </head>
         <body>
             <header>
@@ -27,18 +29,12 @@
             </header>
             <div class="content-container">
                 <div class="main">
-                    <h3 style="margin-bottom: 10px;">Project</h3>
+                    <h3>Project</h3>
                     <h4>Design Brief</h4>
                     <p>Create a task-based visualization interface to explore a dataset that documents citizenship regulations that indicate pathways for gaining and losing citizenship in 190 countries. Visualization must be interactive and feature three information visualizations. </p>
                     <h4>Data</h4>
                     <p>This project combines data from two resources. The first is the <a href="https://cadmus.eui.eu//handle/1814/73190"> global citizenship database </a>maintained by the European University Institute. The database is organized as a typography of modes through which people can acquire citizenship to 190 countries. The database identifies 28 modes through which migrants can acquire citizenship. It was last updated on Janurary 1st, 2020.</p>
-                    <p>The second database documents <a href="https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2020_ims_stock_by_sex_destination_and_origin.xlsx">Interational Migration Flows</a> and is maintained by the United Nations Population Division. These data are estimated counts of migrations between a country of origin and destination.</p>
-                    <h3>Sketching with data</h3>
-                    <h4>Week 1-2</h4>
-                    <h3>Prototyping</h3>
-                    <h4>Week 3-4</h4>
-                    <h3>Application development</h3>
-                    <h4>Week 5-7</h4>
+                    <p>The second database documents <a href="https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2020_ims_stock_by_sex_destination_and_origin.xlsx">international migration flows</a> and is maintained by the United Nations - Population Division. These data are estimated counts of migrations between a country of origin and destination.</p>
                 </div>
                 <div class="sidebar">
                     <h4>Timeline</h4>
@@ -52,6 +48,33 @@
                         <li><span>Javascript</span></li>
                         <li><span>Github</span></li>
                     </ul>
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="main2">
+                    <h3>Sketching with data</h3>
+                    <h4>Week 1-2</h4>
+                    <div class="img-container">
+                        <img src="portfolio/cititzenship-acquisition/design-process-1.png">
+                        <img src="portfolio/cititzenship-acquisition/design-process-2.png">
+                        <img src="portfolio/cititzenship-acquisition/design-process-3.png">
+                    </div>
+                    <h3>Prototyping</h3>
+                    <h4>Week 3-4</h4>
+                    <p>The butterfly is used as a visual metaphor for migration. The veins of the butterfly details differe paths a user could take to acquire migration after answering some simple questions such as:</p>
+                    <ul>
+                        <li><span>Are your parents citizens of the country you are interested in migrating to?</span></li>
+                        <li><span>Were you born in the country you are interested in migrating to?</span></li>
+                        <li><span>Are you married?</span></li>
+                    </ul>
+                    <div class="img-container">
+                        <img src="portfolio/cititzenship-acquisition/design-process-4.png">
+                        <img src="portfolio/cititzenship-acquisition/design-process-5.png">
+                        <img src="portfolio/cititzenship-acquisition/design-process-6.png">
+                        <img src="portfolio/cititzenship-acquisition/design-process-7.png">
+                    </div>
+                    <h3>Application development</h3>
+                    <h4>Week 5-7</h4>
                 </div>
             </div>
         </body>
