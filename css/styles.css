@@ -10,11 +10,11 @@ html, body {
 
 .title {
   color: #1E1E1E;
-  font-size: 45pt;
+  font-size: 36pt;
   font-family: source-code-pro, monospace;
   font-weight: 600;
   font-style: normal;
-  padding: 15px 0;
+  padding-top: 15px;
   margin: 0;
   display: flex;
   align-items: center; 
@@ -69,10 +69,13 @@ footer > div > #footer{
   text-align: center;
 }
 
-footer > div > #footer{
+.home > div > #footer {
+  position: fixed;
+}
+
+footer > div > #footer {
   bottom: 0;
   max-height: 50px;
-  position: fixed;
 }
 
 img {
@@ -82,7 +85,7 @@ img {
 }
 
 .nav {
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 
 .nav a,
