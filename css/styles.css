@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
 html, body {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@ html, body {
 
 .title {
   color: #1E1E1E;
-  font-size: 50pt;
+  font-size: 45pt;
   font-family: source-code-pro, monospace;
   font-weight: 600;
   font-style: normal;
@@ -23,10 +25,16 @@ html, body {
 .title > img {
   margin: 0;
   padding: 0;
+  height: 80px;
 }
 
 .title span {
   max-width: 70%;
+  color: #FF4081;
+}
+
+.title .name {
+  color: #333333;
 }
 
 h1 > span {
@@ -34,7 +42,8 @@ h1 > span {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 26px;
+  margin: 15px 0;
 }
 
 h4 {
@@ -59,6 +68,12 @@ footer > div > #footer{
   position: fixed;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100vh;
+  padding: 5px;
+}
+
 .nav {
   padding-bottom: 15px;
 }
@@ -69,7 +84,7 @@ footer > div > #footer{
   text-decoration: none;
   font-size: 30px;
   letter-spacing: .01em;
-  color: #000000;
+  color: #333333;
   font-family: source-sans-pro, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -89,14 +104,12 @@ a {
   bottom: 0px;
 }
 
-img {
-  max-width: 100%;
-  max-height: 400px;
-  padding: 15px;
-}
-
 .container {
   margin: 0 10%;
+}
+
+.home-container {
+  margin: 0 100px;
 }
 
 .home-container img {
@@ -105,13 +118,20 @@ img {
 }
 
 .portfolio-container {
-  margin: 0 100px;
   text-align: center;
 }
 
-.portfolio-item {
-  margin: 0 50px;
+.portfolio-container .portfolio-item {
+  max-width: 25%;
+  margin: 0 30px;
   display: inline-block;
+}
+
+.portfolio-container .portfolio-item h3 {
+  font-size: 14pt;
+}
+
+.portfolio-item {
   vertical-align: top;
   text-align: center;
 }
@@ -234,8 +254,8 @@ a:hover,
     margin: 0 30px;
   }
 }
-
-@media only screen and (max-width: 500px) {
+/* 
+@media only screen and (min-width: 500px) {
 
   .title {
     font-size: 24pt;
@@ -267,4 +287,4 @@ a:hover,
     font-size: 16pt;
   }
 
-}
+} */
