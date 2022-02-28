@@ -14,8 +14,8 @@ html, body {
   font-family: source-code-pro, monospace;
   font-weight: 600;
   font-style: normal;
+  padding: 15px 0;
   margin: 0;
-  padding-top: 15px;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -43,11 +43,16 @@ h1 > span {
 
 h3 {
   font-size: 26px;
-  margin: 15px 0;
+  margin: 20px 0 0 0;
+  text-transform: uppercase;
+  color: #569CCA;
 }
 
 h4 {
   margin: 0;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #569CCA;
 }
 
 p {
@@ -119,11 +124,12 @@ a {
 
 .portfolio-container {
   text-align: center;
+  margin-top: 15px;
 }
 
 .portfolio-container .portfolio-item {
   max-width: 25%;
-  margin: 0 30px;
+  margin: 0 20px;
   display: inline-block;
 }
 
