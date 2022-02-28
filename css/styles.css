@@ -47,6 +47,7 @@ h3 {
   text-transform: uppercase;
   color: #569CCA;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -141,6 +142,7 @@ a {
 
 .portfolio-container .portfolio-item h3 {
   font-size: 14pt;
+  margin-bottom: 5px;
 }
 
 .portfolio-container .portfolio-item h4 {
@@ -178,7 +180,7 @@ a:hover,
 }
 
 .img-container {
-  display: inline-bock;
+  display: inline-block;
   padding: 25px 0;
   width: 100%;
   text-align: center;
@@ -187,6 +189,7 @@ a:hover,
 .img-container > img,
 .img-wrap-left {
   max-width: 30%;
+  vertical-align: top;
 }
 
 .portfolio-item > img {
@@ -265,11 +268,19 @@ a:hover,
   padding-right: 50px;
 }
 
-.content-container .main {
-  width: 65%;
+.content-container .main,
+.content-container .main2 {
   padding: 10px;
   padding-left: 200px;
   padding-right: 15px;
+}
+
+.content-container .main2 {
+  width: 100%;
+}
+
+.content-container .main {
+  width: 65%;
 }
 
 ul { 
@@ -277,7 +288,7 @@ ul {
   padding-left: 15px;
 }
 
-  .sidebar ul li::before {
+ul li::before {
   content: "\25C6"; 
   color: #FF4081;
   font-size: 10px;
