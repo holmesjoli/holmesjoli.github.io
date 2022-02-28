@@ -252,6 +252,42 @@ a:hover,
   display: block;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content-container .sidebar {
+  margin-top: 15px;
+  width: 35%;
+  padding: 10px;
+  padding-right: 50px;
+}
+
+.content-container .main {
+  width: 65%;
+  padding: 10px;
+  padding-left: 200px;
+  padding-right: 15px;
+}
+
+ul { 
+  list-style: none;
+  padding-left: 15px;
+}
+
+  .sidebar ul li::before {
+  content: "\25C6"; 
+  color: #FF4081;
+  font-size: 10px;
+}
+
+li span {
+  position: relative;
+  left: 10px;
+}
+
 @media only screen and (max-width: 800px) {
 
   .title {
