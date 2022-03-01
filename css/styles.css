@@ -42,7 +42,7 @@ h1 > span {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 20pt;
   margin: 20px 0 0 0;
   text-transform: uppercase;
   color: #569CCA;
@@ -51,11 +51,17 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 16pt;
   margin: 0;
   font-style: italic;
   text-transform: uppercase;
   color: #569CCA;
+}
+
+h5 {
+  font-size: 14pt;
+  margin: 0;
+  color: #333333;
 }
 
 p {
@@ -84,6 +90,11 @@ img {
   max-width: 100%;
   max-height: 100vh;
   padding: 5px;
+}
+
+p {
+  margin: 10px;
+  line-height: 1.4;
 }
 
 .nav {
@@ -277,10 +288,16 @@ a:hover,
 
 .content-container .main2 {
   width: 100%;
+  padding-right: 150px;
 }
 
 .content-container .main {
   width: 65%;
+}
+
+.content-container .timeline {
+  max-height: 25px;
+  padding: 5px 0;
 }
 
 ul { 
