@@ -3,8 +3,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: century-gothic,sans-serif;
   font-weight: 400;
+  font-style: normal;
   line-height: 25px;
 }
 
@@ -42,19 +43,26 @@ h1 > span {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 20pt;
   margin: 20px 0 0 0;
   text-transform: uppercase;
   color: #569CCA;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 16pt;
   margin: 0;
   font-style: italic;
   text-transform: uppercase;
   color: #569CCA;
+}
+
+h5 {
+  font-size: 14pt;
+  margin: 0;
+  color: #333333;
 }
 
 p {
@@ -85,6 +93,11 @@ img {
   padding: 5px;
 }
 
+p {
+  margin: 10px;
+  line-height: 1.4;
+}
+
 .nav {
   padding: 15px 0;
 }
@@ -96,9 +109,7 @@ img {
   font-size: 20px;
   letter-spacing: .01em;
   color: #333333;
-  font-family: source-sans-pro, sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  font-weight: 400;
 } 
 
 .dropdown-content a {
@@ -141,6 +152,7 @@ a {
 
 .portfolio-container .portfolio-item h3 {
   font-size: 14pt;
+  margin-bottom: 5px;
 }
 
 .portfolio-container .portfolio-item h4 {
@@ -168,7 +180,6 @@ a,
 .grey-link > a {
   color: #FF4081;
   text-decoration: none;
-  font-weight: bold;
 }
 
 a:hover,
@@ -178,7 +189,7 @@ a:hover,
 }
 
 .img-container {
-  display: inline-bock;
+  display: inline-block;
   padding: 25px 0;
   width: 100%;
   text-align: center;
@@ -187,6 +198,7 @@ a:hover,
 .img-container > img,
 .img-wrap-left {
   max-width: 30%;
+  vertical-align: top;
 }
 
 .portfolio-item > img {
@@ -250,6 +262,56 @@ a:hover,
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content-container .sidebar {
+  margin-top: 15px;
+  width: 35%;
+  padding: 10px;
+  padding-right: 50px;
+}
+
+.content-container .main,
+.content-container .main2 {
+  padding: 10px;
+  padding-left: 200px;
+  padding-right: 15px;
+}
+
+.content-container .main2 {
+  width: 100%;
+  padding-right: 150px;
+}
+
+.content-container .main {
+  width: 65%;
+}
+
+.content-container .timeline {
+  max-height: 25px;
+  padding: 5px 0;
+}
+
+ul { 
+  list-style: none;
+  padding-left: 15px;
+}
+
+ul li::before {
+  content: "\25C6"; 
+  color: #FF4081;
+  font-size: 10px;
+}
+
+li span {
+  position: relative;
+  left: 10px;
 }
 
 @media only screen and (max-width: 800px) {
