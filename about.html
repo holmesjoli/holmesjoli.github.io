@@ -106,36 +106,6 @@
                     .duration(3000)
                     .attr("width", function(d) { return x(d.years);});
 
-                // let xScale = d3.scaleLinear()
-                //     .domain([0, d3.max(data, function(d) {return d.years;})])
-                //     .range([margin.left, width-margin.right])
-
-                // let yScale = d3.scaleBand()
-                //     .domain(data.map(function(d) { return d.language; }))
-                //     .range([margin.top, height-margin.bottom])
-                //     .padding(0.5);
-
-                // const bars = svg.selectAll("rect")
-                //     .data(data)
-                //     .enter()
-                //     .append("rect")
-                //     .attr("x", xScale(0) )
-                //     .attr("y", function(d) { return yScale(d.language); })
-                //     .attr("width", function(d) { return xScale(d.year); })
-                //     .attr("height", yScale.bandwidth());
-
-                // bars.transition()
-                //     .duration(3000)
-                //     .attr("width", function(d) { return xScale(d.years);});
-
-                // const xAxis = svg.append("g")
-                //     .attr("transform",`translate(0,${height-margin.bottom})`)
-                //     .call(d3.axisBottom().scale(xScale).ticks(7));
-
-                // const yAxis = svg.append("g")
-                //     .attr("transform",`translate(${margin.left},0)`)
-                //     .call(d3.axisLeft().scale(yScale));
-
                 svg.append("text")
                     .attr("class","axisLabel")
                     .attr("x", margin.left + (width-margin.left-margin.right)/2)
