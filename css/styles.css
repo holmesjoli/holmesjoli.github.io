@@ -188,7 +188,8 @@ a:hover,
   text-decoration: 2px underline;
 }
 
-.img-container {
+.img-container,
+.img-container2 {
   display: inline-block;
   padding: 25px 0;
   width: 100%;
@@ -199,6 +200,10 @@ a:hover,
 .img-wrap-left {
   max-width: 30%;
   vertical-align: top;
+}
+
+.img-container2 > img {
+  max-height: 80vh;
 }
 
 .portfolio-item > img {
@@ -291,6 +296,16 @@ a:hover,
 
 .content-container .main {
   width: 65%;
+  display: inline-block;
+}
+
+.content-container .main h3 {
+  padding-bottom: 5px;
+}
+
+.content-container .main img {
+  text-align: center;
+  max-height: 80vh;
 }
 
 .content-container .timeline {
