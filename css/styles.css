@@ -314,6 +314,18 @@ a:hover,
   padding: 5px 0;
 }
 
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid img {
+  flex: 0 0 15%;
+  max-width: 20%;
+  height: 150px;
+}
+
 ul { 
   list-style: none;
   padding-left: 15px;
