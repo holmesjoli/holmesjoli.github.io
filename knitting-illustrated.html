@@ -10,6 +10,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
             </script>
+            <script src="https://d3js.org/d3.v7.min.js"></script>
+            <script src="js/timeline.js"></script>
             <script>
             $(function(){
             $(".nav").load("header.html"); 
@@ -26,38 +28,81 @@
                 </div>
                 <div class="nav"></div>
             </header>
-            <div class="container">
-                <div class="text-container">
-                    <p>I created a <a href="https://xd.adobe.com/view/492f1a6e-ff1d-4297-baf2-bdc0b163db79-1c7c/">prototype</a> for a knitting website. The prototype explores what a website would look like if a website for finding new knitting patterns was combined with information design to show how to complete the stitches. Knitting patterns rarely show the stitches and content which explains how to perform a stitches is rarely combined with a pattern.</p>
-                    <p>The website is designed so that the user would select a pattern using a series of images and filters and then be follow the pattern using a traditional pattern description, as well as illustrated procedural instructions on how to complete each stitch. The goal is allow the user to be able to never need to navigate away from the site if they have questions on how to perform a stitch. The series of images shown below is one set of illustrations show in the website prototype.</p>
+            <div class="content-container">
+                <div class="main">
+                    <h3>Project</h3>
+                    <h4>Design Brief</h4>
+                    <p>Communicating without text is one of the superpowers of graphic and information design. Communicating information by which people can learn instructions or processes is an act of deep understanding of the process, of form, and of simplicity. Create a piece that captures a process. Use minimal (or no) text.</p>
+                    <h4>Graphic Assets</h4>
+                    <div id="two-week-knitting">
+                        <script>showTimeline("#two-week-knitting", 5, 2)</script>
+                    </div>
+                    <div class="grid">
+                            <img src="portfolio/knitting-illustrated/Asset 7.svg">
+                            <img src="portfolio/knitting-illustrated/Asset 3.svg">
+                            <img src="portfolio/knitting-illustrated/Asset 9.svg">
+                            <img src="portfolio/knitting-illustrated/Asset 5.svg">
+                            <img src="portfolio/knitting-illustrated/Asset 10.svg">
+                            <img src="portfolio/knitting-illustrated/Asset 1.svg">
+                            <img src="portfolio/knitting-illustrated/Asset 2.svg">
+                            <img src="portfolio/knitting-illustrated/Asset 6.svg">
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <h4>Timeline</h4>
+                    <div id="five-week-knitting">
+                        <script>showTimeline("#five-week-knitting", 5, 0)</script>
+                    </div>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><span>Adobe XD</span></li>
+                        <li><span>Adobe Illustrator</span></li>
+                    </ul>
+                    <h4>Categories</h4>
+                    <p>#graphic-design</p>
+                    <p>#interaction-design</p>
+                    <p>#information-design</p>
+                    <p>#prototype</p>
                 </div>
             </div>
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)" style="color: #707070"></span>
-                <span class="dot" onclick="currentSlide(2)" style="color: #707070"></span>
-                <span class="dot" onclick="currentSlide(3)" style="color: #707070"></span>
+            <div class="content-container">
+                <div class="main2">
+                <h4>Information Design Tutorials</h4>
+                <div id="three-of-five-week-knitting">
+                    <script>showTimeline("#three-of-five-week-knitting", 5, 3)</script>
+                </div>
+                <p>The website is designed so that the user would select a pattern using a series of images and filters and then be follow the pattern using a traditional pattern description, as well as illustrated procedural instructions on how to complete each stitch. The goal is allow the user to be able to never need to navigate away from the site if they have questions on how to perform a stitch. The series of images shown below is one set of illustrations show in the website prototype.</p>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="portfolio/knitting-illustrated/co1.svg" style="width:100%; margin-top: -15%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="portfolio/knitting-illustrated/co2.svg" style="width:100%; margin-top: -15%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="portfolio/knitting-illustrated/co3.svg" style="width:100%; margin-top: -15%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)" style="color: #707070">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)" style="color: #707070">&#10095;</a>
+                    </div>
+                    <br>
+                <h4>Final Design</h4>
+                <div id="five-of-five-week-knitting">
+                    <script>showTimeline("#five-of-five-week-knitting", 5, 5)</script>
+                </div>
+                <p>I created a <a href="https://xd.adobe.com/view/492f1a6e-ff1d-4297-baf2-bdc0b163db79-1c7c/">prototype</a> for a knitting website. The prototype explores what a website would look like if a website for finding new knitting patterns was combined with information design to show how to complete the stitches. Knitting patterns rarely show the stitches and content which explains how to perform a stitches is rarely combined with a pattern.</p>
+                <div class="grid2">
+                    <img src="portfolio/knitting-illustrated/final_home_page.png">
+                    <img src="portfolio/knitting-illustrated/final_home_page_2.png">
+                    <img src="portfolio/knitting-illustrated/final_home_page_3.png">
+                    <img src="portfolio/knitting-illustrated/final_home_page_4.png">
+                </div>    
             </div>
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <img src="portfolio/knitting-illustrated/co1.svg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="portfolio/knitting-illustrated/co2.svg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="portfolio/knitting-illustrated/co3.svg" style="width:100%">
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)" style="color: #707070">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)" style="color: #707070">&#10095;</a>
-                </div>
-                <br>
-
+            </div>
             <script>
                 var slideIndex = 1;
                 showSlides(slideIndex);

@@ -10,6 +10,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
             </script>
+            <script src="https://d3js.org/d3.v7.min.js"></script>
+            <script src="js/timeline.js"></script>
             <script>
                 $(function(){
                 $(".nav").load("header.html"); 
@@ -38,7 +40,9 @@
                 </div>
                 <div class="sidebar">
                     <h4>Timeline</h4>
-                    <img class="timeline" src="images/7-weeks.svg" style="max-height: 75px">
+                    <div id="seven-week-migration">
+                        <script>showTimeline("#seven-week-migration", 7, 0)</script>
+                    </div>
                     <h4>Tools</h4>
                     <ul>
                         <li><span>Adobe Illustrator</span></li>
@@ -64,7 +68,9 @@
             <div class="content-container">
                 <div class="main2">
                     <h3>Sketching with data</h3>
-                    <img class="timeline" src="images/2-of-7-weeks.svg">
+                    <div id="two-week-migration">
+                        <script>showTimeline("#two-week-migration", 7, 2)</script>
+                    </div>
                     <p>In the first few weeks of the project I mostly played the role of data engineer. I managed, restructured, and created new data tables to be able easily merge and join existing data tables. Additionally, I helped research different designs ideas for the project.</p>
                     <h4>Design Research</h4>
                     <img src="portfolio/cititzenship-acquisition/moodboard.png">
@@ -75,7 +81,9 @@
                         <img src="portfolio/cititzenship-acquisition/design-process-3.png">
                     </div>
                     <h3>Prototyping</h3>
-                    <img class="timeline" src="images/4-of-7-weeks.svg">
+                    <div id="four-week-migration">
+                        <script>showTimeline("#four-week-migration", 7, 4)</script>
+                    </div>
                     <p>The butterfly is used as a visual metaphor for migration. The veins of the butterfly detail different paths a user could take to acquire migration after answering some simple questions such as:</p>
                     <ul>
                         <li><span>Are your parents citizens of the country you are interested in migrating to?</span></li>
@@ -90,7 +98,9 @@
                         <img src="portfolio/cititzenship-acquisition/design-process-8.png">
                     </div>
                     <h3>Application development</h3>
-                    <img class="timeline" src="images/7-of-7-weeks.svg">
+                    <div id="seven-of-seven-week-migration">
+                        <script>showTimeline("#seven-of-seven-week-migration", 7, 7)</script>
+                    </div>
                     <p>Forthcoming</p>
                 </div>
             </div>
