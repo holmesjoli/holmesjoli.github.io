@@ -306,6 +306,7 @@ a:hover,
 .content-container .main img {
   text-align: center;
   max-height: 80vh;
+  padding: 10px;
 }
 
 .content-container .timeline {
