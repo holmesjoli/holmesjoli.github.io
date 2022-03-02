@@ -10,7 +10,10 @@ function showTimeline(id, nWeeks, fillWeek = 0) {
 
         if (fillWeek === i) {
             fill = "#FF4081";
-            stroke = "#000000";
+            stroke = "#FF4081";
+        } else if(fillWeek > i) {
+            fill = "#FFFFFF";
+            stroke = "#FF4081";
         } else {
             fill = "#FFFFFF";
             stroke = "#000000";
@@ -18,8 +21,6 @@ function showTimeline(id, nWeeks, fillWeek = 0) {
 
         data.push({week: i, fill: fill, stroke: stroke});
     }
-
-    console.log(data);
 
     let svg = d3.select(id)
         .append("svg")
@@ -56,7 +57,7 @@ function showTimeline(id, nWeeks, fillWeek = 0) {
         .attr("x", width/2)
         .attr("y", height - 5)
         .attr("text-anchor", "middle")
-        .text("Weeks")
+        .text("# of Weeks")
 }
 
 
