@@ -10,6 +10,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
             </script>
+            <script src="https://d3js.org/d3.v7.min.js"></script>
+            <script src="js/timeline.js"></script>
             <script>
             $(function(){
             $(".nav").load("header.html"); 
@@ -26,9 +28,26 @@
                 </div>
                 <div class="nav"></div>
             </header>
-            <div class="container">
-                <div class="text-container">
-                    <p>The following visualization summarizes the history of information visualizations from Michael Friendly's research compilation: <a href="https://datavis.ca/milestones/">Milestones Tour</a>. The Milestones tour attempts to comprehensively document all scientific and graphic advances in information visualization. To collect the information for the visualization, I web scraped the Milestones Tours site, then organized and selected the data to visualize. Click <a href="portfolio/history-info-viz/friendly_info_history.pdf">here</a> to download a PDF of this visualization.</p>
+            <div class="content-container">
+                <div class="main">
+                    <h3>Brief</h3>
+                    <p>Create an information visualization that summarizes the history of information visualizations from Michael Friendly's research compilation: <a href="https://datavis.ca/milestones/">Milestones Tour</a>. The Milestones tour attempts to comprehensively document all scientific and graphic advances in information visualization.</p>
+                    <h3>Methods</h3>
+                    <p>To collect the information for the visualization, I web scraped the Milestones Tours website, then organized and selected the data to visualize in Illustrator. Click <a href="portfolio/history-info-viz/friendly_info_history.pdf">here</a> to download a PDF of this visualization.</p>
+                </div>
+                <div class="sidebar">
+                    <h4>Timeline</h4>
+                    <div id="three-week-info-hist">
+                        <script>showTimeline("#three-week-info-hist", 3, 0)</script>
+                    </div>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><span>Adobe Illustrator</span></li>
+                        <li><span>R</span></li>
+                    </ul>
+                    <h4>Categories</h4>
+                        <p>#graphic-design</p>
+                        <p>#information-visualization-history</p>
                 </div>
             </div>
             <div>
