@@ -1,4 +1,4 @@
-function showTimeline(id, nWeeks, fillWeek = 0) {
+function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
 
     let width = 50*(nWeeks -1) + 30;
     let height = 40;
@@ -65,12 +65,19 @@ function showTimeline(id, nWeeks, fillWeek = 0) {
             .text(function(d, i) {return i + 1;});
     }
 
+    let text;
+    if (week) {
+        text = "Weeks"
+    } else {
+        text = "Months"
+    }
+
     if (fillWeek === 0) {
         svg.append("text")
             .attr("x", width/2)
             .attr("y", height - 5)
             .attr("text-anchor", "middle")
-            .text("# of Weeks");
+            .text(`# of ${text}`);
     }
 }
 
