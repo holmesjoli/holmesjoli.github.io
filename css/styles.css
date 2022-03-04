@@ -309,21 +309,27 @@ a:hover,
   padding: 10px;
 }
 
-.grid {
+.grid,
+.grid3 {
+  flex-wrap: wrap;
+}
+
+.grid,
+.grid2 {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .grid img {
   flex: 0 0 15%;
-  /* max-width: 20%; */
   height: 150px;
 }
 
-.grid2 img {
+.grid2 img,
+.grid3 img {
+  max-width: 50%;
   flex: 0 0 20%;
-  /* max-width: 20%; */
   max-height: 40vh;
 }
 
