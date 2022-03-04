@@ -287,11 +287,27 @@ a:hover,
   padding-right: 50px;
 }
 
+.content-container .sidebar3 {
+  margin-top: 20px;
+  width: 45%;
+  padding-right: 50px;
+}
 .content-container .main,
-.content-container .main2 {
+.content-container .main2{
   padding: 10px;
   padding-left: 200px;
   padding-right: 25px;
+}
+
+.content-container .main3 {
+  padding: 10px;
+  padding-left: 100px;
+  padding-right: 25px;
+}
+
+.content-container .main {
+  width: 65%;
+  display: inline-block;
 }
 
 .content-container .main2 {
@@ -299,8 +315,8 @@ a:hover,
   padding-right: 150px;
 }
 
-.content-container .main {
-  width: 65%;
+.content-container .main3 {
+  width: 55%;
   display: inline-block;
 }
 
