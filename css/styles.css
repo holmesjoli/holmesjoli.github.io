@@ -284,7 +284,8 @@ a:hover,
   margin-top: 15px;
   width: 35%;
   padding: 10px;
-  padding-right: 50px;
+  padding-left: 25px;
+  /* padding-right: 50px; */
 }
 
 .content-container .sidebar3 {
@@ -295,7 +296,7 @@ a:hover,
 .content-container .main,
 .content-container .main2{
   padding: 10px;
-  padding-left: 200px;
+  padding-left: 175px;
   padding-right: 25px;
 }
 
