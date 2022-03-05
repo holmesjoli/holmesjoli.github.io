@@ -1,7 +1,7 @@
 function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
 
     let width = 50*(nWeeks -1) + 30;
-    let height = 40;
+    let height = 25;
     let yCoord;
 
     if (fillWeek === 0) {
@@ -9,7 +9,7 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
         yCoord = height - 55;
 
     } else {
-        yCoord = 22;
+        yCoord = 20;
     }
 
     const data = [];
@@ -38,9 +38,9 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
         .attr("width", width);
 
     svg.append("line")
-        .attr("x1", 25)
+        .attr("x1", 15)
         .attr("y1", yCoord)
-        .attr("x2", 50*(data.length -1) + 5)
+        .attr("x2", 50*(data.length) - 35)
         .attr("y2", yCoord)
         .attr("stroke", "black");
 
@@ -50,11 +50,12 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
         .append("circle")
         .attr("cx", function(d, i) {return 50*i + 15;})
         .attr("cy", yCoord)
-        .attr("r", 12)
+        .attr("r", 4)
         .attr("fill", function(d) {return d.fill;})
         .attr("stroke", function(d) {return d.stroke;});
 
     if (fillWeek === 0) {
+        
         svg.selectAll("text")
             .data(data)
             .enter()
@@ -63,16 +64,14 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
             .attr("y", height - 25)
             .attr("text-anchor", "middle")
             .text(function(d, i) {return i + 1;});
-    }
 
-    let text;
-    if (week) {
-        text = "Weeks"
-    } else {
-        text = "Months"
-    }
+        let text;
+        if (week) {
+            text = "Weeks"
+        } else {
+            text = "Months"
+        }
 
-    if (fillWeek === 0) {
         svg.append("text")
             .attr("x", width/2)
             .attr("y", height - 5)
