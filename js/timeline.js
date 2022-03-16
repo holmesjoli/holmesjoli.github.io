@@ -38,9 +38,9 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
         .attr("width", width);
 
     svg.append("line")
-        .attr("x1", 15)
+        .attr("x1", 5)
         .attr("y1", yCoord)
-        .attr("x2", 50*(data.length) - 35)
+        .attr("x2", 50*(data.length) - 45)
         .attr("y2", yCoord)
         .attr("stroke", "black");
 
@@ -48,7 +48,7 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
         .data(data)
         .enter()
         .append("circle")
-        .attr("cx", function(d, i) {return 50*i + 15;})
+        .attr("cx", function(d, i) {return 50*i + 5;})
         .attr("cy", yCoord)
         .attr("r", 4)
         .attr("fill", function(d) {return d.fill;})
