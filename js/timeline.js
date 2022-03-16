@@ -60,7 +60,7 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
             .data(data)
             .enter()
             .append("text")
-            .attr("x", function(d, i) {return 50*i + 15;})
+            .attr("x", function(d, i) {return 50*i + 5;})
             .attr("y", height - 25)
             .attr("text-anchor", "middle")
             .text(function(d, i) {return i + 1;});
