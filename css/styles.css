@@ -144,7 +144,7 @@ a {
 }
 
 .button-container {
-  flex: 1 0 200px;
+  flex: 0 0 200px;
   margin: 30px;
 }
 
