@@ -3,6 +3,7 @@
         <head>
             <meta charset="utf-8">
             <title>Joli Holmes</title>
+            <link rel="stylesheet" href="css/filter.css">
             <link rel="stylesheet" href="css/styles.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://use.typekit.net/yzi8cbw.css">
@@ -25,78 +26,237 @@
                 </div>
                 <div class="nav"></div>
             </header>
-            <div class="portfolio-container">
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="design-process.html" alt="Migration is Natural" title="Migration is Natural">Migration is Natural</a></h3>
-                    <h4>2022</h4>
-                    <a href="design-process.html"><img class="portfolio-img" src="portfolio/cititzenship-acquisition/map.png"></a>
+
+            <div class="main-container">
+                <!-- Control buttons -->
+                <div id="button-container">
+                    <h3 class="filter-title" style="margin-bottom: 15px">Filter items</h3>
+                    <button class="btn active" onclick="filterSelection('all')">All</button>
+                    <button class="btn" onclick="filterSelection('adobe-illustrator')">#adobe-illustratror</button>
+                    <button class="btn" onclick="filterSelection('adobe-XD')">#adobe-XD</button>
+                    <button class="btn" onclick="filterSelection('ceramics')">#ceramics</button>
+                    <button class="btn" onclick="filterSelection('covid19')">#covid19</button>
+                    <button class="btn" onclick="filterSelection('d3-js')">#d3-js</button>
+                    <button class="btn" onclick="filterSelection('data-art')">#data-art</button>
+                    <button class="btn" onclick="filterSelection('data-visualization')">#data-visualization</button>
+                    <button class="btn" onclick="filterSelection('data-physicalization')">#data-physicalization</button>
+                    <button class="btn" onclick="filterSelection('drawing')">#drawing</button>
+                    <button class="btn" onclick="filterSelection('information-design')">#information-design</button>
+                    <button class="btn" onclick="filterSelection('information-design-history')">#information-design-history</button>
+                    <button class="btn" onclick="filterSelection('interaction-design')">#interaction-design</button>
+                    <button class="btn" onclick="filterSelection('graphic-design')">#graphic-design</button>
+                    <button class="btn" onclick="filterSelection('public-policy')">#public-policy</button>
+                    <button class="btn" onclick="filterSelection('python')">#python</button>
+                    <button class="btn" onclick="filterSelection('R')">#R</button>
+                    <button class="btn" onclick="filterSelection('system-design')">#system-design</button>
+                    <button class="btn" onclick="filterSelection('transportation-design')">#transportation-design</button>
                 </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="equitable-teams.html" alt="Visualizing Version Control" title="Visualizing Equitable Teams">Visualizing Equitable Teams</a></h3>
-                    <h4>2022</h4>
-                    <a href="equitable-teams.html"><img class="portfolio-img" src="portfolio/equitable_teams/team_strengths_zoom.svg"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="visualizing-version-control.html" alt="Visualizing Version Control" title="Visualizing Version Control">Visualizing Version Control</a></h3>
-                    <h4>2022</h4>
-                    <a href="visualizing-version-control.html"><img class="portfolio-img" src="portfolio/visual_version_control/Visual Version Control.svg"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="becks-distortion.html" alt="Information visualization showing Harry Beck's distortion applied to the MBTA rail mass transportation system in Boston">Beck's Distortion</a></h3>
-                    <h4>2021</h4>
-                    <a href="becks-distortion.html"><img class="portfolio-img" src="portfolio/mbta/mbta.JPG"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="knitting-illustrated.html" alt="Prototype of information design for knitting website">Knitting Illustrated</a></h3>
-                    <h4>2021</h4>
-                    <a href="knitting-illustrated.html"><img class="portfolio-img" src="portfolio/knitting-illustrated/animated-cast-on2.gif"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="personal-data.html" alt="Data visualization collection" title="Data visualization">Personal Data Story</a></h3>
-                    <h4>2021</h4>
-                    <a href="personal-data.html"><img class="portfolio-img" src="portfolio/personal-data/personal-data.svg"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="one-in-five-hundred.html" alt="One in five hundred deaths">One in five hundred</a></h3>
-                    <h4>2021</h4>
-                    <a href="one-in-five-hundred.html"><img class="portfolio-img" src="portfolio/one-in-500/one-in-500.PNG"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="history-info-viz.html" alt="Graphic Design showing the history of information visualization">History of Information Visualization</a></h3>
-                    <h4>2021</h4>
-                    <a href="history-info-viz.html"><img class="portfolio-img" src="portfolio/history-info-viz/friendly_info_history.svg"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="black-data.html" alt="Black cube with machine learning knitting pattern in rainbow yarn">Black data</a></h3>
-                    <h4>2020</h4>
-                    <a href="black-data.html"><img class="portfolio-img" src="portfolio/black data/20201122_142250.jpg"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="policy-research.html" alt="Map of Harris County, Texas child care deserts" title="Data visualization">Data visualization for Policy Research</a></h3>
-                    <h4>2020</h4>
-                    <a href="policy-research.html"><img class="portfolio-img" src="portfolio/webapps/harris county child care markets simple.PNG"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="missingness.html" alt="Beaded data visualization showing the difference in arrest rates between Black and white individuals for marijuana possession" title="Systemic missingness">Missingness</a></h3>
-                    <h4>2020</h4>
-                    <a href="missingness.html"><img class="portfolio-img" src="portfolio/missingness/20201129_144553.jpg"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="ceramics.html" alt="Serving bowl in Spodumene and Turner White" title="Ceramics">Ceramics Collection</a></h3>
-                    <h4>2019/2020</h4>
-                    <a href="ceramics.html"><img class="portfolio-img" src="portfolio/ceramics/20201028_074420.jpg"></a>
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="meta.html" alt="Typing out code with pink fingers">Meta</a></h3>
-                    <h4>2017</h4>
-                    <a href="meta.html"><img src="portfolio/meta/keyboardhands3_slow.gif"></a>    
-                </div>
-                <div class="portfolio-item">
-                    <h3><a class="grey-link" href="drawings.html" alt = "Sleeping person in conte.">Drawings Collection</a></h3>
-                    <h4>2014</h4>
-                    <a href="drawings.html"><img class="portfolio-img" src="portfolio/figure/20201115_164033.jpg"></a>
+                
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                <div class="portfolio-container">
+                    <div class="filterDiv portfolio-item information-design interaction-design graphic-design adobe-illustrator d3-js R">
+                        <h3><a class="grey-link" href="design-process.html" alt="Migration is Natural" title="Migration is Natural">Migration is Natural</a></h3>
+                        <h4>2022</h4>
+                        <a href="design-process.html"><img class="portfolio-img" src="portfolio/cititzenship-acquisition/map.png"></a>
+                        <div class="tag-container">
+                            <span class="tag">#adobe-illustrator</span>
+                            <span class="tag">#d3-js</span>
+                            <span class="tag">#graphic-design</span>
+                            <span class="tag">#interaction-design</span>
+                            <span class="tag">#information-design</span>
+                            <span class="tag">#R</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item information-design graphic-design data-visualization adobe-illustrator">
+                        <h3><a class="grey-link" href="equitable-teams.html" alt="Visualizing Version Control" title="Visualizing Equitable Teams">Visualizing Equitable Teams</a></h3>
+                        <h4>2022</h4>
+                        <a href="equitable-teams.html"><img class="portfolio-img" src="portfolio/equitable_teams/team_strengths_zoom.svg"></a>
+                        <div class="tag-container">
+                            <span class="tag">#adobe-illustrator</span>
+                            <span class="tag">#data-visualization</span>
+                            <span class="tag">#graphic-design</span>
+                            <span class="tag">#information-design</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item graphic-design information-design system-design adobe-illustrator">
+                        <h3><a class="grey-link" href="visualizing-version-control.html" alt="Visualizing Version Control" title="Visualizing Version Control">Visualizing Version Control</a></h3>
+                        <h4>2022</h4>
+                        <a href="visualizing-version-control.html"><img class="portfolio-img" src="portfolio/visual_version_control/Visual Version Control.svg"></a>
+                        <div class="tag-container">
+                            <span class="tag">#adobe-illustrator</span>
+                            <span class="tag">#graphic-design</span>
+                            <span class="tag">#information-design</span>
+                            <span class="tag">#system-design</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item d3-js information-design interaction-design transportation-design information-design-history">
+                        <h3><a class="grey-link" href="becks-distortion.html" alt="Information visualization showing Harry Beck's distortion applied to the MBTA rail mass transportation system in Boston">Beck's Distortion</a></h3>
+                        <h4>2021</h4>
+                        <a href="becks-distortion.html"><img class="portfolio-img" src="portfolio/mbta/mbta.JPG"></a>
+                        <div class="tag-container">
+                            <span class="tag">#d3-js</span>
+                            <span class="tag">#information-design</span>
+                            <span class="tag">#information-design-history</span>
+                            <span class="tag">#interaction-design</span>
+                            <span class="tag">#transportation-design</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item information-design interaction-design adobe-illustrator adobe-XD">
+                        <h3><a class="grey-link" href="knitting-illustrated.html" alt="Prototype of information design for knitting website">Knitting Illustrated</a></h3>
+                        <h4>2021</h4>
+                        <a href="knitting-illustrated.html"><img class="portfolio-img" src="portfolio/knitting-illustrated/animated-cast-on2.gif"></a>
+                        <div class="tag-container">
+                            <span class="tag">#adobe-illustrator</span>
+                            <span class="tag">#adobe-XD</span>
+                            <span class="tag">#interaction-design</span>
+                            <span class="tag">#information-design</span>
+                            <span class="tag">#prototype</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item adobe-illustrator data-visualization information-design R">
+                        <h3><a class="grey-link" href="personal-data.html" alt="Data visualization collection" title="Data visualization">Personal Data Story</a></h3>
+                        <h4>2021</h4>
+                        <a href="personal-data.html"><img class="portfolio-img" src="portfolio/personal-data/personal-data.svg"></a>
+                        <div class="tag-container">
+                            <span class="tag">#adobe-illustrator</span>
+                            <span class="tag">#data-visualization</span>
+                            <span class="tag">#information-design</span>
+                            <span class="tag">#R</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item interaction-design information-design covid19 R d3-js">
+                        <h3><a class="grey-link" href="one-in-five-hundred.html" alt="One in five hundred deaths">One in five hundred</a></h3>
+                        <h4>2021</h4>
+                        <a href="one-in-five-hundred.html"><img class="portfolio-img" src="portfolio/one-in-500/one-in-500.PNG"></a>
+                        <div class="tag-container">
+                            <span class="tag">#covid19</span>
+                            <span class="tag">#d3-js</span>
+                            <span class="tag">#interaction-design</span>
+                            <span class="tag">#information-design</span>
+                            <span class="tag">#R</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item adobe-illustrator information-design graphic-design information-design-history">
+                        <h3><a class="grey-link" href="history-info-viz.html" alt="Graphic Design showing the history of information visualization">History of Information Visualization</a></h3>
+                        <h4>2021</h4>
+                        <a href="history-info-viz.html"><img class="portfolio-img" src="portfolio/history-info-viz/friendly_info_history.svg"></a>
+                        <div class="tag-container">
+                            <span class="tag">#adobe-illustrator</span>
+                            <span class="tag">#interaction-design</span>
+                            <span class="tag">#information-design</span>
+                            <span class="tag">#information-design-history</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item data-art data-physicalization ceramics">
+                        <h3><a class="grey-link" href="black-data.html" alt="Black cube with machine learning knitting pattern in rainbow yarn">Black data</a></h3>
+                        <h4>2020</h4>
+                        <a href="black-data.html"><img class="portfolio-img" src="portfolio/black data/20201122_142250.jpg"></a>
+                        <div class="tag-container">
+                            <span class="tag">#ceramics</span>
+                            <span class="tag">#data-art</span>
+                            <span class="tag">#data-physicalization</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item data-visualization interaction-design public-policy R">
+                        <h3><a class="grey-link" href="policy-research.html" alt="Map of Harris County, Texas child care deserts" title="Data visualization">Data visualization for Policy Research</a></h3>
+                        <h4>2020</h4>
+                        <a href="policy-research.html"><img class="portfolio-img" src="portfolio/webapps/harris county child care markets simple.PNG"></a>
+                        <div class="tag-container">
+                            <span class="tag">#data-visualization</span>
+                            <span class="tag">#interaction-design</span>
+                            <span class="tag">#public-policy</span>
+                            <span class="tag">#R</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item data-visualization data-art public-policy">
+                        <h3><a class="grey-link" href="missingness.html" alt="Beaded data visualization showing the difference in arrest rates between Black and white individuals for marijuana possession" title="Systemic missingness">Missingness</a></h3>
+                        <h4>2020</h4>
+                        <a href="missingness.html"><img class="portfolio-img" src="portfolio/missingness/20201129_144553.jpg"></a>
+                        <div class="tag-container">
+                            <span class="tag">#data-visualization</span>
+                            <span class="tag">#data-art</span>
+                            <span class="tag">#public-policy</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item ceramics">
+                        <h3><a class="grey-link" href="ceramics.html" alt="Serving bowl in Spodumene and Turner White" title="Ceramics">Ceramics Collection</a></h3>
+                        <h4>2019/2020</h4>
+                        <a href="ceramics.html"><img class="portfolio-img" src="portfolio/ceramics/20201028_074420.jpg"></a>
+                        <div class="tag-container">
+                            <span class="tag">#ceramics</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item data-art data-visualization R">
+                        <h3><a class="grey-link" href="meta.html" alt="Typing out code with pink fingers">Meta</a></h3>
+                        <h4>2017</h4>
+                        <a href="meta.html"><img src="portfolio/meta/keyboardhands3_slow.gif"></a>
+                        <div class="tag-container">
+                            <span class="tag">#data-visualization</span>
+                            <span class="tag">#data-art</span>
+                            <span class="tag">#R</span>
+                        </div>
+                    </div>
+                    <div class="filterDiv portfolio-item drawing">
+                        <h3><a class="grey-link" href="drawings.html" alt = "Sleeping person in conte.">Drawings Collection</a></h3>
+                        <h4>2014</h4>
+                        <a href="drawings.html"><img class="portfolio-img" src="portfolio/figure/20201115_164033.jpg"></a>
+                        <div class="tag-container">
+                            <span class="tag">#drawing</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <footer></footer>
         </body>
+        <!--https://www.w3schools.com/howto/howto_js_filter_elements.asp-->
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current control button (highlight it)
+            var btnContainer = document.getElementById("button-container");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                console.log(current)
+                this.className += " active";
+            });
+            }
+        </script>
     </html>

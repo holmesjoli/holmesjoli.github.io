@@ -54,9 +54,8 @@ h3 {
 h4 {
   font-size: 16pt;
   margin: 0;
-  font-style: italic;
   text-transform: uppercase;
-  color: #569CCA;
+  /* color: #569CCA; */
 }
 
 h5 {
@@ -139,20 +138,38 @@ a {
   max-height: 55vh;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#button-container {
+  flex: 0 0 200px;
+  margin: 30px;
+}
+
 .portfolio-container {
   text-align: center;
   margin-top: 15px;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .portfolio-container .portfolio-item {
-  width: 25%;
+  /* /* width: 25%; */
   margin: 0 20px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
-.portfolio-container .portfolio-item h3 {
+.portfolio-container .portfolio-item h3,
+.filter-title {
   font-size: 14pt;
   margin-bottom: 5px;
+}
+
+.filter-title {
+  margin: 0;
 }
 
 .portfolio-container .portfolio-item h4 {
@@ -164,15 +181,16 @@ a {
   text-align: center;
 }
 
-.portfolio-item > h3 > a {
+.portfolio-item > h3 > a,
+.filter-title {
   font-weight: bold;
   text-transform: uppercase;
-  color: #569CCA;
+  color: #333333;
 }
 
 .portfolio-item > h3 > a:hover {
-  color: #569CCA;
-  text-decoration: 2px underline;
+  color: #333333;
+  text-decoration: 2px underline #FF4081;
 }
 
 a,
@@ -373,47 +391,18 @@ li span {
     padding-bottom: 10px;
   }
 
-  .portfolio-container {
+  .main-container {
+    display: flex;
     flex-direction: column;
-    margin: 0;
   }
 
   .portfolio-item {
     max-width: 100%;
     margin: 0 30px;
+  }
+
+  #footer {
+    position:sticky;
+    margin-bottom: -100px;
   }
 }
-/* 
-@media only screen and (min-width: 500px) {
-
-  .title {
-    font-size: 24pt;
-    padding-bottom: 10px;
-  }
-
-  .title > img {
-    height: 50px;
-  }
-
-  .title > img:nth-child(1) {
-    padding-left: 10px;
-  }
-
-  .title > img:nth-child(2) {
-    padding-right: 10px;
-  }
-
-  .nav a, .dropbtn {
-    font-size: 18pt;
-  }
-
-  .portfolio-item {
-    max-width: 100%;
-    margin: 0 30px;
-  }
-
-  .dropdown-content a {
-    font-size: 16pt;
-  }
-
-} */
