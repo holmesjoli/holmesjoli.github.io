@@ -29,7 +29,7 @@
 
             <div class="main-container">
                 <!-- Control buttons -->
-                <div class="button-container">
+                <div id="button-container">
                     <h3 class="filter-title" style="margin-bottom: 15px">Filter items</h3>
                     <button class="btn active" onclick="filterSelection('all')">All</button>
                     <button class="btn" onclick="filterSelection('adobe-illustrator')">#adobe-illustratror</button>
@@ -248,12 +248,13 @@
             }
 
             // Add active class to the current control button (highlight it)
-            var btnContainer = document.getElementByClassName("button-container");
+            var btnContainer = document.getElementById("button-container");
             var btns = btnContainer.getElementsByClassName("btn");
             for (var i = 0; i < btns.length; i++) {
             btns[i].addEventListener("click", function() {
                 var current = document.getElementsByClassName("active");
                 current[0].className = current[0].className.replace(" active", "");
+                console.log(current)
                 this.className += " active";
             });
             }

@@ -143,7 +143,7 @@ a {
   flex-direction: row;
 }
 
-.button-container {
+#button-container {
   flex: 0 0 200px;
   margin: 30px;
 }
@@ -185,11 +185,11 @@ a {
 .filter-title {
   font-weight: bold;
   text-transform: uppercase;
-  color: #000000;
+  color: #333333;
 }
 
 .portfolio-item > h3 > a:hover {
-  color: #000000;
+  color: #333333;
   text-decoration: 2px underline #FF4081;
 }
 
