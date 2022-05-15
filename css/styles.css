@@ -385,14 +385,25 @@ li span {
     padding-bottom: 10px;
   }
 
-  .portfolio-container {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  /* .portfolio-container {
     flex-direction: column;
     margin: 0;
-  }
+  } */
 
   .portfolio-item {
     max-width: 100%;
     margin: 0 30px;
+  }
+
+  #footer {
+    position:sticky;
+    margin-bottom: -100px;
   }
 }
 /* 
