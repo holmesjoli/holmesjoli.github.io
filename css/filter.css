@@ -22,7 +22,8 @@
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-    background-color: #ddd;
+    background-color: #FF4081;
+    color: white;
 }
 
 /* Add a dark background to the active button */
@@ -34,6 +35,7 @@
 .tag {
     font-size: 10px;
     background-color: #f1f1f1;
+
 }
 
 .tag,
