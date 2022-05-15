@@ -54,7 +54,6 @@ h3 {
 h4 {
   font-size: 16pt;
   margin: 0;
-  font-style: italic;
   text-transform: uppercase;
   color: #569CCA;
 }
@@ -144,11 +143,11 @@ a {
   margin-top: 15px;
 }
 
-.portfolio-container .portfolio-item {
+/* .portfolio-container .portfolio-item {
   width: 25%;
   margin: 0 20px;
   display: inline-block;
-}
+} */
 
 .portfolio-container .portfolio-item h3 {
   font-size: 14pt;
