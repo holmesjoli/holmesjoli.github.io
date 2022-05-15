@@ -138,6 +138,16 @@ a {
   max-height: 55vh;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-container {
+  flex: 1 0 200px;
+  margin: 30px;
+}
+
 .portfolio-container {
   text-align: center;
   margin-top: 15px;
