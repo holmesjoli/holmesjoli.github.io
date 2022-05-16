@@ -34,7 +34,6 @@
 
 .tag {
     font-size: 10px;
-    background-color: #f1f1f1;
     color: #333333;
 
 }
@@ -50,4 +49,5 @@
     border-radius: 5px;
     font-family: century-gothic,sans-serif;
     white-space: nowrap;
+    background-color: #e7e7e7;
 }
