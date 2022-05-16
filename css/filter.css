@@ -39,6 +39,10 @@
 
 }
 
+.tag:hover {
+    text-decoration: none;
+}
+
 .tag,
 .btn {
     padding: 3px 5px;

@@ -186,8 +186,7 @@ a {
   color: #333333;
 }
 
-.portfolio-item > h3 > a:hover {
-  color: #333333;
+a h3:hover {
   text-decoration: 2px underline #FF4081;
 }
 
@@ -196,12 +195,6 @@ a,
 .grey-link > a {
   color: #FF4081;
   text-decoration: none;
-}
-
-a:hover,
-.grey-link:hover {
-  color: #FF4081;
-  text-decoration: 2px underline;
 }
 
 .img-container,
