@@ -10,11 +10,10 @@ html, body {
 }
 
 .title {
-  color: #1E1E1E;
-  font-size: 36pt;
-  font-weight: 600;
+  color: #333333;
+  font-size: 40pt;
   font-style: normal;
-  padding-top: 25px;
+  padding: 25px 0;
   margin: 0;
   display: flex;
   align-items: center; 
@@ -38,7 +37,7 @@ html, body {
 }
 
 h1 > span {
-  color: #FF4081;
+  color: #ef4c72;
 }
 
 h3 {
@@ -69,10 +68,9 @@ p {
   line-height: 1.45em;
 }
 
-header,
+header .title,
 footer > div > #footer{
-  /* background-color: #8CDCFE; */
-  background: linear-gradient(45deg, #569CCA 20%, #8CDCFE 60%, #ffffe0);
+  background: linear-gradient(45deg, #fa9891 5%, #ffd7bc 60%, #ffffe0);
   width: 100%;
   text-align: center;
 }
@@ -120,7 +118,7 @@ a {
 
 .social-media a {
   padding: 10px;
-  color: #FF4081;
+  color: #333333;
   bottom: 0px;
 }
 
@@ -193,7 +191,7 @@ a {
 a,
 .grey-link,
 .grey-link > a {
-  color: #FF4081;
+  color: #ef4c72;
   text-decoration: none;
 }
 
@@ -366,7 +364,7 @@ ul {
 
 ul li::before {
   content: "\25C6"; 
-  color: #FF4081;
+  color: #ef4c72;
   font-size: 10px;
 }
 
