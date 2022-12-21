@@ -18,14 +18,14 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
     for (var i = 1; i <= nWeeks; i++) {
 
         if (fillWeek === i) {
-            fill = "#FF4081";
-            stroke = "#FF4081";
+            fill = "#f85347";
+            stroke = "#f85347";
         } else if(fillWeek > i) {
             fill = "#FFFFFF";
-            stroke = "#FF4081";
+            stroke = "#f85347";
         } else {
             fill = "#FFFFFF";
-            stroke = "#000000";
+            stroke = "#7d7d7d";
         }
 
         data.push({week: i, fill: fill, stroke: stroke});

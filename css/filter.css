@@ -22,13 +22,13 @@
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-    background-color: #808080;
-    color: white;
+    background-color: #fa9891;
+    color: black;
 }
 
 /* Add a dark background to the active button */
 .btn.active {
-    background-color: #FF4081;
+    background-color: #f85347;
     color: white;
 }
 
