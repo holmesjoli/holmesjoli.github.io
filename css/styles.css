@@ -7,8 +7,9 @@ html, body {
   font-family: Nunito, sans-serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 25px;
   color: #150e0d;
+  font-size: 11pt;
+  line-height: 1.5em;
 }
 
 .title {
@@ -51,7 +52,7 @@ h3 {
 }
 
 h4 {
-  font-size: 16pt;
+  font-size: 14pt;
   margin: 0;
   color: #333333;
   font-weight: 300;
@@ -65,8 +66,6 @@ h5 {
 }
 
 p {
-  font-size: 12pt;
-  line-height: 1.5em;
   font-weight: 200;
 }
 
@@ -97,11 +96,13 @@ p {
 
 .nav {
   padding: 15px 0;
+  border-bottom: .5px solid #d7d7d7;
+  background-color: #fafafa;
 }
 
 .nav a,
 .dropbtn {
-  padding: 0 23px;
+  padding: 0 25px;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: .01em;
@@ -282,11 +283,16 @@ a,
   width: 100%;
 }
 
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+}
+
 .content-container .sidebar {
-  margin-top: 15px;
-  width: 35%;
-  padding: 10px;
-  padding-left: 25px;
+  /* width: 30%; */
+  border-left: .5px solid #d7d7d7;
   /* padding-right: 50px; */
 }
 
@@ -298,7 +304,7 @@ a,
 .content-container .main,
 .content-container .main2{
   padding: 10px;
-  padding-left: 175px;
+  padding-left: 25px;
   padding-right: 25px;
 }
 
@@ -309,7 +315,7 @@ a,
 }
 
 .content-container .main {
-  width: 65%;
+  width: 85%;
   display: inline-block;
 }
 
