@@ -45,6 +45,13 @@ $fontPath: "../../../public/font/";
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Amasis";
+    src: url(#{$fontPath + 'Amasis/Amasis MT Std Black.otf'}) format("otf");
+    font-weight: 800;
+    font-style: normal;
+}
+
 body {
     font-family: $baseFont;
     font-size: $baseFontSize;
@@ -61,7 +68,8 @@ body {
     user-select:none;
 }
 
-
 h1 {
     font-family: Amasis;
+    font-weight: 800;
+    font-size: 2rem;
 }
