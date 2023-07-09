@@ -6,6 +6,7 @@ import {
   Route,
   HashRouter,
 } from "react-router-dom";
+import './utils/styles/styles.scss'
 
 // Pages
 import Home from "./pages/Home";
@@ -16,8 +17,6 @@ import About from "./pages/About";
 // Styles
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ThemeProvider>
-    <GlobalStyles />
     <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,6 +25,5 @@ root.render(
         <Route path="/About" element={<About />} />
       </Routes>
     </HashRouter>
-  </ThemeProvider>
 );
 
