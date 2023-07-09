@@ -6,7 +6,7 @@ import { NavLink, NavLinks } from "react-router-dom";
  */
 export default function Navigation() {
     return (
-        <div>
+        <div className="Navigation">
             <div className="Navigation_branding">
                 <h1><NavLink to="/">Joli Holmes</NavLink></h1>
             </div>
