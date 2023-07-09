@@ -9,6 +9,9 @@ import {
 
 // Pages
 import Home from "./pages/Home";
+import DesignProcess from "./pages/DesignProcess";
+import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
 
 // Styles
 
@@ -18,8 +21,10 @@ root.render(
     <GlobalStyles />
     <HashRouter>
       <Routes>
-        <Route path="/" element={<CirclePacking />} />
-        <Route path="/Network" element={<Network />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/DesignProcess" element={<DesignProcess />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </HashRouter>
   </ThemeProvider>
