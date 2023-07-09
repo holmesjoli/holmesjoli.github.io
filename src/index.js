@@ -14,7 +14,6 @@ import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 
 // Styles
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider>
