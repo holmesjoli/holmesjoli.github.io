@@ -1,0 +1,13 @@
+
+export default function Footer() {
+
+    return(
+        <div className="Footer">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/joli-holmes/" class="fa fa-linkedin"></a>
+                <a href="mailto:holmesjoli@gmail.com" class="fa fa-envelope-square"></a>
+                <a href="https://github.com/holmesjoli" class="fa fa-github-square"></a>
+            </div>
+        </div>
+    )
+}

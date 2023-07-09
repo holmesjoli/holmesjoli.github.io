@@ -1,4 +1,4 @@
-import { NavLink, NavLinks } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 /**
  * Menu Navigation bar to navigate to different parts of the project
