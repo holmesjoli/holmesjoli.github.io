@@ -15,7 +15,7 @@ export default function Home() {
             <div className="Item-Container">
                 {
                     itemData.map(d => {
-                        return <PortfolioItem title={d.title} year={d.year} src={`${process.env.PUBLIC_URL}${d.src}`} alt={d.alt}/>
+                        return <PortfolioItem title={d.title} year={d.year} src={d.src} alt={d.alt}/>
                     })
                 }
             </div>
