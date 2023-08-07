@@ -4,7 +4,7 @@ import PortfolioItem from "../components/PortfolioItem";
 
 
 let itemData = [
-    {title: "Algorithmically Fair", year: 2022, src: "/assets/algorithmically-fair/PXL_20221207_173728791.PORTRAIT.jpg", alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"}
+    {title: "Algorithmically Fair", year: 2022, src: "/assets/algorithmically-fair/image.jpg", alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"}
 ]
 
 export default function Home() {
