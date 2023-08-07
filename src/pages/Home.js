@@ -2,10 +2,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import PortfolioItem from "../components/PortfolioItem";
 
-
-let itemData = [
-    {title: "Algorithmically Fair", year: 2022, src: "/assets/algorithmically-fair/image.jpg", alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"}
-]
+import { itemData } from "../utils/global";
 
 export default function Home() {
 
