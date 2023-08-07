@@ -83,7 +83,7 @@ export default function About() {
 
     useEffect(() => {
         barChart()
-    }, [])
+    }, []);
 
     return(
         <div className="Content">
@@ -91,5 +91,5 @@ export default function About() {
             <div id="visualization"></div>
             <Footer />
         </div>
-    )
+    );
 }

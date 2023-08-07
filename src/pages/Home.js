@@ -13,7 +13,7 @@ export default function Home() {
                 {
                     itemData.map(d => {
                         return <PortfolioItem title={d.title} year={d.year} src={d.src} alt={d.alt}/>
-                    })
+                    })[0]
                 }
             </div>
             <Footer />
