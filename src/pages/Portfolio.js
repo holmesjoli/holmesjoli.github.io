@@ -13,7 +13,7 @@ export default function About() {
             <div className="Item-Container"></div>
             <div className="Item-Container">
                 {
-                    itemData.map(d => {
+                    itemData.sort((a, b) => b.year - a.year).map(d => {
                         return <PortfolioItem d={d}/>
                     })
                 }

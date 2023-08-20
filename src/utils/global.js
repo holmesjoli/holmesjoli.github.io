@@ -8,6 +8,7 @@ export let itemData = [
     {title: "Bloom", page: "Bloom", year: 2022, src: "/assets/portfolio/bloom/bloom.png", alt: "GIF showing the sequences of cherry blosssom blooms over time"},
     {title: "Risky Code", page: "Risky-Code", year: 2023, src: "/assets/portfolio/risky-code/process/ErrorRates2.png", alt: "Data visualization show different recidivism rates between Black and White defendants"},
     {title: "Equitable Teams", page: "Equitable-Teams", year: 2022, src: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", alt: "Data Visualization showing the combined strengths of individuals"},
-    {title: "Ceramics Collection", page: "Ceramics", year: 2020, src: "assets/portfolio/ceramics/20201028_074420.jpg", alt: "Serving bowl in Spodumene and Turner White"}
+    {title: "Ceramics Collection", page: "Ceramics", year: 2020, src: "assets/portfolio/ceramics/20201028_074420.jpg", alt: "Serving bowl in Spodumene and Turner White"},
+    {title: "Migration is Natural", page: "Citizenship-Acquisition", year: 2022, src: "assets/portfolio/citizenship-acquisition/map.png",  alt:"Migration is Natural"}
 ];
 
