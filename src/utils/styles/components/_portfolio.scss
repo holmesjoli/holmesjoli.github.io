@@ -1,5 +1,16 @@
 .Item-Container {
+    margin-top: $appMargin;
     padding: $appPadding;
     text-align: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
+.Portfolio-Item {
+    margin: $appMargin;
+    padding: $appPadding;
+    border: #D7D7D7 1px solid;
+    background-color: #fbfbfb;
+    border-radius: $appBorderRadius;
+}

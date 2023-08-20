@@ -11,7 +11,7 @@ export default function About() {
             <Navigation />
             <div className="Item-Container">
                 {
-                    itemData.map(d => {
+                    itemData.sort((a, b) => b.year - a.year).map(d => {
                         return <PortfolioItem title={d.title} year={d.year} src={d.src} alt={d.alt}/>
                     })
                 }
