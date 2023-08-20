@@ -1,6 +1,3 @@
-// Libraries
-import { NavLink } from "react-router-dom";
-
 // Components
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
@@ -13,16 +10,14 @@ export default function About() {
     return(
         <div className="Content">
             <Navigation />
-            {itemData.sort((a, b) => b.year - a.year).map(d => {
-                    return <NavLink className="Item-Container" to="/DesignProcess">
-                    {
-                        itemData.sort((a, b) => b.year - a.year).map(d => {
-                            return <PortfolioItem title={d.title} year={d.year} src={d.src} alt={d.alt}/>
-                        })
-                    }
-                    </NavLink>
-                })
-            }
+            <div className="Item-Container"></div>
+            <div className="Item-Container">
+                {
+                    itemData.map(d => {
+                        return <PortfolioItem d={d}/>
+                    })
+                }
+            </div>
             <Footer />
         </div>
     )

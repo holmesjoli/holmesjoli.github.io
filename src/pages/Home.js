@@ -12,7 +12,7 @@ export default function Home() {
             <div className="Item-Container">
                 {
                     itemData.map(d => {
-                        return <PortfolioItem title={d.title} year={d.year} src={d.src} alt={d.alt}/>
+                        return <PortfolioItem d={d}/>
                     })[0]
                 }
             </div>
