@@ -15,14 +15,12 @@ body {
     grid-template-rows: [nav] $topNavHeight [body] auto;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
   }
   
   // Top navigation
   .Navigation {
     grid-column-start: 1;
     grid-column-end: span 2;
-  
     display: flex;
     flex-direction: row;
   }
