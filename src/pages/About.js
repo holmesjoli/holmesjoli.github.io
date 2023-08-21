@@ -82,7 +82,7 @@ function barChart() {
 export default function About() {
 
     useEffect(() => {
-        barChart()
+        barChart();
     }, []);
 
     return(

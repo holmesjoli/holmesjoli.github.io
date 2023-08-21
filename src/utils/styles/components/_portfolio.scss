@@ -23,17 +23,21 @@
     border: 1px solid $appColorFocus;
 }
 
+.Tag-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .Tag,
 .btn {
     font-size: .8rem;
     color: #333333;
     padding: $appPadding/3 $appPadding/2;
-    margin: $appMargin/3;
+    margin: $appPadding/3 $appPadding/2;
     border-radius: 5px;
-    white-space: nowrap;
-    border: 1px solid white;
+    border: 1px solid rgb(239, 239, 239);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 1px 0px;
-    outline: none;
 }
 
 .Tag:hover {

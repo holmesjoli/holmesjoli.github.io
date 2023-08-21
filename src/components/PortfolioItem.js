@@ -11,7 +11,7 @@ export default function PortfolioItem({d}) {
             <div className="Tag-Container">
                 {
                     d.tags.map(t => {
-                        return <span className="Tag">{t}</span>
+                        return <div className="Tag" key={t}>{t}</div>
                     })
                 }
             </div>
