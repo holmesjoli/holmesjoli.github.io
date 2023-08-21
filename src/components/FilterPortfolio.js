@@ -4,8 +4,7 @@ export default function FilterPortfolio() {
         <div className="Button-Container">
             <h3 className="filter-title">Filter items</h3>
             <button className="btn active" onclick="filterSelection('all')">All</button>
-            <button className="btn" onclick="filterSelection('adobe-illustrator')">#adobe-illustratror</button>
-            <button className="btn" onclick="filterSelection('adobe-XD')">#adobe-XD</button>
+            <button className="btn" onclick="filterSelection('adobe-illustrator')">#adobe-illustrator</button>
             <button className="btn" onclick="filterSelection('ceramics')">#ceramics</button>
             <button className="btn" onclick="filterSelection('d3-js')">#d3-js</button>
             <button className="btn" onclick="filterSelection('data-art')">#data-art</button>
