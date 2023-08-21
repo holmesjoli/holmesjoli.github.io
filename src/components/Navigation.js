@@ -10,11 +10,11 @@ export default function Navigation() {
             <div className="Navigation_branding">
                 <h1><NavLink to="/">Joli Holmes</NavLink></h1>
             </div>
-            <div>
-            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
-            <NavLink to="/DesignProcess" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Design Process</NavLink>
-            <NavLink to="/Portfolio" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Portfolio</NavLink>
-            <NavLink to="/About" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
+            <div className="Navigation_links">
+                <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
+                <NavLink to="/DesignProcess" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Design Process</NavLink>
+                <NavLink to="/Portfolio" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Portfolio</NavLink>
+                <NavLink to="/About" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
             </div>
         </div>
     )

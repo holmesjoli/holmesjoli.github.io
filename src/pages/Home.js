@@ -7,16 +7,18 @@ import { itemData } from "../utils/global";
 export default function Home() {
 
     return(
-        <div className="Content">
-            <Navigation />
-            <div className="Item-Container">
-                {
-                    itemData.map(d => {
-                        return <PortfolioItem d={d}/>
-                    })[0]
-                }
+        <div className="Main">
+            <div className="Content">
+                <Navigation />
+                <div className="Item-Container">
+                    {
+                        itemData.map(d => {
+                            return <PortfolioItem d={d}/>
+                        })[0]
+                    }
+                </div>
+                <Footer />
             </div>
-            <Footer />
         </div>
     )
 }

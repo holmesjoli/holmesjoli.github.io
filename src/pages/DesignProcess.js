@@ -4,9 +4,11 @@ import Footer from "../components/Footer";
 export default function About() {
 
     return(
-        <div className="Content">
-            <Navigation />
-            <Footer />
+        <div className="Main">
+            <div className="Content">
+                <Navigation />
+                <Footer />
+            </div>
         </div>
     )
 }

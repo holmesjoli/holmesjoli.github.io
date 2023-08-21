@@ -6,7 +6,7 @@ import FilterPortfolio from "../components/FilterPortfolio";
 
 import { itemData } from "../utils/global";
 
-export default function About() {
+export default function Portfolio() {
 
     return(
         <div className="Main">

@@ -86,10 +86,12 @@ export default function About() {
     }, []);
 
     return(
-        <div className="Content">
-            <Navigation />
-            <div id="visualization"></div>
-            <Footer />
+        <div className="Main">
+            <div className="Content">
+                <Navigation />
+                <div id="visualization"></div>
+                <Footer />
+            </div>
         </div>
     );
 }
