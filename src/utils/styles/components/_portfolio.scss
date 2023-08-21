@@ -19,6 +19,10 @@
     max-height: 30vh;
 }
 
+.Portfolio-Item:hover {
+    border: 1px solid $appColorFocus;
+}
+
 .Tag,
 .btn {
     font-size: .8rem;
