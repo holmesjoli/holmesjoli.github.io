@@ -8,7 +8,13 @@ export default function PortfolioItem({d}) {
             <h2 className="Item-Title">{d.title}</h2>
             <h3 className="Item-Year">{d.year}</h3>
             <img className="Item-Image" src={d.src} alt={d.alt} />
-            <div class="Tag-Container"></div>
+            <div className="Tag-Container">
+                {
+                    d.tags.map(t => {
+                        return <span className="Tag">{t}</span>
+                    })
+                }
+            </div>
         </NavLink>
     )
 }
