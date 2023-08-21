@@ -1,13 +1,12 @@
 $fontPath: "../../../public/font/";
 
-
 // Hind
-// @font-face {
-//     font-family: "Hind";
-//     src: url(#{$fontPath + 'Hind/Hind-Light.ttf'}) format("ttf");
-//     font-weight: 300;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: "Hind";
+    src: url(#{$fontPath + 'Hind/Hind-Light.ttf'}) format("ttf");
+    font-weight: 300;
+    font-style: normal;
+}
 
 @font-face {
     font-family: "Hind";
@@ -16,28 +15,28 @@ $fontPath: "../../../public/font/";
     font-style: normal;
 }
 
-// @font-face {
-//     font-family: "Hind";
-//     src: url(#{$fontPath + 'Hind/Hind-Medium.ttf'}) format("ttf");
-//     font-weight: 500;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: "Hind";
+    src: url(#{$fontPath + 'Hind/Hind-Medium.ttf'}) format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
 
-// @font-face {
-//     font-family: "Hind";
-//     src: url(#{$fontPath + 'Hind/Hind-SemiBold.ttf'}) format("ttf");
-//     font-weight: 600;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: "Hind";
+    src: url(#{$fontPath + 'Hind/Hind-SemiBold.ttf'}) format("ttf");
+    font-weight: 600;
+    font-style: normal;
+}
 
-// @font-face {
-//     font-family: "Hind";
-//     src: url(#{$fontPath + 'Hind/Hind-Bold.ttf'}) format("ttf");
-//     font-weight: 700;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: "Hind";
+    src: url(#{$fontPath + 'Hind/Hind-Bold.ttf'}) format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
 
-//Amasis
+// Amasis
 @font-face {
     font-family: "Amasis";
     src: url(#{$fontPath + 'Amasis/Amasis MT Regular.ttf'}) format("ttf");
@@ -52,31 +51,44 @@ $fontPath: "../../../public/font/";
     font-style: normal;
 }
 
+// Gloridot
+@font-face {
+    font-family:"gloridot";
+    src: url("https://use.typekit.net/af/d9cc0e/0000000000000000774ee007/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+        url("https://use.typekit.net/af/d9cc0e/0000000000000000774ee007/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),
+        url("https://use.typekit.net/af/d9cc0e/0000000000000000774ee007/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
 body {
     font-family: $baseFont;
     font-size: $baseFontSize;
     line-height: $baseLineHeight;
-    // letter-spacing: 0.1em;
+    background-color: $appColorDark;
+    color: white;
 }
-  
+
 // disable selection in the UI
 * {
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h1 {
-    font-family: Amasis;
-    font-weight: 800;
-    font-size: 2rem;
+    font-family: "gloridot", sans-serif;
+    font-size: 4.5rem;
     text-transform: uppercase;
+    color: $appColorFocus;
+    letter-spacing: 0.05em;
 }
 
 h2 {
-    font-family: Amasis;
     font-weight: 800;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -84,13 +96,11 @@ h2 {
 }
 
 h3 {
-    font-family: Hind;
     font-size: 1rem;
     margin: $appMargin;
 }
 
 h4 {
-    font-family: Hind;
     font-size: 1rem;
 }
 

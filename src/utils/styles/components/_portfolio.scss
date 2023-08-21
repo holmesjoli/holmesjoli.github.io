@@ -10,8 +10,8 @@
 .Portfolio-Item {
     margin: $appMargin;
     padding: $appPadding;
-    border: #D7D7D7 1px solid;
-    background-color: #fbfbfb;
+    border: #3a4047 1px solid;
+    background-color: #1c2022;
     border-radius: $appBorderRadius;
 }
 
@@ -32,7 +32,7 @@
 .Tag,
 .btn {
     font-size: .8rem;
-    color: #333333;
+    color: rgb(240, 240, 240);
     padding: $appPadding/3 $appPadding/2;
     margin: $appPadding/3 $appPadding/2;
     border-radius: 5px;
@@ -53,7 +53,7 @@
 /* Add a light grey background on mouse-over */
 .btn:hover {
     border: 1px solid $appColorFocus;
-    color: black;
+    color: white;
 }
 
 /* Add a dark background to the active button */
