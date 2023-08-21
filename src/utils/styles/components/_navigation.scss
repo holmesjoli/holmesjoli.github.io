@@ -52,6 +52,9 @@
   a {
     padding: $appPadding;
     border-radius: $appBorderRadius;
+    font-variant: small-caps;
+    font-size: 1.15rem;
+    letter-spacing: 0.03em;
   }
 
   a.active {
