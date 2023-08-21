@@ -15,6 +15,7 @@ export default function FilterPortfolio() {
             <button className="btn" onclick="filterSelection('information-design')">#information-design</button>
             <button className="btn" onclick="filterSelection('interaction-design')">#interaction-design</button>
             <button className="btn" onclick="filterSelection('graphic-design')">#graphic-design</button>
+            <button className="btn" onclick="filterSelection('map')">#map</button>
             <button className="btn" onclick="filterSelection('public-policy')">#public-policy</button>
             <button className="btn" onclick="filterSelection('python')">#python</button>
             <button className="btn" onclick="filterSelection('r')">#r</button>
