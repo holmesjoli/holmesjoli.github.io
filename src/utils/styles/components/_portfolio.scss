@@ -7,8 +7,8 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.Item-Container h2,
-.Item-Container h3 {
+.Portfolio-Item h2,
+.Portfolio-Item h3 {
     text-align: left;
 }
 
@@ -68,4 +68,22 @@
     border: 1px solid $appColorFocus;
     color: white;
     font-weight: bold;
+}
+
+.Portfolio-Item-Showcase-Container {
+    margin-top: $appMargin;
+    padding: $appPadding;
+    text-align: center;
+    display: grid;
+}
+
+.Portfolio-Item-Showcase {
+    margin: $appMargin;
+    padding: $appPadding;
+}
+
+.Portfolio-Item-Showcase img {
+    max-height: 60vh;
+    padding: $appPadding;
+    max-width: 60vw;
 }

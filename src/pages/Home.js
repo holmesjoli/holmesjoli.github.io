@@ -1,6 +1,6 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import PortfolioItem from "../components/PortfolioItem";
+import { PortfolioItemShowcase } from "../components/PortfolioItem";
 
 import { itemData } from "../utils/global";
 
@@ -8,17 +8,15 @@ export default function Home() {
 
     return(
         <div className="Main">
-            <div className="Content">
-                <Navigation />
-                <div className="Item-Container">
-                    {
-                        itemData.map(d => {
-                            return <PortfolioItem d={d}/>
-                        })[0]
-                    }
-                </div>
-                <Footer />
+            <Navigation />
+            <div className="Portfolio-Item-Showcase-Container">
+                {
+                    itemData.sort((a, b) => b.year - a.year).map(d => {
+                        return <PortfolioItemShowcase d={d}/>
+                    })[0]
+                }
             </div>
+            <Footer />
         </div>
     )
 }

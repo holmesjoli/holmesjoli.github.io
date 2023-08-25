@@ -4,7 +4,7 @@ import { useState } from "react";
 // Components
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import PortfolioItem from "../components/PortfolioItem";
+import { PortfolioItem } from "../components/PortfolioItem";
 import FilterPortfolio from "../components/FilterPortfolio";
 
 import { itemData } from "../utils/global";

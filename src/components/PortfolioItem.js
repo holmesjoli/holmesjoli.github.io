@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 
 // Portfolio Item
-export default function PortfolioItem({d}) {
+export function PortfolioItem({d}) {
     return(
         <NavLink className="Portfolio-Item" to={"/portfolio/"+d.page}>
             <h2 className="Item-Title">{d.title}</h2>
@@ -15,6 +15,16 @@ export default function PortfolioItem({d}) {
                     })
                 }
             </div>
+        </NavLink>
+    )
+}
+
+export function PortfolioItemShowcase({d}) {
+    return(
+        <NavLink className="Portfolio-Item-Showcase" to={"/portfolio/"+d.page}>
+            <h2 className="Item-Title">{d.title}</h2>
+            <h3 className="Item-Year">{d.year}</h3>
+            <img className="Item-Image" src={d.src} alt={d.alt} />
         </NavLink>
     )
 }
