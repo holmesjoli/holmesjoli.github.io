@@ -7,6 +7,11 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
+.Item-Container h2,
+.Item-Container h3 {
+    text-align: left;
+}
+
 .Portfolio-Item {
     margin: $appMargin;
     padding: $appPadding;
@@ -17,6 +22,7 @@
 
 .Portfolio-Item img {
     max-height: 30vh;
+    padding: $appPadding;
 }
 
 .Portfolio-Item:hover {
@@ -26,7 +32,7 @@
 .Tag-Container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
 }
 
 .Tag,
