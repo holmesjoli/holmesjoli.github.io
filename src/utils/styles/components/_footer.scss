@@ -1,13 +1,14 @@
 .Footer {
     width: 100%;
-    height: 2rem;
+    height: 4rem;
     text-align: center;
     bottom: 0;
     position: fixed;
+    padding: $appPadding;
     background: white;
 }
 
-.social-media a {
+.Social-media a {
     padding: $appPadding;
-    color: #333333;
+    color: $appColorFocus;
 }
