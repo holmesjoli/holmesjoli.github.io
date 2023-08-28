@@ -55,14 +55,15 @@
     font-variant: small-caps;
     font-size: 1.15rem;
     letter-spacing: 0.03em;
+    color: $appColorSecondary;
   }
 
   a.active {
-    font-weight: bold;
+    color: $appColorFocus;
   }
 
   a:hover {
-    color: $appColorFocus;
+    color: white;
   }
 
 }

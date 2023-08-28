@@ -25,7 +25,7 @@ export default function FilterPortfolio({data, updateData}) {
             <FormGroup >
                 {
                     filters.map(d => {
-                        return <FormControlLabel control={<Checkbox defaultChecked size="small" />} label={d} />
+                        return <FormControlLabel key={d} control={<Checkbox defaultChecked size="small" />} label={d} />
                     })
                 }
             </FormGroup>
