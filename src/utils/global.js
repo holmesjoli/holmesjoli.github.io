@@ -18,3 +18,7 @@ export let itemData = [
     // {title: "Flee", page: "Flee", year: 2022, src: "/assets/portfolio/flee/", tags: ['#data-journalism', '#react', '#r', '#figma', '#adboe-illustrator', '#d3-js']}
 ];
 
+export const filters = ["#adobe-illustrator", "#ceramics", "#collection", "#d3-js", "#data-art", "#data-journalism",
+    "#data-physicalization", "#data-visualization", "#design-process", "#drawing", "#figma", "#information-design",
+    "#interaction-design", "#graphic-design", "#map", "#pixi-js", "#public-policy", "#python", "#r", "#react",
+    "#system-design", "#service-design", "#user-experience", "#user-interaction" ];

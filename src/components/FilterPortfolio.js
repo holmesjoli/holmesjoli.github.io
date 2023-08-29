@@ -1,23 +1,32 @@
+//Libraries
+
+import { useState } from 'react';
+
+// MUI Components
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
-export default function FilterPortfolio({data, updateData}) {
+import { filters } from '../utils/global';
 
+export default function FilterPortfolio({updateSelectedValues, selectedValues}) {
 
-    const filterSelection = (e) => {
+    let newSelectedTypes = [];
+    const [filteredTypes, updateFilter] = useState([]);
 
-        console.log(e);
-        
-        // const dataNew = data.filter(d => d.tags.includes(e));
+    const handleChange = (d) => {
 
-        // updateData(dataNew);
+        if (selectedValues.includes(d)) {
+            newSelectedTypes = selectedValues.filter((obj) => obj !== d);
+            filteredTypes.push(d);
+            updateFilter([...filteredTypes]);
+          } else {
+            selectedValues.push(d);
+            updateFilter(filteredTypes.filter((obj) => obj !== d));
+            newSelectedTypes = [...selectedValues];
+          }
+          updateSelectedValues(newSelectedTypes);
     }
-
-    const filters = ["#adobe-illustrator", "#ceramics", "#collection", "#d3-js", "#data-art", "#data-journalism",
-    "#data-physicalization", "#data-visualization", "#design-process", "#drawing", "#figma", "#information-design",
-    "#interaction-design", "#graphic-design", "#map", "#pixi-js", "#public-policy", "#python", "#r", "#react",
-    "#system-design", "#service-design", "#user-experience", "#user-interaction" ]
 
     return (
         <div className="Button-Container">
@@ -25,7 +34,7 @@ export default function FilterPortfolio({data, updateData}) {
             <FormGroup >
                 {
                     filters.map(d => {
-                        return <FormControlLabel key={d} control={<Checkbox defaultChecked size="small" />} label={d} />
+                        return <FormControlLabel key={d} control={<Checkbox defaultChecked onClick={() => handleChange(d)} size="small" />} label={d} />
                     })
                 }
             </FormGroup>
