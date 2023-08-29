@@ -1,4 +1,6 @@
-function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
+import * as d3 from 'd3';
+
+export default function ShowTimeline({id, nWeeks, fillWeek = 0, week = true}) {
 
     let width = 50*(nWeeks -1) + 30;
     let height = 25;
@@ -79,6 +81,3 @@ function showTimeline(id, nWeeks, fillWeek = 0, week = true) {
             .text(`# of ${text}`);
     }
 }
-
-
-

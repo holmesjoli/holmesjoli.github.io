@@ -1,5 +1,5 @@
 // Library
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Components
 import Navigation from "../components/Navigation";
@@ -15,7 +15,18 @@ export default function Portfolio() {
 
     const [selectedValues, updateSelectedValues] = useState(filters);
 
-    console.log(selectedValues)
+    useEffect(() => {
+
+        const d = itemData[0];
+
+        console.log(d.tags)
+
+
+        // console.log(d)
+
+        // updateData(d);
+
+    }, [selectedValues])
 
     return(
         <div className="Main">
