@@ -1,7 +1,7 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 
-export default function AlgorithmicallyFair() {
+export default function BancaIntesaKnowledgeNetwork() {
 
     return(
         <div className="Main">
