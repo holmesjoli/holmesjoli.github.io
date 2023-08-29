@@ -18,11 +18,11 @@ export default function Portfolio() {
     useEffect(() => {
 
         let dataNew = itemData.filter(d => {
-            let tagInSelected = false;
+            let tagInSelected = true;
 
             for (let o of d.tags) {
-                if (selectedValues.includes(o)) {
-                    tagInSelected = true;
+                if (!selectedValues.includes(o)) {
+                    tagInSelected = false;
                 }
             }
 
