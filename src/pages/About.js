@@ -126,7 +126,7 @@ export default function About() {
                     <div className="Container">
                         <h3>tools</h3>
                             <div id="visualization"></div>
-                        </div>
+                    </div>
                 </div>
             </div>
             <Footer />

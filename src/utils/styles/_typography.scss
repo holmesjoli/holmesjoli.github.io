@@ -86,6 +86,8 @@ h1 {
     text-transform: uppercase;
     color: $appColorFocus;
     letter-spacing: 0.05em;
+    margin: $appMargin;
+    padding-left: $appPadding;
 }
 
 h2 {

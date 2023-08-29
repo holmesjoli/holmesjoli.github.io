@@ -6,7 +6,6 @@
   grid-column-end: span 2;
   display: flex;
   flex-direction: row;
-  padding-top: $appMargin*2;
   background: #1c2022;
   border-bottom: 1px solid #3a4047;
 }
@@ -34,21 +33,10 @@
   align-items: center;
   justify-content: end;
 
-  padding: $appPadding;
+  padding: $appPadding/2;
 }
 
 // Links
-.Navigation_links {
-  flex: 1;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-
-  padding: $appPadding;
-}
-
 .Navigation_links {
 
   a.active h3 {
