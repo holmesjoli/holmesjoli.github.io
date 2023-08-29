@@ -17,14 +17,21 @@ export default function Portfolio() {
 
     useEffect(() => {
 
-        const d = itemData[0];
+        let dataNew = itemData.filter(d => {
+            let tagInSelected = false;
 
-        console.log(d.tags)
+            for (let o of d.tags) {
+                if (selectedValues.includes(o)) {
+                    tagInSelected = true;
+                }
+            }
 
+            if (tagInSelected) {
+                return d;
+            }
+        });
 
-        // console.log(d)
-
-        // updateData(d);
+        updateData(dataNew);
 
     }, [selectedValues])
 
