@@ -7,9 +7,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
-import { filters } from '../utils/global';
-
-export default function FilterPortfolio({updateSelectedValues, selectedValues}) {
+export default function FilterPortfolio({title, filters, updateSelectedValues, selectedValues}) {
 
     let newSelectedTypes = [];
     const [filteredTypes, updateFilter] = useState([]);
@@ -30,7 +28,7 @@ export default function FilterPortfolio({updateSelectedValues, selectedValues}) 
 
     return (
         <div className="Button-Container">
-             <h3 className="filter-title">Filter items</h3>
+            <h3 className="filter-title">{title}</h3>
             <FormGroup >
                 {
                     filters.map(d => {

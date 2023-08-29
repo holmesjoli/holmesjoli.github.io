@@ -7,39 +7,45 @@ import Footer from "../components/Footer";
 import { PortfolioItem } from "../components/PortfolioItem";
 import FilterPortfolio from "../components/FilterPortfolio";
 
-import { itemData, filters } from "../utils/global";
+import { itemData, mediumFilters, toolFilters, designFilters } from "../utils/global";
 
 export default function Portfolio() {
 
     const [data, updateData] = useState(itemData);
 
-    const [selectedValues, updateSelectedValues] = useState(filters);
+    const [selectedTools, updateSelectedTools] = useState(toolFilters);
+    const [selectedMedium, updateSelectedMedium] = useState(mediumFilters);
+    const [selectedDesign, updateSelectedDesign] = useState(designFilters);
 
     useEffect(() => {
 
-        let dataNew = itemData.filter(d => {
-            let tagInSelected = true;
+        // let dataNew = itemData.filter(d => {
+        //     let tagInSelected = true;
 
-            for (let o of d.tags) {
-                if (!selectedValues.includes(o)) {
-                    tagInSelected = false;
-                }
-            }
+        //     for (let o of d.tags) {
+        //         if (!selectedValues.includes(o)) {
+        //             tagInSelected = false;
+        //         }
+        //     }
 
-            if (tagInSelected) {
-                return d;
-            }
-        });
+        //     if (tagInSelected) {
+        //         return d;
+        //     }
+        // });
 
-        updateData(dataNew);
+        // updateData(dataNew);
 
-    }, [selectedValues])
+    }, [selectedDesign, selectedMedium, selectedTools])
 
     return(
         <div className="Main">
             <Navigation />
             <div className="Content">
-                <FilterPortfolio updateSelectedValues={updateSelectedValues} selectedValues={selectedValues}/>
+                <div>
+                    <FilterPortfolio title={"tools"} filters={toolFilters} updateSelectedValues={updateSelectedTools} selectedValues={selectedTools}/>
+                    <FilterPortfolio title={"design"} filters={designFilters} updateSelectedValues={updateSelectedDesign} selectedValues={selectedDesign}/>
+                    <FilterPortfolio title={"medium"} filters={mediumFilters} updateSelectedValues={updateSelectedMedium} selectedValues={selectedMedium}/>
+                </div>
                 <div className="Item-Container">
                     {
                         data.sort((a, b) => b.year - a.year).map(d => {
