@@ -12,6 +12,15 @@
     padding: $appPadding;
 }
 
+.Body {
+  display: grid;
+  grid-template-columns: [right] $bodyColWidth [main] auto;
+  grid-template-rows: [nav] $topNavHeight [body] auto;
+  width: 100vw;
+  padding: $appPadding;
+}
+
+
 .Query {
   grid-column-start: 1;
   overflow-y: auto;

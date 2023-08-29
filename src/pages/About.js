@@ -94,11 +94,47 @@ export default function About() {
 
     return(
         <div className="Main">
-            <div className="Content">
-                <Navigation />
-                <div id="visualization"></div>
-                <Footer />
+            <Navigation />
+            <div className="Body">
+                <div>
+                    <div className="Container">
+                        <h3>experience</h3>
+                        <ul>
+                            <li><span className="Position">Data Visualization Designer</span> | <span className="Employeer">Northeastern Center for Design</span> | <span className="TimePeriod">Dec 2021 – Current</span></li>
+                            <li><span className="Position">Data Scientist</span> | <span className="Employeer">Rice University</span> | <span className="TimePeriod">Jan 2019 – Aug 2021</span></li>
+                            <li><span className="Position">Statistical Programmer</span> | <span className="Employeer">Mathematica Policy Research</span> | <span className="TimePeriod">Sept 2017 – Jan 2019</span></li>
+                        </ul>
+                        {/* <p><a className="active" href="resume.html">Link to resume</a></p> */}
+                    </div>
+                    <div className="Container">
+                        <h3>education</h3>
+                        <ul>
+                            <li><span className="Position">MFA in Information Design and Data Visualization</span> | <span className="Employeer">Northeastern University</span> | <span>2023</span></li>
+                            <li><span className="Position">BA in Economics</span> | <span className="Employeer">Wesleyan University</span> | <span>2017</span></li>
+                        </ul>
+                    </div>
+                    <div className="Container">
+                    <h3>tools</h3>
+                        <div id="visualization"></div>
+                    </div>
+                    <div className="Container">
+                        <h3>knows about</h3>
+                        <ul>
+                            <li><span>Agile development</span></li>
+                            <li><span>Project management</span></li>
+                            <li><span>Data visualization</span></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div className="Text">
+                    <p>My interest in data science and analytics started as an undergraduate at Wesleyan University. I never planned to fall in love with data, but working in Wesleyan University's Quantitative Analysis Center (QAC) one summer changed everything. I became fascinated with how data, especially data from unusual sources, could be used in traditional academic research. Wesleyan did not just teach me how to code and use statistical methods, but how to think critically and apply an interdisciplinary lens to all research projects.
+                    </p>
+                    <p>My first position was at Mathematica Policy Research. At Mathematica, I worked on traditional public policy evaluations, built web applications in R, and automated web testing in Python. However, at Mathematica, the projects were so high-level that I felt disconnected from the policy that we were shaping. This led me to my position as a data scientist at the Texas Policy Lab at Rice University in Houston, Texas. I work in our Health, Early Child Care, and Criminal Justice policy areas at Texas Policy Lab. At the lab, I frequently developed web applications to help our government partners visualize trends in their data. Currently, I am a graduate student at Northeastern University studying Information Design and Data Visualization.</p>
+                    <p>Originally, I'm from Bainbridge Island, Washington, but have lived in four states in the US and Melbourne, Australia. I identify as a member of the LGBTQ+ community and am very interested in data issues such as privacy and data collection that are particularly sensitive to this community. I graduated from Wesleyan University with a Bachelors of Arts in Economics and a minor in Data Analytics in 2017.</p>
+                    <p>In 2020, I adopted my adorable cat Beanie, who demands playtime during all waking hours. In my spare time I throw ceramics on the wheel, play ultimate frisbee, and try to get outside as much as possible. I've had a love of art my whole life.</p>
+                </div>
             </div>
+            {/* <Footer /> */}
         </div>
     );
 }

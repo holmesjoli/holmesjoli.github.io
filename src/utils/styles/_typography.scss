@@ -68,7 +68,7 @@ body {
     font-size: $baseFontSize;
     line-height: $baseLineHeight;
     background-color: $appColorDark;
-    color: white;
+    color: $appColor;
 }
 
 // disable selection in the UI
@@ -113,3 +113,8 @@ h4 {
 a {
     text-decoration: none;
 }
+
+p, li {
+    padding: $appPadding/2 $appPadding;
+}
+
