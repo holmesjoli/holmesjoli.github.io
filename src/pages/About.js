@@ -57,7 +57,7 @@ function barChart() {
         .attr("y", function(d) { return y(d.tool); })
         .attr("width", function(d) { return x(d.year); })
         .attr("height", y.bandwidth() )
-        .attr("fill", "#69b3a2");
+        .attr("fill", "#ea21ad");
 
     bars.transition()
         .duration(3000)
@@ -68,6 +68,7 @@ function barChart() {
         .attr("x", margin.left + (width-margin.left-margin.right)/2)
         .attr("y", height + 38)
         .attr("text-anchor","middle")
+        .attr("fill", "white")
         .text("Years of Experience");
 
     svg.append("text")
@@ -76,6 +77,7 @@ function barChart() {
         .attr("y", margin.left - 150)
         .attr("text-anchor","middle")
         .attr("transform","rotate(-90)")
+        .attr("fill", "white")
         .text("Tools");
 }
 
