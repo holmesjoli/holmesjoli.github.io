@@ -3,16 +3,18 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import * as d3 from 'd3';
 
-const data = [
+let data = [
     {tool: "R", year: 0, years: 7},
     {tool: "Python", year: 0, years: 3},
     {tool: "HTML", year: 0, years: 3},
     {tool: "CSS", year: 0, years: 2},
     {tool: "JS", year: 0, years: 2},
-    {tool: "Git", year: 0, years: 4},
+    {tool: "Git", year: 0, years: 5},
     {tool: "Illustrator", year: 0, years: 2},
     {tool: "XD", year: 0, years: 1}
 ];
+
+data = data.sort((a, b) => a.years - b.years)
 
 var margin = {top: 20, right: 30, bottom: 50, left: 90},
 width = 460 - margin.left - margin.right,
@@ -35,6 +37,7 @@ function barChart() {
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x).ticks(7))
+        .style("color", "#919295")
         .selectAll("text")
         .attr("transform", "translate(-10,0)rotate(-45)")
         .style("text-anchor", "end");
@@ -46,7 +49,8 @@ function barChart() {
         .padding(.1);
 
     svg.append("g")
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(y))
+        .style("color", "#919295");
 
     //Bars
     let bars = svg.selectAll("rect")
@@ -56,8 +60,9 @@ function barChart() {
         .attr("x", x(0))
         .attr("y", function(d) { return y(d.tool); })
         .attr("width", function(d) { return x(d.year); })
-        .attr("height", y.bandwidth() )
-        .attr("fill", "#ea21ad");
+        .attr("height", y.bandwidth())
+        .attr("stroke", "#ea21ad")
+        .attr("fill", "#1c2022");
 
     bars.transition()
         .duration(3000)
