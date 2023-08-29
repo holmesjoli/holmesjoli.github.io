@@ -10,6 +10,7 @@
     grid-template-rows: [nav] $topNavHeight [body] auto;
     width: 100vw;
     padding: $appPadding;
+    margin-bottom: $appMargin;
 }
 
 .Query {

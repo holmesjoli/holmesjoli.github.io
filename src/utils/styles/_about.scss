@@ -7,23 +7,17 @@
 }
 
 .TimePeriod {
-    text-align: right;
+    float: right;
 }
 
 .Text {
-    margin: $appMargin;
     max-width: 500px;
 }
 
 .Body {
     display: grid;
-    grid-template-columns: minmax(500px, 37%) 1fr;
+    grid-gap: .75rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 490px));
     padding: $appPadding;
     margin: $appMargin;
-}
-
-.Resume-Brief {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }

@@ -64,7 +64,7 @@ export default function Portfolio() {
                     }
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
