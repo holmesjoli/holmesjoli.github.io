@@ -21,3 +21,17 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+.Construction {
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+
+  img {
+    width: 200px;
+    height: 180px;
+  }
+}
