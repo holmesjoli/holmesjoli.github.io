@@ -11,15 +11,17 @@ import { itemData, toolFilters, designFilters } from "../utils/global";
 
 
 function filterData(selected, d) {
-    let tagInSelected = false;
+    let selectedInList = [];
 
-    for (let o of d.tags) {
-        if (selected.includes(o)) {
-            tagInSelected = true;
+    for (let o of selected) {
+        if (d.tags.includes(o)) {
+            selectedInList.push(true)
+        } else {
+            selectedInList.push(false)
         }
     }
 
-    if (tagInSelected) {
+    if (selectedInList.every(v => v === true)) {
         return d;
     }
 }
@@ -38,20 +40,7 @@ export default function Portfolio() {
             if (selectedTools.length === 0 && selectedDesign.length === 0) {
                 return d;
             } else {
-
-                let selectedToolsInList = [];
-
-                for (let o of selectedTools) {
-                    if (d.tags.includes(o)) {
-                        selectedToolsInList.push(true)
-                    } else {
-                        selectedToolsInList.push(false)
-                    }
-                }
- 
-                if (selectedToolsInList.every(v => v === true)) {
-                    return d;
-                }
+                return filterData(selectedTools.concat(selectedDesign), d);
             }
         });
 
