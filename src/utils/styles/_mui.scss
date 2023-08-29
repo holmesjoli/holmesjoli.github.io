@@ -1,3 +1,7 @@
-// .css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
-//     font-size: 11;
-// }
+.MuiFormGroup-root {
+margin-left: $appMargin*2.5;
+}
+
+.Component-Container {
+  padding-bottom: $appPadding;  
+}

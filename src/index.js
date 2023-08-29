@@ -47,7 +47,8 @@ const theme = createTheme({
     MuiCheckbox: {
       styleOverrides: {
         root: {
-         padding: ".3rem"
+         padding: ".3rem",
+         color: "#919295"
         },
       },
     },
@@ -60,34 +61,8 @@ const theme = createTheme({
          padding: ".3rem"
         },
       },
-    },
+    }
   }
-    // MuiButtonBase: {
-    //   root: {
-    //     padding: "5px",
-    //     MuiCheckBox: {
-    //       root: {
-    //         padding: "5px"
-    //       }
-    //     }
-    //   }
-    // }
- 
-  // MuiButtonBase: {
-  //   root: {
-  //     MuiCheckbox: {
-  //       root: {
-  //         color: "#ea21ad"
-  //       }
-  //     }
-  //   }
-  // }
-
-
-  // .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root
-  // "MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeSmall PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeSmall Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeSmall css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root
-
-  // .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -103,4 +78,3 @@ root.render(
     </HashRouter>
   </ThemeProvider>
 );
-

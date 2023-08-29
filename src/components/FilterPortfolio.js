@@ -27,12 +27,12 @@ export default function FilterPortfolio({title, filters, updateSelectedValues, s
     }
 
     return (
-        <div className="Button-Container">
+        <div className="Component-Container">
             <h3 className="filter-title">{title}</h3>
             <FormGroup >
                 {
                     filters.map(d => {
-                        return <FormControlLabel key={d} control={<Checkbox defaultChecked onClick={() => handleChange(d)} size="small" />} label={d} />
+                        return <FormControlLabel key={d} control={<Checkbox onClick={() => handleChange(d)} size="small" />} label={d} />
                     })
                 }
             </FormGroup>

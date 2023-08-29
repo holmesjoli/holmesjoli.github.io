@@ -7,35 +7,57 @@ import Footer from "../components/Footer";
 import { PortfolioItem } from "../components/PortfolioItem";
 import FilterPortfolio from "../components/FilterPortfolio";
 
-import { itemData, mediumFilters, toolFilters, designFilters } from "../utils/global";
+import { itemData, toolFilters, designFilters } from "../utils/global";
+
+
+function filterData(selected, d) {
+    let tagInSelected = false;
+
+    for (let o of d.tags) {
+        if (selected.includes(o)) {
+            tagInSelected = true;
+        }
+    }
+
+    if (tagInSelected) {
+        return d;
+    }
+}
 
 export default function Portfolio() {
 
     const [data, updateData] = useState(itemData);
 
-    const [selectedTools, updateSelectedTools] = useState(toolFilters);
-    const [selectedMedium, updateSelectedMedium] = useState(mediumFilters);
-    const [selectedDesign, updateSelectedDesign] = useState(designFilters);
+    const [selectedTools, updateSelectedTools] = useState([]);
+    const [selectedDesign, updateSelectedDesign] = useState([]);
 
     useEffect(() => {
 
-        // let dataNew = itemData.filter(d => {
-        //     let tagInSelected = true;
+        let dataNew = itemData.filter(d => {
 
-        //     for (let o of d.tags) {
-        //         if (!selectedValues.includes(o)) {
-        //             tagInSelected = false;
-        //         }
-        //     }
+            if (selectedTools.length === 0 && selectedDesign.length === 0) {
+                return d;
+            } else {
 
-        //     if (tagInSelected) {
-        //         return d;
-        //     }
-        // });
+                let selectedToolsInList = [];
 
-        // updateData(dataNew);
+                for (let o of selectedTools) {
+                    if (d.tags.includes(o)) {
+                        selectedToolsInList.push(true)
+                    } else {
+                        selectedToolsInList.push(false)
+                    }
+                }
+ 
+                if (selectedToolsInList.every(v => v === true)) {
+                    return d;
+                }
+            }
+        });
 
-    }, [selectedDesign, selectedMedium, selectedTools])
+        updateData(dataNew);
+
+    }, [selectedDesign, selectedTools])
 
     return(
         <div className="Main">
@@ -44,7 +66,6 @@ export default function Portfolio() {
                 <div>
                     <FilterPortfolio title={"tools"} filters={toolFilters} updateSelectedValues={updateSelectedTools} selectedValues={selectedTools}/>
                     <FilterPortfolio title={"design"} filters={designFilters} updateSelectedValues={updateSelectedDesign} selectedValues={selectedDesign}/>
-                    <FilterPortfolio title={"medium"} filters={mediumFilters} updateSelectedValues={updateSelectedMedium} selectedValues={selectedMedium}/>
                 </div>
                 <div className="Item-Container">
                     {
