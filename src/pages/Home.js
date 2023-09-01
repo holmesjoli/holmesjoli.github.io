@@ -39,20 +39,17 @@ export default function Home() {
     }, [index]);
 
     return(
-        <Carousel index={index} setIndex={setIndex}/>
+        <div className="Main">
+            <Navigation />
+            <Carousel index={index} setIndex={setIndex}/>
+            {/* <div className="Portfolio-Item-Showcase-Container">
+                {
+                    itemData.sort((a, b) => b.year - a.year).map(d => {
+                        return <PortfolioItemShowcase d={d}/>
+                    })
+                }
+            </div> */}
+            <Footer />
+        </div>
     )
-
-    // return(
-    //     <div className="Main">
-    //         <Navigation />
-    //         <div className="Portfolio-Item-Showcase-Container">
-    //             {
-    //                 itemData.sort((a, b) => b.year - a.year).map(d => {
-    //                     return <PortfolioItemShowcase d={d}/>
-    //                 })
-    //             }
-    //         </div>
-    //         <Footer />
-    //     </div>
-    // )
 }
