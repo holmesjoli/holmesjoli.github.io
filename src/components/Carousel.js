@@ -16,7 +16,7 @@ export default function Carousel({index, setIndex}) {
               ></div>
             ))}
           </div>
-    
+
           <div className="slideshowDots">
             {colors.map((_, idx) => (
               <div
@@ -29,5 +29,5 @@ export default function Carousel({index, setIndex}) {
             ))}
           </div>
         </div>
-      );
+    );
 }
