@@ -1,5 +1,6 @@
 import { PortfolioItemShowcase } from "../components/PortfolioItem";
 
+// Adapted from https://tinloof.com/blog/how-to-build-an-auto-play-slideshow-with-react
 export default function Carousel({index, setIndex, data}) {
 
     return (

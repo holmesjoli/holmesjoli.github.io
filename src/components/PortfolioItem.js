@@ -21,7 +21,7 @@ export function PortfolioItem({d}) {
 
 export function PortfolioItemShowcase({d}) {
     return(
-        <NavLink className="slide" key={d.page} to={"/portfolio/"+d.page}>
+        <NavLink className="Slide" key={d.page} to={"/portfolio/"+d.page}>
             <h2 className="Item-Title">{d.title}</h2>
             <h3 className="Item-Year">{d.year}</h3>
             <img className="Item-Image" src={d.src} alt={d.alt} />

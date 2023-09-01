@@ -10,7 +10,7 @@ import { itemData } from "../utils/global";
 
 export default function Home() {
 
-    const delay = 3000;
+    const delay = 5000;
 
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);
