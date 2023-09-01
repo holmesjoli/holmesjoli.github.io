@@ -7,8 +7,7 @@ import Footer from "../components/Footer";
 import { PortfolioItem } from "../components/PortfolioItem";
 import FilterPortfolio from "../components/FilterPortfolio";
 
-import { itemData, toolFilters, designFilters } from "../utils/global";
-
+import { itemData, toolFilters, designFilters, awardFilters } from "../utils/global";
 
 function filterData(selected, d) {
     let selectedInList = [];
@@ -32,6 +31,7 @@ export default function Portfolio() {
 
     const [selectedTools, updateSelectedTools] = useState([]);
     const [selectedDesign, updateSelectedDesign] = useState([]);
+    const [selectedAward, updateSelectedAward] = useState([]);
 
     useEffect(() => {
 
@@ -40,7 +40,7 @@ export default function Portfolio() {
             if (selectedTools.length === 0 && selectedDesign.length === 0) {
                 return d;
             } else {
-                return filterData(selectedTools.concat(selectedDesign), d);
+                return filterData(selectedAward.concat(selectedTools.concat(selectedDesign)), d);
             }
         });
 
@@ -55,6 +55,7 @@ export default function Portfolio() {
                 <div>
                     <FilterPortfolio title={"tools"} filters={toolFilters} updateSelectedValues={updateSelectedTools} selectedValues={selectedTools}/>
                     <FilterPortfolio title={"design"} filters={designFilters} updateSelectedValues={updateSelectedDesign} selectedValues={selectedDesign}/>
+                    <FilterPortfolio title={"award"} filters={awardFilters} updateSelectedValues={updateSelectedAward} selectedValues={selectedAward}/>
                 </div>
                 <div className="Item-Container">
                     {
