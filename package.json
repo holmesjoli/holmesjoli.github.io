@@ -47,5 +47,8 @@
         "eject": "react-scripts eject",
         "start": "react-scripts start",
         "test": "react-scripts test"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
     }
 }
