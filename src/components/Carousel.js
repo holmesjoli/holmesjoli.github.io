@@ -1,6 +1,7 @@
-export default function Carousel({index, setIndex}) {
+import { PortfolioItemShowcase } from "../components/PortfolioItem";
+import { itemData } from "../utils/global";
 
-    const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+export default function Carousel({index, setIndex}) {
 
     return (
         <div className="slideshow">
@@ -8,17 +9,14 @@ export default function Carousel({index, setIndex}) {
             className="slideshowSlider"
             style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
           >
-            {colors.map((backgroundColor, index) => (
-              <div
-                className="slide"
-                key={index}
-                style={{ backgroundColor }}
-              ></div>
-            ))}
+            {itemData.sort((a, b) => b.year - a.year).map((d) => {
+                 return <PortfolioItemShowcase d={d}/>
+                }
+            )}
           </div>
 
           <div className="slideshowDots">
-            {colors.map((_, idx) => (
+            {itemData.map((_, idx) => (
               <div
                 key={idx}
                 className={`slideshowDot${index === idx ? " active" : ""}`}

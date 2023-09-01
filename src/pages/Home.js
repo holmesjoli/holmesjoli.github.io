@@ -4,9 +4,6 @@ import { useState, useRef, useEffect } from "react";
 // Components
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import { PortfolioItemShowcase } from "../components/PortfolioItem";
-
-import { itemData } from "../utils/global";
 import Carousel from "../components/Carousel";
 
 export default function Home() {
@@ -42,13 +39,6 @@ export default function Home() {
         <div className="Main">
             <Navigation />
             <Carousel index={index} setIndex={setIndex}/>
-            {/* <div className="Portfolio-Item-Showcase-Container">
-                {
-                    itemData.sort((a, b) => b.year - a.year).map(d => {
-                        return <PortfolioItemShowcase d={d}/>
-                    })
-                }
-            </div> */}
             <Footer />
         </div>
     )
