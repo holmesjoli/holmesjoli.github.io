@@ -10,7 +10,7 @@ export default function Carousel({index, setIndex, data}) {
             style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
           >
             {data.sort((a, b) => b.year - a.year).map((d) => {
-                 return <PortfolioItemShowcase d={d}/>
+                 return <PortfolioItemShowcase key={d.page} d={d}/>
                 }
             )}
           </div>

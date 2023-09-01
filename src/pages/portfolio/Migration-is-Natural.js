@@ -2,12 +2,12 @@ import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import Page from "../../components/Page";
 
-export default function MigrationIsNatural() {
+export default function MigrationIsNatural({d}) {
 
     return(
         <div className="Main">
             <Navigation />
-            <Page />
+            <Page d={d}/>
             <Footer/>
         </div>
     )

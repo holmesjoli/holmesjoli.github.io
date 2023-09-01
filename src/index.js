@@ -33,6 +33,10 @@ import RiskyCode from "./pages/portfolio/Risky-Code";
 import TutorMatch from "./pages/portfolio/Tutor-Match";
 import VisualVersionControl from "./pages/portfolio/Visual-Version-Control";
 
+import { itemData } from './utils/global';
+
+console.log(itemData.filter(d => d.page === "Algorithmically-Fair"))
+
 const theme = createTheme({
   typography: {
     fontFamily: "Hind, Plex, Verdana, Geneva, Tahoma, sans-serif",
@@ -93,22 +97,22 @@ root.render(
         <Route path="/About" element={<About />} />
 
         {/* Portfolio routes */}
-        <Route path="/portfolio/Algorithmically-Fair" element={<AlgorithmicallyFair />} />
-        <Route path="/portfolio/Banca-Intesa-Processes" element={<BancaIntesaProcesses />} />
-        <Route path="/portfolio/Banca-Intesa-Knowledge-Network" element={<BancaIntesaKnowledgeNetwork />} />
-        <Route path="/portfolio/Billy" element={<Billy />} />
-        <Route path="/portfolio/Black-Data" element={<BlackData />} />
-        <Route path="/portfolio/Bloom" element={<Bloom />} />
+        <Route path="/portfolio/Algorithmically-Fair" element={<AlgorithmicallyFair d={itemData.find(d => d.page === "Algorithmically-Fair")} />} />
+        <Route path="/portfolio/Banca-Intesa-Processes" element={<BancaIntesaProcesses d={itemData.find(d => d.page === "Banca-Intesa-Processes")} />} />
+        <Route path="/portfolio/Banca-Intesa-Knowledge-Network" element={<BancaIntesaKnowledgeNetwork d={itemData.find(d => d.page === "Banca-Intesa-Knowledge-Network")} />} />
+        <Route path="/portfolio/Billy" element={<Billy d={itemData.find(d => d.page === "Billy")} />} />
+        <Route path="/portfolio/Black-Data" element={<BlackData d={itemData.find(d => d.page === "Black-Data")} />} />
+        <Route path="/portfolio/Bloom" element={<Bloom d={itemData.find(d => d.page === "Bloom")} />} />
         <Route path="/portfolio/Drawings-Collection" element={<DrawingsCollection />} />
         <Route path="/portfolio/Ceramics-Collection" element={<CeramicsCollection />} />
-        <Route path="/portfolio/Equitable-Teams" element={<EquitableTeams />} />
-        <Route path="/portfolio/Meta" element={<Meta />} />
-        <Route path="/portfolio/Migration-Is-Natural" element={<MigrationIsNatural />} />
-        <Route path="/portfolio/Patient-Clinician-Interactions" element={<PatientClinicianInteractions />} />
-        <Route path="/portfolio/Public-Policy-Collection" element={<PublicPolicyCollection />} />
-        <Route path="/portfolio/Risky-Code" element={<RiskyCode />} />
-        <Route path="/portfolio/Tutor-Match" element={<TutorMatch />} />
-        <Route path="/portfolio/Visual-Version-Control" element={<VisualVersionControl />} />
+        <Route path="/portfolio/Equitable-Teams" element={<EquitableTeams d={itemData.find(d => d.page === "Equitable-Teams")} />} />
+        <Route path="/portfolio/Meta" element={<Meta d={itemData.find(d => d.page === "Meta")} />} />
+        <Route path="/portfolio/Migration-Is-Natural" element={<MigrationIsNatural d={itemData.find(d => d.page === "Migration-Is-Natural")} />} />
+        <Route path="/portfolio/Patient-Clinician-Interactions" element={<PatientClinicianInteractions d={itemData.find(d => d.page === "Patient-Clinician-Interactions")} />} />
+        <Route path="/portfolio/Public-Policy-Collection" element={<PublicPolicyCollection d={itemData.find(d => d.page === "Public-Policy-Collection")} />} />
+        <Route path="/portfolio/Risky-Code" element={<RiskyCode d={itemData.find(d => d.page === "Risky-Code")} />} />
+        <Route path="/portfolio/Tutor-Match" element={<TutorMatch d={itemData.find(d => d.page === "Tutor-Match")} />} />
+        <Route path="/portfolio/Visual-Version-Control" element={<VisualVersionControl d={itemData.find(d => d.page === "Visual-Version-Control")} />} />
       </Routes>
     </HashRouter>
   </ThemeProvider>
