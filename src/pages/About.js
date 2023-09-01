@@ -76,14 +76,14 @@ function barChart() {
         .attr("fill", "white")
         .text("Years of Experience");
 
-    svg.append("text")
-        .attr("class","axisLabel")
-        .attr("x", -(height-margin.bottom)/2)
-        .attr("y", margin.left - 158)
-        .attr("text-anchor","middle")
-        .attr("transform","rotate(-90)")
-        .attr("fill", "white")
-        .text("Tools");
+    // svg.append("text")
+    //     .attr("class","axisLabel")
+    //     .attr("x", -(height-margin.bottom)/2)
+    //     .attr("y", margin.left - 158)
+    //     .attr("text-anchor","middle")
+    //     .attr("transform","rotate(-90)")
+    //     .attr("fill", "white")
+    //     .text("Tools");
 }
 
 export default function About() {

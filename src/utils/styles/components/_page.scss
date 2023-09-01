@@ -1,0 +1,14 @@
+.Page {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 25%);
+}
+
+.Project-Summary {
+    margin: $appMargin;
+}
+
+.Project-Attributes {
+    margin: $appMargin;
+    background: #1c2022;
+    border-left: 1px solid #3a4047;
+}

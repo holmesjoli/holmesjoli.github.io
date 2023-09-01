@@ -5,12 +5,14 @@
 // Base
 @import "typography";
 @import "layout";
-
 @import "mui";
+
+// Main pages
 @import "about";
 
+// Components
 @import "components/navigation";
 @import "components/footer";
 @import "components/portfolio";
 @import "components/carousel";
-
+@import "components/page";

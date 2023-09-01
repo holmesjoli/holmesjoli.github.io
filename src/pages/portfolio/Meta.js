@@ -1,14 +1,13 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import Page from "../../components/Page";
 
 export default function Meta() {
 
     return(
         <div className="Main">
             <Navigation />
-            <div className="Construction">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Under_construction_animated.gif" alt="Page under construction image"></img>
-            </div>
+            <Page />
             <Footer/>
         </div>
     )
