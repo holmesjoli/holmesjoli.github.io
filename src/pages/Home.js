@@ -6,9 +6,10 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
 
+import { itemData } from "../utils/global";
+
 export default function Home() {
 
-    const colors = ["#0088FE", "#00C49F", "#FFBB28"];
     const delay = 2500;
 
     const [index, setIndex] = useState(0);
@@ -25,7 +26,7 @@ export default function Home() {
         timeoutRef.current = setTimeout(
         () =>
             setIndex((prevIndex) =>
-            prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+            prevIndex === itemData.length - 1 ? 0 : prevIndex + 1
             ),
         delay
         );
@@ -38,7 +39,7 @@ export default function Home() {
     return(
         <div className="Main">
             <Navigation />
-            <Carousel index={index} setIndex={setIndex}/>
+            <Carousel index={index} setIndex={setIndex} data={itemData}/>
             <Footer />
         </div>
     )
