@@ -35,7 +35,6 @@ import VisualVersionControl from "./pages/portfolio/Visual-Version-Control";
 
 import { itemData } from './utils/global';
 
-console.log(itemData.filter(d => d.page === "Algorithmically-Fair"))
 
 const theme = createTheme({
   typography: {
@@ -107,7 +106,7 @@ root.render(
         <Route path="/portfolio/Ceramics-Collection" element={<CeramicsCollection />} />
         <Route path="/portfolio/Equitable-Teams" element={<EquitableTeams d={itemData.find(d => d.page === "Equitable-Teams")} />} />
         <Route path="/portfolio/Meta" element={<Meta d={itemData.find(d => d.page === "Meta")} />} />
-        <Route path="/portfolio/Migration-Is-Natural" element={<MigrationIsNatural d={itemData.find(d => d.page === "Migration-Is-Natural")} />} />
+        <Route path="/portfolio/Migration-Is-Natural" element={<MigrationIsNatural d={itemData.find(d => d.page === "Migration-is-Natural")} />} />
         <Route path="/portfolio/Patient-Clinician-Interactions" element={<PatientClinicianInteractions d={itemData.find(d => d.page === "Patient-Clinician-Interactions")} />} />
         <Route path="/portfolio/Public-Policy-Collection" element={<PublicPolicyCollection d={itemData.find(d => d.page === "Public-Policy-Collection")} />} />
         <Route path="/portfolio/Risky-Code" element={<RiskyCode d={itemData.find(d => d.page === "Risky-Code")} />} />

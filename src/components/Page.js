@@ -7,11 +7,31 @@ export default function Page({d}) {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Under_construction_animated.gif" alt="Page under construction image"></img>
                 </div> */}
                 <h2 className="Project-Title">{d.title}</h2>
-                <div className="Project-Brief">
-                    <h3>brief</h3>
+                <div className="Project-Brief Text">{
+                    d.brief !== ""  ? 
+                        <div>
+                            <h3>brief</h3>
+                            <p>{d.brief}</p>
+                        </div>: <></>
+                    }
+                </div>
+                <div className="Project-Data Text">
+                    {
+                    d.data !== ""  ? 
+                        <div>
+                            <h3>data</h3>
+                            <p>{d.data}</p>
+                        </div>: <></>
+                    }
                 </div>
                 <div className="Project-Sketches">
-                    <h3>sketches</h3>
+                {
+                    d.sketches.length > 0  ? 
+                        <div>
+                            <h3>sketches</h3>
+                            <p>{d.sketches}</p>
+                        </div>: <></>
+                    }
                 </div>
             </div>
             <div className="Project-Attributes">
