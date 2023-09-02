@@ -16,7 +16,14 @@ export let itemData = [
                           "The physical panopticon models obstruct the fairness visualizations; the audience must physically engage with the artifact components to reveal the rates. While the rates indicate the disparate impacts of the algorithm on Black and White defendants; however, rates do not inform readers about the number of people affected. I designed the panopticon models' height to indicate the number of affected people so that a reader can compare the multiple metrics simultaneously.",
                           "Culturally, red is of ten associated with words such as stop, warning, harm, and error. The incorrect predictions, in red, were also printed on translucent acrylic compared to the correct predictions, which were printed on black opaque acrylic.",
                           "Light is used in the piece metaphorically and aesthetically. Light plays an interesting role in this piece metaphorically. In Bentham's panopticon, the lighted guard tower encouraged self-policing behaviors. However, in Algorithmically Fair?, light draws the viewer's eye and highlights the frequency of algorithmic error. Additionally, the predominantly black form representing algorithmic inequity makes visual reference to a black box algorithm. Lighting this form from the inside out to elucidate viewers on algorithmic bias symbolically reverses the role of light plays in these panopticon forms."],
-        sketches: []
+        sketches: [{url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132923256.jpg",
+                    caption: ""}, 
+                   {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132856202.jpg",
+                   caption: ""}, 
+                   {url:"/assets/portfolio/algorithmically-fair/PXL_20221213_220237602.jpg",
+                   caption: ""}],
+        prototype: ["/assets/portfolio/algorithmically-fair/PXL_20221214_133321902.jpg", "/assets/portfolio/algorithmically-fair/PXL_20221202_221919552.jpg"],
+        final: ["/assets/portfolio/algorithmically-fair/PXL_20221207_173728791.PORTRAIT.jpg", "/assets/portfolio/algorithmically-fair/PXL_20221207_173759492.PORTRAIT.jpg"]
     },
     {title: "Banca Intesa Knowledge Network", 
         page: "Banca Intesa Knowledge Network", 
@@ -218,15 +225,14 @@ export let itemData = [
     // }
 ];
 
-export const designFilters = [
-"#data-physicalization", "#data-visualization", "#information-design",
+export const designFilters = ["#data-art", "#data-physicalization", "#data-visualization", "#information-design",
 "#interaction-design", "#graphic-design", "#system-design", "#service-design", "#user-experience", "#user-interaction" ];
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
 export const toolFilters = ["#adobe-illustrator", "#d3-js", "#figma", "#python", "#r", "#react"];
 
-export const areaFilters = ["#data-art", "#data-journalism", "#fine-art", "#map", "#public-policy" ];
+export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
 
 export const awardFilters = ["#iiba-longlist-2023", "#iiba-longlist-2022"]
 

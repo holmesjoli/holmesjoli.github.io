@@ -1,3 +1,37 @@
+import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+
+// const spanStyle = {
+//     padding: '20px',
+//     background: '#efefef',
+//     color: '#000000'
+// }
+
+const divStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundSize: 'cover',
+    height: '400px'
+}
+
+function Slideshow({slideImages}) {
+    return (
+      <div className="slide-container">
+        <Slide>
+         {slideImages.map((slideImage, index)=> (
+            <div key={index}>
+              <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
+                {/* <span style={spanStyle}>{slideImage.caption}</span> */}
+              </div>
+            </div>
+          ))} 
+        </Slide>
+      </div>
+    )
+}
+
 export default function Page({d}) {
 
     return(
@@ -7,45 +41,54 @@ export default function Page({d}) {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Under_construction_animated.gif" alt="Page under construction image"></img>
                 </div> */}
                 <h2 className="Project-Title">{d.title}</h2>
-                <div className="Project-Brief Text">{
-                    d.brief !== ""  ? 
-                        <div>
-                            <h3>brief</h3>
-                            <p>{d.brief}</p>
-                        </div>: <></>
-                    }
-                </div>
-                <div className="Project-Data Text">
-                    {
-                    d.data !== ""  ? 
-                        <div>
-                            <h3>data</h3>
-                            <p>{d.data}</p>
-                        </div>: <></>
-                    }
-                </div>
-                <div className="Project-Artist-Statement Text">
-                    {
-                    d.artistStatement.length > 0  ? 
-                        <div>
-                            <h3>artist statement</h3>
-                            {
-                                d.artistStatement.map((datum, i) => {
-                                    return <p key={i}>{datum}</p>
-                                })
+                <div className="Project-Main">
+                    <div className="Project-Text ">
+                            <div className="Project-Brief Text">{
+                            d.brief !== ""  ? 
+                                <div>
+                                    <h3>brief</h3>
+                                    <p>{d.brief}</p>
+                                </div>: <></>
                             }
-                        </div>: <></>
-                    }
-                </div>
-                <div className="Project-Sketches">
-                {
-                    d.sketches.length > 0  ? 
+                        </div>
+                        <div className="Project-Data">
+                            {
+                            d.data !== ""  ? 
+                                <div>
+                                    <h3>data</h3>
+                                    <p>{d.data}</p>
+                                </div>: <></>
+                            }
+                        </div>
+                        <div className="Project-Artist-Statement">
+                            {
+                            d.artistStatement.length > 0  ? 
+                                <div>
+                                    <h3>artist statement</h3>
+                                    {
+                                        d.artistStatement.map((datum, i) => {
+                                            return <p key={i}>{datum}</p>
+                                        })
+                                    }
+                                </div>: <></>
+                            }
+                        </div>
+                    </div>
+                    <div className="Project-Sketches">
+                    {
+                        d.sketches.length > 0  ? 
                         <div>
                             <h3>sketches</h3>
-                            <p>{d.sketches}</p>
+                            <Slideshow slideImages={d.sketches}/>
+                            {/* {
+                            d.sketches.map((datum, i) => {
+                                    return <img className="Sketch" key={i} src={datum}/>
+                                })
+                            } */}
                         </div>: <></>
                     }
-                </div>
+                    </div>
+                </div>               
             </div>
             <div className="Project-Attributes">
                 <div className="Project-Role">

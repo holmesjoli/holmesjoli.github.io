@@ -3,6 +3,11 @@
     grid-template-columns: 1fr minmax(175px, 20%);
 }
 
+.Project-Main {
+    display: grid;
+    grid-template-columns: minmax(150px, 500px) 1fr;
+}
+
 .Project-Summary {
     padding: $appPadding;
 }
@@ -12,6 +17,16 @@
     background: #1c2022;
     border-left: 1px solid #3a4047;
     height: 100vh;
+}
+
+.Project-Sketches {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.Sketch {
+    padding: $appPadding;
 }
 
 .Project-Role, 
