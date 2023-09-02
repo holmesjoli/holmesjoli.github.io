@@ -4,11 +4,16 @@
 }
 
 .Project-Summary {
-    margin: $appMargin;
+    padding: $appPadding;
 }
 
 .Project-Attributes {
-    margin: $appMargin;
+    padding: $appPadding;
     background: #1c2022;
     border-left: 1px solid #3a4047;
+    height: 100vh;
+}
+
+.Role, .Tool {
+    margin-left: $appMargin;
 }
