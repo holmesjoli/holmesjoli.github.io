@@ -25,7 +25,7 @@ export default function Page({d}) {
                 </div>
                 <div className="Project-Tools">
                     {
-                        d.tools.length > 0 ? 
+                        d.tools.length > 0 ?
                         <div>
                             <h3>tools</h3>
                             <ul>{d.tools.map(datum => { return <li className="Tool" key={datum}>{datum}</li>})}</ul>

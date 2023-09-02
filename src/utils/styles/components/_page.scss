@@ -1,6 +1,6 @@
 .Page {
     display: grid;
-    grid-template-columns: 1fr minmax(200px, 25%);
+    grid-template-columns: 1fr minmax(175px, 20%);
 }
 
 .Project-Summary {
@@ -12,6 +12,11 @@
     background: #1c2022;
     border-left: 1px solid #3a4047;
     height: 100vh;
+}
+
+.Project-Role, 
+.Project-Tools {
+    padding: $appPadding;
 }
 
 .Role, .Tool {
