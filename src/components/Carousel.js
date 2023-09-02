@@ -6,36 +6,22 @@ import { NavLink } from "react-router-dom";
 // Styles
 import 'react-slideshow-image/dist/styles.css';
 
-// const spanStyle = {
-//     padding: '20px',
-//     background: '#efefef',
-//     color: '#000000'
-// }
-
-const divStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  backgroundSize: 'cover',
-  height: '65vh'
-}
-
 export function Slideshow({data, showCase = false}) {
   return (
     <div className="slideContainer">
       <Slide>
        {data.map((d, index)=> (
-          showCase ?    
+          showCase ?
           <NavLink key={index} to={"/portfolio/"+d.page}>
-            <div className="Slide" style={{ ...divStyle, 'backgroundImage': `url(${d.url})` }}>
-              {/* <span style={spanStyle}>{d.caption}</span> */}
+            <div className="Slide">
+              <h2 className="Item-Title">{d.title}</h2>
+              <h3 className="Item-Year">{d.year}</h3>
+              <img className="Item-Image" src={d.url} alt={d.alt} />
             </div>
           </NavLink>:
-        <div key={index}>
-            <div className="Slide" style={{ ...divStyle, 'backgroundImage': `url(${d.url})` }}>
-              {/* <span style={spanStyle}>{d.caption}</span> */}
+            <div key={index} className="Slide">
+              <img className="Item-Image" src={d.url} alt={d.alt} />
             </div>
-          </div>
         ))} 
       </Slide>
     </div>

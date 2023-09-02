@@ -4,8 +4,6 @@ import Page from "../../components/Page";
 
 export default function AlgorithmicallyFair({d}) {
 
-    console.log(d)
-
     return(
         <div className="Main">
             <Navigation />

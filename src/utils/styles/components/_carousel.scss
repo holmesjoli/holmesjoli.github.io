@@ -1,45 +1,30 @@
 /* Slideshow */
 
 .react-slideshow-wrapper {
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-}
-
-.slideContainer {
     margin: $appMargin;
-}
-
-.slideshowSlider {
-    white-space: nowrap;
-    transition: ease 1000ms;
-}
-
-.Slide {
-    display: inline-block;
-    text-align: center;
     padding: $appPadding;
-    margin: $appMargin*3;
-    display: 'flex';
-    align-items: 'center';
-    justify-content: 'center';
-    background-size: 'cover';
-}
-
-.Page .Slide {
-    max-height: 40vh!important;
-}
-
-/* Buttons */
-
-.react-slideshow-wrapper {
-    max-width: 800px;
 }
 
 .react-slideshow-container {
-    margin: auto $appMargin*10;
-
+    margin: auto $appMargin*8;
 }
+
+.Slide {
+    text-align: center;
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+}
+
+.Slide img {
+    max-height: 60vh;
+}
+
+.Page .Slide img {
+    max-height: 40vh;
+}
+
+/* Buttons */
 
 .default-nav {
     background: $appColorFocus!important;
