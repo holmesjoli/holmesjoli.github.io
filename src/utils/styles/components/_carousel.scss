@@ -17,11 +17,13 @@
 
 .Slide {
     display: inline-block;
-    max-height: 80vh!important;
-    // max-width: 100%;
     text-align: center;
     padding: $appPadding;
     margin: $appMargin*3;
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    background-size: 'cover';
 }
 
 .Page .Slide {
@@ -30,7 +32,16 @@
 
 /* Buttons */
 
-.react-slideshow-container .default-nav {
+.react-slideshow-wrapper {
+    max-width: 800px;
+}
+
+.react-slideshow-container {
+    margin: auto $appMargin*10;
+
+}
+
+.default-nav {
     background: $appColorFocus!important;
     width: 20px!important;
     height: 20px!important;
