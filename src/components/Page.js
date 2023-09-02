@@ -24,6 +24,19 @@ export default function Page({d}) {
                         </div>: <></>
                     }
                 </div>
+                <div className="Project-Artist-Statement Text">
+                    {
+                    d.artistStatement.length > 0  ? 
+                        <div>
+                            <h3>artist statement</h3>
+                            {
+                                d.artistStatement.map((datum, i) => {
+                                    return <p key={i}>{datum}</p>
+                                })
+                            }
+                        </div>: <></>
+                    }
+                </div>
                 <div className="Project-Sketches">
                 {
                     d.sketches.length > 0  ? 
