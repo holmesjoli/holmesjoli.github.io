@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 // Components
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import Carousel from "../components/Carousel";
+import { Slideshow } from "../components/Carousel";
 
 import { itemData } from "../utils/global";
 
@@ -39,7 +39,7 @@ export default function Home() {
     return(
         <div className="Main">
             <Navigation />
-            <Carousel index={index} setIndex={setIndex} data={itemData}/>
+            <Slideshow data={itemData.sort((a, b) => b.year - a.year)} showCase={true}/>
             <Footer />
         </div>
     )

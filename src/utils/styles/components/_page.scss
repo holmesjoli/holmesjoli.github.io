@@ -1,15 +1,16 @@
 .Page {
     display: grid;
-    grid-template-columns: 1fr minmax(175px, 20%);
+    grid-template-columns: 1fr minmax(175px, 20%); 
 }
 
 .Project-Main {
-    display: grid;
-    grid-template-columns: minmax(150px, 500px) 1fr;
+    padding: $appPadding;
+    margin: $appMargin;
 }
 
 .Project-Summary {
-    padding: $appPadding;
+    display: grid;
+    grid-template-columns: minmax(150px, 500px) 1fr;
 }
 
 .Project-Attributes {

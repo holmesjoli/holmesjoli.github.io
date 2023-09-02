@@ -1,49 +1,17 @@
-import React from 'react';
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
-
-// const spanStyle = {
-//     padding: '20px',
-//     background: '#efefef',
-//     color: '#000000'
-// }
-
-const divStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundSize: 'cover',
-    height: '400px'
-}
-
-function Slideshow({slideImages}) {
-    return (
-      <div className="slide-container">
-        <Slide>
-         {slideImages.map((slideImage, index)=> (
-            <div key={index}>
-              <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-                {/* <span style={spanStyle}>{slideImage.caption}</span> */}
-              </div>
-            </div>
-          ))} 
-        </Slide>
-      </div>
-    )
-}
+import { Slideshow } from "./Carousel"
 
 export default function Page({d}) {
 
     return(
         <div className="Page">
-            <div className="Project-Summary">
+            <div className="Project-Main">
                 {/* <div className="Construction">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Under_construction_animated.gif" alt="Page under construction image"></img>
                 </div> */}
                 <h2 className="Project-Title">{d.title}</h2>
-                <div className="Project-Main">
+                <div className="Project-Summary">
                     <div className="Project-Text ">
-                            <div className="Project-Brief Text">{
+                        <div className="Project-Brief Text">{
                             d.brief !== ""  ? 
                                 <div>
                                     <h3>brief</h3>
@@ -74,19 +42,25 @@ export default function Page({d}) {
                             }
                         </div>
                     </div>
-                    <div className="Project-Sketches">
-                    {
-                        d.sketches.length > 0  ? 
-                        <div>
-                            <h3>sketches</h3>
-                            <Slideshow slideImages={d.sketches}/>
-                            {/* {
-                            d.sketches.map((datum, i) => {
-                                    return <img className="Sketch" key={i} src={datum}/>
-                                })
-                            } */}
-                        </div>: <></>
-                    }
+                    <div className="Project-Design">
+                        <div className="Project-Sketches">
+                        {
+                            d.sketches.length > 0  ? 
+                            <div>
+                                <h3>sketches</h3>
+                                <Slideshow data={d.sketches}/>
+                            </div>: <></>
+                        }
+                        </div>
+                        {/* <div className="Project-Prototype">
+                        {
+                            d.prototype.length > 0  ? 
+                            <div>
+                                <h3>prototype</h3>
+                                <Slideshow data={d.prototype}/>
+                            </div>: <></>
+                        }
+                        </div> */}
                     </div>
                 </div>               
             </div>

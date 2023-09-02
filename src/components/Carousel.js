@@ -1,31 +1,43 @@
-import { PortfolioItemShowcase } from "../components/PortfolioItem";
+// Libraries
+import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import { NavLink } from "react-router-dom";
 
-// Adapted from https://tinloof.com/blog/how-to-build-an-auto-play-slideshow-with-react
-export default function Carousel({index, setIndex, data}) {
+// Styles
+import 'react-slideshow-image/dist/styles.css';
 
-    return (
-        <div className="slideshow">
-          <div
-            className="slideshowSlider"
-            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-          >
-            {data.sort((a, b) => b.year - a.year).map((d) => {
-                 return <PortfolioItemShowcase key={d.page} d={d}/>
-                }
-            )}
+// const spanStyle = {
+//     padding: '20px',
+//     background: '#efefef',
+//     color: '#000000'
+// }
+
+const divStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundSize: 'cover',
+  height: '400px'
+}
+
+export function Slideshow({data, showCase = false}) {
+  return (
+    <div className="slideContainer">
+      <Slide>
+       {data.map((d, index)=> (
+          showCase ?    
+          <NavLink key={index} to={"/portfolio/"+d.page}>
+            <div className="Slide" style={{ ...divStyle, 'backgroundImage': `url(${d.url})` }}>
+              {/* <span style={spanStyle}>{d.caption}</span> */}
+            </div>
+          </NavLink>:
+        <div key={index}>
+            <div className="Slide" style={{ ...divStyle, 'backgroundImage': `url(${d.url})` }}>
+              {/* <span style={spanStyle}>{d.caption}</span> */}
+            </div>
           </div>
-
-          <div className="slideshowDots">
-            {data.map((_, idx) => (
-              <div
-                key={idx}
-                className={`slideshowDot${index === idx ? " active" : ""}`}
-                onClick={() => {
-                  setIndex(idx);
-                }}
-              ></div>
-            ))}
-          </div>
-        </div>
-    );
+        ))} 
+      </Slide>
+    </div>
+  )
 }
