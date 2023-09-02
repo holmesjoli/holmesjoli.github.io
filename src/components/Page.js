@@ -49,12 +49,18 @@ export default function Page({d}) {
             </div>
             <div className="Project-Attributes">
                 <div className="Project-Role">
-                    <h3>role</h3>
-                    <ul>
+                    {
+                    d.role.length > 0 ? 
+                    <div>
+                        <h3>role</h3>
+                        <ul>
                         {d.role.map(datum => {
                             return <li className="Role" key={datum}>{datum}</li>
                         })}
                     </ul>
+                    </div>
+                    : <></>
+                    }
                 </div>
                 <div className="Project-Tools">
                     {
