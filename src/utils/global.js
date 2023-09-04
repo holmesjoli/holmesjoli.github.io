@@ -7,7 +7,7 @@ export let itemData = [
         tags: ["#adobe-illustrator", "#acrylic", "#public-policy", "#data-art", "#data-physicalization", "#data-visualization", "#r", "#iiba-longlist-2023"],
         tools: ["Adobe Illustrator", "R", "Laser cutter"],
         design: ["Information design"],
-        medium: ["Acrylic"],
+        medium: ["Acrylic", "Radial LED Light Panel"],
         role: ["Data visualization designer", "Data analyst"],
         brief: [],
         data: [],
@@ -39,7 +39,10 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []},
+        sketches: [],
+        prototype: [],
+        final: []
+    },
     {title: "Billy", 
         page: "Billy", 
         year: 2022, 
@@ -92,7 +95,10 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []},
+        sketches: [],
+        prototype: [],
+        final: []
+    },
     {title: "Meta", 
         year: 2015, 
         page: "Meta", 
@@ -106,7 +112,10 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []},
+        sketches: [],
+        prototype: [],
+        final: []
+    },
     {title: "Visualizing Version Control", 
         page: "Visual-Version-Control", 
         year: 2021, 
@@ -120,7 +129,10 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []},
+        sketches: [],
+        prototype: [],
+        final: []
+    },
     {title: "Drawings Collection", 
         page: "Drawings-Collection", 
         year: 2014, 
@@ -134,7 +146,10 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []},
+        sketches: [],
+        prototype: [],
+        final: []
+    },
     {title: "Bloom", 
         page: "Bloom", 
         year: 2022, 
@@ -148,7 +163,10 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []},
+        sketches: [],
+        prototype: [],
+        final: []
+    },
     {title: "Risky Code", 
         page: "Risky-Code", 
         year: 2023, 
@@ -162,7 +180,10 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []},
+        sketches: [],
+        prototype: [],
+        final: []
+        },
     {title: "Equitable Teams", 
         page: "Equitable-Teams", 
         year: 2022, 
@@ -175,7 +196,9 @@ export let itemData = [
         brief: ["Brainstorm the information about your peer's skills and preferences you would need to compose equitable teams. Collect data from the class. Format these requirements as a data schema, including variable names, data types, and validation. Working in pairs, use visualization to propose equitable committee membership. Create a visualization to argue for a set of teams that balance skills and preferences."],
         data: [],
         artistStatement: [],
-        sketches: []
+        sketches: [],
+        prototype: [],
+        final: []
     },
     {title: "Ceramics Collection", 
         page: "Ceramics-Collection", 
@@ -190,7 +213,9 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []
+        sketches: [],
+        prototype: [],
+        final: []
     },
     {title: "Migration is Natural", 
         page: "Migration-is-Natural",
@@ -205,7 +230,9 @@ export let itemData = [
         brief: ["Using data from the global citizenship database create a task-based visualization that explores the dataset. Create an interactive interface that features three information visualizations. The visualizations should balance the database's complexity with a goal of user-friendliness."],
         data: ["This project combines data from two resources. The first is the global citizenship database maintained by the European University Institute. The database standardizes citizenship acquisition methods across 190 countries. The database identifies 28 ways through which migrants can obtain citizenship. It was last updated on January 1st, 2020. This data set was challenging to work with because the data are all categorical, which is often harder to visualize than numeric data."],
         artistStatement: [],
-        sketches: []
+        sketches: [],
+        prototype: [],
+        final: []
     },
     {title: "Public Policy Collection", 
         page: "Public-Policy-Collection", 
@@ -220,7 +247,9 @@ export let itemData = [
         brief: ["Design an interactive visualization that shows child care deserts by census tract in Tarrant and Harris Country, Texas. Users should be able to visually assess geographic areas with a low supply of childcare compared to the demand for childcare. The target audience for this application is policy researchers."],
         data: ["This dashboard combines data from various sources, including the Texas Child Care Licensing database, Texas Workforce Commission, and the Census."],
         artistStatement: [],
-        sketches: []
+        sketches: [],
+        prototype: [],
+        final: []
     },
     {title: "Tutor Match", 
         page: "Tutor-Match", 
@@ -235,7 +264,9 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []
+        sketches: [],
+        prototype: [],
+        final: []
     },
     {title: "Patient Clinician Interactions", 
         page: "Patient-Clinician-Interactions", 
@@ -250,7 +281,9 @@ export let itemData = [
         brief: [],
         data: [],
         artistStatement: [],
-        sketches: []
+        sketches: [],
+        prototype: [],
+        final: []
     }
     //     ,{title: "Flee", 
     //     page: "Flee", 
@@ -264,7 +297,9 @@ export let itemData = [
     //     brief: [],
     //     data: [],
     //     artistStatement: [],
-    //     sketches: []
+    //     sketches: [],
+    //     prototype: [],
+    //     final: []
     // }
 ];
 
