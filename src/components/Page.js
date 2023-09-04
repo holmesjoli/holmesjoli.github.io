@@ -12,19 +12,27 @@ export default function Page({d}) {
                 <div className="Project-Summary">
                     <div className="Project-Text ">
                         <div className="Project-Brief Text">{
-                            d.brief !== ""  ? 
+                            d.brief.length > 0  ? 
                                 <div>
                                     <h3>brief</h3>
-                                    <p>{d.brief}</p>
+                                    {
+                                        d.brief.map((datum, i) => {
+                                            return <p key={i}>{datum}</p>
+                                        })
+                                    }
                                 </div>: <></>
                             }
                         </div>
                         <div className="Project-Data">
                             {
-                            d.data !== ""  ? 
+                            d.data.length > 0  ? 
                                 <div>
                                     <h3>data</h3>
-                                    <p>{d.data}</p>
+                                    {
+                                        d.data.map((datum, i) => {
+                                            return <p key={i}>{datum}</p>
+                                        })
+                                    }
                                 </div>: <></>
                             }
                         </div>
@@ -43,51 +51,54 @@ export default function Page({d}) {
                         </div>
                     </div>
                     <div className="Project-Design">
-                        <div className="Project-Sketches">
                         {
                             d.sketches.length > 0  ? 
-                            <div>
+                            <div className="Project-Sketches">
                                 <h3>sketches</h3>
                                 <Slideshow data={d.sketches}/>
                             </div>: <></>
                         }
-                        </div>
-                        {/* <div className="Project-Prototype">
-                        {
+                        {/* {
                             d.prototype.length > 0  ? 
-                            <div>
+                            <div className="Project-Prototype">
                                 <h3>prototype</h3>
                                 <Slideshow data={d.prototype}/>
                             </div>: <></>
-                        }
-                        </div> */}
+                        } */}
+                        {/* {
+                            d.final.length > 0  ? 
+                            <div className="Project-Final">
+                                <h3>final</h3>
+                                <Slideshow data={d.final}/>
+                            </div>: <></>
+                        } */}
                     </div>
                 </div>               
             </div>
             <div className="Project-Attributes">
+                
+                {
+                d.role.length > 0 ? 
                 <div className="Project-Role">
-                    {
-                    d.role.length > 0 ? 
-                    <div>
-                        <h3>role</h3>
-                        <ul>
-                        {d.role.map(datum => {
-                            return <li className="Role" key={datum}>{datum}</li>
-                        })}
-                    </ul>
-                    </div>
-                    : <></>
-                    }
+                    <h3>role</h3>
+                    <ul>{d.role.map(datum => { return <li className="Role" key={datum}>{datum}</li>})}</ul>
                 </div>
+                : <></>
+                }
+                {
+                d.tools.length > 0 ?
                 <div className="Project-Tools">
-                    {
-                        d.tools.length > 0 ?
-                        <div>
-                            <h3>tools</h3>
-                            <ul>{d.tools.map(datum => { return <li className="Tool" key={datum}>{datum}</li>})}</ul>
-                        </div>: <></>
-                    }
-                </div>
+                    <h3>tools</h3>
+                    <ul>{d.tools.map(datum => { return <li className="Tool" key={datum}>{datum}</li>})}</ul>
+                </div>: <></>
+                }
+                {
+                d.medium.length > 0 ?
+                <div className="Project-Medium">
+                    <h3>medium</h3>
+                    <ul>{d.medium.map(datum => { return <li className="Medium" key={datum}>{datum}</li>})}</ul>
+                </div>: <></>
+                }
             </div>
         </div>
     )

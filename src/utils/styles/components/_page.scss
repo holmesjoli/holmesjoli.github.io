@@ -21,6 +21,11 @@
     height: 100%;
 }
 
+.Project-Design {
+    display: flex;
+    flex-direction: column;
+}
+
 .Project-Sketches {
     display: grid;
     grid-gap: 1rem;
