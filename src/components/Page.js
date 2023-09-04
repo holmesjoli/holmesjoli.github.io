@@ -8,9 +8,9 @@ export default function Page({d}) {
                 <h2 className="Project-Title">{d.title}</h2>
                 <div className="Project-Summary">
                     <div className="Project-Text ">
-                        <div className="Project-Brief Text">{
+                        {
                             d.brief.length > 0  ? 
-                                <div>
+                            <div className="Project-Brief Text">
                                     <h3>brief</h3>
                                     {
                                         d.brief.map((datum, i) => {
@@ -18,34 +18,38 @@ export default function Page({d}) {
                                         })
                                     }
                                 </div>: <></>
-                            }
-                        </div>
-                        <div className="Project-Data">
-                            {
-                            d.data.length > 0  ? 
-                                <div>
-                                    <h3>data</h3>
-                                    {
-                                        d.data.map((datum, i) => {
-                                            return <p key={i}>{datum}</p>
-                                        })
-                                    }
-                                </div>: <></>
-                            }
-                        </div>
+                            }                        
+                        {d.data.length > 0  ? 
+                            <div className="Project-Data">
+                            <h3>data</h3>
+                                {
+                                    d.data.map((datum, i) => {
+                                        return <p key={i}>{datum}</p>
+                                    })
+                                }
+                            </div>: <></>
+                        }
+                        {d.methodology.length > 0  ? 
+                            <div className="Project-Methodology">
+                                <h3>methodology</h3>
+                                {
+                                    d.methodology.map((datum, i) => {
+                                        return <p key={i}>{datum}</p>
+                                    })
+                                }
+                            </div>: <></>
+                        }
+                        {
+                        d.artistStatement.length > 0  ? 
                         <div className="Project-Artist-Statement">
-                            {
-                            d.artistStatement.length > 0  ? 
-                                <div>
-                                    <h3>artist statement</h3>
-                                    {
-                                        d.artistStatement.map((datum, i) => {
-                                            return <p key={i}>{datum}</p>
-                                        })
-                                    }
-                                </div>: <></>
-                            }
-                        </div>
+                                <h3>artist statement</h3>
+                                {
+                                    d.artistStatement.map((datum, i) => {
+                                        return <p key={i}>{datum}</p>
+                                    })
+                                }
+                            </div>: <></>
+                        }
                     </div>
                     <div className="Project-Design">
                         {
