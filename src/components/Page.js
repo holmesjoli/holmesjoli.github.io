@@ -58,25 +58,31 @@ export default function Page({d}) {
                                 <Slideshow data={d.sketches}/>
                             </div>: <></>
                         }
-                        {/* {
+                        {
                             d.prototype.length > 0  ? 
                             <div className="Project-Prototype">
                                 <h3>prototype</h3>
                                 <Slideshow data={d.prototype}/>
                             </div>: <></>
-                        } */}
-                        {/* {
+                        }
+                        {
                             d.final.length > 0  ? 
                             <div className="Project-Final">
                                 <h3>final</h3>
                                 <Slideshow data={d.final}/>
                             </div>: <></>
-                        } */}
+                        }
                     </div>
                 </div>               
             </div>
             <div className="Project-Attributes">
-                
+                {
+                d.design.length > 0 ?
+                <div className="Project-Design">
+                    <h3>design</h3>
+                    <ul>{d.design.map(datum => { return <li className="Design" key={datum}>{datum}</li>})}</ul>
+                </div>: <></>
+                }
                 {
                 d.role.length > 0 ? 
                 <div className="Project-Role">

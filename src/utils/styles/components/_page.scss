@@ -21,26 +21,28 @@
     height: 100%;
 }
 
-.Project-Design {
-    display: flex;
-    flex-direction: column;
+// .Project-Design {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.Project-Sketches,
+.Project-Prototype,
+.Project-Final {
+    width: 50vw;
 }
 
-.Project-Sketches {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.Sketch {
-    padding: $appPadding;
-}
+// .Sketch {
+//     padding: $appPadding;
+// }
 
 .Project-Role, 
-.Project-Tools {
+.Project-Tools,
+.Project-Design,
+.Project-Medium {
     padding: $appPadding;
 }
 
-.Role, .Tool {
+.Role, .Tool, .Design, .Medium {
     margin-left: $appMargin;
 }
