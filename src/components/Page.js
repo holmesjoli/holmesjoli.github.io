@@ -1,13 +1,10 @@
-import { Slideshow } from "./Carousel"
+import { Slideshow, MainImage } from "./Carousel"
 
 export default function Page({d}) {
 
     return(
         <div className="Page">
             <div className="Project-Main">
-                {/* <div className="Construction">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Under_construction_animated.gif" alt="Page under construction image"></img>
-                </div> */}
                 <h2 className="Project-Title">{d.title}</h2>
                 <div className="Project-Summary">
                     <div className="Project-Text ">
@@ -69,8 +66,12 @@ export default function Page({d}) {
                             d.final.length > 0  ? 
                             <div className="Project-Final">
                                 <h3>final</h3>
-                                <Slideshow data={d.final}/>
-                            </div>: <></>
+                                <MainImage data={d.final.filter(e => e.size === "big")}/>
+                                <Slideshow data={d.final.filter(e => e.size === "small")}/>
+                            </div>:
+                            <div className="Construction">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Under_construction_animated.gif" alt="Page under construction image"></img>
+                            </div>
                         }
                     </div>
                 </div>               

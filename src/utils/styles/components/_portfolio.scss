@@ -69,21 +69,3 @@
     color: white;
     font-weight: bold;
 }
-
-.Portfolio-Item-Showcase-Container {
-    margin-top: $appMargin;
-    padding: $appPadding;
-    text-align: center;
-    display: grid;
-}
-
-.Portfolio-Item-Showcase {
-    margin: $appMargin;
-    padding: $appPadding;
-}
-
-.Portfolio-Item-Showcase img {
-    max-height: 60vh;
-    padding: $appPadding;
-    max-width: 60vw;
-}
