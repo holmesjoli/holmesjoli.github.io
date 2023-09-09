@@ -16,25 +16,9 @@ import Home from "./pages/Home";
 import DesignProcess from "./pages/DesignProcess";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
-import AlgorithmicallyFair from "./pages/portfolio/Algorithmically-Fair";
-import BancaIntesaProcesses from "./pages/portfolio/Banca-Intesa-Processes";
-import BancaIntesaKnowledgeNetwork from "./pages/portfolio/Banca-Intesa-Knowledge-Network";
-import Billy from "./pages/portfolio/Billy";
-import Bloom from "./pages/portfolio/Bloom";
-import BlackData from "./pages/portfolio/Black-Data";
-import CeramicsCollection from "./pages/portfolio/Ceramics";
-import DrawingsCollection from "./pages/portfolio/Drawings";
-import EquitableTeams from "./pages/portfolio/Equitable-Teams";
-import MigrationIsNatural from "./pages/portfolio/Migration-is-Natural";
-import Meta from "./pages/portfolio/Meta";
-import PatientClinicianInteractions from "./pages/portfolio/Patient-Clinician-Interactions";
-import PublicPolicyCollection from "./pages/portfolio/Public-Policy-Collection";
-import RiskyCode from "./pages/portfolio/Risky-Code";
-import TutorMatch from "./pages/portfolio/Tutor-Match";
-import VisualVersionControl from "./pages/portfolio/Visual-Version-Control";
+import { PortfolioPage } from './components/Page';
 
 import { itemData } from './utils/global';
-
 
 const theme = createTheme({
   typography: {
@@ -84,6 +68,8 @@ const theme = createTheme({
   }
 })
 
+console.log(itemData[0].page)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider theme={theme}>
@@ -96,22 +82,28 @@ root.render(
         <Route path="/About" element={<About />} />
 
         {/* Portfolio routes */}
-        <Route path="/portfolio/Algorithmically-Fair" element={<AlgorithmicallyFair d={itemData.find(d => d.page === "Algorithmically-Fair")} />} />
-        <Route path="/portfolio/Banca-Intesa-Processes" element={<BancaIntesaProcesses d={itemData.find(d => d.page === "Banca-Intesa-Processes")} />} />
-        <Route path="/portfolio/Banca-Intesa-Knowledge-Network" element={<BancaIntesaKnowledgeNetwork d={itemData.find(d => d.page === "Banca-Intesa-Knowledge-Network")} />} />
-        <Route path="/portfolio/Billy" element={<Billy d={itemData.find(d => d.page === "Billy")} />} />
-        <Route path="/portfolio/Black-Data" element={<BlackData d={itemData.find(d => d.page === "Black-Data")} />} />
-        <Route path="/portfolio/Bloom" element={<Bloom d={itemData.find(d => d.page === "Bloom")} />} />
-        <Route path="/portfolio/Drawings-Collection" element={<DrawingsCollection />} />
-        <Route path="/portfolio/Ceramics-Collection" element={<CeramicsCollection />} />
-        <Route path="/portfolio/Equitable-Teams" element={<EquitableTeams d={itemData.find(d => d.page === "Equitable-Teams")} />} />
-        <Route path="/portfolio/Meta" element={<Meta d={itemData.find(d => d.page === "Meta")} />} />
-        <Route path="/portfolio/Migration-Is-Natural" element={<MigrationIsNatural d={itemData.find(d => d.page === "Migration-is-Natural")} />} />
-        <Route path="/portfolio/Patient-Clinician-Interactions" element={<PatientClinicianInteractions d={itemData.find(d => d.page === "Patient-Clinician-Interactions")} />} />
-        <Route path="/portfolio/Public-Policy-Collection" element={<PublicPolicyCollection d={itemData.find(d => d.page === "Public-Policy-Collection")} />} />
-        <Route path="/portfolio/Risky-Code" element={<RiskyCode d={itemData.find(d => d.page === "Risky-Code")} />} />
-        <Route path="/portfolio/Tutor-Match" element={<TutorMatch d={itemData.find(d => d.page === "Tutor-Match")} />} />
-        <Route path="/portfolio/Visual-Version-Control" element={<VisualVersionControl d={itemData.find(d => d.page === "Visual-Version-Control")} />} />
+        {/* {
+          itemData.map(d => {
+            <Route path={"/portfolio/" + d.page} element={<PortfolioPage d={d} />} />
+          })
+        } */}
+
+        <Route path="/portfolio/Algorithmically-Fair" element={<PortfolioPage d={itemData.find(d => d.page === "Algorithmically-Fair")} />} />
+        <Route path="/portfolio/Banca-Intesa-Processes" element={<PortfolioPage d={itemData.find(d => d.page === "Banca-Intesa-Processes")} />} />
+        <Route path="/portfolio/Banca-Intesa-Knowledge-Network" element={<PortfolioPage d={itemData.find(d => d.page === "Banca-Intesa-Knowledge-Network")} />} />
+        <Route path="/portfolio/Billy" element={<PortfolioPage d={itemData.find(d => d.page === "Billy")} />} />
+        <Route path="/portfolio/Black-Data" element={<PortfolioPage d={itemData.find(d => d.page === "Black-Data")} />} />
+        <Route path="/portfolio/Bloom" element={<PortfolioPage d={itemData.find(d => d.page === "Bloom")} />} />
+        <Route path="/portfolio/Drawings-Collection" element={<PortfolioPage />} />
+        <Route path="/portfolio/Ceramics-Collection" element={<PortfolioPage />} />
+        <Route path="/portfolio/Equitable-Teams" element={<PortfolioPage d={itemData.find(d => d.page === "Equitable-Teams")} />} />
+        <Route path="/portfolio/Meta" element={<PortfolioPage d={itemData.find(d => d.page === "Meta")} />} />
+        <Route path="/portfolio/Migration-Is-Natural" element={<PortfolioPage d={itemData.find(d => d.page === "Migration-is-Natural")} />} />
+        <Route path="/portfolio/Patient-Clinician-Interactions" element={<PortfolioPage d={itemData.find(d => d.page === "Patient-Clinician-Interactions")} />} />
+        <Route path="/portfolio/Public-Policy-Collection" element={<PortfolioPage d={itemData.find(d => d.page === "Public-Policy-Collection")} />} />
+        <Route path="/portfolio/Risky-Code" element={<PortfolioPage d={itemData.find(d => d.page === "Risky-Code")} />} />
+        <Route path="/portfolio/Tutor-Match" element={<PortfolioPage d={itemData.find(d => d.page === "Tutor-Match")} />} />
+        <Route path="/portfolio/Visual-Version-Control" element={<PortfolioPage d={itemData.find(d => d.page === "Visual-Version-Control")} />} />
       </Routes>
     </HashRouter>
   </ThemeProvider>

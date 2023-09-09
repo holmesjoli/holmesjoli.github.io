@@ -1,7 +1,8 @@
 import { DesignStage } from "./Carousel"
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
-
-export default function Page({d}) {
+export function Page({d}) {
 
     return(
         <div className="Page">
@@ -113,6 +114,19 @@ export default function Page({d}) {
                 </div>: <></>
                 }
             </div>
+        </div>
+    )
+}
+
+export function PortfolioPage({d}) {
+
+    console.log(d)
+
+    return(
+        <div className="Main">
+            <Navigation />
+            <Page d={d}/>
+            <Footer/>
         </div>
     )
 }
