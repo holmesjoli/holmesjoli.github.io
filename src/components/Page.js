@@ -1,4 +1,4 @@
-import { Slideshow, MainImage, DesignStage } from "./Carousel"
+import { DesignStage } from "./Carousel"
 
 
 export default function Page({d}) {
@@ -10,7 +10,7 @@ export default function Page({d}) {
                 <div className="Project-Information">
                     <div className="Project-Text ">
                         {
-                            d.brief.length > 0  ? 
+                            d.brief  ? 
                             <div className="Project-Brief">
                                     <h3>brief</h3>
                                     {
@@ -21,7 +21,7 @@ export default function Page({d}) {
                                 </div>: <></>
                         }
                         {
-                        d.summary.length > 0  ? 
+                        d.summary  ? 
                         <div className="Project-Summary">
                             <h3>summary</h3>
                             {
@@ -31,7 +31,7 @@ export default function Page({d}) {
                             }
                         </div>: <></>
                         }                       
-                        {d.data.length > 0  ? 
+                        {d.data  ? 
                             <div className="Project-Data">
                             <h3>data</h3>
                                 {
@@ -41,7 +41,7 @@ export default function Page({d}) {
                                 }
                             </div>: <></>
                         }
-                        {d.methodology.length > 0  ? 
+                        {d.methodology ? 
                             <div className="Project-Methodology">
                                 <h3>methodology</h3>
                                 {
@@ -52,7 +52,7 @@ export default function Page({d}) {
                             </div>: <></>
                         }
                         {
-                        d.artistStatement.length > 0  ? 
+                        d.artistStatement  ? 
                         <div className="Project-Artist-Statement">
                                 <h3>artist statement</h3>
                                 {
@@ -91,7 +91,7 @@ export default function Page({d}) {
                 </div>: <></>
                 }
                 {
-                d.role.length > 0 ? 
+                d.role ? 
                 <div className="Project-Role">
                     <h3>role</h3>
                     <ul>{d.role.map(datum => { return <li className="Role" key={datum}>{datum}</li>})}</ul>
@@ -99,14 +99,14 @@ export default function Page({d}) {
                 : <></>
                 }
                 {
-                d.tools.length > 0 ?
+                d.tools ?
                 <div className="Project-Tools">
                     <h3>tools</h3>
                     <ul>{d.tools.map(datum => { return <li className="Tool" key={datum}>{datum}</li>})}</ul>
                 </div>: <></>
                 }
                 {
-                d.medium.length > 0 ?
+                d.medium ?
                 <div className="Project-Medium">
                     <h3>medium</h3>
                     <ul>{d.medium.map(datum => { return <li className="Medium" key={datum}>{datum}</li>})}</ul>
