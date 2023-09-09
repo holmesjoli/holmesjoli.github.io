@@ -50,16 +50,16 @@ export function DesignStage({title, stage, showCase}) {
     stage ? 
       <div className={"Project-"+{title}+" SlideShow"}>
           <h4>{title}</h4>
-          {/* {
+          {
           stage.descr.length > 0  ? 
           <div className={"Project"+{title}+"-Description"}>
               {
-                  stage.map((datum, i) => {
+                  stage.descr.map((datum, i) => {
                       return <p key={i}>{datum}</p>
                   })
               }
           </div>: <></>
-        } */}
+          }
           {
           stage.images.filter(e => e.size === "big").length > 0? 
           <MainImage data={stage.images.filter(e => e.size === "big")}/>: <></>
