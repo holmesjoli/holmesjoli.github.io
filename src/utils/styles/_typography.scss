@@ -125,3 +125,15 @@ a {
 p, li {
     padding: $appPadding/2 $appPadding;
 }
+
+.Slide a {
+    color: $appColorTeritiary;
+}
+
+a:hover {
+    color: $appColorFocus;
+}
+
+.No-Hover {
+    color: $appColor;
+}

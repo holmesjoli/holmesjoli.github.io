@@ -7,12 +7,23 @@ import { NavLink } from "react-router-dom";
 import 'react-slideshow-image/dist/styles.css';
 
 export function MainImage({data}) {
+
   return (
        data.map((d, index)=> (
         <div key={index}>
-          {/* <img className="Item-Image" src={d.url} alt={d.alt} /> */}
+          {
+            d.descr.length > 0  ? 
+              <div className="Final-Description">
+                  {
+                      d.descr.map((datum, i) => {
+                          return <p key={i}>{datum}</p>
+                      })
+                  }
+              </div>: <></>
+          }
           <iframe src={d.url} width='100%' height='400px' frameborder="0"/>
           <h5 className="Item-Caption">{d.alt}</h5>
+          {d.link ? <a className="Link to application" href={d.link}>Link</a>: <></>}
         </div>
       )
     )
@@ -27,14 +38,15 @@ export function Slideshow({data, showCase = false}) {
           showCase ?
           <NavLink key={index} to={"/portfolio/"+d.page}>
             <div className="Slide">
-              <h2 className="Item-Title">{d.title}</h2>
+              <h2 className="Item-Title No-Hover">{d.title}</h2>
               <h3 className="Item-Year">{d.year}</h3>
-              <img className="Item-Image" src={d.url} alt={d.alt} />
+              <img className="Item-Image" src={d.mainImage.url} alt={d.mainImage.alt} />
             </div>
           </NavLink>:
             <div key={index} className="Slide">
               <img className="Item-Image" src={d.url} alt={d.alt} />
               <h5 className="Item-Caption">{d.alt}</h5>
+              {d.link ? <a href={d.link}>Link to application</a>: <></>}
             </div>
         ))} 
       </Slide>
