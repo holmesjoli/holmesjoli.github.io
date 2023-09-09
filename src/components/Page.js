@@ -1,8 +1,7 @@
-import { Slideshow, MainImage } from "./Carousel"
+import { Slideshow, MainImage, DesignStage } from "./Carousel"
+
 
 export default function Page({d}) {
-
-    console.log(d.designProcess.research ?true:false)
 
     return(
         <div className="Page">
@@ -66,45 +65,10 @@ export default function Page({d}) {
                     </div>
                     <div className="Project-Design">
                         <h3>design process</h3>
-                        {
-                            d.designProcess.research ? 
-                            <div className="Project-Design-Research SlideShow">
-                                <h4>design research</h4>
-                                <Slideshow data={d.designProcess.research.images}/>
-                            </div>: <></>
-                        }
-                        {
-                            d.designProcess.sketches  ? 
-                            <div className="Project-Sketches SlideShow">
-                                <h4>initial sketches</h4>
-                                <Slideshow data={d.designProcess.sketches.images}/>
-                            </div>: <></>
-                        }
-                        {
-                            d.designProcess.prototype  ? 
-                            <div className="Project-Prototype SlideShow">
-                                <h4>prototype</h4>
-                                <Slideshow data={d.designProcess.prototype.images}/>
-                            </div>: <></>
-                        }
-                        {
-                            d.designProcess.final  ? 
-                            <div className="Project-Final SlideShow">
-                                <h4>final design</h4>
-                                {
-                                   d.designProcess.final.images.filter(e => e.size === "big").length > 0? 
-                                   <MainImage data={d.designProcess.final.images.filter(e => e.size === "big")}/>: <></>
-                                }
-                                {
-                                   d.designProcess.final.images.filter(e => e.size === "small").length > 0? 
-                                   <Slideshow data={d.designProcess.final.images.filter(e => e.size === "small")}/>: <></>
-                                }
-                            </div>:
-                            <div className="Construction SlideShow">
-                                <h4>final design</h4>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Under_construction_animated.gif" alt="Page under construction image"></img>
-                            </div>
-                        }
+                        <DesignStage title="design research" stage={d.designProcess.research} showCase={false}/>
+                        <DesignStage title="initial sketches" stage={d.designProcess.sketches} showCase={false}/>
+                        <DesignStage title="prototype" stage={d.designProcess.prototype} showCase={false}/>
+                        <DesignStage title="final design" stage={d.designProcess.final} showCase={false}/>
                     </div>
                 </div>               
             </div>

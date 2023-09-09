@@ -11,16 +11,6 @@ export function MainImage({data}) {
   return (
        data.map((d, index)=> (
         <div key={index}>
-          {
-            d.descr.length > 0  ? 
-              <div className="Final-Description">
-                  {
-                      d.descr.map((datum, i) => {
-                          return <p key={i}>{datum}</p>
-                      })
-                  }
-              </div>: <></>
-          }
           <iframe src={d.url} width='100%' height='400px' frameborder="0"/>
           <h5 className="Item-Caption">{d.alt}</h5>
           {d.link ? <a className="Link to application" href={d.link}>Link</a>: <></>}
@@ -51,5 +41,33 @@ export function Slideshow({data, showCase = false}) {
         ))} 
       </Slide>
     </div>
+  )
+}
+
+export function DesignStage({title, stage, showCase}) {
+
+  return(
+    stage ? 
+      <div className={"Project-"+{title}+" SlideShow"}>
+          <h4>{title}</h4>
+          {/* {
+          stage.descr.length > 0  ? 
+          <div className={"Project"+{title}+"-Description"}>
+              {
+                  stage.map((datum, i) => {
+                      return <p key={i}>{datum}</p>
+                  })
+              }
+          </div>: <></>
+        } */}
+          {
+          stage.images.filter(e => e.size === "big").length > 0? 
+          <MainImage data={stage.images.filter(e => e.size === "big")}/>: <></>
+          }
+          {
+          stage.images.filter(e => e.size === "small").length > 0? 
+          <Slideshow data={stage.images.filter(e => e.size === "small")}/>: <></>
+          }
+      </div>: <></>
   )
 }
