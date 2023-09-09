@@ -10,10 +10,10 @@ export function MainImage({data}) {
 
   return (
        data.map((d, index)=> (
-        <div key={index}>
-          <iframe src={d.url} width='100%' height='400px' frameborder="0"/>
+        <div className="Main-Image" key={index}>
+          <iframe src={d.url} width='100%' height='400px' frameBorder="0"/>
           <h5 className="Item-Caption">{d.alt}</h5>
-          {d.link ? <a className="Link to application" href={d.link}>Link</a>: <></>}
+          {d.link ? <a href={d.link}>Link to application</a>: <></>}
         </div>
       )
     )
