@@ -23,7 +23,6 @@ export let itemData = [
                             "Light is used in the piece metaphorically and aesthetically. Light plays an interesting role in this piece metaphorically. In Bentham's panopticon, the lighted guard tower encouraged self-policing behaviors. However, in Algorithmically Fair?, light draws the viewer's eye and highlights the frequency of algorithmic error. Additionally, the predominantly black form representing algorithmic inequity makes visual reference to a black box algorithm. Lighting this form from the inside out to elucidate viewers on algorithmic bias symbolically reverses the role of light plays in these panopticon forms."],
         designProcess: {
             sketches: {
-                descr: [],
                 images: [
                     {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132923256.jpg",
                         alt: "Initial sketch conveying the idea of physical form that represents a database",
@@ -35,7 +34,6 @@ export let itemData = [
                         alt: "Initial sketch showing how a third dimension could be used to show the number of people",
                         size: "small"}]},
             prototype: {
-                descr: [],
                 images: [{url: "/assets/portfolio/algorithmically-fair/PXL_20221214_133321902.jpg",
                         alt: "Initial prototype of layered pie charts",
                         size: "small"}, 
@@ -43,7 +41,6 @@ export let itemData = [
                         alt: "Initial prototype of light inside a layered pie chart",
                         size: "small"}]},
             final: {
-                descr: [],
                 images: [
                     // {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
                     // alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates",
@@ -116,7 +113,6 @@ export let itemData = [
                             "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
         designProcess: {
             final: {
-                descr: [],
                 images: [{url: "/assets/portfolio/black-data/20201122_142017.jpg",
                         alt: "Black cube with machine learning knitting pattern in rainbow yarn",
                         size: "small"}, 
@@ -167,7 +163,6 @@ export let itemData = [
         artistStatement: ["The installation pictured below explores the social construction of data and how data can be manipulated through code. The installation shows a snippet of the physical code used to extract RGB values from a corpus of Georgia O'Keefe paintings. I downloaded 60 images of famous O'Keefe paintings and used R to extract the RGB values of each pixel in each painting. I visualized the values as histograms for each painting. The histograms and GIF displayed below were installed at Wesleyan University's Quantitative Analysis Center, the physical space where I utilized the university's resources to learn and practice quantitative analysis. The GIF plays off of a common programming technique known as a loop."],
         designProcess: {
             final: {
-                descr: [],
                 images: [{url: "/assets/portfolio/meta/keyboardhands3_slow.gif",
                     alt: "GIF of hands typing out code with physical code layered in the background",
                     size: "big"},
@@ -324,8 +319,8 @@ export let itemData = [
         methodology: [],
         artistStatement: [],
         designProcess: {
+            descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application. "],
             research: {
-                descr: [],
                 images: [
                 {
                     url: "/assets/portfolio/migration-is-natural/moodboard.png",
@@ -392,8 +387,7 @@ export let itemData = [
                     url: "https://joliholmes.com/team-migration/",
                     link: "https://joliholmes.com/team-migration/",
                     alt: "Interactive applications showing the initial map",
-                    size: "big",
-                    descr: ["D3.js was used to create interactive visualizations for the application."]
+                    size: "big"
                 }
             ]}
         }

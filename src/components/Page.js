@@ -63,8 +63,18 @@ export default function Page({d}) {
                             </div>: <></>
                         }
                     </div>
-                    <div className="Project-Design">
+                    <div className="Project-Design-Process">
                         <h3>design process</h3>
+                        {
+                        d.designProcess.descr  ? 
+                        <div className={"Project-Description"}>
+                            {
+                                 d.designProcess.descr.map((datum, i) => {
+                                    return <p key={i}>{datum}</p>
+                                })
+                            }
+                        </div>: <></>
+                        }
                         <DesignStage title="design research" stage={d.designProcess.research} showCase={false}/>
                         <DesignStage title="initial sketches" stage={d.designProcess.sketches} showCase={false}/>
                         <DesignStage title="prototype" stage={d.designProcess.prototype} showCase={false}/>
