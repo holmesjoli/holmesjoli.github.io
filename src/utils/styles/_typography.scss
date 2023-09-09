@@ -123,7 +123,15 @@ a {
 }
 
 p, li {
-    padding: $appPadding/2 $appPadding;
+    line-height: 140%;
+}
+
+p {
+    padding: $appPadding $appPadding;
+}
+
+li {
+    padding: $appPadding/3 $appPadding;
 }
 
 .Slide a {
