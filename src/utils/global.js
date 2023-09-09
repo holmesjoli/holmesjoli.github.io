@@ -309,8 +309,10 @@ export let itemData = [
         medium: [],
         role: ["Data visualization designer", "Project manager", "Data analyst"],
         brief: [],
-        summary: ["Migration is Natural uses data from a global citizen database to create an interactive visualization that explores different countries citizenship paths.",
-                "It employs the visual metaphor of a butterfly to convey that migration is a natural phenomenon frequently witnessed in the natural world. The visual inspiration for the metaphor is from artist, organizater, and activist, Favianna Rodriguez, who created a series called 'Migration is Beautiful' in 2012."],
+        summary: [
+                    "Migration is Natural uses data from a global citizen database to create an interactive visualization that explores different countries citizenship paths.",
+                    "It employs the visual metaphor of a butterfly to convey that migration is a natural phenomenon frequently witnessed in the natural world. The visual inspiration for the metaphor is from artist, organizater, and activist, Favianna Rodriguez, who created a series called 'Migration is Beautiful' in 2012.",
+                    "The veins of the butterfly detail different paths a user could take to acquire migration after answering some simple questions such as, 'Are your parents citizens of the country you are interested in migrating to?', 'Were you born in the country you are interested in migrating to?', or 'Are you married?'"],
         data: ["This project combines data from two resources. The first is the global citizenship database maintained by the European University Institute. The database standardizes citizenship acquisition methods across 190 countries. The database identifies 28 ways through which migrants can obtain citizenship. It was last updated on January 1st, 2020. This data set was challenging to work with because the data are all categorical, which is often harder to visualize than numeric data."],
         methodology: [],
         artistStatement: [],
@@ -346,11 +348,39 @@ export let itemData = [
                     alt: "An information visualization showing path flows",
                     size: "small"
                 }
-        ],
-            sketches: [],
-            prototype: [],
-            final: []
-            }
+            ],
+            sketches: [
+                {
+                    url: "/assets/portfolio/migration-is-natural/design-process-1.png",
+                    alt: "Initial sketch showing underlying logic to the data",
+                    size: "small"
+                },
+                {
+                    url: "/assets/portfolio/migration-is-natural/design-process-2.png",
+                    alt: "Initial sketch showing how a path could be formed from the data",
+                    size: "small"
+                },
+                {
+                    url: "/assets/portfolio/migration-is-natural/design-process-3.png",
+                    alt: "Initial sketch adding more detail to potential data paths",
+                    size: "small"
+                }
+            ],
+            prototype: [
+                {
+                    url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
+                    alt: "The team used figma to prototype the application",
+                    size: "big"
+                }
+            ],
+            final: [
+                {
+                url: "https://joliholmes.com/team-migration/",
+                alt: "The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
+                size: "big"
+                }
+            ]
+        }
     },
     // {title: "Public Policy Collection", 
     // page: "Public-Policy-Collection", 

@@ -89,8 +89,14 @@ export default function Page({d}) {
                             d.designProcess.final.length > 0  ? 
                             <div className="Project-Final SlideShow">
                                 <h4>final design</h4>
-                                <MainImage data={d.designProcess.final.filter(e => e.size === "big")}/>
-                                <Slideshow data={d.designProcess.final.filter(e => e.size === "small")}/>
+                                {
+                                   d.designProcess.final.filter(e => e.size === "big").length > 0? 
+                                   <MainImage data={d.designProcess.final.filter(e => e.size === "big")}/>: <></>
+                                }
+                                {
+                                   d.designProcess.final.filter(e => e.size === "small").length > 0? 
+                                   <Slideshow data={d.designProcess.final.filter(e => e.size === "small")}/>: <></>
+                                }
                             </div>:
                             <div className="Construction SlideShow">
                                 <h4>final design</h4>
