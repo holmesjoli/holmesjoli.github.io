@@ -80,7 +80,6 @@ export let itemData = [
     // tags: ["#interaction-design", "#user-interface", "#figma", "#user-experience", "#user-interaction"],
     // tools: ["Figma"],
     // design: [],
-    // medium: [],
     // role: ["Interaction designer"],
     // brief: [],
     // summary: [],
@@ -124,7 +123,6 @@ export let itemData = [
     // tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#iiba-longlist-2023"],
     // tools: ["D3.js", "Pixi.js", "React", "Python"],
     // design: ["Information design", "Interaction design"],
-    // medium: [],
     // role: ["Data visualization designer", "Project manager", "Data analyst"],
     // brief: [],
     // summary: [],
@@ -172,7 +170,6 @@ export let itemData = [
     // tags: ["#graphic-design", "#information-design", "#system-design", "#adobe-illustrator"],
     // tools: ["Adobe Illustrator"],
     // design: ["Information design", "Graphic design"],
-    // medium: [],
     // role: ["Information designer"],
     // brief: [],
     // summary: [],
@@ -212,7 +209,6 @@ export let itemData = [
     // tags: ["#d3-js", "#adobe-illustrator", "#graphic-design", "#r"],
     // tools: ["D3.js", "R"],
     // design: ["Information design"],
-    // medium: [],
     // role: ["Data visualization designer"],
     // brief: [],
     // summary: [],
@@ -232,7 +228,6 @@ export let itemData = [
     // tags: ["#information-design", "#interaction-design", "#d3-js", "#user-experience", "#data-visualization", "#react", "#r"],
     // tools: ["D3.js", "React", "R"],
     // design: ["Information design", "Interaction design"],
-    // medium: [],
     // role: ["Data visualization designer", "Researcher"],
     // brief: [],
     // summary: [],
@@ -270,14 +265,8 @@ export let itemData = [
     //     alt: "Serving bowl in Spodumene and Turner White"
     // }, 
     // tags: ["#ceramics", "#collection", "#fine-art"],
-    // tools: [],
-    // design: [],
     // medium: ["Clay", "Glaze"],
-    // role: [],
-    // brief: [],
     // summary: [],
-    // data: [],
-    // methodology: [],
     // artistStatement: [],
     // sketches: [],
     // prototype: [],
@@ -354,13 +343,32 @@ export let itemData = [
             ]},
             prototype: {
                 images: [
-                {
-                    url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
-                    link: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
-                    alt: "The team used figma to prototype the application",
-                    size: "big",
-                    descr: []
-                }
+                    {
+                        url: "/assets/portfolio/migration-is-natural/design-process-4.png",
+                        alt: "",
+                        size: "small"},
+                    {
+                        url: "/assets/portfolio/migration-is-natural/design-process-5.png",
+                        alt: "",
+                        size: "small"},
+                    {
+                        url: "/assets/portfolio/migration-is-natural/design-process-6.png",
+                        alt: "",
+                        size: "small"},
+                    {
+                        url: "/assets/portfolio/migration-is-natural/design-process-7.png",
+                        alt: "",
+                        size: "small"},
+                    {
+                        url: "/assets/portfolio/migration-is-natural/design-process-8.png",
+                        alt: "",
+                        size: "small"},
+                    {
+                        url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
+                        link: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
+                        alt: "The team used figma to prototype the application",
+                        size: "big"
+                    }
             ]},
             final: {
                 images: [
@@ -405,11 +413,9 @@ export let itemData = [
     // tags: ["#interaction-design", "#user-interface", "#figma", "#user-experience", "#user-interaction"],
     // tools: ["Figma"],
     // design: ["Interaction design"],
-    // medium: [],
     // role: ["Interaction designer"],
     // brief: [],
     // summary: [],
-    // data: [],
     // methodology: [],
     // artistStatement: [],
     // sketches: [],

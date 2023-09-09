@@ -51,12 +51,12 @@ export function DesignStage({title, stage, showCase}) {
       <div className={"Project-"+{title}+" SlideShow"}>
           <h4>{title}</h4>
           {
-          stage.images.filter(e => e.size === "big").length > 0? 
-          <MainImage data={stage.images.filter(e => e.size === "big")}/>: <></>
-          }
-          {
           stage.images.filter(e => e.size === "small").length > 0? 
           <Slideshow data={stage.images.filter(e => e.size === "small")}/>: <></>
+          }
+          {
+          stage.images.filter(e => e.size === "big").length > 0? 
+          <MainImage data={stage.images.filter(e => e.size === "big")}/>: <></>
           }
       </div>: <></>
   )
