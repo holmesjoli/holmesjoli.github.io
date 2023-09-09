@@ -67,21 +67,21 @@ export default function Page({d}) {
                         {
                             d.sketches.length > 0  ? 
                             <div className="Project-Sketches">
-                                <h4>sketches</h4>
+                                <h4>initial sketches</h4>
                                 <Slideshow data={d.sketches}/>
                             </div>: <></>
                         }
                         {
                             d.prototype.length > 0  ? 
                             <div className="Project-Prototype">
-                                <h4>prototype</h4>
+                                <h4>prototypes</h4>
                                 <Slideshow data={d.prototype}/>
                             </div>: <></>
                         }
                         {
                             d.final.length > 0  ? 
                             <div className="Project-Final">
-                                <h4>final</h4>
+                                <h4>final design</h4>
                                 <MainImage data={d.final.filter(e => e.size === "big")}/>
                                 <Slideshow data={d.final.filter(e => e.size === "small")}/>
                             </div>:
