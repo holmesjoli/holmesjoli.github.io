@@ -10,7 +10,8 @@ export function MainImage({data}) {
   return (
        data.map((d, index)=> (
         <div key={index}>
-          <img className="Item-Image" src={d.url} alt={d.alt} />
+          {/* <img className="Item-Image" src={d.url} alt={d.alt} /> */}
+          <iframe src={d.url} width='100%' height='400px' frameborder="0"/>
           <h5 className="Item-Caption">{d.alt}</h5>
         </div>
       )

@@ -6,11 +6,11 @@ export default function Page({d}) {
         <div className="Page">
             <div className="Project-Main">
                 <h2 className="Project-Title">{d.title}</h2>
-                <div className="Project-Summary">
+                <div className="Project-Information">
                     <div className="Project-Text ">
                         {
                             d.brief.length > 0  ? 
-                            <div className="Project-Brief Text">
+                            <div className="Project-Brief">
                                     <h3>brief</h3>
                                     {
                                         d.brief.map((datum, i) => {
@@ -18,7 +18,18 @@ export default function Page({d}) {
                                         })
                                     }
                                 </div>: <></>
-                            }                        
+                        }
+                        {
+                        d.summary.length > 0  ? 
+                        <div className="Project-Summary">
+                            <h3>summary</h3>
+                            {
+                                d.summary.map((datum, i) => {
+                                    return <p key={i}>{datum}</p>
+                                })
+                            }
+                        </div>: <></>
+                        }                       
                         {d.data.length > 0  ? 
                             <div className="Project-Data">
                             <h3>data</h3>
@@ -52,24 +63,25 @@ export default function Page({d}) {
                         }
                     </div>
                     <div className="Project-Design">
+                        <h3>design process</h3>
                         {
                             d.sketches.length > 0  ? 
                             <div className="Project-Sketches">
-                                <h3>sketches</h3>
+                                <h4>sketches</h4>
                                 <Slideshow data={d.sketches}/>
                             </div>: <></>
                         }
                         {
                             d.prototype.length > 0  ? 
                             <div className="Project-Prototype">
-                                <h3>prototype</h3>
+                                <h4>prototype</h4>
                                 <Slideshow data={d.prototype}/>
                             </div>: <></>
                         }
                         {
                             d.final.length > 0  ? 
                             <div className="Project-Final">
-                                <h3>final</h3>
+                                <h4>final</h4>
                                 <MainImage data={d.final.filter(e => e.size === "big")}/>
                                 <Slideshow data={d.final.filter(e => e.size === "small")}/>
                             </div>:

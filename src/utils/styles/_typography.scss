@@ -98,7 +98,7 @@ h2 {
     line-height: 135%;
 }
 
-h3 {
+h3, h4 {
     padding: $appPadding;
     border-radius: $appBorderRadius;
     font-variant: small-caps;
@@ -109,13 +109,13 @@ h3 {
 }
 
 h4 {
-    font-size: 1rem;
+    color: $appColorTeritiary;
+    font-size: .9rem;
 }
 
 h5 {
     font-size: .8rem;
-    color: $appBorderColor;
-    // text-align: left;
+    color: $appColorTeritiary;
 }
 
 a {
