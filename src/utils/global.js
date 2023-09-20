@@ -114,25 +114,50 @@ export let itemData = [
                         size: "small"}]}
                     }
     },
-    // {title: "Banca Intesa Processes", 
-    // page: "Banca-Intesa-Processes", 
-    // year: "2023", 
-    // mainImage: {
-    //     url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
-    //     alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
-    // tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#iiba-longlist-2023"],
-    // tools: ["D3.js", "Pixi.js", "React", "Python"],
-    // design: ["Information design", "Interaction design"],
-    // role: ["Data visualization designer", "Project manager", "Data analyst"],
-    // brief: [],
-    // summary: [],
-    // data: [],
-    // methodology: [],
-    // artistStatement: [],
-    // sketches: [],
-    // prototype: [],
-    // final: []
-    // },
+    {
+        title: "Banca Intesa Processes", 
+        page: "Banca-Intesa-Processes", 
+        year: "2023", 
+        mainImage: {
+            url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
+            alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
+        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#iiba-longlist-2023"],
+        tools: ["D3.js", "Pixi.js", "React", "Python"],
+        design: ["Information design", "Interaction design"],
+        role: ["Data visualization designer", "Project manager", "Data analyst"],
+        summary: ["Banca Intesa Processes is an exploratory business analytics application that allows the organization to explore and audit risk management data to understand and manage the complexity. The application affords users a visual understanding of how risk is distributed across organizational structures and how activities are distributed among different actors at the company. Additionally, users can identify activities and associated risks without appropriate controls and develop plans to redistribute workflows.",
+                  "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen."],
+        designProcess: {
+            final: {
+                images: [
+                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-view.png",
+                    alt: "Circle packing diagram in that shows nested level of data hierarchies",
+                    size: "small"
+                    },
+                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-zoomed-in.png",
+                    alt: "A zoomed in version of the circle packing diagram showing the zoom and tooltip capabilities of the application",
+                    size: "small"
+                    },
+                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-activities-identified.png",
+                    alt: "A zoomed in version of the circle packing diagram showing a feature that allows the user to identify specific data attributes",
+                    size: "small"
+                    },
+                    {url: "/assets/portfolio/banca-intesa-processes/network-full-screen.png",
+                    alt: "A network visualization showing organizational connections between actors, activities, risks and controls",
+                    size: "small"
+                    },
+                    {url: "/assets/portfolio/banca-intesa-processes/network-freeze-feature.png",
+                    alt: "A network visualization shows how the user can 'freeze' portions of the network and be able to use the tooltip to interact with other parts",
+                    size: "small"
+                    },
+                    {url: "/assets/portfolio/banca-intesa-processes/network-additional-features-shown.png",
+                    alt: "Additional features such as the ability to change risk type are shown in this visualization",
+                    size: "small"
+                    }
+                ]
+            }
+        }
+    },
     {
         title: "Meta", 
         year: 2015, 
