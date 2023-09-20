@@ -2,6 +2,13 @@
 @import "variables";
 @import "reset";
 
+// Components
+@import "components/navigation";
+@import "components/footer";
+@import "components/portfolio";
+@import "components/carousel";
+@import "components/page";
+
 // Base
 @import "typography";
 @import "layout";
@@ -10,9 +17,4 @@
 // Main pages
 @import "about";
 
-// Components
-@import "components/navigation";
-@import "components/footer";
-@import "components/portfolio";
-@import "components/carousel";
-@import "components/page";
+
