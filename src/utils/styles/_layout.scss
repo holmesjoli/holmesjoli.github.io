@@ -65,4 +65,22 @@
   h3 {
     font-size: 1rem;
   }
+
+  .Content {
+    grid-template-columns: [left] 5rem [main] auto;
+  }
+
+  .Project-Attributes {
+    padding: 0;
+  }
+
+  .Project-Attr {
+    padding: $appPadding/2;
+  }
+
+  .Project-Information {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
