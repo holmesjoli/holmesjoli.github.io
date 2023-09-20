@@ -13,7 +13,6 @@ export default function Navigation() {
             </div>
             <div className="Navigation_links">
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>home</h3></NavLink>
-                {/* <NavLink to="/DesignProcess" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>design process</NavLink> */}
                 <NavLink to="/Portfolio" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>portfolio</h3></NavLink>
                 <NavLink to="/About" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>about</h3></NavLink>
             </div>

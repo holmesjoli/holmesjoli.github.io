@@ -13,7 +13,6 @@ import { createTheme, ThemeProvider } from "@mui/material";
 
 // Pages
 import Home from "./pages/Home";
-import DesignProcess from "./pages/DesignProcess";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import { PortfolioPage } from './components/Page';
@@ -77,7 +76,6 @@ root.render(
       <Routes>
         {/* Navigation routes */}
         <Route path="/" element={<Home />} />
-        {/* <Route path="/DesignProcess" element={<DesignProcess />} /> */}
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/About" element={<About />} />
 

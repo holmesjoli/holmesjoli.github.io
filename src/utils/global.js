@@ -129,6 +129,8 @@ export let itemData = [
                   "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen.",
                   "This app enables the user to explore and audit risk management data at the enterprise level, through views of the Process Ecosystem and Actor Network to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads"],
         designProcess: {
+            descr: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io and dynamic visualization was design in Figma. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application.",
+                    "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."],
             research: {
                 images: [{url: "/assets/portfolio/banca-intesa-processes/visual-research1.jpg",
                          alt: "Divine Comedy: https://divinecomedy.digital/#/eng/viz",
@@ -300,14 +302,6 @@ export let itemData = [
     // tools: ["Adobe Illustrator"],
     // role: ["Data visualization designer"],
     // brief: ["Brainstorm the information about your peer's skills and preferences you would need to compose equitable teams. Collect data from the class. Format these requirements as a data schema, including variable names, data types, and validation. Working in pairs, use visualization to propose equitable committee membership. Create a visualization to argue for a set of teams that balance skills and preferences."],
-    // summary: [],
-    // data: [],
-    // methodology: [],
-    // artistStatement: [],
-    // sketches: [],
-    // prototype: [],
-    // final: []
-    // },
     // {title: "Ceramics Collection", 
     // page: "Ceramics-Collection", 
     // year: 2020, 
@@ -340,7 +334,8 @@ export let itemData = [
                     "The veins of the butterfly detail different paths a user could take to acquire migration after answering some simple questions such as, 'Are your parents citizens of the country you are interested in migrating to?', 'Were you born in the country you are interested in migrating to?', or 'Are you married?'"],
         data: ["This project combines data from two resources. The first is the global citizenship database maintained by the European University Institute. The database standardizes citizenship acquisition methods across 190 countries. The database identifies 28 ways through which migrants can obtain citizenship. It was last updated on January 1st, 2020. This data set was challenging to work with because the data are all categorical, which is often harder to visualize than numeric data."],
         designProcess: {
-            descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application."],
+            descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
+                    "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."],
             research: {
                 images: [
                 {

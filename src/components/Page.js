@@ -66,14 +66,21 @@ export function Page({d}) {
                     </div>
                     <div className="Project-Design-Process">
                         <h3>design process</h3>
+
                         {
                         d.designProcess.descr  ? 
-                        <div className={"Project-Description"}>
-                            {
-                                 d.designProcess.descr.map((datum, i) => {
-                                    return <p key={i}>{datum}</p>
-                                })
-                            }
+                        <div className="Project-Description">
+                            <div className="Main-Image">
+                                <img src={d.mainImage.url} alt={d.mainImage.alt}></img>
+                            </div>
+                            <div>
+                                {
+                                    d.designProcess.descr.map((datum, i) => {
+                                        return <p key={i}>{datum}</p>
+                                    })
+                                }
+                            </div>
+                            
                         </div>: <></>
                         }
                         <DesignStage title="design research" stage={d.designProcess.research} showCase={false}/>

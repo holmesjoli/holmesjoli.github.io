@@ -33,6 +33,11 @@
     padding: $appPadding;
 }
 
+.Project-Description {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 30%);
+}
+
 .Role, .Tool, .Design, .Medium {
     margin-left: $appMargin;
 }
