@@ -118,6 +118,7 @@ export let itemData = [
         title: "Banca Intesa Processes", 
         page: "Banca-Intesa-Processes", 
         year: "2023", 
+        links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
         mainImage: {
             url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
             alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
@@ -321,6 +322,8 @@ export let itemData = [
         title: "Migration is Natural", 
         page: "Migration-is-Natural",
         year: 2022, 
+        links: [{url: "https://joliholmes.com/team-migration/", text: "Explore the application"},
+                {url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8", text: "Explore the prototype"}],
         mainImage: {
             url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
             alt:"Migration is Natural"}, 

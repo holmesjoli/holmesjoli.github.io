@@ -25,10 +25,7 @@
     width: 50vw;
 }
 
-.Project-Role, 
-.Project-Tools,
-.Project-Design,
-.Project-Medium,
+.Project-Attr,
 .Main-Image {
     padding: $appPadding;
 }
@@ -38,6 +35,6 @@
     grid-template-columns: 1fr minmax(200px, 30%);
 }
 
-.Role, .Tool, .Design, .Medium {
+.Attr {
     margin-left: $appMargin;
 }

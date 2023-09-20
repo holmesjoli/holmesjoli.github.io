@@ -92,33 +92,41 @@ export function Page({d}) {
             </div>
             <div className="Project-Attributes">
                 {
-                d.design.length > 0 ?
-                <div className="Project-Design">
-                    <h3>design</h3>
-                    <ul>{d.design.map(datum => { return <li className="Design" key={datum}>{datum}</li>})}</ul>
-                </div>: <></>
+                    d.design.length > 0 ?
+                    <div className="Project-Attr">
+                        <h3>design</h3>
+                        <ul>{d.design.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
+                    </div>: <></>
                 }
                 {
-                d.role ? 
-                <div className="Project-Role">
-                    <h3>role</h3>
-                    <ul>{d.role.map(datum => { return <li className="Role" key={datum}>{datum}</li>})}</ul>
-                </div>
-                : <></>
+                    d.role ? 
+                    <div className="Project-Attr">
+                        <h3>role</h3>
+                        <ul>{d.role.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
+                    </div>
+                    : <></>
                 }
                 {
-                d.tools ?
-                <div className="Project-Tools">
-                    <h3>tools</h3>
-                    <ul>{d.tools.map(datum => { return <li className="Tool" key={datum}>{datum}</li>})}</ul>
-                </div>: <></>
+                    d.tools ?
+                    <div className="Project-Attr">
+                        <h3>tools</h3>
+                        <ul>{d.tools.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
+                    </div>: <></>
                 }
                 {
-                d.medium ?
-                <div className="Project-Medium">
-                    <h3>medium</h3>
-                    <ul>{d.medium.map(datum => { return <li className="Medium" key={datum}>{datum}</li>})}</ul>
-                </div>: <></>
+                    d.medium ?
+                    <div className="Project-Attr">
+                        <h3>medium</h3>
+                        <ul>{d.medium.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
+                    </div>: <></>
+                }
+                {
+                    d.links ?
+                    <div className="Project-Attr">
+                        <h3>link</h3>
+                        <ul>{d.links.map((datum, i)=> { return <li className="Attr" key={i}><a className="Attr" target="_blank" href={datum.url}>{datum.text}</a></li>})}
+                        </ul>
+                    </div>: <></>
                 }
             </div>
         </div>
