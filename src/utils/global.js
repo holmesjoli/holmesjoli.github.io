@@ -317,6 +317,7 @@ export let itemData = [
                   "Students were asked to self-assess their skills from using a scale of beginner to advanced across six dimensions: programming, data, graphic design, interaction design, storytelling, and leadership and management skills.",
                   "The final design is based off of the form known as a radar chart. However, the charts show overlap between the students across the six dimensions. The larger the form is in the radar chart, the more skilled the student pair is. The visualization is designed to show pairs where students combined competencies area the strongest team rather than students which may have overlapping compentencies."],
         designProcess: {
+            descr: ["The equitable teams project was developed over the course of two weeks. The main tools used to create the visualization were R and Adobe Illustrator. R was used to generate the initial forms, which were then edited and modified in Adobe Illustrator."],
             sketches: {
                 images: [{
                     url: "assets/portfolio/equitable-teams/design-process-1.png",
