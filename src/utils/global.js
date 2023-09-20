@@ -299,17 +299,79 @@ export let itemData = [
     // prototype: [],
     // final: []
     // },
-    // {title: "Equitable Teams", 
-    // page: "Equitable-Teams", 
-    // year: 2022, 
-    // mainImage: {
-    //     url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
-    //     alt: "Data Visualization showing the combined strengths of individuals"}, 
-    // tags: ["#information-design", "#graphic-design", "#data-visualization", "#adobe-illustrator"],
-    // design: ["Information Design", "Graphic design"],
-    // tools: ["Adobe Illustrator"],
-    // role: ["Data visualization designer"],
-    // brief: ["Brainstorm the information about your peer's skills and preferences you would need to compose equitable teams. Collect data from the class. Format these requirements as a data schema, including variable names, data types, and validation. Working in pairs, use visualization to propose equitable committee membership. Create a visualization to argue for a set of teams that balance skills and preferences."],
+    {
+        title: "Equitable Teams", 
+        page: "Equitable-Teams", 
+        year: 2022, 
+        links: [
+            {url: "assets/portfolio/equitable-teams/team_strengths.pdf", text: "Link to PDF"}
+        ],
+        mainImage: {
+            url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
+            alt: "Data Visualization showing the combined strengths of individuals"}, 
+        tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#adobe-illustrator"],
+        design: ["Information Design", "Graphic design"],
+        tools: ["Adobe Illustrator", "R"],
+        role: ["Data visualization designer"],
+        summary: ["The goal of this project was to use data visualization to assess how students could be partnered to create equitable teams.",
+                  "Students were asked to self-assess their skills from using a scale of beginner to advanced across six dimensions: programming, data, graphic design, interaction design, storytelling, and leadership and management skills.",
+                  "The final design is based off of the form known as a radar chart. However, the charts show overlap between the students across the six dimensions. The larger the form is in the radar chart, the more skilled the student pair is. The visualization is designed to show pairs where students combined competencies area the strongest team rather than students which may have overlapping compentencies."],
+        designProcess: {
+            sketches: {
+                images: [{
+                    url: "assets/portfolio/equitable-teams/design-process-1.png",
+                    alt: "Sketch showing initial design of visualization",
+                    size: "small"
+                },
+                {
+                    url: "assets/portfolio/equitable-teams/design-process-2.png",
+                    alt: "Sketch showing initial design of visualization",
+                    size: "small"
+                }
+                ]
+            },
+            prototype: {
+                images: [
+                    {
+                        url: "assets/portfolio/equitable-teams/1x/Artboard 1-100.jpg",
+                        alt: "Initial visualization created in R",
+                        size: "small"
+                    },
+                    {
+                        url: "assets/portfolio/equitable-teams/1x/Artboard 2-100.jpg",
+                        alt: "Reducing the information so it is less overwhelming to the user",
+                        size: "small"
+                    },
+                    {
+                        url: "assets/portfolio/equitable-teams/1x/Artboard 3-100.jpg",
+                        alt: "Testing how individuals could overlap to create new forms",
+                        size: "small"
+                    },
+                    {
+                        url: "assets/portfolio/equitable-teams/1x/Artboard 6-100.jpg",
+                        alt: "Testing how individuals could overlap to create new forms",
+                        size: "small"
+                    },
+                    {
+                        url: "assets/portfolio/equitable-teams/1x/Artboard 7-100.jpg",
+                        alt: "Testing how individuals could overlap to create new forms",
+                        size: "small"
+                    },
+                    {
+                        url: "assets/portfolio/equitable-teams/1x/Artboard 14-100.jpg",
+                        alt: "Testing how individuals could overlap with solid forms to show collective strengths",
+                        size: "small"
+                    }
+                ]
+            },
+            final: {
+                images: [{
+                    url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
+                    // alt: "Data Visualization showing the combined strengths of individuals",
+                    size: "big"}]
+            }
+        }
+    },
     // {title: "Ceramics Collection", 
     // page: "Ceramics-Collection", 
     // year: 2020, 
