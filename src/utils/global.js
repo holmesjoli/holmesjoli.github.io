@@ -100,7 +100,7 @@ export let itemData = [
         tags: ["#data-art", "#data-physicalization", "#ceramics", "#fiber", "#fine-art"],
         medium: ["Yarn", "Beads", "Clay"],
         artistStatement: ["In Black Data, I play with the idea of transparency and reproducibility in machine learning algorithms. The juxtaposition of the black box in contrast to the white box is intended to make viewers question what a white box algorithm would look like and what the research process would entail. Machine learning algorithms are starting to be employed more regularly, especially in public policy settings, but frequently lack transparency and accountability.",
-                            "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
+                           "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
         designProcess: {
             final: {
                 images: [{url: "/assets/portfolio/black-data/20201122_142017.jpg",
@@ -126,8 +126,34 @@ export let itemData = [
         design: ["Information design", "Interaction design"],
         role: ["Data visualization designer", "Project manager", "Data analyst"],
         summary: ["Banca Intesa Processes is an exploratory business analytics application that allows the organization to explore and audit risk management data to understand and manage the complexity. The application affords users a visual understanding of how risk is distributed across organizational structures and how activities are distributed among different actors at the company. Additionally, users can identify activities and associated risks without appropriate controls and develop plans to redistribute workflows.",
-                  "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen."],
+                  "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen.",
+                  "This app enables the user to explore and audit risk management data at the enterprise level, through views of the Process Ecosystem and Actor Network to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads"],
         designProcess: {
+            research: {
+                images: [{url: "/assets/portfolio/banca-intesa-processes/visual-research1.jpg",
+                         alt: "Divine Comedy: https://divinecomedy.digital/#/eng/viz",
+                         size: "small"},
+                         {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
+                         alt: "Show your stripes: https://showyourstripes.info/s/globe/",
+                         size: "small"},
+                         {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
+                         alt: "Luciano Baldessari: http://baldessari.densitydesign.org/persone/",
+                         size: "small"}]
+            },
+            sketches: {
+                images: [{url: "/assets/portfolio/banca-intesa-processes/sketch1.jpg",
+                          alt: "Dendrogram showing hierarchy",
+                          size: "small"},
+                          {url: "/assets/portfolio/banca-intesa-processes/sketch2.jpg",
+                          alt: "Connections between an actor, the applications the use, and the activities they are in charge of",
+                          size: "small"},
+                          {url: "/assets/portfolio/banca-intesa-processes/sketch3.jpg",
+                          alt: "Circle packing diagram showing hierarchy",
+                          size: "small"},
+                          {url: "/assets/portfolio/banca-intesa-processes/sketch4.jpg",
+                          alt: "Network showing connections between actors and activities",
+                          size: "small"}]
+            },
             final: {
                 images: [
                     {url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-view.png",
