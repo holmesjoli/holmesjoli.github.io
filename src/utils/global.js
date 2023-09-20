@@ -215,25 +215,32 @@ export let itemData = [
                 }
             }
     },
-    // {title: "Visualizing Version Control", 
-    // page: "Visual-Version-Control", 
-    // year: 2021, 
-    // mainImage: {
-    //     url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
-    //     alt:"Visualizing Version Control"}, 
-    // tags: ["#graphic-design", "#information-design", "#system-design", "#adobe-illustrator"],
-    // tools: ["Adobe Illustrator"],
-    // design: ["Information design", "Graphic design"],
-    // role: ["Information designer"],
-    // brief: [],
-    // summary: [],
-    // data: [],
-    // methodology: [],
-    // artistStatement: [],
-    // sketches: [],
-    // prototype: [],
-    // final: []
-    // },
+    {   
+        title: "Visualizing Version Control", 
+        page: "Visual-Version-Control", 
+        year: 2021, 
+        links: [{
+            url: "/assets/portfolio/visual-version-control/Visual Version Control.pdf", text: "Link to PDF"
+        }],
+        mainImage: {
+            url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
+            alt:"Visualizing Version Control"}, 
+        tags: ["#graphic-design", "#information-design", "#system-design", "#adobe-illustrator"],
+        tools: ["Adobe Illustrator"],
+        design: ["Information design", "Graphic design"],
+        role: ["Information designer"],
+        summary: ["This visualization as part of a peer skillshare. Version control for code is a handy tool, but it can be challenging to get started. This visualization aims to help new users of code version control understand the steps involved in the version control cycle."],
+        designProcess: {
+            final: {
+                images: [{
+                    url: "/assets/portfolio/visual-version-control/final_design.jpg",
+                    alt: "",
+                    size: "big"}
+
+                ]
+            }
+        }
+    },
     // {title: "Drawings Collection", 
     // page: "Drawings-Collection", 
     // year: 2014, 
