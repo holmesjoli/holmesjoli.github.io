@@ -67,7 +67,25 @@
   }
 
   .Content {
-    grid-template-columns: [left] 5rem [main] auto;
+    display: flex;
+    flex-direction: column;
+
+    .css-dmmspl-MuiFormGroup-root {
+      display: inherit;
+    }
+
+    .css-zt11pp-MuiFormControlLabel-root {
+      border: 1px solid #919295;
+      border-radius: 5px;
+      margin: 3px;
+    }
+    .css-zt11pp-MuiFormControlLabel-root .MuiFormControlLabel-label {
+      border: none;
+      margin: none;
+    }
+
+    // grid-template-rows: minmax(175px, 17%) 1fr;
+    // grid-template-columns: [left] 5rem [main] auto;
   }
 
   .Project-Attributes {
