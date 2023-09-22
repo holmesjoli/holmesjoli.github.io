@@ -6,11 +6,11 @@
 
 .Content {
     display: grid;
-    grid-template-columns: [left] $queryColWidth [main] auto;
-    grid-template-rows: [nav] $topNavHeight [body] auto;
+    grid-template-columns: minmax(175px, 17%) 1fr;
     width: 100vw;
     padding: $appPadding;
     margin-bottom: $appMargin;
+    min-height: 80vh;
 }
 
 .Query {
