@@ -5,7 +5,7 @@ export let itemData = [
         year: 2022, 
         mainImage: {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
                  alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"},
-        tags: ["#adobe-illustrator", "#acrylic", "#public-policy", "#data-art", "#data-physicalization", "#data-visualization", "#r", "#iiba-longlist-2023"],
+        tags: ["#adobe-illustrator", "#acrylic", "#public-policy", "#data-art", "#data-physicalization", "#data-visualization", "#r"],
         tools: ["Adobe Illustrator", "R", "Laser cutter"],
         design: ["Information design"],
         medium: ["Acrylic", "Radial LED Light Panel"],
@@ -122,7 +122,7 @@ export let itemData = [
         mainImage: {
             url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
             alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
-        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#iiba-longlist-2023"],
+        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python"],
         tools: ["D3.js", "Pixi.js", "React", "Python"],
         design: ["Information design", "Interaction design"],
         role: ["Data visualization designer", "Project manager", "Data analyst"],
@@ -591,6 +591,4 @@ export const toolFilters = ["#adobe-illustrator", "#d3-js", "#figma", "#python",
 
 export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
 
-export const awardFilters = ["#iiba-longlist-2023", "#iiba-longlist-2022"]
-
-export const filters = awardFilters.concat(toolFilters.concat(designFilters.concat(mediumFilters)));
+export const filters = toolFilters.concat(designFilters.concat(mediumFilters));

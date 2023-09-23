@@ -1,3 +1,8 @@
+// Libraries
+import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import ExpandMoreIcon from '@mui/material/IconButton';
+
+// Components
 import { DesignStage } from "./Carousel"
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
@@ -124,7 +129,7 @@ export function Page({d}) {
                     d.links ?
                     <div className="Project-Attr">
                         <h3>link</h3>
-                        <ul>{d.links.map((datum, i)=> { return <li className="Attr" key={i}><a className="Attr" target="_blank" href={datum.url}>{datum.text}</a></li>})}
+                        <ul>{d.links.map((datum, i)=> { return <li className="Attr" key={i}><a target="_blank" href={datum.url}>{datum.text}</a></li>})}
                         </ul>
                     </div>: <></>
                 }

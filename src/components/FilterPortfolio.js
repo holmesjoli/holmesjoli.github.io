@@ -1,6 +1,7 @@
 //Libraries
-
 import { useState } from 'react';
+import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import ExpandMoreIcon from '@mui/material/IconButton';
 
 // MUI Components
 import FormGroup from '@mui/material/FormGroup';
@@ -27,15 +28,21 @@ export default function FilterPortfolio({title, filters, updateSelectedValues, s
     }
 
     return (
-        <div className="Component-Container">
-            <h3 className="filter-title">{title}</h3>
-            <FormGroup >
+        <Accordion className="Component-Container">
+            <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                >
+               <h3 className="filter-title">{title}</h3>
+            </AccordionSummary>
+            <AccordionDetails>
+                <FormGroup >
                 {
                     filters.map(d => {
                         return <FormControlLabel key={d} control={<Checkbox onClick={() => handleChange(d)} size="small" />} label={d} />
                     })
                 }
             </FormGroup>
-        </div>
+            </AccordionDetails>
+        </Accordion>
     );
 }

@@ -8,8 +8,7 @@
     display: grid;
     grid-template-columns: minmax(175px, 17%) 1fr;
     width: 100vw;
-    padding: $appPadding;
-    margin-bottom: $appMargin;
+    // margin: $appMargin;
     min-height: 80vh;
 }
 
@@ -81,11 +80,26 @@
     }
     .css-zt11pp-MuiFormControlLabel-root .MuiFormControlLabel-label {
       border: none;
-      margin: none;
+      margin: 0;
+      padding: .4rem;
+    }
+    .css-15v22id-MuiAccordionDetails-root {
+      padding: 0;
+      margin-left: $appMargin;
     }
 
-    // grid-template-rows: minmax(175px, 17%) 1fr;
-    // grid-template-columns: [left] 5rem [main] auto;
+    .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+      margin: 10px 0;
+    }
+
+    .css-1lnbrrr-MuiAccordionDetails-root {
+      margin: 0 0 0 0;
+    }
+
+    // .MuiFormGroup-root {
+    //   padding-bottom: 1rem;
+    //   border-bottom: 1px solid #3a4047;
+    // }
   }
 
   .Project-Attributes {

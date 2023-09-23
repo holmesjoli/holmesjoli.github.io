@@ -28,7 +28,7 @@ const theme = createTheme({
   palette: {
     type: "dark",
     background: {
-      paper: "#000000"
+      paper: "#1a1d1f"
     },
     primary: {
       main: "#ea21ad"
@@ -62,7 +62,29 @@ const theme = createTheme({
          margin: ".3rem",
          padding: ".3rem"
         },
-      },
+      }
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          boxShadow: 'none'
+        }
+      }
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#1a1d1f"
+          // borderBottom: "1px solid #3a4047"
+        }
+      }
+    },
+    MuiAccordionDetails: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#1a1d1f"
+        }
+      }
     }
   }
 })

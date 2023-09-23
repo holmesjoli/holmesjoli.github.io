@@ -51,7 +51,7 @@ export default function Portfolio() {
         <div className="Main">
             <Navigation />
             <div className="Content">
-                <div>
+                <div className="Sidebar">
                     <FilterPortfolio title={"tools"} filters={toolFilters} updateSelectedValues={updateSelectedTools} selectedValues={selectedTools}/>
                     <FilterPortfolio title={"design"} filters={designFilters} updateSelectedValues={updateSelectedDesign} selectedValues={selectedDesign}/>
                 </div>
