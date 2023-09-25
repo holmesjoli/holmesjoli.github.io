@@ -74,7 +74,7 @@ const theme = createTheme({
     MuiAccordionSummary: {
       styleOverrides: {
         root: {
-          backgroundColor: "#1a1d1f"
+          backgroundColor: "#17191b"
           // borderBottom: "1px solid #3a4047"
         }
       }
@@ -82,7 +82,7 @@ const theme = createTheme({
     MuiAccordionDetails: {
       styleOverrides: {
         root: {
-          backgroundColor: "#1a1d1f"
+          backgroundColor: "#17191b"
         }
       }
     }
