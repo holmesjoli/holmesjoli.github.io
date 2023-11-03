@@ -1,7 +1,3 @@
-// Libraries
-import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
-import ExpandMoreIcon from '@mui/material/IconButton';
-
 // Components
 import { DesignStage } from "./Carousel"
 import Navigation from "../components/Navigation";
