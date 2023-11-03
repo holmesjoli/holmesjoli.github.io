@@ -147,8 +147,6 @@ export function Page({d}) {
 
 export function PortfolioPage({d}) {
 
-    console.log(d)
-
     return(
         <div className="Main">
             <Navigation />
