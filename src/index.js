@@ -96,8 +96,6 @@ const theme = createTheme({
   }
 })
 
-console.log(itemData[0].page)
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider theme={theme}>
