@@ -34,9 +34,9 @@ export function Slideshow({data, showCase = false}) {
             </div>
           </NavLink>:
             <div key={index} className="Slide">
-              <img className="Item-Image" src={d.url} alt={d.alt} />
-              <h5 className="Item-Caption">{d.alt}</h5>
-              {d.link ? <a href={d.link}>Link to application</a>: <></>}
+              // <img className="Item-Image" src={d.url} alt={d.alt} />
+              // <h5 className="Item-Caption">{d.alt}</h5>
+              // {d.link ? <a href={d.link}>Link to application</a>: <></>}
             </div>
         ))} 
       </Slide>

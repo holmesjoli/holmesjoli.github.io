@@ -1,12 +1,12 @@
 /* Slideshow */
 
-.react-slideshow-wrapper {
-    margin: $appMargin;
-    padding: $appPadding;
-}
-
 .react-slideshow-container {
     margin: auto $appMargin*8;
+}
+
+.slideContainer {
+    margin: 1rem auto;
+    min-height: 70vh;
 }
 
 .Slide {
@@ -18,7 +18,6 @@
 
 .Slide img {
     max-height: 60vh;
-    padding: $appPadding;
 }
 
 .Page .Slide img {
