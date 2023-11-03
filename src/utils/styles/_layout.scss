@@ -48,9 +48,20 @@ body {
 
 @media screen and (max-width: 768px) {
 
+  .Navigation {
+    display: flex;
+    flex-direction: row; 
+  }
+
   .Navigation_branding {
+    display: flex;
     flex-direction: column;
-    flex: none;
+    align-items: left;
+    // margin-top: 1rem;
+  }
+
+  .Navigation_links a {
+    padding: 0;
   }
 
   .react-slideshow-container {
@@ -64,10 +75,34 @@ body {
   h1 {
     padding: 0;
     font-size: 2.7rem;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .Navigation {
+    margin: 1rem;
+  }
+
+  .Navigation a {
+    flex: 0;
+    display: inline;
+    padding: 0;
+  }
+
+  .Navigation_branding {
+    align-items: normal;
+
+    h3 {
+      padding: 0;
+    }
   }
 
   h3 {
     font-size: 1rem;
+    padding: $appPadding/2;
+  }
+  p {
+    padding: $appPadding $appPadding/2;
   }
 
   .Content {
