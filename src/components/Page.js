@@ -12,7 +12,7 @@ function Sidebar({d}) {
     return(
     <div className="Project-Attributes">
         {
-            d.design.length > 0 ?
+            d.design ?
             <div className="Project-Attr">
                 <h3>design</h3>
                 <ul>{d.design.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
