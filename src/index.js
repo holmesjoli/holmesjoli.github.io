@@ -85,6 +85,13 @@ const theme = createTheme({
           backgroundColor: "#17191b"
         }
       }
+    },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          fill: "#919295"
+        }
+      }
     }
   }
 })

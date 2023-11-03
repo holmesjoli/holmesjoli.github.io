@@ -1,7 +1,7 @@
 //Libraries
 import { useState } from 'react';
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
-import ExpandMoreIcon from '@mui/material/IconButton';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 // MUI Components
 import FormGroup from '@mui/material/FormGroup';
@@ -29,8 +29,7 @@ export default function FilterPortfolio({title, filters, updateSelectedValues, s
 
     return (
         <Accordion className="Component-Container">
-            <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}
                 >
                <h3 className="filter-title">{title}</h3>
             </AccordionSummary>
