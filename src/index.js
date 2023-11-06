@@ -115,19 +115,19 @@ root.render(
 
         <Route path="/portfolio/Algorithmically-Fair" element={<PortfolioPage d={itemData.find(d => d.page === "Algorithmically-Fair")} />} />
         <Route path="/portfolio/Banca-Intesa-Processes" element={<PortfolioPage d={itemData.find(d => d.page === "Banca-Intesa-Processes")} />} />
-        <Route path="/portfolio/Banca-Intesa-Knowledge-Network" element={<PortfolioPage d={itemData.find(d => d.page === "Banca-Intesa-Knowledge-Network")} />} />
-        <Route path="/portfolio/Billy" element={<PortfolioPage d={itemData.find(d => d.page === "Billy")} />} />
+        {/* <Route path="/portfolio/Banca-Intesa-Knowledge-Network" element={<PortfolioPage d={itemData.find(d => d.page === "Banca-Intesa-Knowledge-Network")} />} /> */}
+        {/* <Route path="/portfolio/Billy" element={<PortfolioPage d={itemData.find(d => d.page === "Billy")} />} /> */}
         <Route path="/portfolio/Black-Data" element={<PortfolioPage d={itemData.find(d => d.page === "Black-Data")} />} />
-        <Route path="/portfolio/Bloom" element={<PortfolioPage d={itemData.find(d => d.page === "Bloom")} />} />
-        <Route path="/portfolio/Drawings-Collection" element={<PortfolioPage />} />
-        <Route path="/portfolio/Ceramics-Collection" element={<PortfolioPage />} />
+        {/* <Route path="/portfolio/Bloom" element={<PortfolioPage d={itemData.find(d => d.page === "Bloom")} />} /> */}
+        {/* <Route path="/portfolio/Drawings-Collection" element={<PortfolioPage />} /> */}
+        {/* <Route path="/portfolio/Ceramics-Collection" element={<PortfolioPage />} /> */}
         <Route path="/portfolio/Equitable-Teams" element={<PortfolioPage d={itemData.find(d => d.page === "Equitable-Teams")} />} />
         <Route path="/portfolio/Meta" element={<PortfolioPage d={itemData.find(d => d.page === "Meta")} />} />
         <Route path="/portfolio/Migration-Is-Natural" element={<PortfolioPage d={itemData.find(d => d.page === "Migration-is-Natural")} />} />
-        <Route path="/portfolio/Patient-Clinician-Interactions" element={<PortfolioPage d={itemData.find(d => d.page === "Patient-Clinician-Interactions")} />} />
-        <Route path="/portfolio/Public-Policy-Collection" element={<PortfolioPage d={itemData.find(d => d.page === "Public-Policy-Collection")} />} />
-        <Route path="/portfolio/Risky-Code" element={<PortfolioPage d={itemData.find(d => d.page === "Risky-Code")} />} />
-        <Route path="/portfolio/Tutor-Match" element={<PortfolioPage d={itemData.find(d => d.page === "Tutor-Match")} />} />
+        {/* <Route path="/portfolio/Patient-Clinician-Interactions" element={<PortfolioPage d={itemData.find(d => d.page === "Patient-Clinician-Interactions")} />} /> */}
+        {/* <Route path="/portfolio/Public-Policy-Collection" element={<PortfolioPage d={itemData.find(d => d.page === "Public-Policy-Collection")} />} /> */}
+        {/* <Route path="/portfolio/Risky-Code" element={<PortfolioPage d={itemData.find(d => d.page === "Risky-Code")} />} /> */}
+        {/* <Route path="/portfolio/Tutor-Match" element={<PortfolioPage d={itemData.find(d => d.page === "Tutor-Match")} />} /> */}
         <Route path="/portfolio/Visual-Ramblings" element={<PortfolioPage d={itemData.find(d => d.page === "Visual-Ramblings")} />} />
         <Route path="/portfolio/Visual-Version-Control" element={<PortfolioPage d={itemData.find(d => d.page === "Visual-Version-Control")} />} />
       </Routes>

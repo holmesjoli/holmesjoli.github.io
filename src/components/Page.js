@@ -1,5 +1,5 @@
 // Components
-import { DesignStage } from "./Carousel"
+import { DesignStage, CollectionExample } from "./Carousel"
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
@@ -110,30 +110,37 @@ export function Page({d}) {
                             </div>: <></>
                         }
                     </div>
-                    <div className="Project-Design-Process">
-                        <h3>design process</h3>
+                    {d.designProcess ? 
+                        <div className="Project-Design-Process">
+                            <h3>design process</h3>
 
-                        {
-                        d.designProcess.descr  ? 
-                        <div className="Project-Description">
-                            <div className="Main-Image">
-                                <img src={d.mainImage.url} alt={d.mainImage.alt}></img>
-                            </div>
-                            <div>
-                                {
-                                    d.designProcess.descr.map((datum, i) => {
-                                        return <p key={i}>{datum}</p>
-                                    })
-                                }
-                            </div>
-                            
-                        </div>: <></>
-                        }
-                        <DesignStage title="design research" stage={d.designProcess.research} showCase={false}/>
-                        <DesignStage title="initial sketches" stage={d.designProcess.sketches} showCase={false}/>
-                        <DesignStage title="prototype" stage={d.designProcess.prototype} showCase={false}/>
-                        <DesignStage title="final design" stage={d.designProcess.final} showCase={false}/>
-                    </div>
+                            {
+                            d.designProcess.descr  ? 
+                            <div className="Project-Description">
+                                <div className="Main-Image">
+                                    <img src={d.mainImage.url} alt={d.mainImage.alt}></img>
+                                </div>
+                                <div>
+                                    {
+                                        d.designProcess.descr.map((datum, i) => {
+                                            return <p key={i}>{datum}</p>
+                                        })
+                                    }
+                                </div>
+                                
+                            </div>: <></>
+                            }
+                            <DesignStage descr="design research" stage={d.designProcess.research} />
+                            <DesignStage descr="initial sketches" stage={d.designProcess.sketches} />
+                            <DesignStage descr="prototype" stage={d.designProcess.prototype} />
+                            <DesignStage descr="final design" stage={d.designProcess.final} />
+                        </div> : <div className="Project-Collection">
+                            {
+                                d.collection.map((datum, i) => {
+                                    return <CollectionExample collection={datum} key={i}/>
+                                })
+                            }    
+                        </div>}
                 </div>               
             </div>
             <Sidebar d={d}/>

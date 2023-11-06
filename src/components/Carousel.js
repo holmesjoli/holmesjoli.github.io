@@ -35,7 +35,7 @@ export function Slideshow({data, showCase = false}) {
           </NavLink>:
             <div key={index} className="Slide">
               <img className="Item-Image" src={d.url} alt={d.alt} />
-              <h5 className="Item-Caption">{d.alt}</h5>
+              {d.caption ? <h5 className="Item-Caption">{d.caption}</h5>: <h5 className="Item-Caption">{d.alt}</h5>}
               {d.link ? <a href={d.link}>Link to application</a>: <></>}
             </div>
         ))} 
@@ -44,12 +44,12 @@ export function Slideshow({data, showCase = false}) {
   )
 }
 
-export function DesignStage({title, stage, showCase}) {
+export function DesignStage({descr, stage}) {
 
   return(
     stage ? 
-      <div className={"Project-"+{title}+" SlideShow"}>
-          <h4>{title}</h4>
+      <div className={"Project-"+{descr}+" SlideShow"}>
+          <h4>{descr}</h4>
           {
           stage.images.filter(e => e.size === "small").length > 0? 
           <Slideshow data={stage.images.filter(e => e.size === "small")}/>: <></>
@@ -59,5 +59,15 @@ export function DesignStage({title, stage, showCase}) {
           <MainImage data={stage.images.filter(e => e.size === "big")}/>: <></>
           }
       </div>: <></>
+  )
+}
+
+export function CollectionExample({collection}) {
+
+  return(
+    <div className="SlideShow">
+       <h3>{collection.descr}</h3>
+       <Slideshow data={collection.images}/>
+    </div>
   )
 }

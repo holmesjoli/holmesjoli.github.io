@@ -401,9 +401,19 @@ export let itemData = [
         design: ["Data visualization"],
         role: ["Data visualization designer"],
         summary: ["Visual Ramblings is a collection of data visualizations designed for the Roanoke Rambler, an independent, investigative, literary magazine in Roanoke, Virginia. The visualizations focus on a variety of topics to support across politics and policy.", "In some cases, the data were provided by the editory of the Rambler, but in others the data were sourced from a variety of reputable sources. After the data were identified, the statistical software R was used to create the initial visual form and it was edited in and edited in Adobe Illustrator."],
-        designProcess: {
-            descr: [""]
-        }
+        collection: [{descr: "incarceration in roanoke city", 
+                      images: [{url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg", 
+                                alt: "Map of Roanoke, Virginia showing incarceration rates",
+                                caption: ""},
+                                {url: "/assets/portfolio/visual-ramblings/Incarceration/2a_race_incarceration_highlight@2x-100.jpg", 
+                                alt: "Map of Roanoke, Virginia showing incarceration rates",
+                                caption: ""}
+                            ]},
+                    {descr: "state senate race", images: [{url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 1.png", alt: "", caption: "Visualization version 1"},
+                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 2.png", alt: "", caption: "Visualization version 2"},
+                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 3.png", alt: "", caption: "Visualization version 3"},
+                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 4.png", alt: "", caption: "Visualization version 4"}]}
+                    ]
     },
     {
         title: "Migration is Natural", 
