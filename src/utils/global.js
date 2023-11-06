@@ -5,7 +5,7 @@ export let itemData = [
         year: 2022, 
         mainImage: {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
                  alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"},
-        tags: ["#adobe-illustrator", "#acrylic", "#public-policy", "#data-art", "#data-physicalization", "#data-visualization", "#r"],
+        tags: ["#adobe-illustrator", "#acrylic", "#public-policy",  "#r", "#data-art", "#data-physicalization", "#data-visualization"],
         tools: ["Adobe Illustrator", "R", "Laser cutter"],
         design: ["Information design"],
         medium: ["Acrylic", "Radial LED Light Panel"],
@@ -389,6 +389,23 @@ export let itemData = [
     // final: []
     // },
     {
+        title: "Visual Ramblings",
+        page: "Visual-Ramblings",
+        year: 2023, 
+        mainImage: {
+            url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
+            alt: "Incarceration by neighborhood"
+        },
+        tags: ["#data-journalism", "#r", "#mapping", "#data-visualization"],
+        tools: ["R", "Adobe Illustrator"],
+        design: ["Data visualization"],
+        role: ["Data visualization designer"],
+        summary: ["Visual Ramblings is a collection of data visualizations designed for the Roanoke Rambler, an independent, investigative, literary magazine in Roanoke, Virginia. The visualizations focus on a variety of topics to support across politics and policy.", "In some cases, the data were provided by the editory of the Rambler, but in others the data were sourced from a variety of reputable sources. After the data were identified, the statistical software R was used to create the initial visual form and it was edited in and edited in Adobe Illustrator."],
+        designProcess: {
+            descr: [""]
+        }
+    },
+    {
         title: "Migration is Natural", 
         page: "Migration-is-Natural",
         year: 2022, 
@@ -397,7 +414,7 @@ export let itemData = [
         mainImage: {
             url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
             alt:"Migration is Natural"}, 
-        tags: ["#information-design", "#interaction-design", "#r", "#graphic-design", "#adobe-illustrator", "#d3-js", "#svelte", "#figma"],
+        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#graphic-design", "#adobe-illustrator", "#d3-js", "#svelte"],
         tools: ["R", "Adobe Illustrator", "D3.js", "Svelte", "Figma"],
         design: ["Information design", "Interaction design", "Graphic design"],
         role: ["Data visualization designer", "Project manager", "Data analyst"],
@@ -582,7 +599,7 @@ export let itemData = [
     // }
 ];
 
-export const designFilters = ["#data-art", "#data-physicalization", "#data-visualization", "#information-design",
+export const designFilters = ["#data-art", "#data-journalism", "#data-physicalization", "#data-visualization", "#information-design",
 "#interaction-design", "#graphic-design", "#system-design", "#service-design", "#user-experience", "#user-interaction" ];
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
