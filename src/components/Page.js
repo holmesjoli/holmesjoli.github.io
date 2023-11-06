@@ -7,18 +7,33 @@ function Sidebar({d}) {
 
     return(
     <div className="Project-Attributes">
+         {
+            d.client ?
+            <div className="Project-Attr">
+                <h3>client</h3>
+                <ul><li className="Attr" key={d.client.name}><a target="_blank" href={d.client.link}>{d.client.name}</a></li></ul>
+            </div>: <></>
+        }
+        {
+            d.links ?
+            <div className="Project-Attr">
+                <h3>project link</h3>
+                <ul>{d.links.map((datum, i) => { return <li className="Attr" key={i}><a target="_blank" href={datum.url}>{datum.text}</a></li>})}
+                </ul>
+            </div>: <></>
+        }
         {
             d.design ?
             <div className="Project-Attr">
                 <h3>design</h3>
-                <ul>{d.design.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
+                <ul>{d.design.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
             </div>: <></>
         }
         {
             d.role ? 
             <div className="Project-Attr">
                 <h3>role</h3>
-                <ul>{d.role.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
+                <ul>{d.role.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
             </div>
             : <></>
         }
@@ -26,22 +41,14 @@ function Sidebar({d}) {
             d.tools ?
             <div className="Project-Attr">
                 <h3>tools</h3>
-                <ul>{d.tools.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
+                <ul>{d.tools.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
             </div>: <></>
         }
         {
             d.medium ?
             <div className="Project-Attr">
                 <h3>medium</h3>
-                <ul>{d.medium.map(datum => { return <li className="Attr" key={datum}>{datum}</li>})}</ul>
-            </div>: <></>
-        }
-        {
-            d.links ?
-            <div className="Project-Attr">
-                <h3>link</h3>
-                <ul>{d.links.map((datum, i)=> { return <li className="Attr" key={i}><a target="_blank" href={datum.url}>{datum.text}</a></li>})}
-                </ul>
+                <ul>{d.medium.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
             </div>: <></>
         }
     </div>

@@ -53,8 +53,9 @@ export let itemData = [
                 }
             }
     },
-    // {title: "Banca Intesa Knowledge Network", 
-    // page: "Banca Intesa Knowledge Network", 
+    // {title: "Intesa SanPaolo Knowledge Network", 
+    // page: "Intesa SanPaolo Knowledge Network", 
+    // client: {name: "Banca Intesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
     // year: 2022, 
     // mainImage: {url: "/assets/portfolio/banca-intesa-knowledge-network/analyze-by-area-domain-gender.png", 
     //             alt: "Image of network analysis across a knowledge network by area, domain, and gender"},
@@ -115,8 +116,9 @@ export let itemData = [
                     }
     },
     {
-        title: "Banca Intesa Processes", 
-        page: "Banca-Intesa-Processes", 
+        title: "Intesa SanPaolo Processes", 
+        page: "Intesa-SanPaolo-Processes", 
+        client: {name: "Banca Intesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
         year: "2023", 
         links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
         mainImage: {
@@ -391,6 +393,7 @@ export let itemData = [
     {
         title: "Visual Ramblings",
         page: "Visual-Ramblings",
+        client: {name: "Roanoke Rambler", link: "https://www.roanokerambler.com/"},
         year: 2023, 
         mainImage: {
             url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
