@@ -1,3 +1,7 @@
+:root {
+  color-scheme: dark;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -80,7 +84,7 @@ body {
   }
 
   .Navigation {
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
   }
 
   .Navigation a {
