@@ -1,58 +1,103 @@
+// Libraries
+import React, {useState, setState} from "react"
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import Button from '@mui/material/Button';
+
 // Components
 import { DesignStage, CollectionExample } from "./Carousel"
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
+//
+import Box from '@mui/material/Box';
+
+function SidebarAttr({element, title}) {
+    return(
+        element ?
+        <div className="Project-Attr">
+            <h3>{title}</h3>
+            <ul>{element.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
+        </div>: <></>
+    )
+}
+
 function Sidebar({d}) {
 
-    return(
-    <div className="Project-Attributes">
-         {
-            d.client ?
-            <div className="Project-Attr">
-                <h3>client</h3>
-                <ul><li className="Attr" key={d.client.name}><a target="_blank" href={d.client.link}>{d.client.name}</a></li></ul>
-            </div>: <></>
+    const [state, setState] = React.useState({
+        right: false
+    });
+
+    const anchor = 'right';
+
+    const toggleDrawer = (anchor, open) =>
+        (event) => {
+        if (
+            event &&
+            event.type === 'keydown' &&
+            ((event).key === 'Tab' ||
+            (event).key === 'Shift')
+        ) {
+            return;
         }
-        {
-            d.links ?
-            <div className="Project-Attr">
-                <h3>project link</h3>
-                <ul>{d.links.map((datum, i) => { return <li className="Attr" key={i}><a target="_blank" href={datum.url}>{datum.text}</a></li>})}
-                </ul>
-            </div>: <></>
-        }
-        {
-            d.design ?
-            <div className="Project-Attr">
-                <h3>design</h3>
-                <ul>{d.design.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
-            </div>: <></>
-        }
-        {
-            d.role ? 
-            <div className="Project-Attr">
-                <h3>role</h3>
-                <ul>{d.role.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
+
+        setState({ ...state, [anchor]: open });
+    };
+
+    //-----------
+    const list = (anchor) => (
+        <Box
+          sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+          role="presentation"
+          onClick={toggleDrawer(anchor, false)}
+        //   onKeyDown={toggleDrawer(anchor, false)}
+        >
+            <div className="Project-Attributes">
+                {
+                    d.client ?
+                    <div className="Project-Attr">
+                        <h3>client</h3>
+                        <ul><li className="Attr" key={d.client.name}><a target="_blank" href={d.client.link}>{d.client.name}</a></li></ul>
+                    </div>: <></>
+                }
+                {
+                    d.links ?
+                    <div className="Project-Attr">
+                        <h3>project link</h3>
+                        <ul>{d.links.map((datum, i) => { return <li className="Attr" key={i}><a target="_blank" href={datum.url}>{datum.text}</a></li>})}
+                        </ul>
+                    </div>: <></>
+                }
+                {
+                    <SidebarAttr element={d.design} title="design" />
+                }
+                {
+                    <SidebarAttr element={d.role} title="role" />
+                }
+                {
+                    <SidebarAttr element={d.tools} title="tools" />
+                }
+                {
+                    <SidebarAttr element={d.medium} title="medium" />
+                }
             </div>
-            : <></>
-        }
-        {
-            d.tools ?
-            <div className="Project-Attr">
-                <h3>tools</h3>
-                <ul>{d.tools.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
-            </div>: <></>
-        }
-        {
-            d.medium ?
-            <div className="Project-Attr">
-                <h3>medium</h3>
-                <ul>{d.medium.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
-            </div>: <></>
-        }
-    </div>
-    )
+        </Box>
+      );
+    
+      return (
+        <div>
+            <React.Fragment key={anchor}>
+              <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+              <SwipeableDrawer
+                anchor={anchor}
+                open={state[anchor]}
+                onClose={toggleDrawer(anchor, false)}
+                onOpen={toggleDrawer(anchor, true)}
+              >
+                {list(anchor)}
+              </SwipeableDrawer>
+            </React.Fragment>
+        </div>
+      );
 }
 
 export function Page({d}) {
