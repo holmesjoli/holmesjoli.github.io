@@ -22,6 +22,10 @@
     color: $appColorFocus;
     font-size: 1.25rem;
   }
+
+  h3 {
+    padding: $appPadding $appPadding/2 0  $appPadding/2;
+  }
 }
 
 // Links
