@@ -114,6 +114,14 @@ body {
     padding: $appPadding $appPadding/2;
   }
 
+  img {
+    max-width: 80%;
+  }
+
+  h2 {
+    margin: $appPadding $appPadding $appPadding/2 $appPadding/2;
+  }
+
   .Content {
     display: flex;
     flex-direction: column;
