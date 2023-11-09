@@ -14,6 +14,7 @@ import { createTheme, ThemeProvider } from "@mui/material";
 // Pages
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
+import Research from "./pages/Research";
 import About from "./pages/About";
 import { PortfolioPage } from './components/Page';
 
@@ -104,6 +105,7 @@ root.render(
         {/* Navigation routes */}
         <Route path="/" element={<Home />} />
         <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/Research" element={<Research />} />
         <Route path="/About" element={<About />} />
 
         {/* Portfolio routes */}

@@ -1,0 +1,28 @@
+.Item-Container {
+    padding: $appPadding;
+    text-align: center;
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 490px));
+}
+
+.Research-Item h3,
+.Research-Item h4,
+.Research-Item p {
+    text-align: left;
+}
+
+.Research-Item {
+    margin: $appMargin;
+    padding: $appPadding;
+    max-height: 65vh;
+}
+
+.Research-Item img {
+    max-height: 45vh;
+    padding: $appPadding;
+}
+
+.Research-Item a:hover h3 {
+    color: $appColorFocus;
+}
