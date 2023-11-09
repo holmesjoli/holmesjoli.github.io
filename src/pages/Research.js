@@ -18,6 +18,9 @@ const data = [ { title: "patient decision-making in the context of a healthcare 
                 },
                 {title: "identification of best practices for county-level data reporting on covid-19 dashboards",
                  subtitle: "texas public health association (tpha) 2021",
+                 href: "/assets/design-research/presentation.html",
+                 src: "/assets/design-research/tpha_bar.png",
+                 p: "The lack of a centralized public health response at the advent of the COVID-19 pandemic led many states and counties to develop different metrics to convey the current state of COVID-19 disease prevelance and control. This research summarized epidemological metric dashboard development best practices.",
                  year: 2021
                 },
                 {title: "polygraphs",

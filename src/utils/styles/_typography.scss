@@ -101,8 +101,9 @@ h2 {
 h3, h4 {
     padding: $appPadding;
     border-radius: $appBorderRadius;
-    font-variant: small-caps;
-    font-size: 1.2rem;
+    // font-variant: small-caps;
+    text-transform: uppercase;
+    font-size: .9rem;
     letter-spacing: 0.04em;
     color: $appColorSecondary;
     padding-bottom: $appPadding/2;
@@ -114,7 +115,7 @@ h3 {
 
 h4 {
     color: $appColorTeritiary;
-    font-size: 1.1rem;
+    font-size: .8rem;
 }
 
 h5 {
