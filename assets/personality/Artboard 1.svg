@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ea21ad;
+        font-family: Gloridot-Regular, Gloridot;
+        font-size: 27px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.16em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(.79 22.98) scale(1.03 1)"><tspan x="0" y="0">J</tspan><tspan class="cls-2" x="9.45" y="0"> </tspan><tspan x="10.42" y="0">H</tspan></text>
+</svg>
