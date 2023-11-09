@@ -58,7 +58,7 @@ export default function Research() {
     return(
         <div className="Main">
             <Navigation />
-            <div className="Item-Container">
+            <div className="Research-Item-Container">
                 {
                     data.sort((a, b) => b.year - a.year).map((d, i) => {
                         return <ResearchItem d={d} key={i}/>
