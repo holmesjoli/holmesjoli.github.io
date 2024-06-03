@@ -5,13 +5,52 @@ export let itemData = [
      year: 2024,
      mainImage: {url: "/assets/portfolio/voting-access-monitor/Homescreen.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-    summary: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months."],
+    summary: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
+              "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
+              "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
      tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
      design: ["Information design", "Interaction design", "UI/UX Design", "Data Visualization"],
      designProcess: {
-        descr: ["As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
-                "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."]
+        descr: [],
+        research: {
+            images: [
+                {
+                    url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
+                    alt: "Moodboard of different images used in the intial research phase",
+                    size: "small"
+                },
+                {
+                    url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
+                    alt: "Synthesis of stakeholder research",
+                    size: "small"
+                },
+                {
+                    url: "/assets/portfolio/voting-access-monitor/DesignResearch2.png",
+                    alt: "Outcome of a card sorting activity",
+                    size: "small"
+                }
+            ]
+        },
+        sketches: {
+            images: [
+                {
+                    url: "/assets/portfolio/voting-access-monitor/Sketch1.png",
+                    alt: "Sketch of isolating and ranking different geographies",
+                    size: "small"
+                },
+                {
+                    url: "/assets/portfolio/voting-access-monitor/Sketch2.png",
+                    alt: "Sketch of ranking a set of geographies across a variety of variables",
+                    size: "small"
+                },
+                {
+                    url: "/assets/portfolio/migration-is-natural/design-process-3.png",
+                    alt: "Initial sketch adding more detail to potential data paths",
+                    size: "small"
+                }
+            ]
+        },
      },
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
     },
