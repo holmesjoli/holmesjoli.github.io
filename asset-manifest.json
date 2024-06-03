@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8c77505.css",
-    "main.js": "/static/js/main.00113939.js",
+    "main.css": "/static/css/main.005cc387.css",
+    "main.js": "/static/js/main.a4e93668.js",
     "static/media/Hind-Regular.ttf": "/static/media/Hind-Regular.4d32dabf118c5c7e3f48.ttf",
     "static/media/Hind-Light.ttf": "/static/media/Hind-Light.24b3cba72f468690ce13.ttf",
     "static/media/Hind-Bold.ttf": "/static/media/Hind-Bold.ba5def1986599e839e18.ttf",
@@ -10,11 +10,11 @@
     "static/media/Amasis MT Regular.ttf": "/static/media/Amasis MT Regular.1b3b8cec957f4a7bfe79.ttf",
     "static/media/Amasis MT Std Black.otf": "/static/media/Amasis MT Std Black.81623eb0bfd1e0ccbb93.otf",
     "index.html": "/index.html",
-    "main.a8c77505.css.map": "/static/css/main.a8c77505.css.map",
-    "main.00113939.js.map": "/static/js/main.00113939.js.map"
+    "main.005cc387.css.map": "/static/css/main.005cc387.css.map",
+    "main.a4e93668.js.map": "/static/js/main.a4e93668.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8c77505.css",
-    "static/js/main.00113939.js"
+    "static/css/main.005cc387.css",
+    "static/js/main.a4e93668.js"
   ]
 }
