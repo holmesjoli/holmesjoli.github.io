@@ -3,7 +3,7 @@ export let itemData = [
      page: "Voting-Access-Monitor",
      client: {name: "Center for New Data", link: "https://www.newdata.org/"},
      year: 2024,
-     mainImage: {url: "/assets/portfolio/voting-access-monitor/Homescreen.png",
+     mainImage: {url: "/assets/portfolio/voting-access-monitor/Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
     summary: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
               "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
@@ -43,14 +43,40 @@ export let itemData = [
                     url: "/assets/portfolio/voting-access-monitor/Sketch2.png",
                     alt: "Sketch of ranking a set of geographies across a variety of variables",
                     size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/design-process-3.png",
-                    alt: "Initial sketch adding more detail to potential data paths",
-                    size: "small"
                 }
             ]
         },
+        prototype: {
+            images: [
+                {
+                    url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
+                    alt: "The image shows the proposed changes to a user interaction after receiving feedback from users about how to reset the view. I researched and put together a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed.",
+                    size: "small"
+                },
+                {
+                    url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
+                    alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs non-selected and enabled and disabled start to create a component system.",
+                    size: "small"
+                },
+                {
+                    url: "/assets/portfolio/voting-access-monitor/VisualSystem2.png",
+                    alt: "The image to shows the iterative process of designing a slider component.",
+                    size: "small"
+                }
+            ],
+        },
+        final: {
+            images: [
+                {url: "/assets/portfolio/voting-access-monitor/Development.png",
+                alt: "An image of the fully interactive data visualization zoomed into South Carolina",
+                size: "small"
+                },
+                {url: "/assets/portfolio/voting-access-monitor/Development2.png",
+                alt: "An image of specific county in South Carolina where the use can see where in the individual polling locations have been added or removed",
+                size: "small"
+                }
+            ]
+        }
      },
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
     },
