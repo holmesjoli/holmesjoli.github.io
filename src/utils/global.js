@@ -2,6 +2,7 @@ export let itemData = [
     {title: "Voting Access Monitor",
      page: "Voting-Access-Monitor",
      client: {name: "Center for New Data", link: "https://www.newdata.org/"},
+     links: [{url: "https://www.figma.com/proto/ZRGxAHYOsZAK0eu4va8yuF/VAM-Design?node-id=1511-52218&t=rhc8ILCeHvvALer8-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1511%3A52218", text: "Explore the prototype"}],
      year: 2024,
      mainImage: {url: "/assets/portfolio/voting-access-monitor/Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
