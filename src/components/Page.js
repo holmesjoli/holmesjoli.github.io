@@ -11,14 +11,14 @@ function Sidebar({d}) {
             d.client ?
             <div className="Project-Attr">
                 <h3>client</h3>
-                <ul><li className="Attr" key={d.client.name}><a target="_blank" href={d.client.link}>{d.client.name}</a></li></ul>
+                <ul><li className="Attr" key={d.client.name}><a target="_blank"  rel="noreferrer" href={d.client.link}>{d.client.name}</a></li></ul>
             </div>: <></>
         }
         {
             d.links ?
             <div className="Project-Attr">
                 <h3>project link</h3>
-                <ul>{d.links.map((datum, i) => { return <li className="Attr" key={i}><a target="_blank" href={datum.url}>{datum.text}</a></li>})}
+                <ul>{d.links.map((datum, i) => { return <li className="Attr" key={i}><a target="_blank"  rel="noreferrer" href={datum.url}>{datum.text}</a></li>})}
                 </ul>
             </div>: <></>
         }

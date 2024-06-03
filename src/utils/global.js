@@ -1,4 +1,12 @@
 export let itemData = [
+    {title: "Voting Access Monitor",
+     page: "Voting-Access-Monitor",
+     year: 2024,
+     mainImage: {url: "/assets/portfolio/voting-access-monitor/Homescreen.png",
+                 alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
+     tags: ["#figma", "#react", "#leaflet", "#d3", "#data-visualization", "#ui", "#ux"],
+     tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
+    },
     {
         title: "Algorithmically Fair?", 
         page: "Algorithmically-Fair", 

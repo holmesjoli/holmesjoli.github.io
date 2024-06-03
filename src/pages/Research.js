@@ -48,7 +48,7 @@ const data = [ { title: "patient decision-making in the context of a healthcare 
 function ResearchItem({d}) {
     return(
         <div className="Research-Item">
-            {d.href ? <a href={d.href} target="_blank"><h3 className="Item-Title">{d.title}</h3></a> : <h3 className="Item-Title">{d.title}</h3>}
+            {d.href ? <a href={d.href} target="_blank" rel="noreferrer"><h3 className="Item-Title">{d.title}</h3></a> : <h3 className="Item-Title">{d.title}</h3>}
             {d.subtitle? <h4 className="Item-Year">{d.subtitle}</h4> : <></>}
             {d.p? <p>{d.p}</p>: <></>}
             {d.src? <img className="Item-Image" src={d.src} alt={d.alt} />: <></>}
