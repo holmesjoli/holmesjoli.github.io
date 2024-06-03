@@ -28,7 +28,7 @@
 
 .Project-Attr,
 .Main-Image {
-    padding: $appPadding;
+    padding: $appPadding $appPadding 0 $appPadding;
 }
 
 .Project-Description {
