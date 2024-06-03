@@ -1,16 +1,20 @@
 export let itemData = [
-    // {title: "Voting Access Monitor",
-    //  page: "Voting-Access-Monitor",
-    //  client: {name: "Center for New Data", link: "https://www.newdata.org/"},
-    //  year: 2024,
-    //  mainImage: {url: "/assets/portfolio/voting-access-monitor/Homescreen.png",
-    //              alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-    //  tags: ["#figma", "#react", "#leaflet", "#d3", "#data-visualization", "#ui", "#ux"],
-    //  tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
-    //  designProcess: {
-    //     descr: ["The Voting Access Monitor is a data visualization project that tracks changes in polling locations in the key states over the last decade. The project was developed over the course of three months with a team of five members. The project was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io and dynamic visualization was design in Figma. Finally, D3.js and Leaflet.js were used to create interactive visualizations for the application."]
-    //  }
-    // },
+    {title: "Voting Access Monitor",
+     page: "Voting-Access-Monitor",
+     client: {name: "Center for New Data", link: "https://www.newdata.org/"},
+     year: 2024,
+     mainImage: {url: "/assets/portfolio/voting-access-monitor/Homescreen.png",
+                 alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
+    summary: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months."],
+     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r"],
+     tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
+     design: ["Information design", "Interaction design", "UI/UX Design", "Data Visualization"],
+     designProcess: {
+        descr: ["As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
+                "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."]
+     },
+     role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
+    },
     {
         title: "Algorithmically Fair?", 
         page: "Algorithmically-Fair", 
@@ -131,7 +135,7 @@ export let itemData = [
         title: "Intesa SanPaolo Processes", 
         page: "Intesa-SanPaolo-Processes", 
         client: {name: "Banca Intesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
-        year: "2023", 
+        year: "2024", 
         links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
         mainImage: {
             url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
@@ -139,10 +143,10 @@ export let itemData = [
         tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python"],
         tools: ["D3.js", "Pixi.js", "React", "Python"],
         design: ["Information design", "Interaction design"],
-        role: ["Data visualization designer", "Project manager", "Data analyst"],
+        role: ["Data visualization designer", "Data visualization developer", "Project manager", "Data engineer"],
         summary: ["Banca Intesa Processes is an exploratory business analytics application that allows the organization to explore and audit risk management data to understand and manage data complexity. The application affords users a visual understanding of how risk is distributed across organizational structures and how activities are distributed among different actors at the company. Additionally, users can identify activities and associated risks without appropriate controls and develop plans to redistribute workflows.",
                   "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen.",
-                  "This app enables the user to explore and audit risk management data at the enterprise level, through views of the Process Ecosystem and Actor Network to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads"],
+                  "This app enables the user to explore and audit risk management data at the enterprise level, through different views to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads."],
         designProcess: {
             descr: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io and dynamic visualization was design in Figma. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application.",
                     "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."],
@@ -629,7 +633,7 @@ export const designFilters = ["#data-art", "#data-journalism", "#data-physicaliz
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
-export const toolFilters = ["#adobe-illustrator", "#d3-js", "#figma", "#python", "#r", "#react"];
+export const toolFilters = ["#adobe-illustrator", "#d3-js", "#leaflet-js", "#figma", "#pixi-js", "#python", "#r", "#react"];
 
 export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
 

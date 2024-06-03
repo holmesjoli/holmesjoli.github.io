@@ -4,6 +4,10 @@
     overflow-y: scroll;
 }
 
+.Page .slideContainer {
+    min-height: calc(50vh - 2.5rem);
+}
+
 .Project-Main {
     padding: $appPadding;
     margin: $appMargin;

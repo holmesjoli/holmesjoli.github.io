@@ -32,7 +32,7 @@ function Sidebar({d}) {
         {
             d.role ? 
             <div className="Project-Attr">
-                <h3>role</h3>
+                <h3>roles</h3>
                 <ul>{d.role.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
             </div>
             : <></>
