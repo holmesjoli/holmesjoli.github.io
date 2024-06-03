@@ -6,9 +6,9 @@ import * as d3 from 'd3';
 let data = [
     {tool: "R", year: 0, years: 7},
     {tool: "Python", year: 0, years: 3},
-    {tool: "HTML", year: 0, years: 3},
-    {tool: "CSS", year: 0, years: 2},
-    {tool: "JS", year: 0, years: 2},
+    {tool: "HTML", year: 0, years: 4},
+    {tool: "CSS", year: 0, years: 3},
+    {tool: "JS", year: 0, years: 3},
     {tool: "Git", year: 0, years: 5},
     {tool: "Illustrator", year: 0, years: 2},
     {tool: "XD", year: 0, years: 1}
