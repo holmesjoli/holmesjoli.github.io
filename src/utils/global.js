@@ -1,11 +1,15 @@
 export let itemData = [
     {title: "Voting Access Monitor",
      page: "Voting-Access-Monitor",
+     client: {name: "Center for New Data", link: "https://www.newdata.org/"},
      year: 2024,
      mainImage: {url: "/assets/portfolio/voting-access-monitor/Homescreen.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
      tags: ["#figma", "#react", "#leaflet", "#d3", "#data-visualization", "#ui", "#ux"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
+     designProcess: {
+        descr: ["The Voting Access Monitor is a data visualization project that tracks changes in polling locations in the key states over the last decade. The project was developed over the course of three months with a team of five members. The project was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io and dynamic visualization was design in Figma. Finally, D3.js and Leaflet.js were used to create interactive visualizations for the application."]
+     }
     },
     {
         title: "Algorithmically Fair?", 
