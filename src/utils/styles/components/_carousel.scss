@@ -6,6 +6,7 @@
 
 .slideContainer {
     margin: 1rem auto;
+    min-height: calc(75vh - $footerHeight);
     // min-height: 70vh;
 }
 
