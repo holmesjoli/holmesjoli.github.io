@@ -11,7 +11,7 @@ export let itemData = [
               "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
      tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
-     design: ["Information design", "Interaction design", "UI/UX Design", "Data Visualization"],
+     design: ["Data Visualization", "Interaction design", "UI/UX Design" ],
      designProcess: {
         descr: [],
         research: {
@@ -481,7 +481,7 @@ export let itemData = [
             url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
             alt: "Incarceration by neighborhood"
         },
-        tags: ["#data-journalism", "#r", "#mapping", "#data-visualization"],
+        tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#adobe-illustrator"],
         tools: ["R", "Adobe Illustrator"],
         design: ["Data visualization"],
         role: ["Data visualization designer"],
