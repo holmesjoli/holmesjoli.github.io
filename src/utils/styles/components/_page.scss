@@ -1,6 +1,7 @@
 .Page {
     display: grid;
-    grid-template-columns: 1fr minmax(175px, 17%); 
+    grid-template-columns: 1fr minmax(175px, 17%);
+    overflow-y: scroll;
 }
 
 .Project-Main {
