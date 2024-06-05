@@ -6,7 +6,7 @@ export let itemData = [
      year: 2024,
      mainImage: {url: "/assets/portfolio/voting-access-monitor/Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-    summary: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
+     summary: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
               "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
               "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
      tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r"],
@@ -81,13 +81,37 @@ export let itemData = [
      },
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
     },
+    {title: "Vault Breakers",
+     page: "Vault-Breakers",
+     client: {name: "Valentino Mori", link: "https://www.valentinomori.com/"},
+     year: 2024,
+     role: ["Information designer"],
+     design: ["Information design", "Graphic design", "Game design"],
+     tools: ["Illustrator", "Indesign"],
+     tags: ["#illutrator", "#indesign", "#information-design", "#graphic-design", "#game-design"],
+     mainImage: {
+        url: "/assets/portfolio/vault-breakers/Assets_Backstab card.png",
+        alt: "Incarceration by neighborhood"
+    },
+    summary: ["As I consultant on Vault Breakers, I worked with the game designer to create a series of cards that would be used in the game. The game is a cooperative card game where players work together to break into a vault and steal the treasure inside. The game is designed to be played by 2-4 players and takes about 30 minutes to play."],
+    designProcess: {
+        final: {
+            images: [
+                {url: "/assets/portfolio/voting-access-monitor/Development.png",
+                 alt: "An image of the fully interactive data visualization zoomed into South Carolina",
+                 size: "small"
+                }
+            ]
+        }
+    }
+    },
     {
         title: "Algorithmically Fair?", 
         page: "Algorithmically-Fair", 
         year: 2022, 
         mainImage: {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
                  alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"},
-        tags: ["#adobe-illustrator", "#acrylic", "#public-policy",  "#r", "#data-art", "#data-physicalization", "#data-visualization"],
+        tags: ["#illustrator", "#acrylic", "#public-policy",  "#r", "#data-art", "#data-physicalization", "#data-visualization"],
         tools: ["Adobe Illustrator", "R", "Laser cutter"],
         design: ["Information design"],
         medium: ["Acrylic", "Radial LED Light Panel"],
@@ -309,7 +333,7 @@ export let itemData = [
         mainImage: {
             url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
             alt:"Visualizing Version Control"}, 
-        tags: ["#graphic-design", "#information-design", "#system-design", "#adobe-illustrator"],
+        tags: ["#graphic-design", "#information-design", "#system-design", "#illustrator"],
         tools: ["Adobe Illustrator"],
         design: ["Information design", "Graphic design"],
         role: ["Information designer"],
@@ -351,7 +375,7 @@ export let itemData = [
     // mainImage: {
     //     url: "/assets/portfolio/bloom/bloom-zoomed.png", 
     //     alt: "GIF showing the sequences of cherry blosssom blooms over time"}, 
-    // tags: ["#d3-js", "#adobe-illustrator", "#graphic-design", "#r"],
+    // tags: ["#d3-js", "#illustrator", "#graphic-design", "#r"],
     // tools: ["D3.js", "R"],
     // design: ["Information design"],
     // role: ["Data visualization designer"],
@@ -393,7 +417,7 @@ export let itemData = [
         mainImage: {
             url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
             alt: "Data Visualization showing the combined strengths of individuals"}, 
-        tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#adobe-illustrator"],
+        tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#illustrator"],
         design: ["Information Design", "Graphic design"],
         tools: ["Adobe Illustrator", "R"],
         role: ["Data visualization designer"],
@@ -481,7 +505,7 @@ export let itemData = [
             url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
             alt: "Incarceration by neighborhood"
         },
-        tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#adobe-illustrator"],
+        tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#illustrator"],
         tools: ["R", "Adobe Illustrator"],
         design: ["Data visualization"],
         role: ["Data visualization designer"],
@@ -509,7 +533,7 @@ export let itemData = [
         mainImage: {
             url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
             alt:"Migration is Natural"}, 
-        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#graphic-design", "#adobe-illustrator", "#d3-js", "#svelte"],
+        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#graphic-design", "#illustrator", "#d3-js", "#svelte"],
         tools: ["R", "Adobe Illustrator", "D3.js", "Svelte", "Figma"],
         design: ["Information design", "Interaction design", "Graphic design"],
         role: ["Data visualization designer", "Project manager", "Data analyst"],
@@ -659,7 +683,7 @@ export let itemData = [
     // mainImage: {
     // url: "/assets/portfolio/healthcare-patient-clinician-interaction/system-zoomed.jpg", 
     // alt:"Image healthcare system clincian-patient hypothesized interactions"}, 
-    // tags: ["#service-design", "#system-design", "#graphic-design", "#adobe-illustrator"],
+    // tags: ["#service-design", "#system-design", "#graphic-design", "#illustrator"],
     // tools: ["Adobe Illustrator"],
     // design: ["Service design", "System design", "Graphic design",],
     // medium: [],
@@ -678,7 +702,7 @@ export let itemData = [
     //     year: 2022, 
     //     mainImage: {
     //     url: "/assets/portfolio/flee/", alt: ""},
-    //     tags: ['#data-journalism', '#react', '#r', '#figma', '#adobe-illustrator', '#d3-js'],
+    //     tags: ['#data-journalism', '#react', '#r', '#figma', '#illustrator', '#d3-js'],
     //     tools: ["R", "Adobe Illustrator", "D3.js"],
     //     design: [],
     //     medium: [],
@@ -699,7 +723,7 @@ export const designFilters = ["#data-art", "#data-journalism", "#data-physicaliz
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
-export const toolFilters = ["#adobe-illustrator", "#d3-js", "#leaflet-js", "#figma", "#pixi-js", "#python", "#r", "#react"];
+export const toolFilters = ["#d3-js", "#figma", "#illustrator", "#indesign", "#leaflet-js", "#pixi-js", "#python", "#r", "#react"];
 
 export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
 
