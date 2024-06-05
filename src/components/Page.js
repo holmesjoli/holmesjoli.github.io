@@ -2,13 +2,14 @@
 import { DesignStage, CollectionExample } from "./Carousel"
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import SideBarLeft from "./SideBarLeft";
 
 function ProjectAttributes({d, title}) {
 
     return(
         <div className="Project-Attr">
             <h3>{title}</h3>
-            <ul>{d.role.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
+            <ul>{d.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
         </div>
     )
 }
