@@ -3,6 +3,16 @@ import { DesignStage, CollectionExample } from "./Carousel"
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
+function ProjectAttributes({d, title}) {
+
+    return(
+        <div className="Project-Attr">
+            <h3>{title}</h3>
+            <ul>{d.role.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
+        </div>
+    )
+}
+
 function Sidebar({d}) {
 
     return(
@@ -23,33 +33,20 @@ function Sidebar({d}) {
             </div>: <></>
         }
         {
-            d.design ?
-            <div className="Project-Attr">
-                <h3>design</h3>
-                <ul>{d.design.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
-            </div>: <></>
-        }
-        {
-            d.role ? 
-            <div className="Project-Attr">
-                <h3>roles</h3>
-                <ul>{d.role.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
-            </div>
+            d.design ? <ProjectAttributes d={d.design} title="design" />
             : <></>
         }
         {
-            d.tools ?
-            <div className="Project-Attr">
-                <h3>tools</h3>
-                <ul>{d.tools.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
-            </div>: <></>
+            d.role ? <ProjectAttributes d={d.role} title="roles" />
+            : <></>
         }
         {
-            d.medium ?
-            <div className="Project-Attr">
-                <h3>medium</h3>
-                <ul>{d.medium.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
-            </div>: <></>
+            d.tools ? <ProjectAttributes d={d.tools} title="tools" />
+            : <></>
+        }
+        {
+            d.medium ? <ProjectAttributes d={d.medium} title="medium" />
+            : <></>
         }
     </div>
     )
