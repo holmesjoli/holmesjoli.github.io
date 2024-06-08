@@ -3,15 +3,21 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 
-export default function TemporaryDrawer() {
+function ProjectAttribute({d, title}) {
+
+    return (
+        <div className="Project-Attr">
+            <h3>{title}</h3>
+            <ul>{d.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
+        </div>
+    )
+}
+
+export default function SideBarRight({d}) {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
@@ -19,39 +25,33 @@ export default function TemporaryDrawer() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+    <Box sx={{ width: 250 }} onClick={toggleDrawer(false)}>
+        {
+            d.client ?
+            <div className="Project-Attr">
+                <h3>client</h3>
+                <ul><li className="Attr" key={d.client.name}><a target="_blank"  rel="noreferrer" href={d.client.link}>{d.client.name}</a></li></ul>
+            </div>: <></>
+        }
+        {
+            d.links ?
+            <div className="Project-Attr">
+                <h3>project link</h3>
+                <ul>{d.links.map((datum, i) => { return <li className="Attr" key={i}><a target="_blank"  rel="noreferrer" href={datum.url}>{datum.text}</a></li>})}
+                </ul>
+            </div>: <></>
+        }
+        {d.design ? <ProjectAttribute d={d.design} title="design" />: <></>}
+        {d.role ? <ProjectAttribute d={d.role} title="roles" />: <></>}
+        {d.tools ? <ProjectAttribute d={d.tools} title="tools" />: <></>}
+        {d.medium ? <ProjectAttribute d={d.medium} title="medium" />: <></>}
     </Box>
   );
 
   return (
     <div>
       <Button onClick={toggleDrawer(true)}>Open drawer</Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer open={open} onClose={toggleDrawer(false)}  anchor="right">
         {DrawerList}
       </Drawer>
     </div>

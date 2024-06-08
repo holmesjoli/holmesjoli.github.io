@@ -1,44 +1,8 @@
 // Components
 import { DesignStage, CollectionExample } from "./Carousel"
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
-
-function ProjectAttribute({d, title}) {
-
-    return (
-        <div className="Project-Attr">
-            <h3>{title}</h3>
-            <ul>{d.map((datum, i) => { return <li className="Attr" key={i}>{datum}</li>})}</ul>
-        </div>
-    )
-}
-
-function Sidebar({d}) {
-
-    return(
-    <div className="Project-Attributes">
-         {
-            d.client ?
-            <div className="Project-Attr">
-                <h3>client</h3>
-                <ul><li className="Attr" key={d.client.name}><a target="_blank"  rel="noreferrer" href={d.client.link}>{d.client.name}</a></li></ul>
-            </div>: <></>
-        }
-        {
-            d.links ?
-            <div className="Project-Attr">
-                <h3>project link</h3>
-                <ul>{d.links.map((datum, i) => { return <li className="Attr" key={i}><a target="_blank"  rel="noreferrer" href={datum.url}>{datum.text}</a></li>})}
-                </ul>
-            </div>: <></>
-        }
-        {d.design ? <ProjectAttribute d={d.design} title="design" />: <></>}
-        {d.role ? <ProjectAttribute d={d.role} title="roles" />: <></>}
-        {d.tools ? <ProjectAttribute d={d.tools} title="tools" />: <></>}
-        {d.medium ? <ProjectAttribute d={d.medium} title="medium" />: <></>}
-    </div>
-    )
-}
+import Navigation from "./Navigation";
+import Footer from "./Footer";
+import SideBarRight from "./SideBarRight";
 
 export function Page({d}) {
 
@@ -135,7 +99,8 @@ export function Page({d}) {
                         </div>}
                 </div>               
             </div>
-            <Sidebar d={d}/>
+            <SideBarRight d={d}/>
+            {/* <Sidebar d={d}/> */}
         </div>
     )
 }
