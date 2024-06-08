@@ -9,7 +9,10 @@ export function Page({d}) {
     return(
         <div className="Page">
             <div className="Project-Main">
-                <h2 className="Project-Title">{d.title}</h2>
+                <div className="Page-Header">
+                    <h2 className="Project-Title">{d.title}</h2>
+                    <SideBarRight d={d}/>
+                </div>
                 <div className="Project-Information">
                     <div className="Project-Text ">
                         {
@@ -99,8 +102,6 @@ export function Page({d}) {
                         </div>}
                 </div>               
             </div>
-            <SideBarRight d={d}/>
-            {/* <Sidebar d={d}/> */}
         </div>
     )
 }

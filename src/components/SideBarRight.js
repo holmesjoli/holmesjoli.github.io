@@ -2,10 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import InfoIcon from '@mui/icons-material/Info';
 
 function ProjectAttribute({d, title}) {
 
@@ -50,8 +47,8 @@ export default function SideBarRight({d}) {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Open drawer</Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}  anchor="right">
+      <Button onClick={toggleDrawer(true)}><InfoIcon/></Button>
+      <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
         {DrawerList}
       </Drawer>
     </div>
