@@ -14,7 +14,6 @@
     border: 2px solid #1c2022;
 }
 
-.Social-media a:hover {
-    border: 2px solid white;
-    border-radius: 5px;
+.Social-media svg:hover path {
+    fill: white;
 }
