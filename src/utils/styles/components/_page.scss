@@ -1,16 +1,27 @@
 .Page {
-    display: grid;
-    grid-template-columns: 1fr minmax(175px, 17%);
+    // display: grid;
+    // grid-template-columns: 1fr minmax(50px, 5%);
     overflow-y: scroll;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: $appPadding;
+    margin: $appMargin;
+}
+
+.Page-Header {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 90vw; /*  Stretching: */
+    // flex: 0 1 90vw; /*  No stretching: */
+    // margin: 5px;
 }
 
 .Page .slideContainer {
     min-height: calc(50vh - 2.5rem);
-}
-
-.Project-Main {
-    padding: $appPadding;
-    margin: $appMargin;
 }
 
 .Project-Information {
@@ -35,6 +46,22 @@
     padding: $appPadding $appPadding 0 $appPadding;
 }
 
+.Project-Attr:first-child {
+    margin-top: $topNavHeight;
+    // border-top: 1px solid #3a4047;
+}
+
+.Project-Attr h3 {
+    border-top: 1px solid #3a4047;
+    padding: $appPadding;
+    border-radius: 0;
+    padding-bottom: .5rem;
+}
+
+// .Project-Attr:last-child {
+//     border-bottom: 1px solid #3a4047;
+// }
+
 .Project-Description {
     display: grid;
     grid-template-columns: 1fr minmax(200px, 30%);
@@ -42,4 +69,5 @@
 
 .Attr {
     margin-left: $appMargin;
+    color: $appColor;
 }
