@@ -38,8 +38,8 @@ export default function SideBarRight({d}) {
                 </ul>
             </div>: <></>
         }
-        {d.design ? <ProjectAttribute d={d.design} title="design" />: <></>}
-        {d.role ? <ProjectAttribute d={d.role} title="roles" />: <></>}
+        {d.role ? <ProjectAttribute d={d.role} title="my roles" />: <></>}
+        {d.design ? <ProjectAttribute d={d.design} title="design practice area" />: <></>}
         {d.tools ? <ProjectAttribute d={d.tools} title="tools" />: <></>}
         {d.medium ? <ProjectAttribute d={d.medium} title="medium" />: <></>}
     </Box>

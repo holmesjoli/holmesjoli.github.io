@@ -46,6 +46,22 @@
     padding: $appPadding $appPadding 0 $appPadding;
 }
 
+.Project-Attr:first-child {
+    margin-top: $topNavHeight;
+    // border-top: 1px solid #3a4047;
+}
+
+.Project-Attr h3 {
+    border-top: 1px solid #3a4047;
+    padding: $appPadding;
+    border-radius: 0;
+    padding-bottom: .5rem;
+}
+
+// .Project-Attr:last-child {
+//     border-bottom: 1px solid #3a4047;
+// }
+
 .Project-Description {
     display: grid;
     grid-template-columns: 1fr minmax(200px, 30%);
