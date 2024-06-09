@@ -483,7 +483,7 @@ export let itemData = [
         },
         tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#adobe-illustrator"],
         tools: ["R", "Adobe Illustrator"],
-        design: ["Data visualization"],
+        design: ["Data visualization", "Data journalism"],
         role: ["Data visualization designer"],
         summary: ["Visual Ramblings is a collection of data visualizations designed for the Roanoke Rambler, an independent, investigative, literary magazine in Roanoke, Virginia. The visualizations focus on a variety of topics to support across politics and policy.", "In some cases, the data were provided by the editory of the Rambler, but in others the data were sourced from a variety of reputable sources. After the data were identified, the statistical software R was used to create the initial visual form and it was edited in and edited in Adobe Illustrator."],
         collection: [{descr: "incarceration in roanoke city", 
