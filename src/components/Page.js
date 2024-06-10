@@ -96,11 +96,12 @@ export function Page({d}) {
         <div className="Page">
             <PageNavigation />
             <div id="main-content">	
+                <div className="Page-Header">
+                    <h2 className="Project-Title">{d.title}</h2>
+                    <SideBarRight d={d}/>
+                </div>
                 <div className="item item-0">
-                    <div className="Page-Header">
-                        <h2 className="Project-Title">{d.title}</h2>
-                        <SideBarRight d={d}/>
-                    </div>
+                  
                     <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
 
                     <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
@@ -113,10 +114,6 @@ export function Page({d}) {
                 </div>
                 
                 <div className="item item-1">
-                    <div className="Page-Header">
-                        <h2 className="Project-Title">{d.title}</h2>
-                        <SideBarRight d={d}/>
-                    </div>
                     <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
 
                     <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
@@ -129,10 +126,6 @@ export function Page({d}) {
                 </div>
                 
                 <div className="item item-2">
-                    <div className="Page-Header">
-                        <h2 className="Project-Title">{d.title}</h2>
-                        <SideBarRight d={d}/>
-                    </div>
                     <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
 
                     <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
@@ -145,10 +138,6 @@ export function Page({d}) {
                 </div>
                 
                 <div className="item item-3">
-                    <div className="Page-Header">
-                        <h2 className="Project-Title">{d.title}</h2>
-                        <SideBarRight d={d}/>
-                    </div>
                     <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
 
                     <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
@@ -161,10 +150,6 @@ export function Page({d}) {
                 </div>
                 
                 <div className="item item-4">
-                    <div className="Page-Header">
-                        <h2 className="Project-Title">{d.title}</h2>
-                        <SideBarRight d={d}/>
-                    </div>
                     <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
 
                     <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
@@ -177,10 +162,6 @@ export function Page({d}) {
                 </div>
                 
                 <div className="item item-5">
-                    <div className="Page-Header">
-                        <h2 className="Project-Title">{d.title}</h2>
-                        <SideBarRight d={d}/>
-                    </div>
                     <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
 
                     <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
