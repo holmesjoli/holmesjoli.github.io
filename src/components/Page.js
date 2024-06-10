@@ -25,14 +25,10 @@ function updateRotation(activeIndex, nItem) {
     // Find the offset value for all items based on active nav item
     var rotaOffset = activeIndex * rotaIncrement;
 
-    // Bring appropriate content into view
-    d3.select('#main-content .active').classed("active", false);
-    d3.select('#main-content .item:nth-child('+activeIndex+')').classed("active", true);
-
     // Iterate through all nav items and update their position/rotation
     d3.selectAll('#nav .item').each(function(d, i) {
 
-        currIndex = +d3.select(this).property("id") + 1;
+        currIndex = +d3.select(this).property("id");
         // calculate current rotational value of item
         rotaVal = rotaIncrement*currIndex-rotaOffset+activeNavItemPos;
 
@@ -51,26 +47,31 @@ let navData = [{name: "Summary", active: true},
             //    {name: "Development", active: false}, 
                { name: "Testing", active: false}];
 
-console.log(navData);
-
 navData.map((d, i) => {d.id = i; return(d)});
+
+console.log(navData);
 
 function PageNavigation() {
 
     useEffect(() => {
 
-        var initActiveIndex = +d3.select('#main-content .item.active').property('id') + 1;
-        // d3.select('#main-content .item:nth-child('+initActiveIndex+')');
-        updateRotation(initActiveIndex, navData.length);
+        let activeIndex = 0;
+
+        updateRotation(activeIndex, navData.length);
 
         // Update active nav item and rotate it to the top
         d3.selectAll('#nav .item').on('click', function() {
-            var activeIndex = +d3.select(this).property('id') + 1;
-            // var lastActiveIndex = d3.select('.active').property('id') + 1;
-            d3.select('.active').classed("active", false);
-            d3.select(this).classed('active', true);
+            activeIndex = +d3.select(this).property('id');
+            console.log(activeIndex);
+
+            d3.select('#nav .active').classed("active", false); // remove active from previous active selection
+            d3.select(this).classed('active', true); // add active to new active selection
 
             updateRotation(activeIndex, navData.length);
+
+            // Bring appropriate content into view
+            d3.selectAll('#main-content .item').classed("active", false);
+            d3.select(`#main-content .item.item-${activeIndex}`).classed("active", true);
         })
 
     }, []);
