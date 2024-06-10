@@ -15,7 +15,7 @@ export let itemData = [
                               "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
                               "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
                     videos: [
-                        {url: "/assets/portfolio/voting-access-monitor/InteractionDemo.mp4",}
+                        {url: "/assets/portfolio/voting-access-monitor/InteractionDemo.mp4"}
                     ] },
                      {name: 'user research', 
                      descr: ["Throughout the design process we engaged in card sorting, stakeholder mapping, user interview, and cognitive walkthroughs."], 
@@ -201,66 +201,81 @@ export let itemData = [
         tools: ["D3.js", "Pixi.js", "React", "Python"],
         design: ["Information design", "Interaction design"],
         role: ["Data visualization designer", "Data visualization developer", "Project manager", "Data engineer"],
-        summary: ["Banca Intesa Processes is an exploratory business analytics application that allows the organization to explore and audit risk management data to understand and manage data complexity. The application affords users a visual understanding of how risk is distributed across organizational structures and how activities are distributed among different actors at the company. Additionally, users can identify activities and associated risks without appropriate controls and develop plans to redistribute workflows.",
-                  "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen.",
-                  "This app enables the user to explore and audit risk management data at the enterprise level, through different views to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads."],
-        designProcess: {
-            summary: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io and dynamic visualization was design in Figma. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application.",
-                    "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."],
-            research: {
-                images: [{url: "/assets/portfolio/banca-intesa-processes/visual-research1.jpg",
-                         alt: "Divine Comedy: https://divinecomedy.digital/#/eng/viz",
-                         size: "small"},
-                         {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
-                         alt: "Show your stripes: https://showyourstripes.info/s/globe/",
-                         size: "small"},
-                         {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
-                         alt: "Luciano Baldessari: http://baldessari.densitydesign.org/persone/",
-                         size: "small"}]
-            },
-            sketches: {
-                images: [{url: "/assets/portfolio/banca-intesa-processes/sketch1.jpg",
-                          alt: "Dendrogram showing hierarchy",
-                          size: "small"},
-                          {url: "/assets/portfolio/banca-intesa-processes/sketch2.jpg",
-                          alt: "Connections between an actor, the applications the use, and the activities they are in charge of",
-                          size: "small"},
-                          {url: "/assets/portfolio/banca-intesa-processes/sketch3.jpg",
-                          alt: "Circle packing diagram showing hierarchy",
-                          size: "small"},
-                          {url: "/assets/portfolio/banca-intesa-processes/sketch4.jpg",
-                          alt: "Network showing connections between actors and activities",
-                          size: "small"}]
-            },
-            final: {
-                images: [
-                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-view.png",
-                    alt: "Circle packing diagram in that shows nested level of data hierarchies",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-zoomed-in.png",
-                    alt: "A zoomed in version of the circle packing diagram showing the zoom and tooltip capabilities of the application",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-activities-identified.png",
-                    alt: "A zoomed in version of the circle packing diagram showing a feature that allows the user to identify specific data attributes",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/network-full-screen.png",
-                    alt: "A network visualization showing organizational connections between actors, activities, risks and controls",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/network-freeze-feature.png",
-                    alt: "A network visualization shows how the user can 'freeze' portions of the network and be able to use the tooltip to interact with other parts",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/network-additional-features-shown.png",
-                    alt: "Additional features such as the ability to change risk type are shown in this visualization",
-                    size: "small"
-                    }
+        designProcess: [
+            {name: 'summary', 
+             descr: ["Processes Map is an exploratory business analytics application that allows the organization to explore and audit risk management data to understand and manage data complexity. The application affords users a visual understanding of how risk is distributed across organizational structures and how activities are distributed among different actors at the company. Additionally, users can identify activities and associated risks without appropriate controls and develop plans to redistribute workflows.",
+                     "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen.",
+                     "This app enables the user to explore and audit risk management data at the enterprise level, through different views to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads.",
+                    //  "The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application."
+                ],
+            videos: [
+                {url: "/assets/portfolio/banca-intesa-processes/circlepackingInteraction.mp4"}
                 ]
-            }
-        }
+            },
+            {name: 'research',
+             descr: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The first step was researching and presenting different visual forms to a client user group.",
+                    "The team considered other interfaces that relied on forms that show hierarchies within the data such as a treemap."],
+             images: [
+                      {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
+                       alt: "Divine Comedy: https://divinecomedy.digital/#/eng/viz"},
+                      {url: "/assets/portfolio/banca-intesa-processes/visual-research1.jpg",
+                       alt: "Show your stripes: https://showyourstripes.info/s/globe/"},
+                      {url: "/assets/portfolio/banca-intesa-processes/visual-research3.jpg",
+                       alt: "Luciano Baldessari: http://baldessari.densitydesign.org/persone/"}]
+            },
+            {name: 'static sketching',
+             descr: ["The team sketched out different ideas for the on paper and digitally. The team relied on RawGraphs.io to create digital data sketches."],
+             images: [{url: "/assets/portfolio/banca-intesa-processes/sketch1.jpg",
+                       alt: "A sketch of a dendrogram showing hierarchies within the data."},
+                      {url: "/assets/portfolio/banca-intesa-processes/sketch2.jpg",
+                       alt: "Connections between an actor, the applications the use, and the activities they are in charge of"},
+                      {url: "/assets/portfolio/banca-intesa-processes/sketch3.jpg",
+                       alt: "A sketch of a circle packing diagram showing hierarchy."},
+                      {url: "/assets/portfolio/banca-intesa-processes/sketch4.jpg",
+                       alt: "Network showing connections between actors and activities."
+                }]},
+            {name: 'data',
+             descr: ['The data were stored in an Excel spreadsheet. Each sheet in the Excel document represented a table that was related to other tables in the spreadsheet. The team was not given a data dictionary or documentation, making it challenging to interpret relationships between the tables.',
+                    'One of the ways that the team at the Center for Design navigated this challenge was creating diagrams (e.g., ERD) to be able to visually communicate how we were interpreting the relationships.',
+                    'Once the data structure was understood, I cleaned the data in Python and exported the data as a JSON object.'],
+             images: [{url: "/assets/portfolio/banca-intesa-processes/Data Model.jpg",
+                        alt: "A Entity-Relationship Diagram (ERD) shows show the Center for Design's interpretation of the relationships between variables in tables."},
+                        {url: "/assets/portfolio/banca-intesa-processes/data_modeling.jpg",
+                        alt: "A diagram communicating different interpretations of the data relationships to help clarify the correct relationship."}]
+            },
+            {name: 'interactive sketching', 
+             descr: ['We used Observable notebooks to imagine how a user might interact with a visualization. Using Observable allowed the team to be able to demonstrate several user interactions to our client and get feedback on the usablity and form without investing a large amount of time in the development process.'],
+             images: [{url: "/assets/portfolio/banca-intesa-processes/observable-sketch1.png",
+                       alt: "An Observable notebook showing a sketch of a potential visualization for the application."}]}
+            ],
+            // final: {
+            //     images: [
+            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-view.png",
+            //         alt: "Circle packing diagram in that shows nested level of data hierarchies",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-zoomed-in.png",
+            //         alt: "A zoomed in version of the circle packing diagram showing the zoom and tooltip capabilities of the application",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-activities-identified.png",
+            //         alt: "A zoomed in version of the circle packing diagram showing a feature that allows the user to identify specific data attributes",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/network-full-screen.png",
+            //         alt: "A network visualization showing organizational connections between actors, activities, risks and controls",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/network-freeze-feature.png",
+            //         alt: "A network visualization shows how the user can 'freeze' portions of the network and be able to use the tooltip to interact with other parts",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/network-additional-features-shown.png",
+            //         alt: "Additional features such as the ability to change risk type are shown in this visualization",
+            //         size: "small"
+            //         }
+            //     ]
+            // }
     },
     {
         title: "Meta", 
