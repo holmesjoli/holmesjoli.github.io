@@ -93,19 +93,19 @@ function PageNavigation({data}) {
 
 export function Page({pageData}) {
 
-    pageData.designProcess.map((d, i) => {d.id = i; return(d)})
-    .map((d, i) => d.i === 0 ? d.active = true : d.active = false);
+    let designProcess = pageData.designProcess.map((d, i) => {d.id = i; return(d)})
+    .map((d, i) => {i === 0 ? d.active = true : d.active = false; return(d)});
 
     return(
         <div className="Page">
-            <PageNavigation data={pageData.designProcess}/>
+            <PageNavigation data={designProcess}/>
             <div id="main-content">	
                 <div className="Page-Header">
                     <h2 className="Project-Title">{pageData.title}</h2>
                     <SideBarRight d={pageData}/>
                 </div>
 
-                {pageData.designProcess.map((datum, i) => {
+                {designProcess.map((datum, i) => {
                     return(
                         <div className={datum.active ? `item item-${i} active`: `item item-${i}`} id={i} key={i + "-content"}>			
                             <h3>{datum.name}</h3>
