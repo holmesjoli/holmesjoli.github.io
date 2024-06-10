@@ -48,7 +48,11 @@ export let itemData = [
                         }
                     ]},
                     {name: 'data', 
-                     descr: ['Designing for a complex, interactive data visualization such as VAM necessitates the development of a database to support this type of visualization. Working with our data engineer, product manager, and partners, I designed the table schemas for the project. I also frequently researched what type of data was available and where we could acquire it for our data engineer because of my previous experience working in public policy and data analytics.']},
+                     descr: ['Designing for a complex, interactive data visualization such as VAM necessitates the development of a database to support this type of visualization. Working with our data engineer, product manager, and partners, I designed the table schemas for the project. I also frequently researched what type of data was available and where we could acquire it for our data engineer because of my previous experience working in public policy and data analytics.'],
+                    images: [{
+                        url: "/assets/portfolio/voting-access-monitor/DatabaseDesign.png",
+                        alt: "Relational table schema I designed for VAM. The two tables shown in this image integrate shape file geometries with other variables at a geographic level.",
+                    }]},
                     {name: 'prototyping', 
                      descr: ["Prototyping was mostly done in Figma with initial visualizations created in R and then imported into Figma as SVGs."],  
                      images: [

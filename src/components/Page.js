@@ -107,7 +107,11 @@ export function Page({pageData}) {
                             <h3>{datum.name}</h3>
                             <div className="Content">
                                 <div className="Visual-Content">
-                                    {datum.images ? <div><img src={datum.images[0].url} alt={datum.images[0].alt}></img></div>: <></>}
+                                    {datum.images ? 
+                                        <div>
+                                            <img src={datum.images[0].url} alt={datum.images[0].alt}/>
+                                            <h5 className="Item-Caption">{datum.images[0].alt}</h5>
+                                        </div>: <></>}
                                 </div>
                                 <div className="Written-Content">
                                     {datum.descr.map((p, i) => {
