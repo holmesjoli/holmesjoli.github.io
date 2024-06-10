@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import { PortfolioItem } from "../components/PortfolioItem";
 import FilterPortfolio from "../components/FilterPortfolio";
 
-import { itemData, toolFilters, designFilters } from "../utils/global";
+import { itemData, toolFilters, designFilters, roleFilters } from "../utils/global";
 
 function filterData(selected, d) {
     let selectedInList = [];
@@ -31,6 +31,7 @@ export default function Portfolio() {
 
     const [selectedTools, updateSelectedTools] = useState([]);
     const [selectedDesign, updateSelectedDesign] = useState([]);
+    const [selectedRole, updateSelectedRole] = useState([]);
 
     useEffect(() => {
 
@@ -54,6 +55,7 @@ export default function Portfolio() {
                 <div className="Sidebar">
                     <FilterPortfolio title={"tools"} filters={toolFilters} updateSelectedValues={updateSelectedTools} selectedValues={selectedTools}/>
                     <FilterPortfolio title={"design"} filters={designFilters} updateSelectedValues={updateSelectedDesign} selectedValues={selectedDesign}/>
+                    {/* <FilterPortfolio title={"roles"} filters={roleFilters} updateSelectedValues={updateSelectedRole} selectedValues={selectedRole}/> */}
                 </div>
                 <div className="Item-Container">
                     {

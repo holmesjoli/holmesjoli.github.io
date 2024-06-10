@@ -689,4 +689,6 @@ export const toolFilters = ["#adobe-illustrator", "#d3-js", "#leaflet-js", "#fig
 
 export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
 
+export const roleFilters = [... new Set(itemData.map(d => d.role).flat())];
+
 export const filters = toolFilters.concat(designFilters.concat(mediumFilters));
