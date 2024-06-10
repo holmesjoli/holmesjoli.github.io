@@ -11,10 +11,12 @@ import { useEffect } from "react";
 // TODO: persistent rotational direction
 
 // Modified from https://codepen.io/freyrh/pen/WXzGGj
-function updateRotation(activeIndex) {
+function updateRotation(activeIndex, nItem) {
 
     // TODO: programmatically decide increment value
-    const rotaIncrement = 60;
+    const rotaIncrement = 360/nItem;
+
+    // console.log(rotaIncrement);
     // Control where on the wheel active nav item is displayed
     const activeNavItemPos = 135;
 
@@ -28,11 +30,12 @@ function updateRotation(activeIndex) {
     d3.select('#main-content .item:nth-child('+activeIndex+')').classed("active", true);
 
     // Iterate through all nav items and update their position/rotation
-    d3.selectAll('#nav .item').each(function() {
+    d3.selectAll('#nav .item').each(function(d, i) {
 
-        currIndex = +d3.select(this).property('id') + 1;
+        currIndex = i + 1;
         // calculate current rotational value of item
         rotaVal = rotaIncrement*currIndex-rotaOffset+activeNavItemPos;
+
         // Inverse rotaVal to counter-rotate text/image in relation to nav item parent
         rotaValInverse = (rotaIncrement*currIndex-rotaOffset+activeNavItemPos)*(-1);
     
@@ -43,11 +46,18 @@ function updateRotation(activeIndex) {
 
 function PageNavigation() {
 
+    let navData = [{id: 0, name: "Summary", active: true}, 
+    {id: 1, name: "User Research", active: false}, 
+    {id: 2, name: "Sketching", active: false}, 
+ //    {id: 3, name: "Prototyping", active: false}, 
+ //    {id: 4, name: "Development", active: false}, 
+    {id: 5, name: "Testing", active: false}];
+
     useEffect(() => {
 
         var initActiveIndex = +d3.select('.item.active').property('id') + 1;
         // d3.select('#main-content .item:nth-child('+initActiveIndex+')');
-        updateRotation(initActiveIndex);
+        updateRotation(initActiveIndex, navData.length);
 
         // Update active nav item and rotate it to the top
         d3.selectAll('.item').on('click', function() {
@@ -56,17 +66,10 @@ function PageNavigation() {
             d3.select('.active').classed("active", false);
             d3.select(this).classed('active', true);
 
-            updateRotation(activeIndex);
+            updateRotation(activeIndex, navData.length);
         })
 
     }, []);
-
-    let navData = [{id: 0, name: "Summary", active: true}, 
-                   {id: 1, name: "User Research", active: false}, 
-                   {id: 2, name: "Sketching", active: false}, 
-                   {id: 3, name: "Prototyping", active: false}, 
-                   {id: 4, name: "Development", active: false}, 
-                   {id: 5, name: "Testing", active: false}];
 
     return (
         <div id="nav">
@@ -93,7 +96,7 @@ export function Page({d}) {
         <div className="Page">
             <PageNavigation />
             <div id="main-content">	
-                <div class="item item-0">
+                <div className="item item-0">
                     <div className="Page-Header">
                         <h2 className="Project-Title">{d.title}</h2>
                         <SideBarRight d={d}/>
@@ -109,7 +112,7 @@ export function Page({d}) {
                     <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
                 </div>
                 
-                <div class="item item-1">
+                <div className="item item-1">
                     <div className="Page-Header">
                         <h2 className="Project-Title">{d.title}</h2>
                         <SideBarRight d={d}/>
@@ -125,7 +128,7 @@ export function Page({d}) {
                     <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
                 </div>
                 
-                <div class="item item-2">
+                <div className="item item-2">
                     <div className="Page-Header">
                         <h2 className="Project-Title">{d.title}</h2>
                         <SideBarRight d={d}/>
@@ -141,7 +144,7 @@ export function Page({d}) {
                     <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
                 </div>
                 
-                <div class="item item-3">
+                <div className="item item-3">
                     <div className="Page-Header">
                         <h2 className="Project-Title">{d.title}</h2>
                         <SideBarRight d={d}/>
@@ -157,7 +160,7 @@ export function Page({d}) {
                     <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
                 </div>
                 
-                <div class="item item-4">
+                <div className="item item-4">
                     <div className="Page-Header">
                         <h2 className="Project-Title">{d.title}</h2>
                         <SideBarRight d={d}/>
@@ -173,7 +176,7 @@ export function Page({d}) {
                     <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
                 </div>
                 
-                <div class="item item-5">
+                <div className="item item-5">
                     <div className="Page-Header">
                         <h2 className="Project-Title">{d.title}</h2>
                         <SideBarRight d={d}/>

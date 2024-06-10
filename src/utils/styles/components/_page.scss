@@ -1,10 +1,9 @@
 .Page {
     display: grid;
     grid-template-columns: minmax(100px, 10%) 1fr;
-    overflow-y: hidden;
+    overflow: hidden;
     width: 100vw;
-    overflow-x: hidden;
-    // padding: $appPadding;
+    min-height: 60vh;
 }
 
 .Page-Header {
