@@ -24,11 +24,11 @@ function updateRotation(activeIndex) {
     var rotaOffset = activeIndex * rotaIncrement;
 
     // Bring appropriate content into view
-    d3.select('.active').classed("active", false);
-    d3.select('.item:nth-child('+activeIndex+')').classed("active", true);
+    d3.select('#main-content .active').classed("active", false);
+    d3.select('#main-content .item:nth-child('+activeIndex+')').classed("active", true);
 
     // Iterate through all nav items and update their position/rotation
-    d3.selectAll('.item').each(function() {
+    d3.selectAll('#nav .item').each(function() {
 
         currIndex = +d3.select(this).property('id') + 1;
         // calculate current rotational value of item
@@ -46,7 +46,7 @@ function PageNavigation() {
     useEffect(() => {
 
         var initActiveIndex = +d3.select('.item.active').property('id') + 1;
-        d3.select('.item:nth-child('+initActiveIndex+')');
+        // d3.select('#main-content .item:nth-child('+initActiveIndex+')');
         updateRotation(initActiveIndex);
 
         // Update active nav item and rotate it to the top
@@ -61,9 +61,9 @@ function PageNavigation() {
 
     }, []);
 
-    let navData = [{id: 0, name: "User Research", active: true}, 
-                   {id: 1, name: "Sketching", active: false}, 
-                   {id: 2, name: "Database design", active: false}, 
+    let navData = [{id: 0, name: "Summary", active: true}, 
+                   {id: 1, name: "User Research", active: false}, 
+                   {id: 2, name: "Sketching", active: false}, 
                    {id: 3, name: "Prototyping", active: false}, 
                    {id: 4, name: "Development", active: false}, 
                    {id: 5, name: "Testing", active: false}];
@@ -74,7 +74,7 @@ function PageNavigation() {
             <div id="nav-inside">
                 {navData.map((datum, i) => {
                     return(
-                        <div className={datum.active ? "item active": "item"} id={datum.id} key={datum.id + "-design-phase"}>
+                        <div className={datum.active ? `item item-${datum.id} active`: `item item-${datum.id}`} id={datum.id} key={datum.id + "-design-phase"}>
                             <div className="sub">				
                                 <h3>{datum.name}</h3>
                             </div>
@@ -92,14 +92,94 @@ export function Page({d}) {
     return(
         <div className="Page">
             <PageNavigation />
-            <div className="Project-Main">
+            <div id="main-content">	
+                <div class="item item-0">
+                    <h1>Content page #1</h1>
+                    <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
+
+                    <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
+
+                    <p>Sed viverra aliquam orci id suscipit. Vivamus ornare nisl sed magna cursus porttitor. Quisque id eros risus. Aenean non orci quam. Sed commodo bibendum ipsum at suscipit. Vivamus lobortis scelerisque orci, in euismod nulla eleifend quis. Aliquam posuere dui magna. Donec nec posuere massa, id aliquam urna. Curabitur sit amet porta nisl. Mauris aliquam viverra nulla eu pharetra. Nullam vulputate ac felis quis elementum.</p>
+
+                    <p>Aenean ac pellentesque nulla, ut varius nisl. Duis pharetra tortor ornare mi gravida, quis consectetur est efficitur. Pellentesque eu odio ut lacus accumsan fermentum. Maecenas tincidunt leo ac lacus mollis vulputate. In consectetur odio vel dignissim scelerisque. Curabitur urna massa, posuere nec ultricies tempus, malesuada suscipit lacus. Morbi eu iaculis orci. Nam mollis vitae nunc ut tempus. Aliquam porta aliquet ipsum, ut feugiat lorem rutrum eget. Vestibulum egestas urna in ante molestie fermentum ac faucibus nibh. Integer eget tempus velit. Aliquam et interdum erat, ut blandit velit.</p>
+
+                    <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
+                </div>
+                
+                <div class="item item-1">
+                    <h1>Content page #2</h1>
+                    <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
+
+                    <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
+
+                    <p>Sed viverra aliquam orci id suscipit. Vivamus ornare nisl sed magna cursus porttitor. Quisque id eros risus. Aenean non orci quam. Sed commodo bibendum ipsum at suscipit. Vivamus lobortis scelerisque orci, in euismod nulla eleifend quis. Aliquam posuere dui magna. Donec nec posuere massa, id aliquam urna. Curabitur sit amet porta nisl. Mauris aliquam viverra nulla eu pharetra. Nullam vulputate ac felis quis elementum.</p>
+
+                    <p>Aenean ac pellentesque nulla, ut varius nisl. Duis pharetra tortor ornare mi gravida, quis consectetur est efficitur. Pellentesque eu odio ut lacus accumsan fermentum. Maecenas tincidunt leo ac lacus mollis vulputate. In consectetur odio vel dignissim scelerisque. Curabitur urna massa, posuere nec ultricies tempus, malesuada suscipit lacus. Morbi eu iaculis orci. Nam mollis vitae nunc ut tempus. Aliquam porta aliquet ipsum, ut feugiat lorem rutrum eget. Vestibulum egestas urna in ante molestie fermentum ac faucibus nibh. Integer eget tempus velit. Aliquam et interdum erat, ut blandit velit.</p>
+
+                    <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
+                </div>
+                
+                <div class="item item-2">
+                    <h1>Content page #3</h1>
+                    <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
+
+                    <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
+
+                    <p>Sed viverra aliquam orci id suscipit. Vivamus ornare nisl sed magna cursus porttitor. Quisque id eros risus. Aenean non orci quam. Sed commodo bibendum ipsum at suscipit. Vivamus lobortis scelerisque orci, in euismod nulla eleifend quis. Aliquam posuere dui magna. Donec nec posuere massa, id aliquam urna. Curabitur sit amet porta nisl. Mauris aliquam viverra nulla eu pharetra. Nullam vulputate ac felis quis elementum.</p>
+
+                    <p>Aenean ac pellentesque nulla, ut varius nisl. Duis pharetra tortor ornare mi gravida, quis consectetur est efficitur. Pellentesque eu odio ut lacus accumsan fermentum. Maecenas tincidunt leo ac lacus mollis vulputate. In consectetur odio vel dignissim scelerisque. Curabitur urna massa, posuere nec ultricies tempus, malesuada suscipit lacus. Morbi eu iaculis orci. Nam mollis vitae nunc ut tempus. Aliquam porta aliquet ipsum, ut feugiat lorem rutrum eget. Vestibulum egestas urna in ante molestie fermentum ac faucibus nibh. Integer eget tempus velit. Aliquam et interdum erat, ut blandit velit.</p>
+
+                    <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
+                </div>
+                
+                <div class="item item-3">
+                    <h1>Content page #4</h1>
+                    <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
+
+                    <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
+
+                    <p>Sed viverra aliquam orci id suscipit. Vivamus ornare nisl sed magna cursus porttitor. Quisque id eros risus. Aenean non orci quam. Sed commodo bibendum ipsum at suscipit. Vivamus lobortis scelerisque orci, in euismod nulla eleifend quis. Aliquam posuere dui magna. Donec nec posuere massa, id aliquam urna. Curabitur sit amet porta nisl. Mauris aliquam viverra nulla eu pharetra. Nullam vulputate ac felis quis elementum.</p>
+
+                    <p>Aenean ac pellentesque nulla, ut varius nisl. Duis pharetra tortor ornare mi gravida, quis consectetur est efficitur. Pellentesque eu odio ut lacus accumsan fermentum. Maecenas tincidunt leo ac lacus mollis vulputate. In consectetur odio vel dignissim scelerisque. Curabitur urna massa, posuere nec ultricies tempus, malesuada suscipit lacus. Morbi eu iaculis orci. Nam mollis vitae nunc ut tempus. Aliquam porta aliquet ipsum, ut feugiat lorem rutrum eget. Vestibulum egestas urna in ante molestie fermentum ac faucibus nibh. Integer eget tempus velit. Aliquam et interdum erat, ut blandit velit.</p>
+
+                    <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
+                </div>
+                
+                <div class="item item-4">
+                    <h1>Content page #5</h1>
+                    <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
+
+                    <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
+
+                    <p>Sed viverra aliquam orci id suscipit. Vivamus ornare nisl sed magna cursus porttitor. Quisque id eros risus. Aenean non orci quam. Sed commodo bibendum ipsum at suscipit. Vivamus lobortis scelerisque orci, in euismod nulla eleifend quis. Aliquam posuere dui magna. Donec nec posuere massa, id aliquam urna. Curabitur sit amet porta nisl. Mauris aliquam viverra nulla eu pharetra. Nullam vulputate ac felis quis elementum.</p>
+
+                    <p>Aenean ac pellentesque nulla, ut varius nisl. Duis pharetra tortor ornare mi gravida, quis consectetur est efficitur. Pellentesque eu odio ut lacus accumsan fermentum. Maecenas tincidunt leo ac lacus mollis vulputate. In consectetur odio vel dignissim scelerisque. Curabitur urna massa, posuere nec ultricies tempus, malesuada suscipit lacus. Morbi eu iaculis orci. Nam mollis vitae nunc ut tempus. Aliquam porta aliquet ipsum, ut feugiat lorem rutrum eget. Vestibulum egestas urna in ante molestie fermentum ac faucibus nibh. Integer eget tempus velit. Aliquam et interdum erat, ut blandit velit.</p>
+
+                    <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
+                </div>
+                
+                <div class="item item-5">
+                    <h1>Content page #6</h1>
+                    <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
+
+                    <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
+
+                    <p>Sed viverra aliquam orci id suscipit. Vivamus ornare nisl sed magna cursus porttitor. Quisque id eros risus. Aenean non orci quam. Sed commodo bibendum ipsum at suscipit. Vivamus lobortis scelerisque orci, in euismod nulla eleifend quis. Aliquam posuere dui magna. Donec nec posuere massa, id aliquam urna. Curabitur sit amet porta nisl. Mauris aliquam viverra nulla eu pharetra. Nullam vulputate ac felis quis elementum.</p>
+
+                    <p>Aenean ac pellentesque nulla, ut varius nisl. Duis pharetra tortor ornare mi gravida, quis consectetur est efficitur. Pellentesque eu odio ut lacus accumsan fermentum. Maecenas tincidunt leo ac lacus mollis vulputate. In consectetur odio vel dignissim scelerisque. Curabitur urna massa, posuere nec ultricies tempus, malesuada suscipit lacus. Morbi eu iaculis orci. Nam mollis vitae nunc ut tempus. Aliquam porta aliquet ipsum, ut feugiat lorem rutrum eget. Vestibulum egestas urna in ante molestie fermentum ac faucibus nibh. Integer eget tempus velit. Aliquam et interdum erat, ut blandit velit.</p>
+
+                    <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
+                </div>
+            </div>
+
+            {/* <div className="Project-Main">
                 <div className="Page-Header">
                     <h2 className="Project-Title">{d.title}</h2>
                     <SideBarRight d={d}/>
-                </div>
-                <div className="Project-Information">
-                    <div className="Project-Text ">
-                        {
+                </div> */}
+                {/* <div className="Project-Information"> */}
+                    {/* <div className="Project-Text "> */}
+                        {/* {
                             d.brief  ? 
                             <div className="Project-Brief">
                                     <h3>brief</h3>
@@ -109,8 +189,8 @@ export function Page({d}) {
                                         })
                                     }
                                 </div>: <></>
-                        }
-                        {
+                        } */}
+                        {/* {
                         d.summary  ? 
                         <div className="Project-Summary">
                             <h3>summary</h3>
@@ -120,8 +200,8 @@ export function Page({d}) {
                                 })
                             }
                         </div>: <></>
-                        }                       
-                        {d.data  ? 
+                        }                        */}
+                        {/* {d.data  ? 
                             <div className="Project-Data">
                             <h3>data</h3>
                                 {
@@ -130,8 +210,8 @@ export function Page({d}) {
                                     })
                                 }
                             </div>: <></>
-                        }
-                        {d.methodology ? 
+                        } */}
+                        {/* {d.methodology ? 
                             <div className="Project-Methodology">
                                 <h3>methodology</h3>
                                 {
@@ -140,8 +220,8 @@ export function Page({d}) {
                                     })
                                 }
                             </div>: <></>
-                        }
-                        {
+                        } */}
+                        {/* {
                         d.artistStatement  ? 
                         <div className="Project-Artist-Statement">
                                 <h3>artist statement</h3>
@@ -151,9 +231,9 @@ export function Page({d}) {
                                     })
                                 }
                             </div>: <></>
-                        }
-                    </div>
-                    {d.designProcess ? 
+                        } */}
+                    {/* </div> */}
+                    {/* {d.designProcess ? 
                         <div className="Project-Design-Process">
                             <h3>design process</h3>
 
@@ -177,15 +257,16 @@ export function Page({d}) {
                             <DesignStage descr="initial sketches" stage={d.designProcess.sketches} />
                             <DesignStage descr="prototype" stage={d.designProcess.prototype} />
                             <DesignStage descr="final design" stage={d.designProcess.final} />
-                        </div> : <div className="Project-Collection">
+                        </div> : 
+                        <div className="Project-Collection">
                             {
                                 d.collection.map((datum, i) => {
                                     return <CollectionExample collection={datum} key={i}/>
                                 })
                             }    
-                        </div>}
-                </div>               
-            </div>
+                        </div>} */}
+                {/* </div>                */}
+            {/* </div> */}
         </div>
     )
 }

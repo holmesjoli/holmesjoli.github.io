@@ -77,10 +77,10 @@
 }
 
 body {
-	background: #333;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
+	// background: #333;
+	// height: 100%;
+	// width: 100%;
+	// overflow: hidden;
 	position: relative;
 }
 
@@ -140,7 +140,7 @@ body {
 			&.active .sub h3 {
 				color: $appColorFocus;
 			}
-			
+
 			.sub {
 				position: absolute;
 				height: 60px;
