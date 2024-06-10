@@ -154,9 +154,9 @@
 
 #Main-Content {
 	padding: $appPadding;
-	margin-left: 50px;
+	margin-left: 5rem;
     overflow-y: hidden;
-	
+
 	.item {
 		position: absolute;
 		opacity: 0;
@@ -172,21 +172,27 @@
 			margin: $appMargin/2 0;
 			font-size: 1rem;
 		}
+
+		h5 {
+			margin: 0 $appMargin;
+		}
 	}
 }
 
 .Content {
-	display: grid;
-    grid-template-columns: auto minmax(150px, 40%);
+	display: flex;
+	flex-direction: row;
 }
 
 .Written-Content {
-	margin-right: $appMargin;
+	margin: 0 $appMargin*2;
+	max-width: 35vw;
 }
 
 .Visual-Content {
+	max-width: 35vw;
+
 	img {
-		max-height: 50vh;
 		margin: $appMargin;
 	}
 }

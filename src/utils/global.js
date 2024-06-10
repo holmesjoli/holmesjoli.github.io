@@ -18,13 +18,13 @@ export let itemData = [
                      descr: ["Throughout the design process we engaged in card sorting, stakeholder mapping, user interview, and cognitive walkthroughs."], 
                      images: [
                         {
-                            url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
-                            alt: "Moodboard of different images used in the intial research phase",
+                            url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
+                            alt: "Synthesis of stakeholder research. After initial user interviews I grouped stakeholders into three groups to help the team prioritize features.",
                             size: "small"
                         },
                         {
-                            url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
-                            alt: "Synthesis of stakeholder research",
+                            url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
+                            alt: "Moodboard of different images used in the intial research phase",
                             size: "small"
                         },
                         {
@@ -57,11 +57,6 @@ export let itemData = [
                      descr: ["Prototyping was mostly done in Figma with initial visualizations created in R and then imported into Figma as SVGs."],  
                      images: [
                         {
-                            url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
-                            alt: "The image shows the proposed changes to a user interaction after receiving feedback from users about how to reset the view. I researched and put together a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed.",
-                            size: "small"
-                        },
-                        {
                             url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
                             alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs non-selected and enabled and disabled start to create a component system.",
                             size: "small"
@@ -71,17 +66,14 @@ export let itemData = [
                             alt: "The image to shows the iterative process of designing a slider component.",
                             size: "small"
                         }
-                    ]}, 
-                    {name: 'development', 
-                    descr: ['The images show the fully functional frontend of VAM developed with React, D3, Material UI, and Leaflet.'], 
-                    images: [
-                        {url: "/assets/portfolio/voting-access-monitor/Development.png",
-                        alt: "An image of the fully interactive data visualization zoomed into South Carolina",
-                        size: "small"
-                        },
-                        {url: "/assets/portfolio/voting-access-monitor/Development2.png",
-                        alt: "An image of specific county in South Carolina where the use can see where in the individual polling locations have been added or removed",
-                        size: "small"
+                    ]},
+                    {name: 'interaction research',
+                     descr: ['I designed specific components in Figma like the components used in Material UI as that was the base library I used to code interactions between the components and the visualization. I also engaged in user interface research when we learned that it was challenging for several of our users to navigate back to the main view. During this research step, I researched how other similar mapping software handled a similar interaction and then proposed both short- and long-term changes to the visualization.'],
+                     images: [
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
+                            alt: "The image shows the proposed changes to a user interaction after receiving feedback from users about how to reset the view. I researched and put together a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed.",
+                            size: "small"
                         }
                     ]}
                 ]
