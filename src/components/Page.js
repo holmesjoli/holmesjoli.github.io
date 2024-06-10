@@ -9,6 +9,8 @@ import { useEffect } from "react";
 
 // Update current placement of all navigation items based on current active item
 // TODO: persistent rotational direction
+
+// Modified from https://codepen.io/freyrh/pen/WXzGGj
 function updateRotation(activeIndex) {
 
     // TODO: programmatically decide increment value
@@ -27,16 +29,13 @@ function updateRotation(activeIndex) {
 
     // Iterate through all nav items and update their position/rotation
     d3.selectAll('.item').each(function() {
-        // console.log(this);
 
         currIndex = +d3.select(this).property('id') + 1;
         // calculate current rotational value of item
         rotaVal = rotaIncrement*currIndex-rotaOffset+activeNavItemPos;
         // Inverse rotaVal to counter-rotate text/image in relation to nav item parent
         rotaValInverse = (rotaIncrement*currIndex-rotaOffset+activeNavItemPos)*(-1);
-
-        // d3.select(this).data('rotaVal', rotaVal);
-
+    
         d3.select(this).style('transform', 'rotate('+rotaVal+'deg)');
         d3.select(this).select('.sub').style('transform', 'rotate('+rotaValInverse+'deg)');
     });
@@ -68,32 +67,32 @@ function PageNavigation() {
             <div id="nav-inside">
                 <div className="item active" id="0">
                     <div className="sub">
-                        <p>1</p>
+                        <p>User Research</p>
                     </div>
                 </div>
                 <div className="item" id="1">
                     <div className="sub">				
-                        <p>2</p>
+                        <p>Sketching</p>
                     </div>
                 </div>
                 <div className="item" id="2">
                     <div className="sub">
-                        <p>3</p>
+                        <p>Database design</p>
                     </div>
                 </div>
                 <div className="item" id="3">			
                     <div className="sub">				
-                        <p>4</p>
+                        <p>Prototyping</p>
                     </div>
                 </div>
                 <div className="item" id="4">
                     <div className="sub">
-                        <p>5</p>
+                        <p>Development</p>
                     </div>
                 </div>
                 <div className="item" id="5">			
                     <div className="sub">				
-                        <p>6</p>
+                        <p>Testing</p>
                     </div>
                 </div>
             </div>
