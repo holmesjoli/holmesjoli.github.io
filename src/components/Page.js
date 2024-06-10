@@ -61,40 +61,27 @@ function PageNavigation() {
 
     }, []);
 
+    let navData = [{id: 0, name: "User Research", active: true}, 
+                   {id: 1, name: "Sketching", active: false}, 
+                   {id: 2, name: "Database design", active: false}, 
+                   {id: 3, name: "Prototyping", active: false}, 
+                   {id: 4, name: "Development", active: false}, 
+                   {id: 5, name: "Testing", active: false}];
+
     return (
         <div id="nav">
             <div id="nav-bg"><div className="inner"></div></div>
             <div id="nav-inside">
-                <div className="item active" id="0">
-                    <div className="sub">
-                        <p>User Research</p>
-                    </div>
-                </div>
-                <div className="item" id="1">
-                    <div className="sub">				
-                        <p>Sketching</p>
-                    </div>
-                </div>
-                <div className="item" id="2">
-                    <div className="sub">
-                        <p>Database design</p>
-                    </div>
-                </div>
-                <div className="item" id="3">			
-                    <div className="sub">				
-                        <p>Prototyping</p>
-                    </div>
-                </div>
-                <div className="item" id="4">
-                    <div className="sub">
-                        <p>Development</p>
-                    </div>
-                </div>
-                <div className="item" id="5">			
-                    <div className="sub">				
-                        <p>Testing</p>
-                    </div>
-                </div>
+                {navData.map((datum, i) => {
+                    return(
+                        <div className={datum.active ? "item active": "item"} id={datum.id}>
+                            <div className="sub">				
+                                <p>{datum.name}</p>
+                            </div>
+                        </div>
+                    )
+                    })
+                }
             </div>
         </div>
     )
