@@ -58,7 +58,7 @@ export let itemData = [
                      images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
-                            alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs non-selected and enabled and disabled start to create a component system.",
+                            alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs. non-selected and enabled vs. disabled start to create a component system.",
                             size: "small"
                         },
                         {

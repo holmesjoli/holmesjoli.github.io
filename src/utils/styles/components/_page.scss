@@ -190,9 +190,10 @@
 }
 
 .Visual-Content {
-	max-width: 35vw;
+	max-width: 33vw;
 
 	img {
 		margin: $appMargin;
+		margin-right: 0;
 	}
 }
