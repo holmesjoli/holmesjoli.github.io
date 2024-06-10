@@ -6,79 +6,70 @@ export let itemData = [
      year: 2024,
      mainImage: {url: "/assets/portfolio/voting-access-monitor/Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-    summary: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
-              "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
-              "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
      tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
      design: ["Data Visualization", "Interaction design", "UI/UX Design" ],
-     designProcess: {
-        descr: [],
-        research: {
-            images: [
-                {
-                    url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
-                    alt: "Moodboard of different images used in the intial research phase",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
-                    alt: "Synthesis of stakeholder research",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/DesignResearch2.png",
-                    alt: "Outcome of a card sorting activity",
-                    size: "small"
-                }
-            ]
-        },
-        sketches: {
-            images: [
-                {
-                    url: "/assets/portfolio/voting-access-monitor/Sketch1.png",
-                    alt: "Sketch of isolating and ranking different geographies",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/Sketch2.png",
-                    alt: "Sketch of ranking a set of geographies across a variety of variables",
-                    size: "small"
-                }
-            ]
-        },
-        prototype: {
-            images: [
-                {
-                    url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
-                    alt: "The image shows the proposed changes to a user interaction after receiving feedback from users about how to reset the view. I researched and put together a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed.",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
-                    alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs non-selected and enabled and disabled start to create a component system.",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/VisualSystem2.png",
-                    alt: "The image to shows the iterative process of designing a slider component.",
-                    size: "small"
-                }
-            ],
-        },
-        final: {
-            images: [
-                {url: "/assets/portfolio/voting-access-monitor/Development.png",
-                alt: "An image of the fully interactive data visualization zoomed into South Carolina",
-                size: "small"
-                },
-                {url: "/assets/portfolio/voting-access-monitor/Development2.png",
-                alt: "An image of specific county in South Carolina where the use can see where in the individual polling locations have been added or removed",
-                size: "small"
-                }
-            ]
-        }
-     },
+     designProcess: [{key: 'summary', name: 'summary', descr: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
+                                                                "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
+                                                                "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."] },
+                     {key: 'user-research', name: 'user research', descr: [], images: [
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
+                            alt: "Moodboard of different images used in the intial research phase",
+                            size: "small"
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
+                            alt: "Synthesis of stakeholder research",
+                            size: "small"
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/DesignResearch2.png",
+                            alt: "Outcome of a card sorting activity",
+                            size: "small"
+                        }
+                    ]},
+                    {key: 'sketching', name: 'sketching', descr: [], images: [
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/Sketch1.png",
+                            alt: "Sketch of isolating and ranking different geographies",
+                            size: "small"
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/Sketch2.png",
+                            alt: "Sketch of ranking a set of geographies across a variety of variables",
+                            size: "small"
+                        }
+                    ]},
+                    {key: 'prototyping', name: 'prototyping', descr: [],  images: [
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
+                            alt: "The image shows the proposed changes to a user interaction after receiving feedback from users about how to reset the view. I researched and put together a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed.",
+                            size: "small"
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
+                            alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs non-selected and enabled and disabled start to create a component system.",
+                            size: "small"
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/VisualSystem2.png",
+                            alt: "The image to shows the iterative process of designing a slider component.",
+                            size: "small"
+                        }
+                    ]}, 
+                    {key: 'development', name: 'development', descr: [], images: [
+                        {url: "/assets/portfolio/voting-access-monitor/Development.png",
+                        alt: "An image of the fully interactive data visualization zoomed into South Carolina",
+                        size: "small"
+                        },
+                        {url: "/assets/portfolio/voting-access-monitor/Development2.png",
+                        alt: "An image of specific county in South Carolina where the use can see where in the individual polling locations have been added or removed",
+                        size: "small"
+                        }
+                    ]}
+
+                    ],
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
     },
     {
@@ -101,7 +92,7 @@ export let itemData = [
                             "Culturally, red is of ten associated with words such as stop, warning, harm, and error. The incorrect predictions, in red, were also printed on translucent acrylic compared to the correct predictions, which were printed on black opaque acrylic.",
                             "Light is used in the piece metaphorically and aesthetically. Light plays an interesting role in this piece metaphorically. In Bentham's panopticon, the lighted guard tower encouraged self-policing behaviors. However, in Algorithmically Fair?, light draws the viewer's eye and highlights the frequency of algorithmic error. Additionally, the predominantly black form representing algorithmic inequity makes visual reference to a black box algorithm. Lighting this form from the inside out to elucidate viewers on algorithmic bias symbolically reverses the role of light plays in these panopticon forms."],
         designProcess: {
-            descr: ["I started by sketching out some initial ideas and design for a physical data visualization. I was interested in play with a cylindrical form because the form is representative in nature of both a database and Bentham's panopticon.",
+            summary: ["I started by sketching out some initial ideas and design for a physical data visualization. I was interested in play with a cylindrical form because the form is representative in nature of both a database and Bentham's panopticon.",
                     "Next, I processed and normalized the data in R and started some initial prototype of cylindrical laser cut forms that could be stacked."],
             sketches: {
                 images: [
@@ -214,7 +205,7 @@ export let itemData = [
                   "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen.",
                   "This app enables the user to explore and audit risk management data at the enterprise level, through different views to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads."],
         designProcess: {
-            descr: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io and dynamic visualization was design in Figma. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application.",
+            summary: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io and dynamic visualization was design in Figma. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application.",
                     "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."],
             research: {
                 images: [{url: "/assets/portfolio/banca-intesa-processes/visual-research1.jpg",
@@ -401,7 +392,7 @@ export let itemData = [
                   "Students were asked to self-assess their skills from using a scale of beginner to advanced across six dimensions: programming, data, graphic design, interaction design, storytelling, and leadership and management skills.",
                   "The final design is based off of the form known as a radar chart. However, the charts show overlap between the students across the six dimensions. The larger the form is in the radar chart, the more skilled the student pair is. The visualization is designed to show pairs where students combined competencies area the strongest team rather than students which may have overlapping compentencies."],
         designProcess: {
-            descr: ["The equitable teams project was developed over the course of two weeks. The main tools used to create the visualization were R and Adobe Illustrator. R was used to generate the initial forms, which were then edited and modified in Adobe Illustrator."],
+            summary: ["The equitable teams project was developed over the course of two weeks. The main tools used to create the visualization were R and Adobe Illustrator. R was used to generate the initial forms, which were then edited and modified in Adobe Illustrator."],
             sketches: {
                 images: [{
                     url: "assets/portfolio/equitable-teams/design-process-1.png",
@@ -518,99 +509,94 @@ export let itemData = [
                     "It employs the visual metaphor of a butterfly to convey that migration is a natural phenomenon frequently witnessed in the natural world. The visual inspiration for the metaphor is from artist, organizater, and activist, Favianna Rodriguez, who created a series called 'Migration is Beautiful' in 2012.",
                     "The veins of the butterfly detail different paths a user could take to acquire migration after answering some simple questions such as, 'Are your parents citizens of the country you are interested in migrating to?', 'Were you born in the country you are interested in migrating to?', or 'Are you married?'"],
         data: ["This project combines data from two resources. The first is the global citizenship database maintained by the European University Institute. The database standardizes citizenship acquisition methods across 190 countries. The database identifies 28 ways through which migrants can obtain citizenship. It was last updated on January 1st, 2020. This data set was challenging to work with because the data are all categorical, which is often harder to visualize than numeric data."],
-        designProcess: {
-            descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
-                    "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."],
-            research: {
-                images: [
-                {
-                    url: "/assets/portfolio/migration-is-natural/moodboard.png",
-                    alt: "Moodboard of different images used in the intial research phase of Migration is Natural",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration1@2x-100.jpg",
-                    alt: "A map showing the migratory patterns of birds",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration2@2x-100.jpg",
-                    alt: "A map showing the migratory patterns of birds",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration3@2x-100.jpg",
-                    alt: "A map showing the migratory patterns of whales",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration4@2x-100.jpg",
-                    alt: "An information visualization showing the different paths to the 2016 presidency",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration5@2x-100.jpg",
-                    alt: "An information visualization showing path flows",
-                    size: "small"
-                }
-            ]},
-            sketches: {
-                images: [
-                {
-                    url: "/assets/portfolio/migration-is-natural/design-process-1.png",
-                    alt: "Initial sketch showing underlying logic to the data",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/design-process-2.png",
-                    alt: "Initial sketch showing how a path could be formed from the data",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/design-process-3.png",
-                    alt: "Initial sketch adding more detail to potential data paths",
-                    size: "small"
-                }
-            ]},
-            prototype: {
-                images: [
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-4.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-5.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-6.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-7.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-8.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
-                        link: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
-                        alt: "The team used figma to prototype the application",
-                        size: "big"
-                    }
-            ]},
-            final: {
-                images: [
-                {
-                    url: "https://joliholmes.com/team-migration/",
-                    link: "https://joliholmes.com/team-migration/",
-                    alt: "Interactive applications showing the initial map",
-                    size: "big"
-                }
-            ]}
-        }
+        designProcess: [{key: "summary", name: "summary", descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
+                                                                  "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."]},
+                        {key: "design-research", name: "design research", descr: [], images: [
+                            {
+                                url: "/assets/portfolio/migration-is-natural/moodboard.png",
+                                alt: "Moodboard of different images used in the intial research phase of Migration is Natural",
+                                size: "small"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration1@2x-100.jpg",
+                                alt: "A map showing the migratory patterns of birds",
+                                size: "small"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration2@2x-100.jpg",
+                                alt: "A map showing the migratory patterns of birds",
+                                size: "small"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration3@2x-100.jpg",
+                                alt: "A map showing the migratory patterns of whales",
+                                size: "small"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration4@2x-100.jpg",
+                                alt: "An information visualization showing the different paths to the 2016 presidency",
+                                size: "small"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration5@2x-100.jpg",
+                                alt: "An information visualization showing path flows",
+                                size: "small"
+                            }
+                        ]},
+                        {key: "sketching", name: "sketching", descr: [], images: [
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-1.png",
+                                alt: "Initial sketch showing underlying logic to the data",
+                                size: "small"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-2.png",
+                                alt: "Initial sketch showing how a path could be formed from the data",
+                                size: "small"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-3.png",
+                                alt: "Initial sketch adding more detail to potential data paths",
+                                size: "small"
+                            }
+                        ] },
+                        {key: "prototyping", name: "prototyping", descr: [], images: [
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-4.png",
+                                alt: "",
+                                size: "small"},
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-5.png",
+                                alt: "",
+                                size: "small"},
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-6.png",
+                                alt: "",
+                                size: "small"},
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-7.png",
+                                alt: "",
+                                size: "small"},
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-8.png",
+                                alt: "",
+                                size: "small"},
+                            {
+                                url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
+                                link: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
+                                alt: "The team used figma to prototype the application",
+                                size: "big"
+                            }
+                    ] },
+                    {key: "development", name: "development", descr: [], images: [
+                        {
+                            url: "https://joliholmes.com/team-migration/",
+                            link: "https://joliholmes.com/team-migration/",
+                            alt: "Interactive applications showing the initial map",
+                            size: "big"
+                        }] }
+
+                    ]
     },
     // {title: "Public Policy Collection", 
     // page: "Public-Policy-Collection", 
