@@ -26,7 +26,7 @@ function updateRotation(activeIndex, lastActiveIndex) {
     d3.select('.item:nth-child('+activeIndex+')').classed("active", true);
 
     // Iterate through all nav items and update their position/rotation
-    d3.select('.item').each(function() {
+    d3.selectAll('.item').each(function() {
         // console.log(this);
 
         currIndex = +d3.select(this).property('id') + 1;
@@ -51,7 +51,7 @@ function PageNavigation() {
         updateRotation(initActiveIndex, 0);
 
         // Update active nav item and rotate it to the top
-        d3.select('.item').on('click', function() {
+        d3.selectAll('.item').on('click', function() {
             var activeIndex = +d3.select(this).property('id') + 1;
             var lastActiveIndex = d3.select('.active').property('id') + 1;
             d3.select('.active').classed("active", false);
