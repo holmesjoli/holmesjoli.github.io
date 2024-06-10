@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 // Update current placement of all navigation items based on current active item
 // TODO: persistent rotational direction
-function updateRotation(activeIndex, lastActiveIndex) {
+function updateRotation(activeIndex) {
 
     // TODO: programmatically decide increment value
     const rotaIncrement = 60;
@@ -48,16 +48,16 @@ function PageNavigation() {
 
         var initActiveIndex = +d3.select('.item.active').property('id') + 1;
         d3.select('.item:nth-child('+initActiveIndex+')');
-        updateRotation(initActiveIndex, 0);
+        updateRotation(initActiveIndex);
 
         // Update active nav item and rotate it to the top
         d3.selectAll('.item').on('click', function() {
             var activeIndex = +d3.select(this).property('id') + 1;
-            var lastActiveIndex = d3.select('.active').property('id') + 1;
+            // var lastActiveIndex = d3.select('.active').property('id') + 1;
             d3.select('.active').classed("active", false);
             d3.select(this).classed('active', true);
 
-            updateRotation(activeIndex, lastActiveIndex);
+            updateRotation(activeIndex);
         })
 
     }, []);
