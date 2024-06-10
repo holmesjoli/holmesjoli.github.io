@@ -1,5 +1,4 @@
 // Components
-import { DesignStage, CollectionExample, Slideshow } from "./Carousel"
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import SideBarRight from "./SideBarRight";
@@ -111,7 +110,8 @@ export function Page({pageData}) {
                                         <div>
                                             <img src={datum.images[0].url} alt={datum.images[0].alt}/>
                                             <h5 className="Item-Caption">{datum.images[0].alt}</h5>
-                                        </div>: <></>}
+                                        </div>: 
+                                        <video playsinline autoplay muted loop controls src={datum.videos[0].url} type="video/mp4"/> }
                                 </div>
                                 <div className="Written-Content">
                                     {datum.descr.map((p, i) => {
@@ -125,42 +125,6 @@ export function Page({pageData}) {
                     })
                 }
             </div>
-
-               
-                    {/* {d.designProcess ? 
-                        <div className="Project-Design-Process">
-                            <h3>design process</h3>
-
-                            {
-                            d.designProcess.descr  ? 
-                            <div className="Project-Description">
-                                <div className="Main-Image">
-                                    <img src={d.mainImage.url} alt={d.mainImage.alt}></img>
-                                </div>
-                                <div>
-                                    {
-                                        d.designProcess.descr.map((datum, i) => {
-                                            return <p key={i}>{datum}</p>
-                                        })
-                                    }
-                                </div>
-                                
-                            </div>: <></>
-                            }
-                            <DesignStage descr="design research" stage={d.designProcess.research} />
-                            <DesignStage descr="initial sketches" stage={d.designProcess.sketches} />
-                            <DesignStage descr="prototype" stage={d.designProcess.prototype} />
-                            <DesignStage descr="final design" stage={d.designProcess.final} />
-                        </div> : 
-                        <div className="Project-Collection">
-                            {
-                                d.collection.map((datum, i) => {
-                                    return <CollectionExample collection={datum} key={i}/>
-                                })
-                            }    
-                        </div>} */}
-                {/* </div>                */}
-            {/* </div> */}
         </div>
     )
 }

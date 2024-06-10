@@ -13,24 +13,24 @@ export let itemData = [
      designProcess: [{name: 'summary', 
                       descr: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
                               "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
-                              "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."] },
+                              "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
+                    videos: [
+                        {url: "/assets/portfolio/voting-access-monitor/InteractionDemo.mp4",}
+                    ] },
                      {name: 'user research', 
                      descr: ["Throughout the design process we engaged in card sorting, stakeholder mapping, user interview, and cognitive walkthroughs."], 
                      images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
-                            alt: "Synthesis of stakeholder research. After initial user interviews I grouped stakeholders into three groups to help the team prioritize features.",
-                            size: "small"
+                            alt: "Synthesis of stakeholder research. After initial user interviews I grouped stakeholders into three groups to help the team prioritize features."
                         },
                         {
                             url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
-                            alt: "Moodboard of different images used in the intial research phase",
-                            size: "small"
+                            alt: "Moodboard of different images used in the intial research phase"
                         },
                         {
                             url: "/assets/portfolio/voting-access-monitor/DesignResearch2.png",
-                            alt: "Outcome of a card sorting activity",
-                            size: "small"
+                            alt: "Outcome of a card sorting activity"
                         }
                     ]},
                     {name: 'sketching', 
@@ -38,13 +38,11 @@ export let itemData = [
                     images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/Sketch1.png",
-                            alt: "Sketch of isolating and ranking different geographies",
-                            size: "small"
+                            alt: "Sketch of isolating and ranking different geographies"
                         },
                         {
                             url: "/assets/portfolio/voting-access-monitor/Sketch2.png",
-                            alt: "Sketch of ranking a set of geographies across a variety of variables",
-                            size: "small"
+                            alt: "Sketch of ranking a set of geographies across a variety of variables"
                         }
                     ]},
                     {name: 'data', 
@@ -58,13 +56,11 @@ export let itemData = [
                      images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
-                            alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs. non-selected and enabled vs. disabled start to create a component system.",
-                            size: "small"
+                            alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs. non-selected and enabled vs. disabled start to create a component system."
                         },
                         {
                             url: "/assets/portfolio/voting-access-monitor/VisualSystem2.png",
-                            alt: "The image to shows the iterative process of designing a slider component.",
-                            size: "small"
+                            alt: "The image to shows the iterative process of designing a slider component."
                         }
                     ]},
                     {name: 'interaction research',
@@ -72,8 +68,7 @@ export let itemData = [
                      images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
-                            alt: "The image shows the proposed changes to a user interaction after receiving feedback from users about how to reset the view. I researched and put together a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed.",
-                            size: "small"
+                            alt: "Proposed changes to a user interaction after receiving feedback from users about how to reset the view. I assembled a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed."
                         }
                     ]}
                 ]
@@ -105,30 +100,30 @@ export let itemData = [
             images: [
                 {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132923256.jpg",
                     alt: "Initial sketch conveying the idea of physical form that represents a database",
-                    size: "small"},
+                    },
                     {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132856202.jpg",
                     alt: "A second sketch conveying the idea of physical form that represents a database",
-                    size: "small"},
+                   },
                     {url:"/assets/portfolio/algorithmically-fair/PXL_20221213_220237602.jpg",
                     alt: "Initial sketch showing how a third dimension could be used to show the number of people",
-                    size: "small"}]},
+                   }]},
             {name: 'prototyping', descr: ["Next, I processed and normalized the data in R and started some initial prototype of cylindrical laser cut forms that could be stacked."], 
             images:  [{url: "/assets/portfolio/algorithmically-fair/PXL_20221214_133321902.jpg",
                        alt: "Initial prototype of layered pie charts",
-                       size: "small"}, 
+                       }, 
                        {url: "/assets/portfolio/algorithmically-fair/PXL_20221202_221919552.jpg",
                         alt: "Initial prototype of light inside a layered pie chart",
-                        size: "small"}]},
+                       }]},
             {name: 'final', images: [
                 // {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
                 // alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates",
                 // size: "big"},
                 {url: "/assets/portfolio/algorithmically-fair/PXL_20221207_173728791.PORTRAIT.jpg",
                 alt: "Birdseye view of the Algorithmically Fair?",
-                size: "small"}, 
+                }, 
                 {url: "/assets/portfolio/algorithmically-fair/PXL_20221207_173759492.PORTRAIT.jpg",
                 alt: "Close-up of one data visualization's physical form on the LED radial light",
-                size: "small"}]}
+                }]}
             ]
     },
     // {title: "Intesa SanPaolo Knowledge Network", 
