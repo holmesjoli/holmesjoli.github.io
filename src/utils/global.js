@@ -212,7 +212,7 @@ export let itemData = [
                 {url: "/assets/portfolio/banca-intesa-processes/circlepackingInteraction.mp4"}
                 ]
             },
-            {name: 'research',
+            {name: 'visual research',
              descr: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The first step was researching and presenting different visual forms to a client user group.",
                     "The team considered other interfaces that relied on forms that show hierarchies within the data such as a treemap."],
              images: [

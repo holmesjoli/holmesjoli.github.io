@@ -17,7 +17,7 @@ function updateRotation(activeIndex, nItem) {
 
     // console.log(rotaIncrement);
     // Control where on the wheel active nav item is displayed
-    const activeNavItemPos = 135;
+    const activeNavItemPos = 90;
 
     let rotaVal = 0, rotaValInverse = 0, currIndex;
 
@@ -99,8 +99,6 @@ export function Page({pageData}) {
                 </div>
 
                 {designProcess.map((datum, i) => {
-
-                    console.log(datum.images && datum.images[0]);
                     return(
                         <div className={datum.active ? `item item-${i} active`: `item item-${i}`} id={i} key={i + "-content"}>			
                             <h3>{datum.name}</h3>
@@ -111,7 +109,7 @@ export function Page({pageData}) {
                                             <img src={datum.images[0].url} alt={datum.images[0].alt}/>
                                             <h5 className="Item-Caption">{datum.images[0].alt}</h5>
                                         </div>: 
-                                        <video playsinline autoplay muted loop controls src={datum.videos[0].url} type="video/mp4"/> }
+                                        <video playsInline autoPlay muted loop controls src={datum.videos[0].url} type="video/mp4"/> }
                                 </div>
                                 <div className="Written-Content">
                                     {datum.descr.map((p, i) => {
