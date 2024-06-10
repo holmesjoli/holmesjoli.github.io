@@ -76,7 +76,7 @@ function PageNavigation() {
                     return(
                         <div className={datum.active ? "item active": "item"} id={datum.id} key={datum.id + "-design-phase"}>
                             <div className="sub">				
-                                <p>{datum.name}</p>
+                                <h3>{datum.name}</h3>
                             </div>
                         </div>
                     )
