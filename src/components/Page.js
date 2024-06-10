@@ -74,7 +74,7 @@ function PageNavigation() {
             <div id="nav-inside">
                 {navData.map((datum, i) => {
                     return(
-                        <div className={datum.active ? "item active": "item"} id={datum.id}>
+                        <div className={datum.active ? "item active": "item"} id={datum.id} key={datum.id + "-design-phase"}>
                             <div className="sub">				
                                 <p>{datum.name}</p>
                             </div>
