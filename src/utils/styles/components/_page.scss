@@ -1,11 +1,10 @@
 .Page {
     display: grid;
     grid-template-columns: minmax(100px, 10%) 1fr;
-    overflow-y: scroll;
+    overflow-y: hidden;
     width: 100vw;
     overflow-x: hidden;
-    padding: $appPadding;
-    margin: $appMargin;
+    // padding: $appPadding;
 }
 
 .Page-Header {
@@ -68,21 +67,7 @@
     color: $appColor;
 }
 
-
 // Page Navigation
-
-* {
-	margin:0;
-	padding:0;
-}
-
-body {
-	// background: #333;
-	// height: 100%;
-	// width: 100%;
-	// overflow: hidden;
-	position: relative;
-}
 
 #nav {
 	position: relative;
@@ -169,8 +154,8 @@ body {
 }
 
 #main-content {
-	color:#ccc;
-	padding:50px;
+	padding: 0 50px;
+    overflow-y: hidden;
 	
 	.item {
 		position: absolute;
