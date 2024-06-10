@@ -109,16 +109,11 @@ export function Page({pageData}) {
                     return(
                         <div className={datum.active ? `item item-${i} active`: `item item-${i}`} id={i} key={i + "-content"}>			
                             <h3>{datum.name}</h3>
-                            <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
 
-                            <p>Aliquam mi risus, elementum et blandit sit amet, laoreet quis justo. Etiam sed justo nec est aliquet posuere gravida et diam. Aenean at tortor tortor. Sed vel leo lectus. Mauris sed tellus odio. Nam vel nibh egestas, pharetra nisl eget, pulvinar sem. In vitae commodo sem. In dolor risus, iaculis nec hendrerit eu, lacinia lacinia magna.</p>
-
-                            <p>Sed viverra aliquam orci id suscipit. Vivamus ornare nisl sed magna cursus porttitor. Quisque id eros risus. Aenean non orci quam. Sed commodo bibendum ipsum at suscipit. Vivamus lobortis scelerisque orci, in euismod nulla eleifend quis. Aliquam posuere dui magna. Donec nec posuere massa, id aliquam urna. Curabitur sit amet porta nisl. Mauris aliquam viverra nulla eu pharetra. Nullam vulputate ac felis quis elementum.</p>
-
-                            <p>Aenean ac pellentesque nulla, ut varius nisl. Duis pharetra tortor ornare mi gravida, quis consectetur est efficitur. Pellentesque eu odio ut lacus accumsan fermentum. Maecenas tincidunt leo ac lacus mollis vulputate. In consectetur odio vel dignissim scelerisque. Curabitur urna massa, posuere nec ultricies tempus, malesuada suscipit lacus. Morbi eu iaculis orci. Nam mollis vitae nunc ut tempus. Aliquam porta aliquet ipsum, ut feugiat lorem rutrum eget. Vestibulum egestas urna in ante molestie fermentum ac faucibus nibh. Integer eget tempus velit. Aliquam et interdum erat, ut blandit velit.</p>
-
-                            <p>Vestibulum consequat, enim egestas porttitor efficitur, velit dolor venenatis orci, a posuere risus erat in ante. Integer nunc tellus, aliquet a odio et, consequat viverra turpis. Mauris ullamcorper, diam vitae feugiat ornare, erat augue tristique erat, eu consectetur libero diam et tellus. Phasellus vel odio ex. Vestibulum dignissim volutpat justo ut ultricies. Aliquam erat volutpat. Phasellus pharetra vulputate diam, sed euismod nisl. Nulla erat enim, feugiat ac diam ut, finibus sodales ante. Phasellus imperdiet vulputate nulla, quis vulputate nisi scelerisque vitae. Sed posuere aliquet risus a imperdiet. Fusce eget ex posuere magna eleifend laoreet eget non lacus.</p>
-  
+                            {datum.descr.map((p) => {
+                                return(<p>{p}</p>)
+                            })
+                            }
                         </div>
                     )
                     })
@@ -132,17 +127,7 @@ export function Page({pageData}) {
                 </div> */}
                 {/* <div className="Project-Information"> */}
                     {/* <div className="Project-Text "> */}
-                        {/* {
-                            d.brief  ? 
-                            <div className="Project-Brief">
-                                    <h3>brief</h3>
-                                    {
-                                        d.brief.map((datum, i) => {
-                                            return <p key={i}>{datum}</p>
-                                        })
-                                    }
-                                </div>: <></>
-                        } */}
+                    
                         {/* {
                         d.summary  ? 
                         <div className="Project-Summary">

@@ -9,10 +9,11 @@ export let itemData = [
      tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
      design: ["Data Visualization", "Interaction design", "UI/UX Design" ],
-     designProcess: [{key: 'summary', name: 'summary', descr: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
+     role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
+     designProcess: [{name: 'summary', descr: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
                                                                 "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
                                                                 "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."] },
-                     {key: 'user-research', name: 'user research', descr: [], images: [
+                     {name: 'user research', descr: [], images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
                             alt: "Moodboard of different images used in the intial research phase",
@@ -29,7 +30,9 @@ export let itemData = [
                             size: "small"
                         }
                     ]},
-                    {key: 'sketching', name: 'sketching', descr: [], images: [
+                    {name: 'sketching', 
+                    descr: ['I always start by sketching on paper. Sketching on paper has the potential to invite conversation from co-designers such as users, stakeholders, and other team members.'], 
+                    images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/Sketch1.png",
                             alt: "Sketch of isolating and ranking different geographies",
@@ -41,7 +44,8 @@ export let itemData = [
                             size: "small"
                         }
                     ]},
-                    {key: 'prototyping', name: 'prototyping', descr: [],  images: [
+                    {name: 'data', descr: [], images: []},
+                    {name: 'prototyping', descr: [],  images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
                             alt: "The image shows the proposed changes to a user interaction after receiving feedback from users about how to reset the view. I researched and put together a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed.",
@@ -58,7 +62,7 @@ export let itemData = [
                             size: "small"
                         }
                     ]}, 
-                    {key: 'development', name: 'development', descr: [], images: [
+                    {name: 'development', descr: [], images: [
                         {url: "/assets/portfolio/voting-access-monitor/Development.png",
                         alt: "An image of the fully interactive data visualization zoomed into South Carolina",
                         size: "small"
@@ -68,9 +72,7 @@ export let itemData = [
                         size: "small"
                         }
                     ]}
-
-                    ],
-     role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
+                ]
     },
     {
         title: "Algorithmically Fair?", 
