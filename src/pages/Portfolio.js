@@ -37,16 +37,16 @@ export default function Portfolio() {
 
         let dataNew = itemData.filter(d => {
 
-            if (selectedTools.length === 0 && selectedDesign.length === 0) {
+            if (selectedTools.length === 0 && selectedDesign.length === 0 && selectedRole.length === 0) {
                 return d;
             } else {
-                return filterData(selectedTools.concat(selectedDesign), d);
+                return filterData(selectedRole.concat(selectedTools.concat(selectedDesign)), d);
             }
         });
 
         updateData(dataNew);
 
-    }, [selectedDesign, selectedTools])
+    }, [selectedDesign, selectedTools, selectedRole])
 
     return(
         <div className="Main">
