@@ -66,8 +66,8 @@ function PageNavigation({data}) {
             updateRotation(activeIndex, data.length);
 
             // Bring appropriate content into view
-            d3.selectAll('#main-content .item').classed("active", false);
-            d3.select(`#main-content .item.item-${activeIndex}`).classed("active", true);
+            d3.selectAll('#Main-Content .item').classed("active", false);
+            d3.select(`#Main-Content .item.item-${activeIndex}`).classed("active", true);
         })
 
     }, []);
@@ -99,7 +99,7 @@ export function Page({pageData}) {
     return(
         <div className="Page">
             <PageNavigation data={designProcess}/>
-            <div id="main-content">	
+            <div id="Main-Content">	
                 <div className="Page-Header">
                     <h2 className="Project-Title">{pageData.title}</h2>
                     <SideBarRight d={pageData}/>
@@ -109,68 +109,22 @@ export function Page({pageData}) {
                     return(
                         <div className={datum.active ? `item item-${i} active`: `item item-${i}`} id={i} key={i + "-content"}>			
                             <h3>{datum.name}</h3>
-
-                            {datum.descr.map((p) => {
-                                return(<p>{p}</p>)
-                            })
-                            }
+                            <div className="Content">
+                                <div></div>
+                                <div className="Written-Content">
+                                    {datum.descr.map((p) => {
+                                        return(<p>{p}</p>)
+                                    })
+                                    }
+                                </div>
+                            </div>
                         </div>
                     )
                     })
                 }
             </div>
 
-            {/* <div className="Project-Main">
-                <div className="Page-Header">
-                    <h2 className="Project-Title">{d.title}</h2>
-                    <SideBarRight d={d}/>
-                </div> */}
-                {/* <div className="Project-Information"> */}
-                    {/* <div className="Project-Text "> */}
-                    
-                        {/* {
-                        d.summary  ? 
-                        <div className="Project-Summary">
-                            <h3>summary</h3>
-                            {
-                                d.summary.map((datum, i) => {
-                                    return <p key={i}>{datum}</p>
-                                })
-                            }
-                        </div>: <></>
-                        }                        */}
-                        {/* {d.data  ? 
-                            <div className="Project-Data">
-                            <h3>data</h3>
-                                {
-                                    d.data.map((datum, i) => {
-                                        return <p key={i}>{datum}</p>
-                                    })
-                                }
-                            </div>: <></>
-                        } */}
-                        {/* {d.methodology ? 
-                            <div className="Project-Methodology">
-                                <h3>methodology</h3>
-                                {
-                                    d.methodology.map((datum, i) => {
-                                        return <p key={i}>{datum}</p>
-                                    })
-                                }
-                            </div>: <></>
-                        } */}
-                        {/* {
-                        d.artistStatement  ? 
-                        <div className="Project-Artist-Statement">
-                                <h3>artist statement</h3>
-                                {
-                                    d.artistStatement.map((datum, i) => {
-                                        return <p key={i}>{datum}</p>
-                                    })
-                                }
-                            </div>: <></>
-                        } */}
-                    {/* </div> */}
+               
                     {/* {d.designProcess ? 
                         <div className="Project-Design-Process">
                             <h3>design process</h3>

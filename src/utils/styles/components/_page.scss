@@ -152,8 +152,9 @@
 	}
 }
 
-#main-content {
-	padding: 0 50px;
+#Main-Content {
+	padding: $appPadding;
+	margin-left: 50px;
     overflow-y: hidden;
 	
 	.item {
@@ -171,4 +172,13 @@
 			margin: $appMargin/2 0;
 		}
 	}
+}
+
+.Content {
+	display: grid;
+    grid-template-columns: 1fr minmax(150px, 40%);
+}
+
+.Written-Content {
+	margin-right: $appMargin;
 }
