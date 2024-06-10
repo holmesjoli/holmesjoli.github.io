@@ -5,11 +5,12 @@ import Footer from "./Footer";
 import SideBarRight from "./SideBarRight";
 import * as d3 from 'd3';
 
+import { useEffect } from "react";
+
 // Update current placement of all navigation items based on current active item
 // TODO: persistent rotational direction
 function updateRotation(activeIndex, lastActiveIndex) {
 
-    // define rotation increments based on number of items in nav
     // TODO: programmatically decide increment value
     const rotaIncrement = 60;
     // Control where on the wheel active nav item is displayed
@@ -21,80 +22,79 @@ function updateRotation(activeIndex, lastActiveIndex) {
     var rotaOffset = activeIndex * rotaIncrement;
 
     // Bring appropriate content into view
-    d3.select('#main-content .active').removeClass('active');
-    d3.select('#main-content .item:nth-child('+activeIndex+')').addClass('active');
+    d3.select('.active').classed("active", false);
+    d3.select('.item:nth-child('+activeIndex+')').classed("active", true);
 
     // Iterate through all nav items and update their position/rotation
-    d3.select('#nav .item').each(function() {
-        currIndex = this.index()+1;
+    d3.select('.item').each(function() {
+        // console.log(this);
+
+        currIndex = +d3.select(this).property('id') + 1;
         // calculate current rotational value of item
         rotaVal = rotaIncrement*currIndex-rotaOffset+activeNavItemPos;
         // Inverse rotaVal to counter-rotate text/image in relation to nav item parent
         rotaValInverse = (rotaIncrement*currIndex-rotaOffset+activeNavItemPos)*(-1);
 
-        this.data('rotaVal', rotaVal);
+        // d3.select(this).data('rotaVal', rotaVal);
 
-        this.css({
-            'transform': 'rotate('+rotaVal+'deg)'
-        });
-        this.find('.sub').css({
-            'transform': 'rotate('+rotaValInverse+'deg)'
-        });
+        d3.select(this).style('transform', 'rotate('+rotaVal+'deg)');
+        d3.select(this).select('.sub').style('transform', 'rotate('+rotaValInverse+'deg)');
     });
 }
 
 function PageNavigation() {
 
-    // document.ready(function() {
-    //     // Find currently active item and pass it to item placement function
-    //     var initActiveIndex = d3.select('.item.active').index()+1;
-    //     d3.select('#main-content .item:nth-child('+initActiveIndex+')')
-    //     updateRotation(initActiveIndex, 0);
+    useEffect(() => {
 
-    //     // Update active nav item and rotate it to the top
-    //     d3.select('.item').click(function() {
-    //         var activeIndex = this.index()+1;
-    //         var lastActiveIndex = d3.select('.active').index()+1;
-    //         d3.select('.active').removeClass('active');
-    //         this.addClass('active');
+        var initActiveIndex = +d3.select('.item.active').property('id') + 1;
+        d3.select('.item:nth-child('+initActiveIndex+')');
+        updateRotation(initActiveIndex, 0);
 
-    //         updateRotation(activeIndex, lastActiveIndex);
-    //     })
-    // });
+        // Update active nav item and rotate it to the top
+        d3.select('.item').on('click', function() {
+            var activeIndex = +d3.select(this).property('id') + 1;
+            var lastActiveIndex = d3.select('.active').property('id') + 1;
+            d3.select('.active').classed("active", false);
+            d3.select(this).classed('active', true);
+
+            updateRotation(activeIndex, lastActiveIndex);
+        })
+
+    }, []);
 
     return (
         <div id="nav">
-            <div id="nav-bg"><div class="inner"></div></div>
-                <div id="nav-inside">
-                    <div className="item item-1 active">
-                        <div className="sub">
-                            <p>1</p>
-                        </div>
+            <div id="nav-bg"><div className="inner"></div></div>
+            <div id="nav-inside">
+                <div className="item active" id="0">
+                    <div className="sub">
+                        <p>1</p>
                     </div>
-                    <div className="item item-2">
-                        <div className="sub">				
-                            <p>2</p>
-                        </div>
+                </div>
+                <div className="item" id="1">
+                    <div className="sub">				
+                        <p>2</p>
                     </div>
-                    <div className="item item-3">
-                        <div className="sub">
-                            <p>3</p>
-                        </div>
+                </div>
+                <div className="item" id="2">
+                    <div className="sub">
+                        <p>3</p>
                     </div>
-                    <div className="item item-4">			
-                        <div className="sub">				
-                            <p>4</p>
-                        </div>
+                </div>
+                <div className="item" id="3">			
+                    <div className="sub">				
+                        <p>4</p>
                     </div>
-                    <div className="item item-5">
-                        <div className="sub">
-                            <p>5</p>
-                        </div>
+                </div>
+                <div className="item" id="4">
+                    <div className="sub">
+                        <p>5</p>
                     </div>
-                    <div className="item item-6">			
-                        <div className="sub">				
-                            <p>6</p>
-                        </div>
+                </div>
+                <div className="item" id="5">			
+                    <div className="sub">				
+                        <p>6</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -214,3 +214,4 @@ export function PortfolioPage({d}) {
         </div>
     )
 }
+
