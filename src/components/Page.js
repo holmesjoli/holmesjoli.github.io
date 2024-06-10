@@ -4,10 +4,52 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import SideBarRight from "./SideBarRight";
 
+function PageNavigation() {
+
+    return (
+        <nav class="radial-nav">
+        <div class="center"></div>
+        <ul>
+            <li>
+            <a href="#">
+                <i class="fa fa-chrome"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+                <i class="fa fa-firefox"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+                <i class="fa fa-opera"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+                <i class="fa fa-edge"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+                <i class="fa fa-safari"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+                <i class="fa fa-internet-explorer"></i>
+            </a>
+            </li>
+        </ul>
+    </nav>
+    )
+}
+
 export function Page({d}) {
 
     return(
         <div className="Page">
+            <PageNavigation />
             <div className="Project-Main">
                 <div className="Page-Header">
                     <h2 className="Project-Title">{d.title}</h2>

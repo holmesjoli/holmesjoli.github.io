@@ -71,3 +71,93 @@
     margin-left: $appMargin;
     color: $appColor;
 }
+
+
+// Page Navigation
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  transition: all .3s;
+}
+  
+.center {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  border: 5px solid #eee;
+  border-radius: 50%;
+}
+
+.radial-nav {
+//   position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 150px auto;  
+  background: white;
+  border: 5px solid #eee;
+  border-radius: 50%;
+}
+  
+.radial-nav ul {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+  
+.radial-nav ul li {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 160px;
+  height: 160px;
+  transform-origin: 100% 100%;
+  overflow: hidden;
+}
+  
+.radial-nav ul li a {
+  background: rgba(#3498db, .4);
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  width: 160px;
+  height: 160px;
+  margin-top: 40px;
+  margin-left: 40px;
+  line-height: 100px;
+  color: #fff;
+  transform: skew(-30deg) rotate(-60deg);
+}
+  
+.radial-nav ul li a:hover {
+  background: rgba(#3498db, .6);
+}
+
+.radial-nav ul li:nth-child(1) {
+  transform: rotate(0deg) skew(30deg);
+}
+   
+.radial-nav ul li:nth-child(2) {
+  transform: rotate(60deg) skew(30deg);
+}
+  
+.radial-nav ul li:nth-child(3) {
+  transform: rotate(120deg) skew(30deg);
+}
+    
+.radial-nav ul li:nth-child(4) {
+  transform: rotate(180deg) skew(30deg);
+}
+   
+.radial-nav ul li:nth-child(5) {
+  transform: rotate(240deg) skew(30deg);
+}
+  
+.radial-nav ul li:nth-child(6) {
+  transform: rotate(300deg) skew(30deg);
+}
