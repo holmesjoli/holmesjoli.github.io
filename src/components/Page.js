@@ -59,12 +59,12 @@ function PageNavigation() {
 
     useEffect(() => {
 
-        var initActiveIndex = +d3.select('.item.active').property('id') + 1;
+        var initActiveIndex = +d3.select('#main-content .item.active').property('id') + 1;
         // d3.select('#main-content .item:nth-child('+initActiveIndex+')');
         updateRotation(initActiveIndex, navData.length);
 
         // Update active nav item and rotate it to the top
-        d3.selectAll('.item').on('click', function() {
+        d3.selectAll('#nav .item').on('click', function() {
             var activeIndex = +d3.select(this).property('id') + 1;
             // var lastActiveIndex = d3.select('.active').property('id') + 1;
             d3.select('.active').classed("active", false);
@@ -107,7 +107,7 @@ export function Page({d}) {
 
                 {navData.map((datum, i) => {
                     return(
-                        <div className={ `item item-${i}`} id={i} key={i + "-content"}>			
+                        <div className={datum.active ? `item item-${i} active`: `item item-${i}`} id={i} key={i + "-content"}>			
                             <h3>{datum.name}</h3>
                             <p>Nunc at magna augue. Duis aliquam porta risus ut sodales. Vivamus lobortis placerat sem, sed pretium tellus efficitur sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce interdum mauris nec bibendum consequat. Fusce elementum vulputate enim eget congue. Praesent dui ante, rhoncus eget molestie ac, fringilla id lorem.</p>
 
