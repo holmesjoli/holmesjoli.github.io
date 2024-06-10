@@ -1,5 +1,5 @@
 // Components
-import { DesignStage, CollectionExample } from "./Carousel"
+import { DesignStage, CollectionExample, Slideshow } from "./Carousel"
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import SideBarRight from "./SideBarRight";
@@ -40,12 +40,6 @@ function updateRotation(activeIndex, nItem) {
     });
 }
 
-// let navData = [{name: "Summary", active: true, key: 'summary'}, 
-//             //    {name: "User Research", active: false}, 
-//                {name: "Sketching", active: false}, 
-//                {name: "Prototyping", active: false}, 
-//                {name: "Development", active: false}, 
-//                {name: "Testing", active: false}];
 
 function PageNavigation({data}) {
 
@@ -106,14 +100,18 @@ export function Page({pageData}) {
                 </div>
 
                 {designProcess.map((datum, i) => {
+
+                    console.log(datum.images && datum.images[0]);
                     return(
                         <div className={datum.active ? `item item-${i} active`: `item item-${i}`} id={i} key={i + "-content"}>			
                             <h3>{datum.name}</h3>
                             <div className="Content">
-                                <div></div>
+                                <div className="Visual-Content">
+                                    {datum.images ? <div><img src={datum.images[0].url} alt={datum.images[0].alt}></img></div>: <></>}
+                                </div>
                                 <div className="Written-Content">
-                                    {datum.descr.map((p) => {
-                                        return(<p>{p}</p>)
+                                    {datum.descr.map((p, i) => {
+                                        return(<p key={i + "-paragraph"}>{p}</p>)
                                     })
                                     }
                                 </div>

@@ -170,15 +170,23 @@
 		
 		h3 {
 			margin: $appMargin/2 0;
+			font-size: 1rem;
 		}
 	}
 }
 
 .Content {
 	display: grid;
-    grid-template-columns: 1fr minmax(150px, 40%);
+    grid-template-columns: auto minmax(150px, 40%);
 }
 
 .Written-Content {
 	margin-right: $appMargin;
+}
+
+.Visual-Content {
+	img {
+		max-height: 50vh;
+		margin: $appMargin;
+	}
 }
