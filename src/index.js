@@ -119,7 +119,7 @@ root.render(
         } */}
 
         <Route path="/portfolio/Voting-Access-Monitor" element={<PortfolioPage d={itemData.find(d => d.page === "Voting-Access-Monitor")} />} />
-        <Route path="/portfolio/Vault-Breakers" element={<PortfolioPage d={itemData.find(d => d.page === "Vaultbreakers")} />} />
+        <Route path="/portfolio/Vaultbreakers" element={<PortfolioPage d={itemData.find(d => d.page === "Vaultbreakers")} />} />
         <Route path="/portfolio/Algorithmically-Fair" element={<PortfolioPage d={itemData.find(d => d.page === "Algorithmically-Fair")} />} />
         <Route path="/portfolio/Intesa-SanPaolo-Processes" element={<PortfolioPage d={itemData.find(d => d.page === "Intesa-SanPaolo-Processes")} />} />
         {/* <Route path="/portfolio/Banca-Intesa-Knowledge-Network" element={<PortfolioPage d={itemData.find(d => d.page === "Banca-Intesa-Knowledge-Network")} />} /> */}

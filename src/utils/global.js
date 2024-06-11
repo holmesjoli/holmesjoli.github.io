@@ -82,36 +82,49 @@ export let itemData = [
      tools: ["Illustrator", "Indesign"],
      tags: ["#illustrator", "#indesign", "#information-design", "#graphic-design", "#game-design"],
      mainImage: {
-        url: "/assets/portfolio/vault-breakers/Assets_Backstab card.png",
+        url: "/assets/portfolio/vaultbreakers/Assets_Backstab card.png",
         alt: "Vaultbreakers Backstab card. The card shows a character with a knife in their hand and a player can use this card to backstab opponents."
      },
     designProcess: [{
         name: "summary", 
         descr: ["As I consultant on Vaultbreakers, I worked with the game designer to create a series of cards that would be used in the game. The game is a cooperative-competitive card game where players work together to break into a vault and steal the loot inside. The game is designed to be played by 2-4 players and takes about 45 minutes to play.",
                 "I generated sketches for how the information could be displayed on the cards, suggested typographic changes to make the cards readable and consistent, gave feedback on color choices, in addition to creating several components for the printed game."],
-        images: [{url: "/assets/portfolio/vault-breakers/Assets_Vaultbreakers Example Cards.png",
+        images: [{url: "/assets/portfolio/vaultbreakers/Assets_Vaultbreakers Example Cards.png",
                   alt: "Vaultbreakers Backstab card. The card shows a character with a knife in their hand and a player can use this card to backstab opponents."}]
     },
     {
-        name: "digital sketches",
+        name: "information architecture",
         descr: ["One of my first steps as a consultant on the project was to present multiple ways of displaying the information on the cards. The game designer knew that he would be hiring an illustrator for card, so white boxes represent those spaces."],
-        images: [{url: "/assets/portfolio/vault-breakers/sketch.png",
+        images: [{url: "/assets/portfolio/vaultbreakers/sketch.png",
                   alt: "Image shows an initial possible layout for the card."},
-                  {url: "/assets/portfolio/vault-breakers/sketch2.png",
+                  {url: "/assets/portfolio/vaultbreakers/sketch2.png",
                   alt: "Image shows an initial possible layout for the card."},
-                  {url: "/assets/portfolio/vault-breakers/sketch3.png",
+                  {url: "/assets/portfolio/vaultbreakers/sketch3.png",
                   alt: "Image shows an initial possible layout for the card."},
-                  {url: "/assets/portfolio/vault-breakers/sketch4.png",
+                  {url: "/assets/portfolio/vaultbreakers/sketch4.png",
                   alt: "Image shows an initial possible layout for the card."},
-                  {url: "/assets/portfolio/vault-breakers/sketch5.png",
+                  {url: "/assets/portfolio/vaultbreakers/sketch5.png",
                   alt: "Image shows an initial possible layout for the card."}
                 ]
         },
+        {name: "visual language",
+         descr: ["I worked with the game designer to develop a consistent visual language for the game. I worked with the game designer and illustrator to create the color palette for the game",
+                 "Throughout the design process, I am always aware of accessibility. The cards are designed to have a high contrast between the text and background so that they are easily readable and the type is set at a point size of 10."],
+         images: [{url: "/assets/portfolio/vaultbreakers/Assets_VBColorPalette.png",
+                   alt: "Color palette for the game Vaultbreakers."}]},
         {name: "iteration",
-         descr: ["I worked with the game designer to iterate on the information architecture of the games and develop a consistent visual language for the game.",
-                 "When play testing the game revealed that it would be helpful for users to be able to distinguish between two types of action cards, I suggested different ways of visually differentiating the cards."],
-         images: [{url: "/assets/portfolio/vault-breakers/Assets_Iterations of Suprise Actions.png",
-                   alt: ""}]
+         descr: ["I worked with the game designer to iterate on the information architecture of the cards and develop a consistent visual language for the game.",
+                 "When play testing the game revealed that it would be helpful for users to be able to distinguish between two types of action cards, I suggested different ways of visually differentiating the cards.",
+                 "The first card design with the exclamation point icon is the final design. I suggested that the game designer use the first design because I feared that the border changes would be too subtle and players would still have a hard time visually differentiating between the two types of actions."],
+         images: [{url: "/assets/portfolio/vaultbreakers/Assets_Iterations of Surprise Actions.png",
+                   alt: "Three versions of a 'Suprise Action' card. "}]
+        },
+        {name: "instructional design",
+         descr: ["The final deliverable that I produced for this project is the Vaultbreakers instruction manual. I created additional assets for the manual in Illustrator and used Indesign to develop the page spreads.",
+                "While designing the instructions, I discovered the typeface used on the cards, CC Marian Churchill, was only available in uppercase. While uppercase works well for short and simple passages, such as on cards, it is much hard to read in blocks of text that are commonly present in instruction manuals.",
+                "I tested and selected a new typeface, Josefin Sans, size 10, for the body text of the instruction manual. The headers are set in CC Marian Churchill to extend the visual language of the cards to the instruction manual."],
+         images: [{url: "/assets/portfolio/vaultbreakers/VaultbreakersInstructions4.png",
+                   alt: "Page four of the instruction manual for Vaultbreakers."}]
         }
     ]
     },
