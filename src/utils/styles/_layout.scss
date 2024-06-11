@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+#root {
+  height: 100vh;
+}
+
 body::after {
   content: '';
   display: block;
@@ -80,6 +84,7 @@ body::after {
     font-size: 2.7rem;
     line-height: 1;
     margin: 0;
+    letter-spacing: .08em;
   }
 
   .Navigation {
@@ -94,9 +99,12 @@ body::after {
 
   .Navigation_branding {
     align-items: normal;
+    padding-right: $appPadding*2;
+    padding-left: 0;
 
     h3 {
       padding: 0;
+      line-height: 1.4;
     }
   }
 
