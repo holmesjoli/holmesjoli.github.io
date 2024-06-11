@@ -56,7 +56,10 @@ export let itemData = [
                         alt: "Relational table schema I designed for VAM. The two tables shown in this image integrate shape file geometries with other variables at a geographic level.",
                     }]},
                     {name: 'prototyping', 
-                     descr: ["Prototyping was mostly done in Figma with initial visualizations created in R and then imported into Figma as SVGs."],  
+                     descr: ["Prototyping was mostly done in Figma with initial visualizations created in R and then imported into Figma as SVGs.",
+                             "As both a designer and frontend developer on the project there were weeks where I worked mostly in Figma to design work and then there were weeks where I worked mostly in code. Initially, before VAM entered the development phase, I used Figma was a great tool to communicate with the rest of the team and get feedback on the design from the Center for New Data's partners.",
+                             "After VAM entered development, I continued to use Figma to mock-up how users would interact with new features. We would show these mock-ups to partners and get feedback on the design before implementing the feature in code.",
+                             "Additionally, I used Figma to create a design system for the project. I created a typographic system, color system, and components and variants that utilized these systems to create a consistent visual language across the application."],  
                      images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
@@ -68,7 +71,8 @@ export let itemData = [
                         }
                     ]},
                     {name: 'interaction research',
-                     descr: ['I designed specific components in Figma like the components used in Material UI as that was the base library I used to code interactions between the components and the visualization. I also engaged in user interface research when we learned that it was challenging for several of our users to navigate back to the main view. During this research step, I researched how other similar mapping software handled a similar interaction and then proposed both short- and long-term changes to the visualization.'],
+                     descr: ["I designed specific components in Figma like the components used in Material UI as that was the base library I used to code interactions between the components and the visualization.",
+                             "I also engaged in user interface research when we learned that it was challenging for several of our users to navigate back to the main view. During this research step, I researched how other mapping software handled a similar interaction and then proposed both short- and long-term changes to the visualization. As a both a designer and developer, I'm uniquely positioned to be able to assist in the overall planning of a project because I can propose design and development timelines."],
                      images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
