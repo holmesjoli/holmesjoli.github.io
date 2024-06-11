@@ -6,7 +6,7 @@ export let itemData = [
      year: 2024,
      mainImage: {url: "/assets/portfolio/voting-access-monitor/Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r"],
+     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r", "#typescript"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
      design: ["Data Visualization", "Interaction design", "UI/UX Design" ],
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
@@ -79,7 +79,7 @@ export let itemData = [
         year: 2022, 
         mainImage: {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
                     alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"},
-        tags: ["#adobe-illustrator", "#acrylic", "#public-policy",  "#r", "#data-art", "#data-physicalization", "#data-visualization"],
+        tags: ["#illustrator", "#acrylic", "#public-policy",  "#r", "#data-art", "#data-physicalization", "#data-visualization"],
         tools: ["Adobe Illustrator", "R", "Laser cutter"],
         design: ["Information design"],
         medium: ["Acrylic", "Radial LED Light Panel"],
@@ -201,7 +201,7 @@ export let itemData = [
         mainImage: {
             url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
             alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
-        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python"],
+        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#javascript"],
         tools: ["D3.js", "Pixi.js", "React", "Python"],
         design: ["Information design", "Interaction design"],
         role: ["Data visualization designer", "Data visualization developer", "Project manager", "Data engineer"],
@@ -319,7 +319,7 @@ export let itemData = [
     //     mainImage: {
     //         url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
     //         alt:"Visualizing Version Control"}, 
-    //     tags: ["#graphic-design", "#information-design", "#system-design", "#adobe-illustrator"],
+    //     tags: ["#graphic-design", "#information-design", "#system-design", "#illustrator"],
     //     tools: ["Adobe Illustrator"],
     //     design: ["Information design", "Graphic design"],
     //     role: ["Information designer"],
@@ -361,7 +361,7 @@ export let itemData = [
     // mainImage: {
     //     url: "/assets/portfolio/bloom/bloom-zoomed.png", 
     //     alt: "GIF showing the sequences of cherry blosssom blooms over time"}, 
-    // tags: ["#d3-js", "#adobe-illustrator", "#graphic-design", "#r"],
+    // tags: ["#d3-js", "#illustrator", "#graphic-design", "#r"],
     // tools: ["D3.js", "R"],
     // design: ["Information design"],
     // role: ["Data visualization designer"],
@@ -403,7 +403,7 @@ export let itemData = [
     //     mainImage: {
     //         url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
     //         alt: "Data Visualization showing the combined strengths of individuals"}, 
-    //     tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#adobe-illustrator"],
+    //     tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#illustrator"],
     //     design: ["Information Design", "Graphic design"],
     //     tools: ["Adobe Illustrator", "R"],
     //     role: ["Data visualization designer"],
@@ -491,7 +491,7 @@ export let itemData = [
     //         url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
     //         alt: "Incarceration by neighborhood"
     //     },
-    //     tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#adobe-illustrator"],
+    //     tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#illustrator"],
     //     tools: ["R", "Adobe Illustrator"],
     //     design: ["Data visualization", "Data journalism"],
     //     role: ["Data visualization designer"],
@@ -519,7 +519,7 @@ export let itemData = [
         mainImage: {
             url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
             alt:"Migration is Natural"}, 
-        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#graphic-design", "#adobe-illustrator", "#d3-js", "#svelte"],
+        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#graphic-design", "#illustrator", "#d3-js", "#svelte", "#typescript"],
         tools: ["R", "Adobe Illustrator", "D3.js", "Svelte", "Figma"],
         design: ["Information design", "Interaction design", "Graphic design"],
         role: ["Data visualization designer", "Project manager", "Data analyst"],
@@ -528,93 +528,76 @@ export let itemData = [
                     "It employs the visual metaphor of a butterfly to convey that migration is a natural phenomenon frequently witnessed in the natural world. The visual inspiration for the metaphor is from artist, organizater, and activist, Favianna Rodriguez, who created a series called 'Migration is Beautiful' in 2012.",
                     "The veins of the butterfly detail different paths a user could take to acquire migration after answering some simple questions such as, 'Are your parents citizens of the country you are interested in migrating to?', 'Were you born in the country you are interested in migrating to?', or 'Are you married?'"],
         data: ["This project combines data from two resources. The first is the global citizenship database maintained by the European University Institute. The database standardizes citizenship acquisition methods across 190 countries. The database identifies 28 ways through which migrants can obtain citizenship. It was last updated on January 1st, 2020. This data set was challenging to work with because the data are all categorical, which is often harder to visualize than numeric data."],
-        designProcess: [{key: "summary", name: "summary", descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
+        designProcess: [{name: "summary", descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
                                                                   "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."]},
-                        {key: "design-research", name: "design research", descr: [], images: [
+                        {name: "design research", descr: [], images: [
                             {
                                 url: "/assets/portfolio/migration-is-natural/moodboard.png",
-                                alt: "Moodboard of different images used in the intial research phase of Migration is Natural",
-                                size: "small"
+                                alt: "Moodboard of different images used in the intial research phase of Migration is Natural"
                             },
                             {
                                 url: "/assets/portfolio/migration-is-natural/2x/Inspiration1@2x-100.jpg",
-                                alt: "A map showing the migratory patterns of birds",
-                                size: "small"
+                                alt: "A map showing the migratory patterns of birds"
                             },
                             {
                                 url: "/assets/portfolio/migration-is-natural/2x/Inspiration2@2x-100.jpg",
-                                alt: "A map showing the migratory patterns of birds",
-                                size: "small"
+                                alt: "A map showing the migratory patterns of birds"
                             },
                             {
                                 url: "/assets/portfolio/migration-is-natural/2x/Inspiration3@2x-100.jpg",
-                                alt: "A map showing the migratory patterns of whales",
-                                size: "small"
+                                alt: "A map showing the migratory patterns of whales"
                             },
                             {
                                 url: "/assets/portfolio/migration-is-natural/2x/Inspiration4@2x-100.jpg",
-                                alt: "An information visualization showing the different paths to the 2016 presidency",
-                                size: "small"
+                                alt: "An information visualization showing the different paths to the 2016 presidency"
                             },
                             {
                                 url: "/assets/portfolio/migration-is-natural/2x/Inspiration5@2x-100.jpg",
-                                alt: "An information visualization showing path flows",
-                                size: "small"
+                                alt: "An information visualization showing path flows"
                             }
                         ]},
-                        {key: "sketching", name: "sketching", descr: [], images: [
+                        {name: "sketching", descr: [], images: [
                             {
                                 url: "/assets/portfolio/migration-is-natural/design-process-1.png",
-                                alt: "Initial sketch showing underlying logic to the data",
-                                size: "small"
+                                alt: "Initial sketch showing underlying logic to the data"
                             },
                             {
                                 url: "/assets/portfolio/migration-is-natural/design-process-2.png",
-                                alt: "Initial sketch showing how a path could be formed from the data",
-                                size: "small"
+                                alt: "Initial sketch showing how a path could be formed from the data"
                             },
                             {
                                 url: "/assets/portfolio/migration-is-natural/design-process-3.png",
-                                alt: "Initial sketch adding more detail to potential data paths",
-                                size: "small"
+                                alt: "Initial sketch adding more detail to potential data paths"
                             }
                         ] },
-                        {key: "prototyping", name: "prototyping", descr: [], images: [
+                        {name: "prototyping", descr: [], images: [
                             {
                                 url: "/assets/portfolio/migration-is-natural/design-process-4.png",
-                                alt: "",
-                                size: "small"},
+                                alt: ""},
                             {
                                 url: "/assets/portfolio/migration-is-natural/design-process-5.png",
-                                alt: "",
-                                size: "small"},
+                                alt: ""},
                             {
                                 url: "/assets/portfolio/migration-is-natural/design-process-6.png",
-                                alt: "",
-                                size: "small"},
+                                alt: ""},
                             {
                                 url: "/assets/portfolio/migration-is-natural/design-process-7.png",
-                                alt: "",
-                                size: "small"},
+                                alt: ""},
                             {
                                 url: "/assets/portfolio/migration-is-natural/design-process-8.png",
-                                alt: "",
-                                size: "small"},
+                                alt: ""},
                             {
                                 url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
                                 link: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
-                                alt: "The team used figma to prototype the application",
-                                size: "big"
+                                alt: "The team used figma to prototype the application"
                             }
                     ] },
-                    {key: "development", name: "development", descr: [], images: [
+                    {name: "development", descr: [], images: [
                         {
                             url: "https://joliholmes.com/team-migration/",
                             link: "https://joliholmes.com/team-migration/",
-                            alt: "Interactive applications showing the initial map",
-                            size: "big"
+                            alt: "Interactive applications showing the initial map"
                         }] }
-
                     ]
     },
     // {title: "Public Policy Collection", 
@@ -664,7 +647,7 @@ export let itemData = [
     // mainImage: {
     // url: "/assets/portfolio/healthcare-patient-clinician-interaction/system-zoomed.jpg", 
     // alt:"Image healthcare system clincian-patient hypothesized interactions"}, 
-    // tags: ["#service-design", "#system-design", "#graphic-design", "#adobe-illustrator"],
+    // tags: ["#service-design", "#system-design", "#graphic-design", "#illustrator"],
     // tools: ["Adobe Illustrator"],
     // design: ["Service design", "System design", "Graphic design",],
     // medium: [],
@@ -683,7 +666,7 @@ export let itemData = [
     //     year: 2022, 
     //     mainImage: {
     //     url: "/assets/portfolio/flee/", alt: ""},
-    //     tags: ['#data-journalism', '#react', '#r', '#figma', '#adobe-illustrator', '#d3-js'],
+    //     tags: ['#data-journalism', '#react', '#r', '#figma', '#illustrator', '#d3-js'],
     //     tools: ["R", "Adobe Illustrator", "D3.js"],
     //     design: [],
     //     medium: [],
@@ -704,7 +687,7 @@ export const designFilters = ["#data-art", "#data-journalism", "#data-physicaliz
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
-export const toolFilters = ["#adobe-illustrator", "#d3-js", "#leaflet-js", "#figma", "#pixi-js", "#python", "#r", "#react"];
+export const toolFilters = ["#illustrator", "#d3-js", "#leaflet-js", "#figma", "#javascript", "#pixi-js", "#python", "#r", "#react", "#svelte", "#typescript"];
 
 export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
 
