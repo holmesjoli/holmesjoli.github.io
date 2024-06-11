@@ -37,9 +37,9 @@ const data = [ { title: "patient decision-making in the context of a healthcare 
                  p: "This research uses network visualization to show the distribution of knowledge and skills within the Intesa San Paolo Financial Institution.",
                  year: 2022
                 },
-                {title: "intesa san paolo processes",
-                 subtitle: "2023",
-                 href: "https://nu-center-for-design.github.io/banca-process/",
+                {title: "harnessing information visualization as a vehicle for translational design",
+                 subtitle: "2024",
+                 href: "design research society",
                  src: "/assets/design-research/circle-packing.png",
                  p: "This research uses circle packing and network visualization to show how risks are distributed across the Intesa San Paolo Financial Institution.",
                  year: 2023
