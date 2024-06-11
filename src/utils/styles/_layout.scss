@@ -88,7 +88,7 @@ body::after {
   }
 
   .Navigation {
-    padding: 1rem 1rem 0 1rem;
+    padding: 2rem 1rem 0 1rem;
   }
 
   .Navigation a {
@@ -225,5 +225,9 @@ body::after {
 
   li {
     padding-left: $appPadding/2;
+  }
+
+  .slideContainer {
+    margin: 10rem auto;
   }
 }

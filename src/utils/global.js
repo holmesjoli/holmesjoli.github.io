@@ -94,7 +94,9 @@ export let itemData = [
             "The physical panopticon models obstruct the fairness visualizations; the audience must physically engage with the artifact components to reveal the rates. While the rates indicate the disparate impacts of the algorithm on Black and White defendants; however, rates do not inform readers about the number of people affected. I designed the panopticon models' height to indicate the number of affected people so that a reader can compare the multiple metrics simultaneously.",
             "Culturally, red is of ten associated with words such as stop, warning, harm, and error. The incorrect predictions, in red, were also printed on translucent acrylic compared to the correct predictions, which were printed on black opaque acrylic.",
             "Light is used in the piece metaphorically and aesthetically. Light plays an interesting role in this piece metaphorically. In Bentham's panopticon, the lighted guard tower encouraged self-policing behaviors. However, in Algorithmically Fair?, light draws the viewer's eye and highlights the frequency of algorithmic error. Additionally, the predominantly black form representing algorithmic inequity makes visual reference to a black box algorithm. Lighting this form from the inside out to elucidate viewers on algorithmic bias symbolically reverses the role of light plays in these panopticon forms."
-            ]},
+            ],
+            images: [{url: "/assets/portfolio/algorithmically-fair/image1.jpg",
+                      alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"}]},
             {name: 'sketching', 
             descr: ["I started by sketching out some initial ideas and design for a physical data visualization. I was interested in play with a cylindrical form because the form is representative in nature of both a database and Bentham's panopticon."],
             images: [
@@ -107,14 +109,16 @@ export let itemData = [
                     {url:"/assets/portfolio/algorithmically-fair/PXL_20221213_220237602.jpg",
                     alt: "Initial sketch showing how a third dimension could be used to show the number of people",
                    }]},
-            {name: 'prototyping', descr: ["Next, I processed and normalized the data in R and started some initial prototype of cylindrical laser cut forms that could be stacked."], 
+            {name: 'prototyping', 
+                descr: ["Next, I processed and normalized the data in R and started some initial prototype of cylindrical laser cut forms that could be stacked."], 
             images:  [{url: "/assets/portfolio/algorithmically-fair/PXL_20221214_133321902.jpg",
                        alt: "Initial prototype of layered pie charts",
                        }, 
                        {url: "/assets/portfolio/algorithmically-fair/PXL_20221202_221919552.jpg",
                         alt: "Initial prototype of light inside a layered pie chart",
                        }]},
-            {name: 'final', images: [
+            {name: 'final', descr: [],
+            images: [
                 // {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
                 // alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates",
                 // size: "big"},
@@ -164,30 +168,30 @@ export let itemData = [
     // prototype: [],
     // final: []
     // },
-    {
-        title: "Black Data", 
-        page: "Black-Data", 
-        year: 2020,
-        mainImage: {
-            url: "/assets/portfolio/black-data/20201122_142250.jpg", 
-            alt:"Black cube with machine learning knitting pattern in rainbow yarn"}, 
-        tags: ["#data-art", "#data-physicalization", "#ceramics", "#fiber", "#fine-art"],
-        medium: ["Yarn", "Beads", "Clay"],
-        artistStatement: ["In Black Data, I play with the idea of transparency and reproducibility in machine learning algorithms. The juxtaposition of the black box in contrast to the white box is intended to make viewers question what a white box algorithm would look like and what the research process would entail. Machine learning algorithms are starting to be employed more regularly, especially in public policy settings, but frequently lack transparency and accountability.",
-                           "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
-        designProcess: {
-            final: {
-                images: [{url: "/assets/portfolio/black-data/20201122_142017.jpg",
-                        alt: "Black cube with machine learning knitting pattern in rainbow yarn",
-                        size: "small"}, 
-                    {url: "/assets/portfolio/black-data/20201122_142356.jpg",
-                        alt: "Black cube with machine learning knitting pattern in rainbow yarn close up",
-                        size: "small"}, 
-                    {url: "/assets/portfolio/black-data/20201124_173636 edited.jpg",
-                        alt: "White cube with knitting pattern in white yarn",
-                        size: "small"}]}
-                    }
-    },
+    // {
+    //     title: "Black Data", 
+    //     page: "Black-Data", 
+    //     year: 2020,
+    //     mainImage: {
+    //         url: "/assets/portfolio/black-data/20201122_142250.jpg", 
+    //         alt:"Black cube with machine learning knitting pattern in rainbow yarn"}, 
+    //     tags: ["#data-art", "#data-physicalization", "#ceramics", "#fiber", "#fine-art"],
+    //     medium: ["Yarn", "Beads", "Clay"],
+    //     artistStatement: ["In Black Data, I play with the idea of transparency and reproducibility in machine learning algorithms. The juxtaposition of the black box in contrast to the white box is intended to make viewers question what a white box algorithm would look like and what the research process would entail. Machine learning algorithms are starting to be employed more regularly, especially in public policy settings, but frequently lack transparency and accountability.",
+    //                        "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
+    //     designProcess: {
+    //         final: {
+    //             images: [{url: "/assets/portfolio/black-data/20201122_142017.jpg",
+    //                     alt: "Black cube with machine learning knitting pattern in rainbow yarn",
+    //                     size: "small"}, 
+    //                 {url: "/assets/portfolio/black-data/20201122_142356.jpg",
+    //                     alt: "Black cube with machine learning knitting pattern in rainbow yarn close up",
+    //                     size: "small"}, 
+    //                 {url: "/assets/portfolio/black-data/20201124_173636 edited.jpg",
+    //                     alt: "White cube with knitting pattern in white yarn",
+    //                     size: "small"}]}
+    //                 }
+    // },
     {
         title: "Intesa SanPaolo Processes", 
         page: "Intesa-SanPaolo-Processes", 
@@ -277,60 +281,60 @@ export let itemData = [
             //     ]
             // }
     },
-    {
-        title: "Meta", 
-        year: 2015, 
-        page: "Meta", 
-        mainImage: {
-            url: "/assets/portfolio/meta/keyboardhands3_slow.gif", 
-            alt: "Typing out code with pink fingers"}, 
-        tags: ["#data-art", "#data-visualization", "#r"],
-        tools: ["R"],
-        design: ["Information design"],
-        artistStatement: ["The installation pictured below explores the social construction of data and how data can be manipulated through code. The installation shows a snippet of the physical code used to extract RGB values from a corpus of Georgia O'Keefe paintings. I downloaded 60 images of famous O'Keefe paintings and used R to extract the RGB values of each pixel in each painting. I visualized the values as histograms for each painting. The histograms and GIF displayed below were installed at Wesleyan University's Quantitative Analysis Center, the physical space where I utilized the university's resources to learn and practice quantitative analysis. The GIF plays off of a common programming technique known as a loop."],
-        designProcess: {
-            final: {
-                images: [{url: "/assets/portfolio/meta/keyboardhands3_slow.gif",
-                    alt: "GIF of hands typing out code with physical code layered in the background",
-                    size: "big"},
-                    {url:"/assets/portfolio/meta/histograms.jpg",
-                    alt: "Image of histogram installation",
-                    size: "small"},
-                    {url:"/assets/portfolio/meta/histogram_computer.jpg",
-                    alt: "Image of additional histograms shown on computer screens",
-                    size: "small"},
-                    {url:"/assets/portfolio/meta/computer.jpg",
-                    alt: "Computers at Wesleyan University's Quantitative Analysis Center",
-                    size: "small"}]
-                }
-            }
-    },
-    {   
-        title: "Visualizing Version Control", 
-        page: "Visual-Version-Control", 
-        year: 2021, 
-        links: [{
-            url: "/assets/portfolio/visual-version-control/Visual Version Control.pdf", text: "Link to PDF"
-        }],
-        mainImage: {
-            url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
-            alt:"Visualizing Version Control"}, 
-        tags: ["#graphic-design", "#information-design", "#system-design", "#adobe-illustrator"],
-        tools: ["Adobe Illustrator"],
-        design: ["Information design", "Graphic design"],
-        role: ["Information designer"],
-        summary: ["This visualization as part of a peer skillshare. Version control for code is a handy tool, but it can be challenging to get started. This visualization aims to help new users of code version control understand the steps involved in the version control cycle."],
-        designProcess: {
-            final: {
-                images: [{
-                    url: "/assets/portfolio/visual-version-control/final_design.jpg",
-                    alt: "",
-                    size: "big"}
+    // {
+    //     title: "Meta", 
+    //     year: 2015, 
+    //     page: "Meta", 
+    //     mainImage: {
+    //         url: "/assets/portfolio/meta/keyboardhands3_slow.gif", 
+    //         alt: "Typing out code with pink fingers"}, 
+    //     tags: ["#data-art", "#data-visualization", "#r"],
+    //     tools: ["R"],
+    //     design: ["Information design"],
+    //     artistStatement: ["The installation pictured below explores the social construction of data and how data can be manipulated through code. The installation shows a snippet of the physical code used to extract RGB values from a corpus of Georgia O'Keefe paintings. I downloaded 60 images of famous O'Keefe paintings and used R to extract the RGB values of each pixel in each painting. I visualized the values as histograms for each painting. The histograms and GIF displayed below were installed at Wesleyan University's Quantitative Analysis Center, the physical space where I utilized the university's resources to learn and practice quantitative analysis. The GIF plays off of a common programming technique known as a loop."],
+    //     designProcess: {
+    //         final: {
+    //             images: [{url: "/assets/portfolio/meta/keyboardhands3_slow.gif",
+    //                 alt: "GIF of hands typing out code with physical code layered in the background",
+    //                 size: "big"},
+    //                 {url:"/assets/portfolio/meta/histograms.jpg",
+    //                 alt: "Image of histogram installation",
+    //                 size: "small"},
+    //                 {url:"/assets/portfolio/meta/histogram_computer.jpg",
+    //                 alt: "Image of additional histograms shown on computer screens",
+    //                 size: "small"},
+    //                 {url:"/assets/portfolio/meta/computer.jpg",
+    //                 alt: "Computers at Wesleyan University's Quantitative Analysis Center",
+    //                 size: "small"}]
+    //             }
+    //         }
+    // },
+    // {   
+    //     title: "Visualizing Version Control", 
+    //     page: "Visual-Version-Control", 
+    //     year: 2021, 
+    //     links: [{
+    //         url: "/assets/portfolio/visual-version-control/Visual Version Control.pdf", text: "Link to PDF"
+    //     }],
+    //     mainImage: {
+    //         url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
+    //         alt:"Visualizing Version Control"}, 
+    //     tags: ["#graphic-design", "#information-design", "#system-design", "#adobe-illustrator"],
+    //     tools: ["Adobe Illustrator"],
+    //     design: ["Information design", "Graphic design"],
+    //     role: ["Information designer"],
+    //     summary: ["This visualization as part of a peer skillshare. Version control for code is a handy tool, but it can be challenging to get started. This visualization aims to help new users of code version control understand the steps involved in the version control cycle."],
+    //     designProcess: {
+    //         final: {
+    //             images: [{
+    //                 url: "/assets/portfolio/visual-version-control/final_design.jpg",
+    //                 alt: "",
+    //                 size: "big"}
 
-                ]
-            }
-        }
-    },
+    //             ]
+    //         }
+    //     }
+    // },
     // {title: "Drawings Collection", 
     // page: "Drawings-Collection", 
     // year: 2014, 
@@ -389,80 +393,80 @@ export let itemData = [
     // prototype: [],
     // final: []
     // },
-    {
-        title: "Equitable Teams", 
-        page: "Equitable-Teams", 
-        year: 2022, 
-        links: [
-            {url: "assets/portfolio/equitable-teams/team_strengths.pdf", text: "Link to PDF"}
-        ],
-        mainImage: {
-            url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
-            alt: "Data Visualization showing the combined strengths of individuals"}, 
-        tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#adobe-illustrator"],
-        design: ["Information Design", "Graphic design"],
-        tools: ["Adobe Illustrator", "R"],
-        role: ["Data visualization designer"],
-        summary: ["The goal of this project was to use data visualization to assess how students could be partnered to create equitable teams.",
-                  "Students were asked to self-assess their skills from using a scale of beginner to advanced across six dimensions: programming, data, graphic design, interaction design, storytelling, and leadership and management skills.",
-                  "The final design is based off of the form known as a radar chart. However, the charts show overlap between the students across the six dimensions. The larger the form is in the radar chart, the more skilled the student pair is. The visualization is designed to show pairs where students combined competencies area the strongest team rather than students which may have overlapping compentencies."],
-        designProcess: {
-            summary: ["The equitable teams project was developed over the course of two weeks. The main tools used to create the visualization were R and Adobe Illustrator. R was used to generate the initial forms, which were then edited and modified in Adobe Illustrator."],
-            sketches: {
-                images: [{
-                    url: "assets/portfolio/equitable-teams/design-process-1.png",
-                    alt: "Sketch showing initial design of visualization",
-                    size: "small"
-                },
-                {
-                    url: "assets/portfolio/equitable-teams/design-process-2.png",
-                    alt: "Sketch showing initial design of visualization",
-                    size: "small"
-                }
-                ]
-            },
-            prototype: {
-                images: [
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 1-100.jpg",
-                        alt: "Initial visualization created in R",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 2-100.jpg",
-                        alt: "Reducing the information so it is less overwhelming to the user",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 3-100.jpg",
-                        alt: "Testing how individuals could overlap to create new forms",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 6-100.jpg",
-                        alt: "Testing how individuals could overlap to create new forms",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 7-100.jpg",
-                        alt: "Testing how individuals could overlap to create new forms",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 14-100.jpg",
-                        alt: "Testing how individuals could overlap with solid forms to show collective strengths",
-                        size: "small"
-                    }
-                ]
-            },
-            final: {
-                images: [{
-                    url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
-                    // alt: "Data Visualization showing the combined strengths of individuals",
-                    size: "big"}]
-            }
-        }
-    },
+    // {
+    //     title: "Equitable Teams", 
+    //     page: "Equitable-Teams", 
+    //     year: 2022, 
+    //     links: [
+    //         {url: "assets/portfolio/equitable-teams/team_strengths.pdf", text: "Link to PDF"}
+    //     ],
+    //     mainImage: {
+    //         url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
+    //         alt: "Data Visualization showing the combined strengths of individuals"}, 
+    //     tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#adobe-illustrator"],
+    //     design: ["Information Design", "Graphic design"],
+    //     tools: ["Adobe Illustrator", "R"],
+    //     role: ["Data visualization designer"],
+    //     summary: ["The goal of this project was to use data visualization to assess how students could be partnered to create equitable teams.",
+    //               "Students were asked to self-assess their skills from using a scale of beginner to advanced across six dimensions: programming, data, graphic design, interaction design, storytelling, and leadership and management skills.",
+    //               "The final design is based off of the form known as a radar chart. However, the charts show overlap between the students across the six dimensions. The larger the form is in the radar chart, the more skilled the student pair is. The visualization is designed to show pairs where students combined competencies area the strongest team rather than students which may have overlapping compentencies."],
+    //     designProcess: {
+    //         summary: ["The equitable teams project was developed over the course of two weeks. The main tools used to create the visualization were R and Adobe Illustrator. R was used to generate the initial forms, which were then edited and modified in Adobe Illustrator."],
+    //         sketches: {
+    //             images: [{
+    //                 url: "assets/portfolio/equitable-teams/design-process-1.png",
+    //                 alt: "Sketch showing initial design of visualization",
+    //                 size: "small"
+    //             },
+    //             {
+    //                 url: "assets/portfolio/equitable-teams/design-process-2.png",
+    //                 alt: "Sketch showing initial design of visualization",
+    //                 size: "small"
+    //             }
+    //             ]
+    //         },
+    //         prototype: {
+    //             images: [
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 1-100.jpg",
+    //                     alt: "Initial visualization created in R",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 2-100.jpg",
+    //                     alt: "Reducing the information so it is less overwhelming to the user",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 3-100.jpg",
+    //                     alt: "Testing how individuals could overlap to create new forms",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 6-100.jpg",
+    //                     alt: "Testing how individuals could overlap to create new forms",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 7-100.jpg",
+    //                     alt: "Testing how individuals could overlap to create new forms",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 14-100.jpg",
+    //                     alt: "Testing how individuals could overlap with solid forms to show collective strengths",
+    //                     size: "small"
+    //                 }
+    //             ]
+    //         },
+    //         final: {
+    //             images: [{
+    //                 url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
+    //                 // alt: "Data Visualization showing the combined strengths of individuals",
+    //                 size: "big"}]
+    //         }
+    //     }
+    // },
     // {title: "Ceramics Collection", 
     // page: "Ceramics-Collection", 
     // year: 2020, 
@@ -478,34 +482,34 @@ export let itemData = [
     // prototype: [],
     // final: []
     // },
-    {
-        title: "Visual Ramblings",
-        page: "Visual-Ramblings",
-        client: {name: "Roanoke Rambler", link: "https://www.roanokerambler.com/"},
-        year: 2023, 
-        mainImage: {
-            url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
-            alt: "Incarceration by neighborhood"
-        },
-        tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#adobe-illustrator"],
-        tools: ["R", "Adobe Illustrator"],
-        design: ["Data visualization", "Data journalism"],
-        role: ["Data visualization designer"],
-        summary: ["Visual Ramblings is a collection of data visualizations designed for the Roanoke Rambler, an independent, investigative, literary magazine in Roanoke, Virginia. The visualizations focus on a variety of topics to support across politics and policy.", "In some cases, the data were provided by the editory of the Rambler, but in others the data were sourced from a variety of reputable sources. After the data were identified, the statistical software R was used to create the initial visual form and it was edited in and edited in Adobe Illustrator."],
-        collection: [{descr: "incarceration in roanoke city", 
-                      images: [{url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg", 
-                                alt: "Map of Roanoke, Virginia showing incarceration rates",
-                                caption: ""},
-                                {url: "/assets/portfolio/visual-ramblings/Incarceration/2a_race_incarceration_highlight@2x-100.jpg", 
-                                alt: "Map of Roanoke, Virginia showing incarceration rates",
-                                caption: ""}
-                            ]},
-                    {descr: "state senate race", images: [{url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 1.png", alt: "", caption: "Visualization version 1"},
-                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 2.png", alt: "", caption: "Visualization version 2"},
-                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 3.png", alt: "", caption: "Visualization version 3"},
-                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 4.png", alt: "", caption: "Visualization version 4"}]}
-                    ]
-    },
+    // {
+    //     title: "Visual Ramblings",
+    //     page: "Visual-Ramblings",
+    //     client: {name: "Roanoke Rambler", link: "https://www.roanokerambler.com/"},
+    //     year: 2023, 
+    //     mainImage: {
+    //         url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
+    //         alt: "Incarceration by neighborhood"
+    //     },
+    //     tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#adobe-illustrator"],
+    //     tools: ["R", "Adobe Illustrator"],
+    //     design: ["Data visualization", "Data journalism"],
+    //     role: ["Data visualization designer"],
+    //     summary: ["Visual Ramblings is a collection of data visualizations designed for the Roanoke Rambler, an independent, investigative, literary magazine in Roanoke, Virginia. The visualizations focus on a variety of topics to support across politics and policy.", "In some cases, the data were provided by the editory of the Rambler, but in others the data were sourced from a variety of reputable sources. After the data were identified, the statistical software R was used to create the initial visual form and it was edited in and edited in Adobe Illustrator."],
+    //     collection: [{descr: "incarceration in roanoke city", 
+    //                   images: [{url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg", 
+    //                             alt: "Map of Roanoke, Virginia showing incarceration rates",
+    //                             caption: ""},
+    //                             {url: "/assets/portfolio/visual-ramblings/Incarceration/2a_race_incarceration_highlight@2x-100.jpg", 
+    //                             alt: "Map of Roanoke, Virginia showing incarceration rates",
+    //                             caption: ""}
+    //                         ]},
+    //                 {descr: "state senate race", images: [{url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 1.png", alt: "", caption: "Visualization version 1"},
+    //                                                       {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 2.png", alt: "", caption: "Visualization version 2"},
+    //                                                       {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 3.png", alt: "", caption: "Visualization version 3"},
+    //                                                       {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 4.png", alt: "", caption: "Visualization version 4"}]}
+    //                 ]
+    // },
     {
         title: "Migration is Natural", 
         page: "Migration-is-Natural",
