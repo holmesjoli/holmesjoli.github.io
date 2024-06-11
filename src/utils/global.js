@@ -591,8 +591,12 @@ export let itemData = [
                     "It employs the visual metaphor of a butterfly to convey that migration is a natural phenomenon frequently witnessed in the natural world. The visual inspiration for the metaphor is from artist, organizater, and activist, Favianna Rodriguez, who created a series called 'Migration is Beautiful' in 2012.",
                     "The veins of the butterfly detail different paths a user could take to acquire migration after answering some simple questions such as, 'Are your parents citizens of the country you are interested in migrating to?', 'Were you born in the country you are interested in migrating to?', or 'Are you married?'"],
         data: ["This project combines data from two resources. The first is the global citizenship database maintained by the European University Institute. The database standardizes citizenship acquisition methods across 190 countries. The database identifies 28 ways through which migrants can obtain citizenship. It was last updated on January 1st, 2020. This data set was challenging to work with because the data are all categorical, which is often harder to visualize than numeric data."],
-        designProcess: [{name: "summary", descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
-                                                                  "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."]},
+        designProcess: [{name: "summary", 
+                        descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
+                                ],
+                        images: [{url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
+                                  alt:"Migration is Natural"}]
+                        },
                         {name: "design research", descr: [], images: [
                             {
                                 url: "/assets/portfolio/migration-is-natural/moodboard.png",
