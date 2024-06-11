@@ -98,12 +98,12 @@ export default function About() {
             <div className="Body">
                 <div className="Text">
                     <h3>background</h3>
-                    <p>My interest in data science and analytics started as an undergraduate at Wesleyan University. I never planned to fall in love with data, but working in Wesleyan University's Quantitative Analysis Center (QAC) one summer changed everything. I became fascinated with how data, especially data from unusual sources, could be used in traditional academic research. Wesleyan did not just teach me how to code and use statistical methods, but how to think critically and apply an interdisciplinary lens to all research projects.
+                    <p>My interest in data science and analytics started as an undergraduate at Wesleyan University. I never planned to fall in love with data, but working in Wesleyan University's Quantitative Analysis Center (QAC) changed everything. Wesleyan did not just teach me how to code and use statistical methods, but how to think critically and apply an interdisciplinary lens to all research projects.
                     </p>
-                    <p>My first position was at Mathematica Policy Research. At Mathematica, I worked on traditional public policy evaluations, built web applications in R, and automated web testing in Python. My next position was at the Texas Poliy Lab at Rice University. At the lab, I frequently developed web applications to help our government partners visualize trends in their data. 
+                    <p>My first position was at Mathematica Policy Research. At Mathematica, I worked on traditional public policy evaluations, built web applications in R, and automated web testing in Python. My next position was at the Texas Policy Lab at Rice University. At the lab, I frequently developed web applications to help our government partners visualize trends in their data. 
                         Currently, I am a Data Visualization Designer at Northeastern University's Center for Design.</p>
                     <p>Originally, I'm from Bainbridge Island, Washington, but have lived in six states in the US and Melbourne, Australia. I identify as a member of the LGBTQ+ community and am very interested in data issues such as privacy and data collection that are particularly sensitive to this community.</p>
-                    <p>In 2020, I adopted my adorable cat Beanie, who demands playtime during all waking hours. In my spare time I throw ceramics on the wheel, play ultimate frisbee, and try to get outside as much as possible. I've had a love of art my whole life.</p>
+                    <p>In 2020, I adopted my adorable cat Beanie, who demands playtime during all waking hours. In my spare time I throw ceramics on the wheel, play ultimate frisbee, and try to get outside as much as possible.</p>
                 </div>
                 <div className="Resume-Brief">
                     <div className="Container">

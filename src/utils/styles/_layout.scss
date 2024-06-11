@@ -16,13 +16,13 @@ body {
 }
 
 #root {
-  height: 100vh;
+  height: 90vh;
 }
 
 body::after {
   content: '';
   display: block;
-  height: 2.5rem;
+  height: $footerHeight;
   /* Set same as footer's height */
 }
 
@@ -32,10 +32,6 @@ body::after {
   width: 100vw;
   // margin: $appMargin;
   min-height: 80vh;
-}
-
-.Query {
-  grid-column-start: 1;
 }
 
 .Construction {
@@ -88,7 +84,7 @@ body::after {
   }
 
   .Navigation {
-    padding: 2rem 1rem 0 1rem;
+    padding: $appPadding*2;
   }
 
   .Navigation a {
@@ -203,6 +199,7 @@ body::after {
         .Written-Content {
           max-width: 90vw;
           margin: 0;
+          margin-bottom: calc($footerHeight + $appMargin);
         }
 
         .Visual-Content, 
@@ -214,9 +211,9 @@ body::after {
   }
 
   .Footer {
-    position:static;
+    position: fixed;
     bottom: 0;
-    height: 10%;
+    height: $footerHeight;
   }
 
   #visualization {
