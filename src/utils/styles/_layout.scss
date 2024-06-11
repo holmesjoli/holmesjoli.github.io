@@ -210,4 +210,12 @@ body::after {
     bottom: 0;
     height: 10%;
   }
+
+  #visualization {
+    transform: translate(-10%, 0%);
+  }
+
+  li {
+    padding-left: $appPadding/2;
+  }
 }

@@ -17,7 +17,7 @@ let data = [
 data = data.sort((a, b) => a.years - b.years)
 
 var margin = {top: 20, right: 30, bottom: 50, left: 90},
-width = 460 - margin.left - margin.right,
+width = 430 - margin.left - margin.right,
 height = 400 - margin.top - margin.bottom;
 
 function barChart() {
