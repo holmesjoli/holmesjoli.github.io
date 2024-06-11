@@ -1,7 +1,7 @@
 .Page {
     display: grid;
     grid-template-columns: minmax(100px, 10%) 1fr;
-    overflow: hidden;
+    // overflow: hidden;
     width: 100vw;
     min-height: 60vh;
 }
@@ -76,15 +76,15 @@
 	height:200px;
 	width:200px;
 	border-radius: 100%;
-	border:3px solid #111;
+	border: 3px dotted $appColorFocus;
 	transition: transform 0.3s;
 	transition-delay:0.5s;
 	
-	&:hover {
-		transform: translate(10%,12%);
-		transition-delay:0s;
-	}
-	
+	// &:hover {
+	// 	transform: translate(10%,12%);
+	// 	transition-delay:0s;
+	// }
+
 	#nav-bg {
 		position: absolute;
 		height: 90%;
@@ -96,16 +96,15 @@
 		opacity: 0.6;
 		
 		// .inner {
-		// 	position:absolute;
-		// 	height: 6%;
-		// 	width: 6%;
-		// 	top: calc(44% - 2px);
-		// 	left: calc(44% - 2px);
-		// 	border:
-		// 	2px solid #000;
+		// 	position: absolute;
+		// 	height: 60%;
+		// 	width: 60%;
+		// 	top: 5%;
+		// 	left: 5%;
 		// 	padding: 5%;
-		// 	background: #333;
 		// 	border-radius: 100%;
+		// 	border: 3px dotted $appColorFocus;
+		// 	opacity: 0.4;
 		// }
 	}
 	

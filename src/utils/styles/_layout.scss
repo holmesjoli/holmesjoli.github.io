@@ -49,11 +49,6 @@ body::after {
   }
 }
 
-// img {
-//   max-width: 100%;
-//   max-height: 50vh;
-// }
-
 @media screen and (max-width: 768px) {
 
   .Navigation {
@@ -179,14 +174,14 @@ body::after {
   .Page {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
 
     #nav {
-      transform: translate(50%, 0%);
+      transform: translate(50%, 10%);
     }
 
     #Main-Content {
       margin-left: 0;
+      margin-top: $appMargin*3;
 
       img, video {
         max-width: 90vw;
@@ -195,12 +190,24 @@ body::after {
       .Content {
         display: flex;
         flex-direction: column;
+        width: 100%;
 
         .Written-Content {
           max-width: 90vw;
           margin: 0;
         }
+
+        .Visual-Content, 
+        .Visual-Content h5 {
+          max-width: 90vw;
+        }
       }
     }
+  }
+
+  .Footer {
+    position:static;
+    bottom: 0;
+    height: 10%;
   }
 }
