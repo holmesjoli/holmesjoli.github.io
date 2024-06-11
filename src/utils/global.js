@@ -6,7 +6,7 @@ export let itemData = [
      year: 2024,
      mainImage: {url: "/assets/portfolio/voting-access-monitor/Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r", "#typescript"],
+     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#r", "#figma", "#user-interaction",  "#typescript"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
      design: ["Data Visualization", "Interaction design", "UI/UX Design" ],
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
@@ -18,7 +18,10 @@ export let itemData = [
                         {url: "/assets/portfolio/voting-access-monitor/InteractionDemo.mp4"}
                     ] },
                      {name: 'user research', 
-                     descr: ["Throughout the design process we engaged in card sorting, stakeholder mapping, user interview, and cognitive walkthroughs."], 
+                     descr: ["Throughout the design process we engaged in card sorting, stakeholder mapping, user interview, and cognitive walkthroughs.",
+                             "During the development of VAM, the team at the Center for New Data met with potential users approximately every few weeks to show them progress on the web application and get their feedback. During these sessions, the Center for New Data conducted a user interview and cognitive walkthrough.",
+                             "Using user-centered design techniques such as the cognitive walkthrough allowed us to discover that certain functionalities, such as moving up a geographic level were not intuitive or easily discoverable to our users.",
+                             "Additionally, conducting frequent user interviews allowed us to be able to priorize the design and development of certain features over others. For example, our users suggested that they would like to be able to identify census tracts that met certain thresholds. Using this insight from  our interviews I designed and developed a custom feature to allow our users achieve this task."], 
                      images: [
                         {
                             url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
@@ -46,7 +49,8 @@ export let itemData = [
                         }
                     ]},
                     {name: 'data', 
-                     descr: ['Designing for a complex, interactive data visualization such as VAM necessitates the development of a database to support this type of visualization. Working with our data engineer, product manager, and partners, I designed the table schemas for the project. I also frequently researched what type of data was available and where we could acquire it for our data engineer because of my previous experience working in public policy and data analytics.'],
+                     descr: ["Designing for a complex, interactive data visualization such as VAM necessitates the development of a database to support this type of visualization. Working with our data engineer, product manager, and partners, I designed the table schemas for the project.",
+                             "I also researched data availablity for our data engineer. My previous experience working in public policy and data analytics familiarized me with common publically available data sources such as the American Community Survey and TIGER shape files from the US Census Bureau. I used this knowledge to help guide the data engineer in the development of the database."],
                     images: [{
                         url: "/assets/portfolio/voting-access-monitor/DatabaseDesign.png",
                         alt: "Relational table schema I designed for VAM. The two tables shown in this image integrate shape file geometries with other variables at a geographic level.",
@@ -574,7 +578,7 @@ export let itemData = [
         mainImage: {
             url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
             alt:"Migration is Natural"}, 
-        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#graphic-design", "#illustrator", "#d3-js", "#svelte", "#typescript"],
+        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#illustrator", "#d3-js", "#svelte", "#typescript"],
         tools: ["R", "Adobe Illustrator", "D3.js", "Svelte", "Figma"],
         design: ["Information design", "Interaction design", "Graphic design"],
         role: ["Data visualization designer", "Project manager", "Data analyst"],
