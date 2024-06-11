@@ -43,31 +43,3 @@ export function Slideshow({data, showCase = false}) {
     </div>
   )
 }
-
-export function DesignStage({descr, stage}) {
-
-  return(
-    stage ? 
-      <div className={"Project-"+{descr}+" SlideShow"}>
-          <h4>{descr}</h4>
-          {
-          stage.images.filter(e => e.size === "small").length > 0? 
-          <Slideshow data={stage.images.filter(e => e.size === "small")}/>: <></>
-          }
-          {
-          stage.images.filter(e => e.size === "big").length > 0? 
-          <MainImage data={stage.images.filter(e => e.size === "big")}/>: <></>
-          }
-      </div>: <></>
-  )
-}
-
-export function CollectionExample({collection}) {
-
-  return(
-    <div className="SlideShow">
-       <h3>{collection.descr}</h3>
-       <Slideshow data={collection.images}/>
-    </div>
-  )
-}

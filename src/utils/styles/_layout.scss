@@ -2,27 +2,36 @@
   color-scheme: dark;
 }
 
+* {
+  margin:0;
+	padding:0;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
 }
 
-// React app mounting point
 #root {
-    width: 100vw;
-    height: 100vh;
+  height: 90vh;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: $footerHeight;
+  /* Set same as footer's height */
 }
 
 .Content {
-    display: grid;
-    grid-template-columns: minmax(175px, 17%) 1fr;
-    width: 100vw;
-    // margin: $appMargin;
-    min-height: 80vh;
-}
-
-.Query {
-  grid-column-start: 1;
+  display: grid;
+  grid-template-columns: minmax(175px, 17%) 1fr;
+  width: 100vw;
+  // margin: $appMargin;
+  min-height: 80vh;
 }
 
 .Construction {
@@ -39,11 +48,6 @@ body {
     height: 180px;
   }
 }
-
-// img {
-//   max-width: 100%;
-//   max-height: 50vh;
-// }
 
 @media screen and (max-width: 768px) {
 
@@ -76,10 +80,11 @@ body {
     font-size: 2.7rem;
     line-height: 1;
     margin: 0;
+    letter-spacing: .08em;
   }
 
   .Navigation {
-    margin: 1rem 1rem 0 1rem;
+    padding: $appPadding*2;
   }
 
   .Navigation a {
@@ -90,9 +95,12 @@ body {
 
   .Navigation_branding {
     align-items: normal;
+    padding-right: $appPadding*2;
+    padding-left: 0;
 
     h3 {
       padding: 0;
+      line-height: 1.4;
     }
   }
 
@@ -167,4 +175,56 @@ body {
     flex-direction: column;
   }
 
+  .Page {
+    display: flex;
+    flex-direction: column;
+
+    #nav {
+      transform: translate(50%, 10%);
+    }
+
+    #Main-Content {
+      margin-left: 0;
+      margin-top: $appMargin*3;
+
+      img, video {
+        max-width: 90vw;
+      }
+
+      .Content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .Written-Content {
+          max-width: 90vw;
+          margin: 0;
+          margin-bottom: calc($footerHeight + $appMargin);
+        }
+
+        .Visual-Content, 
+        .Visual-Content h5 {
+          max-width: 90vw;
+        }
+      }
+    }
+  }
+
+  .Footer {
+    position: fixed;
+    bottom: 0;
+    height: $footerHeight;
+  }
+
+  #visualization {
+    transform: translate(-10%, 0%);
+  }
+
+  li {
+    padding-left: $appPadding/2;
+  }
+
+  .slideContainer {
+    margin: 10rem auto;
+  }
 }

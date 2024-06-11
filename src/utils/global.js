@@ -6,158 +6,171 @@ export let itemData = [
      year: 2024,
      mainImage: {url: "/assets/portfolio/voting-access-monitor/Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-     summary: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
-              "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
-              "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
-     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r"],
+     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#figma", "#user-experience", "#user-interaction", "#r", "#typescript"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
      design: ["Data Visualization", "Interaction design", "UI/UX Design" ],
-     designProcess: {
-        descr: [],
-        research: {
-            images: [
-                {
-                    url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
-                    alt: "Moodboard of different images used in the intial research phase",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
-                    alt: "Synthesis of stakeholder research",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/DesignResearch2.png",
-                    alt: "Outcome of a card sorting activity",
-                    size: "small"
-                }
-            ]
-        },
-        sketches: {
-            images: [
-                {
-                    url: "/assets/portfolio/voting-access-monitor/Sketch1.png",
-                    alt: "Sketch of isolating and ranking different geographies",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/Sketch2.png",
-                    alt: "Sketch of ranking a set of geographies across a variety of variables",
-                    size: "small"
-                }
-            ]
-        },
-        prototype: {
-            images: [
-                {
-                    url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
-                    alt: "The image shows the proposed changes to a user interaction after receiving feedback from users about how to reset the view. I researched and put together a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed.",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
-                    alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs non-selected and enabled and disabled start to create a component system.",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/voting-access-monitor/VisualSystem2.png",
-                    alt: "The image to shows the iterative process of designing a slider component.",
-                    size: "small"
-                }
-            ],
-        },
-        final: {
-            images: [
-                {url: "/assets/portfolio/voting-access-monitor/Development.png",
-                alt: "An image of the fully interactive data visualization zoomed into South Carolina",
-                size: "small"
-                },
-                {url: "/assets/portfolio/voting-access-monitor/Development2.png",
-                alt: "An image of specific county in South Carolina where the use can see where in the individual polling locations have been added or removed",
-                size: "small"
-                }
-            ]
-        }
-     },
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
+     designProcess: [{name: 'summary', 
+                      descr: ["Voting Access Monitor (VAM) is an interactive map designed to assist voting equity advocates in better understanding trends in polling location closures across priority states. VAM was co-designed with the Center for New Data's partners, Legal Defense Fund, Fair Fight Action, and Campaign Legal Center over the course of several months.",
+                              "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
+                              "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
+                    videos: [
+                        {url: "/assets/portfolio/voting-access-monitor/InteractionDemo.mp4"}
+                    ] },
+                     {name: 'user research', 
+                     descr: ["Throughout the design process we engaged in card sorting, stakeholder mapping, user interview, and cognitive walkthroughs."], 
+                     images: [
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
+                            alt: "Synthesis of stakeholder research. After initial user interviews I grouped stakeholders into three groups to help the team prioritize features."
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
+                            alt: "Moodboard of different images used in the intial research phase"
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/DesignResearch2.png",
+                            alt: "Outcome of a card sorting activity"
+                        }
+                    ]},
+                    {name: 'sketching', 
+                    descr: ['I always start by sketching on paper. Sketching on paper has the potential to invite conversation from co-designers such as users, stakeholders, and other team members.'], 
+                    images: [
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/Sketch1.png",
+                            alt: "Sketch of isolating and ranking different geographies"
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/Sketch2.png",
+                            alt: "Sketch of ranking a set of geographies across a variety of variables"
+                        }
+                    ]},
+                    {name: 'data', 
+                     descr: ['Designing for a complex, interactive data visualization such as VAM necessitates the development of a database to support this type of visualization. Working with our data engineer, product manager, and partners, I designed the table schemas for the project. I also frequently researched what type of data was available and where we could acquire it for our data engineer because of my previous experience working in public policy and data analytics.'],
+                    images: [{
+                        url: "/assets/portfolio/voting-access-monitor/DatabaseDesign.png",
+                        alt: "Relational table schema I designed for VAM. The two tables shown in this image integrate shape file geometries with other variables at a geographic level.",
+                    }]},
+                    {name: 'prototyping', 
+                     descr: ["Prototyping was mostly done in Figma with initial visualizations created in R and then imported into Figma as SVGs."],  
+                     images: [
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
+                            alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs. non-selected and enabled vs. disabled start to create a component system."
+                        },
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/VisualSystem2.png",
+                            alt: "The image to shows the iterative process of designing a slider component."
+                        }
+                    ]},
+                    {name: 'interaction research',
+                     descr: ['I designed specific components in Figma like the components used in Material UI as that was the base library I used to code interactions between the components and the visualization. I also engaged in user interface research when we learned that it was challenging for several of our users to navigate back to the main view. During this research step, I researched how other similar mapping software handled a similar interaction and then proposed both short- and long-term changes to the visualization.'],
+                     images: [
+                        {
+                            url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
+                            alt: "Proposed changes to a user interaction after receiving feedback from users about how to reset the view. I assembled a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed."
+                        }
+                    ]}
+                ]
     },
-    {title: "Vault Breakers",
-     page: "Vault-Breakers",
+    {title: "Vaultbreakers",
+     page: "Vaultbreakers",
      client: {name: "Valentino Mori", link: "https://www.valentinomori.com/"},
      year: 2024,
      role: ["Information designer"],
      design: ["Information design", "Graphic design", "Game design"],
      tools: ["Illustrator", "Indesign"],
-     tags: ["#illutrator", "#indesign", "#information-design", "#graphic-design", "#game-design"],
+     tags: ["#illustrator", "#indesign", "#information-design", "#graphic-design", "#game-design"],
      mainImage: {
         url: "/assets/portfolio/vault-breakers/Assets_Backstab card.png",
-        alt: "Incarceration by neighborhood"
+        alt: "Vaultbreakers Backstab card. The card shows a character with a knife in their hand and a player can use this card to backstab opponents."
+     },
+    designProcess: [{
+        name: "summary", 
+        descr: ["As I consultant on Vaultbreakers, I worked with the game designer to create a series of cards that would be used in the game. The game is a cooperative-competitive card game where players work together to break into a vault and steal the loot inside. The game is designed to be played by 2-4 players and takes about 45 minutes to play.",
+                "I generated sketches for how the information could be displayed on the cards, suggested typographic changes to make the cards readable and consistent, gave feedback on color choices, in addition to creating several components for the printed game."],
+        images: [{url: "/assets/portfolio/vault-breakers/Assets_Vaultbreakers Example Cards.png",
+                  alt: "Vaultbreakers Backstab card. The card shows a character with a knife in their hand and a player can use this card to backstab opponents."}]
     },
-    summary: ["As I consultant on Vault Breakers, I worked with the game designer to create a series of cards that would be used in the game. The game is a cooperative card game where players work together to break into a vault and steal the treasure inside. The game is designed to be played by 2-4 players and takes about 30 minutes to play."],
-    designProcess: {
-        final: {
-            images: [
-                {url: "/assets/portfolio/voting-access-monitor/Development.png",
-                 alt: "An image of the fully interactive data visualization zoomed into South Carolina",
-                 size: "small"
-                }
-            ]
+    {
+        name: "digital sketches",
+        descr: ["One of my first steps as a consultant on the project was to present multiple ways of displaying the information on the cards. The game designer knew that he would be hiring an illustrator for card, so white boxes represent those spaces."],
+        images: [{url: "/assets/portfolio/vault-breakers/sketch.png",
+                  alt: "Image shows an initial possible layout for the card."},
+                  {url: "/assets/portfolio/vault-breakers/sketch2.png",
+                  alt: "Image shows an initial possible layout for the card."},
+                  {url: "/assets/portfolio/vault-breakers/sketch3.png",
+                  alt: "Image shows an initial possible layout for the card."},
+                  {url: "/assets/portfolio/vault-breakers/sketch4.png",
+                  alt: "Image shows an initial possible layout for the card."},
+                  {url: "/assets/portfolio/vault-breakers/sketch5.png",
+                  alt: "Image shows an initial possible layout for the card."}
+                ]
+        },
+        {name: "iteration",
+         descr: ["I worked with the game designer to iterate on the information architecture of the games and develop a consistent visual language for the game.",
+                 "When play testing the game revealed that it would be helpful for users to be able to distinguish between two types of action cards, I suggested different ways of visually differentiating the cards."],
+         images: [{url: "/assets/portfolio/vault-breakers/Assets_Iterations of Suprise Actions.png",
+                   alt: ""}]
         }
-    }
+    ]
     },
     {
         title: "Algorithmically Fair?", 
         page: "Algorithmically-Fair", 
         year: 2022, 
         mainImage: {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
-                 alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"},
+                    alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"},
         tags: ["#illustrator", "#acrylic", "#public-policy",  "#r", "#data-art", "#data-physicalization", "#data-visualization"],
         tools: ["Adobe Illustrator", "R", "Laser cutter"],
         design: ["Information design"],
         medium: ["Acrylic", "Radial LED Light Panel"],
         role: ["Data visualization designer", "Data analyst"],
         summary: ["Algorithmically fair? is a data physicalization project that visualizations disparate rates of a commonly used recidivism algorithm in the United States. Through simple pie charts, the project compares how the error rates of the algorithm differ for Black and White defendants. The physical forms obstruct part of the visualizations; the audience must physically engage with the artifact to reveal the rates. The third dimension, the form's height, indicates the number of people affected by these differing rates. The use of light draws the audience’s attention to the error rate, highlighting the discrepancy between Black and White defendants, and asks the audience to think critically about what it means for an algorithm to be fair."],
-        artistStatement: ["This work critiques the use of risk assessment tools in the criminal justice system by asking an audience to reflect on the impacts of the COMPAS recidivism algorithm by engaging with three-dimensional panopticon forms representing disparate impacts. Algorithmically Fair? was inspired by two models of surveillance — the capture model and the surveillance model.",
-                            "The surveillance model is often invoked using the visual metaphor of the panopticon, designed by Jeremy Bentham. Bentham arranged the prison cells around a centralized guard tower in his architectural plans. An intermittent light reminds prisoners that they are being watched, even if no one is there. Bentham's radial architectural design inspired the radial coordinate system in this design.",
-                            "Philip Agre's theoretical model of data capture systems motivated the informational content of this work. Agre theorizes that capturing and storing human activity in information systems encourages individuals to change their behavior and reorient toward the system. Given specific data inputs, the COMPAS recidivism algorithm takes data inputs of an individual defendant. It returns a risk score from 1-10, representing the defendant's likelihood of returning to the system. Although predictive algorithms such as COMPAS are known to have low overall predictive accuracy, these risk scores are used to inform decision-making, orienting judges and other decision-makers towards the system.",
-                            "Algorithmically Fair? comments on the capture model by visualizing two standard measures of algorithmic fairness — the false positive rate and the false negative rate — using the actual and predictive outcomes from the model. The false positive rate is the probability of falsely rejecting the truth, simply triggering a false alarm. In contrast, the false negative rate is the failure to raise a valid alarm. However, in a criminal justice context, triggering a false alarm can result in additional sentencing time or setting a higher bail. Additionally, failing to raise a valid alarm results in future offenders going free. Although developers of COMPAS and proponents of criminal risk assessment tools have used other definitions of algorithmic accuracy to claim that the COMPAS recidivism algorithm is fair, this artifact challenges this notion.",
-                            "The physical panopticon models obstruct the fairness visualizations; the audience must physically engage with the artifact components to reveal the rates. While the rates indicate the disparate impacts of the algorithm on Black and White defendants; however, rates do not inform readers about the number of people affected. I designed the panopticon models' height to indicate the number of affected people so that a reader can compare the multiple metrics simultaneously.",
-                            "Culturally, red is of ten associated with words such as stop, warning, harm, and error. The incorrect predictions, in red, were also printed on translucent acrylic compared to the correct predictions, which were printed on black opaque acrylic.",
-                            "Light is used in the piece metaphorically and aesthetically. Light plays an interesting role in this piece metaphorically. In Bentham's panopticon, the lighted guard tower encouraged self-policing behaviors. However, in Algorithmically Fair?, light draws the viewer's eye and highlights the frequency of algorithmic error. Additionally, the predominantly black form representing algorithmic inequity makes visual reference to a black box algorithm. Lighting this form from the inside out to elucidate viewers on algorithmic bias symbolically reverses the role of light plays in these panopticon forms."],
-        designProcess: {
-            descr: ["I started by sketching out some initial ideas and design for a physical data visualization. I was interested in play with a cylindrical form because the form is representative in nature of both a database and Bentham's panopticon.",
-                    "Next, I processed and normalized the data in R and started some initial prototype of cylindrical laser cut forms that could be stacked."],
-            sketches: {
-                images: [
-                    {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132923256.jpg",
-                        alt: "Initial sketch conveying the idea of physical form that represents a database",
-                        size: "small"},
-                        {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132856202.jpg",
-                        alt: "A second sketch conveying the idea of physical form that represents a database",
-                        size: "small"},
-                        {url:"/assets/portfolio/algorithmically-fair/PXL_20221213_220237602.jpg",
-                        alt: "Initial sketch showing how a third dimension could be used to show the number of people",
-                        size: "small"}]},
-            prototype: {
-                images: [{url: "/assets/portfolio/algorithmically-fair/PXL_20221214_133321902.jpg",
-                        alt: "Initial prototype of layered pie charts",
-                        size: "small"}, 
-                        {url: "/assets/portfolio/algorithmically-fair/PXL_20221202_221919552.jpg",
+        designProcess: [
+            {name: 'artist statement', 
+            descr: ["This work critiques the use of risk assessment tools in the criminal justice system by asking an audience to reflect on the impacts of the COMPAS recidivism algorithm by engaging with three-dimensional panopticon forms representing disparate impacts. Algorithmically Fair? was inspired by two models of surveillance — the capture model and the surveillance model.",
+            "The surveillance model is often invoked using the visual metaphor of the panopticon, designed by Jeremy Bentham. Bentham arranged the prison cells around a centralized guard tower in his architectural plans. An intermittent light reminds prisoners that they are being watched, even if no one is there. Bentham's radial architectural design inspired the radial coordinate system in this design.",
+            "Philip Agre's theoretical model of data capture systems motivated the informational content of this work. Agre theorizes that capturing and storing human activity in information systems encourages individuals to change their behavior and reorient toward the system. Given specific data inputs, the COMPAS recidivism algorithm takes data inputs of an individual defendant. It returns a risk score from 1-10, representing the defendant's likelihood of returning to the system. Although predictive algorithms such as COMPAS are known to have low overall predictive accuracy, these risk scores are used to inform decision-making, orienting judges and other decision-makers towards the system.",
+            "Algorithmically Fair? comments on the capture model by visualizing two standard measures of algorithmic fairness — the false positive rate and the false negative rate — using the actual and predictive outcomes from the model. The false positive rate is the probability of falsely rejecting the truth, simply triggering a false alarm. In contrast, the false negative rate is the failure to raise a valid alarm. However, in a criminal justice context, triggering a false alarm can result in additional sentencing time or setting a higher bail. Additionally, failing to raise a valid alarm results in future offenders going free. Although developers of COMPAS and proponents of criminal risk assessment tools have used other definitions of algorithmic accuracy to claim that the COMPAS recidivism algorithm is fair, this artifact challenges this notion.",
+            "The physical panopticon models obstruct the fairness visualizations; the audience must physically engage with the artifact components to reveal the rates. While the rates indicate the disparate impacts of the algorithm on Black and White defendants; however, rates do not inform readers about the number of people affected. I designed the panopticon models' height to indicate the number of affected people so that a reader can compare the multiple metrics simultaneously.",
+            "Culturally, red is of ten associated with words such as stop, warning, harm, and error. The incorrect predictions, in red, were also printed on translucent acrylic compared to the correct predictions, which were printed on black opaque acrylic.",
+            "Light is used in the piece metaphorically and aesthetically. Light plays an interesting role in this piece metaphorically. In Bentham's panopticon, the lighted guard tower encouraged self-policing behaviors. However, in Algorithmically Fair?, light draws the viewer's eye and highlights the frequency of algorithmic error. Additionally, the predominantly black form representing algorithmic inequity makes visual reference to a black box algorithm. Lighting this form from the inside out to elucidate viewers on algorithmic bias symbolically reverses the role of light plays in these panopticon forms."
+            ],
+            images: [{url: "/assets/portfolio/algorithmically-fair/image1.jpg",
+                      alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"}]},
+            {name: 'sketching', 
+            descr: ["I started by sketching out some initial ideas and design for a physical data visualization. I was interested in play with a cylindrical form because the form is representative in nature of both a database and Bentham's panopticon."],
+            images: [
+                {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132923256.jpg",
+                    alt: "Initial sketch conveying the idea of physical form that represents a database",
+                    },
+                    {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132856202.jpg",
+                    alt: "A second sketch conveying the idea of physical form that represents a database",
+                   },
+                    {url:"/assets/portfolio/algorithmically-fair/PXL_20221213_220237602.jpg",
+                    alt: "Initial sketch showing how a third dimension could be used to show the number of people",
+                   }]},
+            {name: 'prototyping', 
+                descr: ["Next, I processed and normalized the data in R and started some initial prototype of cylindrical laser cut forms that could be stacked."], 
+            images:  [{url: "/assets/portfolio/algorithmically-fair/PXL_20221214_133321902.jpg",
+                       alt: "Initial prototype of layered pie charts",
+                       }, 
+                       {url: "/assets/portfolio/algorithmically-fair/PXL_20221202_221919552.jpg",
                         alt: "Initial prototype of light inside a layered pie chart",
-                        size: "small"}]},
-            final: {
-                images: [
-                    // {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
-                    // alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates",
-                    // size: "big"},
-                    {url: "/assets/portfolio/algorithmically-fair/PXL_20221207_173728791.PORTRAIT.jpg",
-                    alt: "Birdseye view of the Algorithmically Fair?",
-                    size: "small"}, 
-                    {url: "/assets/portfolio/algorithmically-fair/PXL_20221207_173759492.PORTRAIT.jpg",
-                    alt: "Close-up of one data visualization's physical form on the LED radial light",
-                    size: "small"}]
-                }
-            }
+                       }]},
+            {name: 'final', descr: [],
+            images: [
+                // {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
+                // alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates",
+                // size: "big"},
+                {url: "/assets/portfolio/algorithmically-fair/PXL_20221207_173728791.PORTRAIT.jpg",
+                alt: "Birdseye view of the Algorithmically Fair?",
+                }, 
+                {url: "/assets/portfolio/algorithmically-fair/PXL_20221207_173759492.PORTRAIT.jpg",
+                alt: "Close-up of one data visualization's physical form on the LED radial light",
+                }]}
+            ]
     },
     // {title: "Intesa SanPaolo Knowledge Network", 
     // page: "Intesa SanPaolo Knowledge Network", 
@@ -197,158 +210,173 @@ export let itemData = [
     // prototype: [],
     // final: []
     // },
-    {
-        title: "Black Data", 
-        page: "Black-Data", 
-        year: 2020,
-        mainImage: {
-            url: "/assets/portfolio/black-data/20201122_142250.jpg", 
-            alt:"Black cube with machine learning knitting pattern in rainbow yarn"}, 
-        tags: ["#data-art", "#data-physicalization", "#ceramics", "#fiber", "#fine-art"],
-        medium: ["Yarn", "Beads", "Clay"],
-        artistStatement: ["In Black Data, I play with the idea of transparency and reproducibility in machine learning algorithms. The juxtaposition of the black box in contrast to the white box is intended to make viewers question what a white box algorithm would look like and what the research process would entail. Machine learning algorithms are starting to be employed more regularly, especially in public policy settings, but frequently lack transparency and accountability.",
-                           "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
-        designProcess: {
-            final: {
-                images: [{url: "/assets/portfolio/black-data/20201122_142017.jpg",
-                        alt: "Black cube with machine learning knitting pattern in rainbow yarn",
-                        size: "small"}, 
-                    {url: "/assets/portfolio/black-data/20201122_142356.jpg",
-                        alt: "Black cube with machine learning knitting pattern in rainbow yarn close up",
-                        size: "small"}, 
-                    {url: "/assets/portfolio/black-data/20201124_173636 edited.jpg",
-                        alt: "White cube with knitting pattern in white yarn",
-                        size: "small"}]}
-                    }
-    },
+    // {
+    //     title: "Black Data", 
+    //     page: "Black-Data", 
+    //     year: 2020,
+    //     mainImage: {
+    //         url: "/assets/portfolio/black-data/20201122_142250.jpg", 
+    //         alt:"Black cube with machine learning knitting pattern in rainbow yarn"}, 
+    //     tags: ["#data-art", "#data-physicalization", "#ceramics", "#fiber", "#fine-art"],
+    //     medium: ["Yarn", "Beads", "Clay"],
+    //     artistStatement: ["In Black Data, I play with the idea of transparency and reproducibility in machine learning algorithms. The juxtaposition of the black box in contrast to the white box is intended to make viewers question what a white box algorithm would look like and what the research process would entail. Machine learning algorithms are starting to be employed more regularly, especially in public policy settings, but frequently lack transparency and accountability.",
+    //                        "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
+    //     designProcess: {
+    //         final: {
+    //             images: [{url: "/assets/portfolio/black-data/20201122_142017.jpg",
+    //                     alt: "Black cube with machine learning knitting pattern in rainbow yarn",
+    //                     size: "small"}, 
+    //                 {url: "/assets/portfolio/black-data/20201122_142356.jpg",
+    //                     alt: "Black cube with machine learning knitting pattern in rainbow yarn close up",
+    //                     size: "small"}, 
+    //                 {url: "/assets/portfolio/black-data/20201124_173636 edited.jpg",
+    //                     alt: "White cube with knitting pattern in white yarn",
+    //                     size: "small"}]}
+    //                 }
+    // },
     {
         title: "Intesa SanPaolo Processes", 
         page: "Intesa-SanPaolo-Processes", 
         client: {name: "Banca Intesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
         year: "2024", 
-        links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
+        // links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
         mainImage: {
             url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
             alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
-        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python"],
+        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#javascript"],
         tools: ["D3.js", "Pixi.js", "React", "Python"],
         design: ["Information design", "Interaction design"],
         role: ["Data visualization designer", "Data visualization developer", "Project manager", "Data engineer"],
-        summary: ["Banca Intesa Processes is an exploratory business analytics application that allows the organization to explore and audit risk management data to understand and manage data complexity. The application affords users a visual understanding of how risk is distributed across organizational structures and how activities are distributed among different actors at the company. Additionally, users can identify activities and associated risks without appropriate controls and develop plans to redistribute workflows.",
-                  "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen.",
-                  "This app enables the user to explore and audit risk management data at the enterprise level, through different views to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads."],
-        designProcess: {
-            descr: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io and dynamic visualization was design in Figma. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application.",
-                    "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."],
-            research: {
-                images: [{url: "/assets/portfolio/banca-intesa-processes/visual-research1.jpg",
-                         alt: "Divine Comedy: https://divinecomedy.digital/#/eng/viz",
-                         size: "small"},
-                         {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
-                         alt: "Show your stripes: https://showyourstripes.info/s/globe/",
-                         size: "small"},
-                         {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
-                         alt: "Luciano Baldessari: http://baldessari.densitydesign.org/persone/",
-                         size: "small"}]
-            },
-            sketches: {
-                images: [{url: "/assets/portfolio/banca-intesa-processes/sketch1.jpg",
-                          alt: "Dendrogram showing hierarchy",
-                          size: "small"},
-                          {url: "/assets/portfolio/banca-intesa-processes/sketch2.jpg",
-                          alt: "Connections between an actor, the applications the use, and the activities they are in charge of",
-                          size: "small"},
-                          {url: "/assets/portfolio/banca-intesa-processes/sketch3.jpg",
-                          alt: "Circle packing diagram showing hierarchy",
-                          size: "small"},
-                          {url: "/assets/portfolio/banca-intesa-processes/sketch4.jpg",
-                          alt: "Network showing connections between actors and activities",
-                          size: "small"}]
-            },
-            final: {
-                images: [
-                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-view.png",
-                    alt: "Circle packing diagram in that shows nested level of data hierarchies",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-zoomed-in.png",
-                    alt: "A zoomed in version of the circle packing diagram showing the zoom and tooltip capabilities of the application",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/circle-packing-activities-identified.png",
-                    alt: "A zoomed in version of the circle packing diagram showing a feature that allows the user to identify specific data attributes",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/network-full-screen.png",
-                    alt: "A network visualization showing organizational connections between actors, activities, risks and controls",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/network-freeze-feature.png",
-                    alt: "A network visualization shows how the user can 'freeze' portions of the network and be able to use the tooltip to interact with other parts",
-                    size: "small"
-                    },
-                    {url: "/assets/portfolio/banca-intesa-processes/network-additional-features-shown.png",
-                    alt: "Additional features such as the ability to change risk type are shown in this visualization",
-                    size: "small"
-                    }
+        designProcess: [
+            {name: 'summary', 
+             descr: ["Processes Map is an exploratory business analytics application that allows the organization to explore and audit risk management data to understand and manage data complexity. The application affords users a visual understanding of how risk is distributed across organizational structures and how activities are distributed among different actors at the company. Additionally, users can identify activities and associated risks without appropriate controls and develop plans to redistribute workflows.",
+                     "The power behind the design of this application is its minimal interface design that facilitates user interaction. A query status pane allows users to filter, zoom, and highlight specific attributes of the visualizations. Additionally, navigational controls create a visualization-first user experience by hiding all non-visualization components on the screen.",
+                     "This app enables the user to explore and audit risk management data at the enterprise level, through different views to understand and manage the complexity. The application equips users to understand the distribution of risk across the company, understand the links between activities, actors, and organizational structure, identify risks without adequate controls, and develop plans to redistribute workloads.",
+                    //  "The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application."
+                ],
+            videos: [
+                {url: "/assets/portfolio/banca-intesa-processes/circlepackingInteraction.mp4"}
                 ]
-            }
-        }
+            },
+            {name: 'visual research',
+             descr: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The first step was researching and presenting different visual forms to a client user group.",
+                    "The team considered other interfaces that relied on forms that show hierarchies within the data such as a treemap."],
+             images: [
+                      {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
+                       alt: "Divine Comedy: https://divinecomedy.digital/#/eng/viz"},
+                      {url: "/assets/portfolio/banca-intesa-processes/visual-research1.jpg",
+                       alt: "Show your stripes: https://showyourstripes.info/s/globe/"},
+                      {url: "/assets/portfolio/banca-intesa-processes/visual-research3.jpg",
+                       alt: "Luciano Baldessari: http://baldessari.densitydesign.org/persone/"}]
+            },
+            {name: 'static sketching',
+             descr: ["The team sketched out different ideas for the on paper and digitally. The team relied on RawGraphs.io to create digital data sketches."],
+             images: [{url: "/assets/portfolio/banca-intesa-processes/sketch1.jpg",
+                       alt: "A sketch of a dendrogram showing hierarchies within the data."},
+                      {url: "/assets/portfolio/banca-intesa-processes/sketch2.jpg",
+                       alt: "Connections between an actor, the applications the use, and the activities they are in charge of"},
+                      {url: "/assets/portfolio/banca-intesa-processes/sketch3.jpg",
+                       alt: "A sketch of a circle packing diagram showing hierarchy."},
+                      {url: "/assets/portfolio/banca-intesa-processes/sketch4.jpg",
+                       alt: "Network showing connections between actors and activities."
+                }]},
+            {name: 'data',
+             descr: ['The data were stored in an Excel spreadsheet. Each sheet in the Excel document represented a table that was related to other tables in the spreadsheet. The team was not given a data dictionary or documentation, making it challenging to interpret relationships between the tables.',
+                    'One of the ways that the team at the Center for Design navigated this challenge was creating diagrams (e.g., ERD) to be able to visually communicate how we were interpreting the relationships.',
+                    'Once the data structure was understood, I cleaned the data in Python and exported the data as a JSON object.'],
+             images: [{url: "/assets/portfolio/banca-intesa-processes/Data Model.jpg",
+                        alt: "A Entity-Relationship Diagram (ERD) shows show the Center for Design's interpretation of the relationships between variables in tables."},
+                        {url: "/assets/portfolio/banca-intesa-processes/data_modeling.jpg",
+                        alt: "A diagram communicating different interpretations of the data relationships to help clarify the correct relationship."}]
+            },
+            {name: 'interactive sketching', 
+             descr: ['We used Observable notebooks to imagine how a user might interact with a visualization. Using Observable allowed the team to be able to demonstrate several user interactions to our client and get feedback on the usablity and form without investing a large amount of time in the development process.'],
+             images: [{url: "/assets/portfolio/banca-intesa-processes/observable-sketch1.png",
+                       alt: "An Observable notebook showing a sketch of a potential visualization for the application."}]}
+            ],
+            // final: {
+            //     images: [
+            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-view.png",
+            //         alt: "Circle packing diagram in that shows nested level of data hierarchies",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-zoomed-in.png",
+            //         alt: "A zoomed in version of the circle packing diagram showing the zoom and tooltip capabilities of the application",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-activities-identified.png",
+            //         alt: "A zoomed in version of the circle packing diagram showing a feature that allows the user to identify specific data attributes",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/network-full-screen.png",
+            //         alt: "A network visualization showing organizational connections between actors, activities, risks and controls",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/network-freeze-feature.png",
+            //         alt: "A network visualization shows how the user can 'freeze' portions of the network and be able to use the tooltip to interact with other parts",
+            //         size: "small"
+            //         },
+            //         {url: "/assets/portfolio/banca-intesa-processes/network-additional-features-shown.png",
+            //         alt: "Additional features such as the ability to change risk type are shown in this visualization",
+            //         size: "small"
+            //         }
+            //     ]
+            // }
     },
-    {
-        title: "Meta", 
-        year: 2015, 
-        page: "Meta", 
-        mainImage: {
-            url: "/assets/portfolio/meta/keyboardhands3_slow.gif", 
-            alt: "Typing out code with pink fingers"}, 
-        tags: ["#data-art", "#data-visualization", "#r"],
-        tools: ["R"],
-        design: ["Information design"],
-        artistStatement: ["The installation pictured below explores the social construction of data and how data can be manipulated through code. The installation shows a snippet of the physical code used to extract RGB values from a corpus of Georgia O'Keefe paintings. I downloaded 60 images of famous O'Keefe paintings and used R to extract the RGB values of each pixel in each painting. I visualized the values as histograms for each painting. The histograms and GIF displayed below were installed at Wesleyan University's Quantitative Analysis Center, the physical space where I utilized the university's resources to learn and practice quantitative analysis. The GIF plays off of a common programming technique known as a loop."],
-        designProcess: {
-            final: {
-                images: [{url: "/assets/portfolio/meta/keyboardhands3_slow.gif",
-                    alt: "GIF of hands typing out code with physical code layered in the background",
-                    size: "big"},
-                    {url:"/assets/portfolio/meta/histograms.jpg",
-                    alt: "Image of histogram installation",
-                    size: "small"},
-                    {url:"/assets/portfolio/meta/histogram_computer.jpg",
-                    alt: "Image of additional histograms shown on computer screens",
-                    size: "small"},
-                    {url:"/assets/portfolio/meta/computer.jpg",
-                    alt: "Computers at Wesleyan University's Quantitative Analysis Center",
-                    size: "small"}]
-                }
-            }
-    },
-    {   
-        title: "Visualizing Version Control", 
-        page: "Visual-Version-Control", 
-        year: 2021, 
-        links: [{
-            url: "/assets/portfolio/visual-version-control/Visual Version Control.pdf", text: "Link to PDF"
-        }],
-        mainImage: {
-            url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
-            alt:"Visualizing Version Control"}, 
-        tags: ["#graphic-design", "#information-design", "#system-design", "#illustrator"],
-        tools: ["Adobe Illustrator"],
-        design: ["Information design", "Graphic design"],
-        role: ["Information designer"],
-        summary: ["This visualization as part of a peer skillshare. Version control for code is a handy tool, but it can be challenging to get started. This visualization aims to help new users of code version control understand the steps involved in the version control cycle."],
-        designProcess: {
-            final: {
-                images: [{
-                    url: "/assets/portfolio/visual-version-control/final_design.jpg",
-                    alt: "",
-                    size: "big"}
+    // {
+    //     title: "Meta", 
+    //     year: 2015, 
+    //     page: "Meta", 
+    //     mainImage: {
+    //         url: "/assets/portfolio/meta/keyboardhands3_slow.gif", 
+    //         alt: "Typing out code with pink fingers"}, 
+    //     tags: ["#data-art", "#data-visualization", "#r"],
+    //     tools: ["R"],
+    //     design: ["Information design"],
+    //     artistStatement: ["The installation pictured below explores the social construction of data and how data can be manipulated through code. The installation shows a snippet of the physical code used to extract RGB values from a corpus of Georgia O'Keefe paintings. I downloaded 60 images of famous O'Keefe paintings and used R to extract the RGB values of each pixel in each painting. I visualized the values as histograms for each painting. The histograms and GIF displayed below were installed at Wesleyan University's Quantitative Analysis Center, the physical space where I utilized the university's resources to learn and practice quantitative analysis. The GIF plays off of a common programming technique known as a loop."],
+    //     designProcess: {
+    //         final: {
+    //             images: [{url: "/assets/portfolio/meta/keyboardhands3_slow.gif",
+    //                 alt: "GIF of hands typing out code with physical code layered in the background",
+    //                 size: "big"},
+    //                 {url:"/assets/portfolio/meta/histograms.jpg",
+    //                 alt: "Image of histogram installation",
+    //                 size: "small"},
+    //                 {url:"/assets/portfolio/meta/histogram_computer.jpg",
+    //                 alt: "Image of additional histograms shown on computer screens",
+    //                 size: "small"},
+    //                 {url:"/assets/portfolio/meta/computer.jpg",
+    //                 alt: "Computers at Wesleyan University's Quantitative Analysis Center",
+    //                 size: "small"}]
+    //             }
+    //         }
+    // },
+    // {   
+    //     title: "Visualizing Version Control", 
+    //     page: "Visual-Version-Control", 
+    //     year: 2021, 
+    //     links: [{
+    //         url: "/assets/portfolio/visual-version-control/Visual Version Control.pdf", text: "Link to PDF"
+    //     }],
+    //     mainImage: {
+    //         url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
+    //         alt:"Visualizing Version Control"}, 
+    //     tags: ["#graphic-design", "#information-design", "#system-design", "#illustrator"],
+    //     tools: ["Adobe Illustrator"],
+    //     design: ["Information design", "Graphic design"],
+    //     role: ["Information designer"],
+    //     summary: ["This visualization as part of a peer skillshare. Version control for code is a handy tool, but it can be challenging to get started. This visualization aims to help new users of code version control understand the steps involved in the version control cycle."],
+    //     designProcess: {
+    //         final: {
+    //             images: [{
+    //                 url: "/assets/portfolio/visual-version-control/final_design.jpg",
+    //                 alt: "",
+    //                 size: "big"}
 
-                ]
-            }
-        }
-    },
+    //             ]
+    //         }
+    //     }
+    // },
     // {title: "Drawings Collection", 
     // page: "Drawings-Collection", 
     // year: 2014, 
@@ -407,80 +435,80 @@ export let itemData = [
     // prototype: [],
     // final: []
     // },
-    {
-        title: "Equitable Teams", 
-        page: "Equitable-Teams", 
-        year: 2022, 
-        links: [
-            {url: "assets/portfolio/equitable-teams/team_strengths.pdf", text: "Link to PDF"}
-        ],
-        mainImage: {
-            url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
-            alt: "Data Visualization showing the combined strengths of individuals"}, 
-        tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#illustrator"],
-        design: ["Information Design", "Graphic design"],
-        tools: ["Adobe Illustrator", "R"],
-        role: ["Data visualization designer"],
-        summary: ["The goal of this project was to use data visualization to assess how students could be partnered to create equitable teams.",
-                  "Students were asked to self-assess their skills from using a scale of beginner to advanced across six dimensions: programming, data, graphic design, interaction design, storytelling, and leadership and management skills.",
-                  "The final design is based off of the form known as a radar chart. However, the charts show overlap between the students across the six dimensions. The larger the form is in the radar chart, the more skilled the student pair is. The visualization is designed to show pairs where students combined competencies area the strongest team rather than students which may have overlapping compentencies."],
-        designProcess: {
-            descr: ["The equitable teams project was developed over the course of two weeks. The main tools used to create the visualization were R and Adobe Illustrator. R was used to generate the initial forms, which were then edited and modified in Adobe Illustrator."],
-            sketches: {
-                images: [{
-                    url: "assets/portfolio/equitable-teams/design-process-1.png",
-                    alt: "Sketch showing initial design of visualization",
-                    size: "small"
-                },
-                {
-                    url: "assets/portfolio/equitable-teams/design-process-2.png",
-                    alt: "Sketch showing initial design of visualization",
-                    size: "small"
-                }
-                ]
-            },
-            prototype: {
-                images: [
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 1-100.jpg",
-                        alt: "Initial visualization created in R",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 2-100.jpg",
-                        alt: "Reducing the information so it is less overwhelming to the user",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 3-100.jpg",
-                        alt: "Testing how individuals could overlap to create new forms",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 6-100.jpg",
-                        alt: "Testing how individuals could overlap to create new forms",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 7-100.jpg",
-                        alt: "Testing how individuals could overlap to create new forms",
-                        size: "small"
-                    },
-                    {
-                        url: "assets/portfolio/equitable-teams/1x/Artboard 14-100.jpg",
-                        alt: "Testing how individuals could overlap with solid forms to show collective strengths",
-                        size: "small"
-                    }
-                ]
-            },
-            final: {
-                images: [{
-                    url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
-                    // alt: "Data Visualization showing the combined strengths of individuals",
-                    size: "big"}]
-            }
-        }
-    },
+    // {
+    //     title: "Equitable Teams", 
+    //     page: "Equitable-Teams", 
+    //     year: 2022, 
+    //     links: [
+    //         {url: "assets/portfolio/equitable-teams/team_strengths.pdf", text: "Link to PDF"}
+    //     ],
+    //     mainImage: {
+    //         url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
+    //         alt: "Data Visualization showing the combined strengths of individuals"}, 
+    //     tags: ["#information-design", "#graphic-design", "#data-visualization", "#r", "#illustrator"],
+    //     design: ["Information Design", "Graphic design"],
+    //     tools: ["Adobe Illustrator", "R"],
+    //     role: ["Data visualization designer"],
+    //     summary: ["The goal of this project was to use data visualization to assess how students could be partnered to create equitable teams.",
+    //               "Students were asked to self-assess their skills from using a scale of beginner to advanced across six dimensions: programming, data, graphic design, interaction design, storytelling, and leadership and management skills.",
+    //               "The final design is based off of the form known as a radar chart. However, the charts show overlap between the students across the six dimensions. The larger the form is in the radar chart, the more skilled the student pair is. The visualization is designed to show pairs where students combined competencies area the strongest team rather than students which may have overlapping compentencies."],
+    //     designProcess: {
+    //         summary: ["The equitable teams project was developed over the course of two weeks. The main tools used to create the visualization were R and Adobe Illustrator. R was used to generate the initial forms, which were then edited and modified in Adobe Illustrator."],
+    //         sketches: {
+    //             images: [{
+    //                 url: "assets/portfolio/equitable-teams/design-process-1.png",
+    //                 alt: "Sketch showing initial design of visualization",
+    //                 size: "small"
+    //             },
+    //             {
+    //                 url: "assets/portfolio/equitable-teams/design-process-2.png",
+    //                 alt: "Sketch showing initial design of visualization",
+    //                 size: "small"
+    //             }
+    //             ]
+    //         },
+    //         prototype: {
+    //             images: [
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 1-100.jpg",
+    //                     alt: "Initial visualization created in R",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 2-100.jpg",
+    //                     alt: "Reducing the information so it is less overwhelming to the user",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 3-100.jpg",
+    //                     alt: "Testing how individuals could overlap to create new forms",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 6-100.jpg",
+    //                     alt: "Testing how individuals could overlap to create new forms",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 7-100.jpg",
+    //                     alt: "Testing how individuals could overlap to create new forms",
+    //                     size: "small"
+    //                 },
+    //                 {
+    //                     url: "assets/portfolio/equitable-teams/1x/Artboard 14-100.jpg",
+    //                     alt: "Testing how individuals could overlap with solid forms to show collective strengths",
+    //                     size: "small"
+    //                 }
+    //             ]
+    //         },
+    //         final: {
+    //             images: [{
+    //                 url: "assets/portfolio/equitable-teams/team_strengths_zoom.svg", 
+    //                 // alt: "Data Visualization showing the combined strengths of individuals",
+    //                 size: "big"}]
+    //         }
+    //     }
+    // },
     // {title: "Ceramics Collection", 
     // page: "Ceramics-Collection", 
     // year: 2020, 
@@ -496,34 +524,34 @@ export let itemData = [
     // prototype: [],
     // final: []
     // },
-    {
-        title: "Visual Ramblings",
-        page: "Visual-Ramblings",
-        client: {name: "Roanoke Rambler", link: "https://www.roanokerambler.com/"},
-        year: 2023, 
-        mainImage: {
-            url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
-            alt: "Incarceration by neighborhood"
-        },
-        tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#illustrator"],
-        tools: ["R", "Adobe Illustrator"],
-        design: ["Data visualization"],
-        role: ["Data visualization designer"],
-        summary: ["Visual Ramblings is a collection of data visualizations designed for the Roanoke Rambler, an independent, investigative, literary magazine in Roanoke, Virginia. The visualizations focus on a variety of topics to support across politics and policy.", "In some cases, the data were provided by the editory of the Rambler, but in others the data were sourced from a variety of reputable sources. After the data were identified, the statistical software R was used to create the initial visual form and it was edited in and edited in Adobe Illustrator."],
-        collection: [{descr: "incarceration in roanoke city", 
-                      images: [{url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg", 
-                                alt: "Map of Roanoke, Virginia showing incarceration rates",
-                                caption: ""},
-                                {url: "/assets/portfolio/visual-ramblings/Incarceration/2a_race_incarceration_highlight@2x-100.jpg", 
-                                alt: "Map of Roanoke, Virginia showing incarceration rates",
-                                caption: ""}
-                            ]},
-                    {descr: "state senate race", images: [{url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 1.png", alt: "", caption: "Visualization version 1"},
-                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 2.png", alt: "", caption: "Visualization version 2"},
-                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 3.png", alt: "", caption: "Visualization version 3"},
-                                                          {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 4.png", alt: "", caption: "Visualization version 4"}]}
-                    ]
-    },
+    // {
+    //     title: "Visual Ramblings",
+    //     page: "Visual-Ramblings",
+    //     client: {name: "Roanoke Rambler", link: "https://www.roanokerambler.com/"},
+    //     year: 2023, 
+    //     mainImage: {
+    //         url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg",
+    //         alt: "Incarceration by neighborhood"
+    //     },
+    //     tags: ["#data-journalism", "#r", "#mapping", "#data-visualization", "#illustrator"],
+    //     tools: ["R", "Adobe Illustrator"],
+    //     design: ["Data visualization", "Data journalism"],
+    //     role: ["Data visualization designer"],
+    //     summary: ["Visual Ramblings is a collection of data visualizations designed for the Roanoke Rambler, an independent, investigative, literary magazine in Roanoke, Virginia. The visualizations focus on a variety of topics to support across politics and policy.", "In some cases, the data were provided by the editory of the Rambler, but in others the data were sourced from a variety of reputable sources. After the data were identified, the statistical software R was used to create the initial visual form and it was edited in and edited in Adobe Illustrator."],
+    //     collection: [{descr: "incarceration in roanoke city", 
+    //                   images: [{url: "/assets/portfolio/visual-ramblings/Incarceration/1_race_incarceration@2x-100.jpg", 
+    //                             alt: "Map of Roanoke, Virginia showing incarceration rates",
+    //                             caption: ""},
+    //                             {url: "/assets/portfolio/visual-ramblings/Incarceration/2a_race_incarceration_highlight@2x-100.jpg", 
+    //                             alt: "Map of Roanoke, Virginia showing incarceration rates",
+    //                             caption: ""}
+    //                         ]},
+    //                 {descr: "state senate race", images: [{url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 1.png", alt: "", caption: "Visualization version 1"},
+    //                                                       {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 2.png", alt: "", caption: "Visualization version 2"},
+    //                                                       {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 3.png", alt: "", caption: "Visualization version 3"},
+    //                                                       {url: "/assets/portfolio/visual-ramblings/State Senate Race 2023/Version 4.png", alt: "", caption: "Visualization version 4"}]}
+    //                 ]
+    // },
     {
         title: "Migration is Natural", 
         page: "Migration-is-Natural",
@@ -533,7 +561,7 @@ export let itemData = [
         mainImage: {
             url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
             alt:"Migration is Natural"}, 
-        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#graphic-design", "#illustrator", "#d3-js", "#svelte"],
+        tags: ["#information-design", "#interaction-design", "#r", "#figma", "#graphic-design", "#illustrator", "#d3-js", "#svelte", "#typescript"],
         tools: ["R", "Adobe Illustrator", "D3.js", "Svelte", "Figma"],
         design: ["Information design", "Interaction design", "Graphic design"],
         role: ["Data visualization designer", "Project manager", "Data analyst"],
@@ -542,99 +570,77 @@ export let itemData = [
                     "It employs the visual metaphor of a butterfly to convey that migration is a natural phenomenon frequently witnessed in the natural world. The visual inspiration for the metaphor is from artist, organizater, and activist, Favianna Rodriguez, who created a series called 'Migration is Beautiful' in 2012.",
                     "The veins of the butterfly detail different paths a user could take to acquire migration after answering some simple questions such as, 'Are your parents citizens of the country you are interested in migrating to?', 'Were you born in the country you are interested in migrating to?', or 'Are you married?'"],
         data: ["This project combines data from two resources. The first is the global citizenship database maintained by the European University Institute. The database standardizes citizenship acquisition methods across 190 countries. The database identifies 28 ways through which migrants can obtain citizenship. It was last updated on January 1st, 2020. This data set was challenging to work with because the data are all categorical, which is often harder to visualize than numeric data."],
-        designProcess: {
-            descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
-                    "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."],
-            research: {
-                images: [
-                {
-                    url: "/assets/portfolio/migration-is-natural/moodboard.png",
-                    alt: "Moodboard of different images used in the intial research phase of Migration is Natural",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration1@2x-100.jpg",
-                    alt: "A map showing the migratory patterns of birds",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration2@2x-100.jpg",
-                    alt: "A map showing the migratory patterns of birds",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration3@2x-100.jpg",
-                    alt: "A map showing the migratory patterns of whales",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration4@2x-100.jpg",
-                    alt: "An information visualization showing the different paths to the 2016 presidency",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/2x/Inspiration5@2x-100.jpg",
-                    alt: "An information visualization showing path flows",
-                    size: "small"
-                }
-            ]},
-            sketches: {
-                images: [
-                {
-                    url: "/assets/portfolio/migration-is-natural/design-process-1.png",
-                    alt: "Initial sketch showing underlying logic to the data",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/design-process-2.png",
-                    alt: "Initial sketch showing how a path could be formed from the data",
-                    size: "small"
-                },
-                {
-                    url: "/assets/portfolio/migration-is-natural/design-process-3.png",
-                    alt: "Initial sketch adding more detail to potential data paths",
-                    size: "small"
-                }
-            ]},
-            prototype: {
-                images: [
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-4.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-5.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-6.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-7.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "/assets/portfolio/migration-is-natural/design-process-8.png",
-                        alt: "",
-                        size: "small"},
-                    {
-                        url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
-                        link: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
-                        alt: "The team used figma to prototype the application",
-                        size: "big"
-                    }
-            ]},
-            final: {
-                images: [
-                {
-                    url: "https://joliholmes.com/team-migration/",
-                    link: "https://joliholmes.com/team-migration/",
-                    alt: "Interactive applications showing the initial map",
-                    size: "big"
-                }
-            ]}
-        }
+        designProcess: [{name: "summary", descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
+                                                                  "Scroll down to see how the project evolved with different stages of design research, thinking, user testing, and iteration."]},
+                        {name: "design research", descr: [], images: [
+                            {
+                                url: "/assets/portfolio/migration-is-natural/moodboard.png",
+                                alt: "Moodboard of different images used in the intial research phase of Migration is Natural"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration1@2x-100.jpg",
+                                alt: "A map showing the migratory patterns of birds"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration2@2x-100.jpg",
+                                alt: "A map showing the migratory patterns of birds"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration3@2x-100.jpg",
+                                alt: "A map showing the migratory patterns of whales"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration4@2x-100.jpg",
+                                alt: "An information visualization showing the different paths to the 2016 presidency"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration5@2x-100.jpg",
+                                alt: "An information visualization showing path flows"
+                            }
+                        ]},
+                        {name: "sketching", descr: [], images: [
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-1.png",
+                                alt: "Initial sketch showing underlying logic to the data"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-2.png",
+                                alt: "Initial sketch showing how a path could be formed from the data"
+                            },
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-3.png",
+                                alt: "Initial sketch adding more detail to potential data paths"
+                            }
+                        ] },
+                        {name: "prototyping", descr: [], images: [
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-4.png",
+                                alt: ""},
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-5.png",
+                                alt: ""},
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-6.png",
+                                alt: ""},
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-7.png",
+                                alt: ""},
+                            {
+                                url: "/assets/portfolio/migration-is-natural/design-process-8.png",
+                                alt: ""},
+                            {
+                                url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
+                                link: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
+                                alt: "The team used figma to prototype the application"
+                            }
+                    ] },
+                    {name: "development", descr: [], images: [
+                        {
+                            url: "https://joliholmes.com/team-migration/",
+                            link: "https://joliholmes.com/team-migration/",
+                            alt: "Interactive applications showing the initial map"
+                        }] }
+                    ]
     },
     // {title: "Public Policy Collection", 
     // page: "Public-Policy-Collection", 
@@ -723,8 +729,10 @@ export const designFilters = ["#data-art", "#data-journalism", "#data-physicaliz
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
-export const toolFilters = ["#d3-js", "#figma", "#illustrator", "#indesign", "#leaflet-js", "#pixi-js", "#python", "#r", "#react"];
+export const toolFilters = ["#d3-js", "#figma", "#illustrator", "#indesign", "#javascript", "#leaflet-js", "#pixi-js", "#python", "#r", "#react", "#svelte", "#typescript"];
 
 export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
+
+export const roleFilters = [... new Set(itemData.map(d => d.role).flat())];
 
 export const filters = toolFilters.concat(designFilters.concat(mediumFilters));

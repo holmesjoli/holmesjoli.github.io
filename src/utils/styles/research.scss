@@ -26,3 +26,15 @@
 .Research-Item a:hover h3 {
     color: $appColorFocus;
 }
+
+@media screen and (max-width: 480px) {
+
+    .Research-Item-Container {
+        padding: 0;
+        
+        img {
+            padding: 0;
+            padding-top: $appPadding;
+        }
+    }
+}
