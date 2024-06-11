@@ -9,12 +9,12 @@ export default function Navigation() {
         <div className="Navigation">
             <div className="Navigation_branding">
                 <h1><NavLink to="/">Joli Holmes</NavLink></h1>
-                <h3>data visualization designer</h3>
+                <h3>data visualization designer + developer</h3>
             </div>
             <div className="Navigation_links">
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>home</h3></NavLink>
                 <NavLink to="/Portfolio" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>portfolio</h3></NavLink>
-                <NavLink to="/Research" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>design research</h3></NavLink>
+                <NavLink to="/Research" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>research</h3></NavLink>
                 <NavLink to="/About" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>about</h3></NavLink>
             </div>
         </div>
