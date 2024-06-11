@@ -70,3 +70,11 @@
 h3 {
     margin: 0
 }
+
+@media screen and (max-width: 480px) {
+
+    .Body {
+        display: flex;
+        flex-direction: column;
+    }
+}
