@@ -312,7 +312,7 @@ export let itemData = [
             },
             {name: 'interactive sketching', 
              descr: ['We used Observable notebooks to imagine how a user might interact with a visualization. Using Observable allowed the team to be able to demonstrate several user interactions to our client and get feedback on the usablity and form without investing a large amount of time in the development process.'],
-             images: [{url: "/assets/portfolio/banca-intesa-processes/observable-sketch1.png",
+             videos: [{url: "/assets/portfolio/banca-intesa-processes/sketchinginteractionsobservable.mp4",
                        alt: "An Observable notebook showing a sketch of a potential visualization for the application."}]}
             ],
             // final: {
