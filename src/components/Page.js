@@ -51,7 +51,6 @@ function PageNavigation({data}) {
         // Update active nav item and rotate it to the top
         d3.selectAll('#nav .item').on('click', function() {
             activeIndex = +d3.select(this).property('id');
-            console.log(activeIndex);
 
             d3.select('#nav .active').classed("active", false); // remove active from previous active selection
             d3.select(this).classed('active', true); // add active to new active selection

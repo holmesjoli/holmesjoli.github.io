@@ -73,6 +73,61 @@ export let itemData = [
                     ]}
                 ]
     },
+    {title: "Vaultbreakers",
+     page: "Vaultbreakers",
+     client: {name: "Valentino Mori", link: "https://www.valentinomori.com/"},
+     year: 2024,
+     role: ["Information designer"],
+     design: ["Information design", "Graphic design", "Game design"],
+     tools: ["Illustrator", "Indesign"],
+     tags: ["#illustrator", "#indesign", "#information-design", "#graphic-design", "#game-design"],
+     mainImage: {
+        url: "/assets/portfolio/vaultbreakers/Assets_Backstab card.png",
+        alt: "Vaultbreakers Backstab card. The card shows a character with a knife in their hand and a player can use this card to backstab opponents."
+     },
+    designProcess: [{
+        name: "summary", 
+        descr: ["As I consultant on Vaultbreakers, I worked with the game designer to create a series of cards that would be used in the game. The game is a cooperative-competitive card game where players work together to break into a vault and steal the loot inside. The game is designed to be played by 2-4 players and takes about 45 minutes to play.",
+                "I generated sketches for how the information could be displayed on the cards, suggested typographic changes to make the cards readable and consistent, gave feedback on color choices, in addition to creating several components for the printed game."],
+        images: [{url: "/assets/portfolio/vaultbreakers/Assets_Vaultbreakers Example Cards.png",
+                  alt: "Vaultbreakers Backstab card. The card shows a character with a knife in their hand and a player can use this card to backstab opponents."}]
+    },
+    {
+        name: "information architecture",
+        descr: ["One of my first steps as a consultant on the project was to present multiple ways of displaying the information on the cards. The game designer knew that he would be hiring an illustrator for card, so white boxes represent those spaces."],
+        images: [{url: "/assets/portfolio/vaultbreakers/sketch.png",
+                  alt: "Image shows an initial possible layout for the card."},
+                  {url: "/assets/portfolio/vaultbreakers/sketch2.png",
+                  alt: "Image shows an initial possible layout for the card."},
+                  {url: "/assets/portfolio/vaultbreakers/sketch3.png",
+                  alt: "Image shows an initial possible layout for the card."},
+                  {url: "/assets/portfolio/vaultbreakers/sketch4.png",
+                  alt: "Image shows an initial possible layout for the card."},
+                  {url: "/assets/portfolio/vaultbreakers/sketch5.png",
+                  alt: "Image shows an initial possible layout for the card."}
+                ]
+        },
+        {name: "visual language",
+         descr: ["I worked with the game designer to develop a consistent visual language for the game. I worked with the game designer and illustrator to create the color palette for the game",
+                 "Throughout the design process, I am always aware of accessibility. The cards are designed to have a high contrast between the text and background so that they are easily readable and the type is set at a point size of 10."],
+         images: [{url: "/assets/portfolio/vaultbreakers/Assets_VBColorPalette.png",
+                   alt: "Color palette for the game Vaultbreakers."}]},
+        {name: "iteration",
+         descr: ["I worked with the game designer to iterate on the information architecture of the cards and develop a consistent visual language for the game.",
+                 "When play testing the game revealed that it would be helpful for users to be able to distinguish between two types of action cards, I suggested different ways of visually differentiating the cards.",
+                 "The first card design with the exclamation point icon is the final design. I suggested that the game designer use the first design because I feared that the border changes would be too subtle and players would still have a hard time visually differentiating between the two types of actions."],
+         images: [{url: "/assets/portfolio/vaultbreakers/Assets_Iterations of Surprise Actions.png",
+                   alt: "Three versions of a 'Suprise Action' card. "}]
+        },
+        {name: "instructional design",
+         descr: ["The final deliverable that I produced for this project is the Vaultbreakers instruction manual. I created additional assets for the manual in Illustrator and used Indesign to develop the page spreads.",
+                "While designing the instructions, I discovered the typeface used on the cards, CC Marian Churchill, was only available in uppercase. While uppercase works well for short and simple passages, such as on cards, it is much hard to read in blocks of text that are commonly present in instruction manuals.",
+                "I tested and selected a new typeface, Josefin Sans, size 10, for the body text of the instruction manual. The headers are set in CC Marian Churchill to extend the visual language of the cards to the instruction manual."],
+         images: [{url: "/assets/portfolio/vaultbreakers/VaultbreakersInstructions4.png",
+                   alt: "Page four of the instruction manual for Vaultbreakers."}]
+        }
+    ]
+    },
     {
         title: "Algorithmically Fair?", 
         page: "Algorithmically-Fair", 
@@ -197,7 +252,7 @@ export let itemData = [
         page: "Intesa-SanPaolo-Processes", 
         client: {name: "Banca Intesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
         year: "2024", 
-        links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
+        // links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
         mainImage: {
             url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
             alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
@@ -687,7 +742,7 @@ export const designFilters = ["#data-art", "#data-journalism", "#data-physicaliz
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
-export const toolFilters = ["#illustrator", "#d3-js", "#leaflet-js", "#figma", "#javascript", "#pixi-js", "#python", "#r", "#react", "#svelte", "#typescript"];
+export const toolFilters = ["#d3-js", "#figma", "#illustrator", "#indesign", "#javascript", "#leaflet-js", "#pixi-js", "#python", "#r", "#react", "#svelte", "#typescript"];
 
 export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
 
