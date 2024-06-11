@@ -88,7 +88,7 @@ body::after {
   }
 
   .Navigation {
-    margin: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
   }
 
   .Navigation a {
@@ -176,4 +176,32 @@ body::after {
     flex-direction: column;
   }
 
+  .Page {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+
+    #nav {
+      transform: translate(50%, 0%);
+    }
+
+    #Main-Content {
+      margin-left: 0;
+
+      img, video {
+        max-width: 90vw;
+      }
+
+      .Content {
+        display: flex;
+        flex-direction: column;
+
+        .Written-Content {
+          max-width: 90vw;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
