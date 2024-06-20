@@ -136,7 +136,7 @@ root.render(
         {/* <Route path="/portfolio/Risky-Code" element={<PortfolioPage d={itemData.find(d => d.page === "Risky-Code")} />} /> */}
         {/* <Route path="/portfolio/Tutor-Match" element={<PortfolioPage d={itemData.find(d => d.page === "Tutor-Match")} />} /> */}
         <Route path="/portfolio/Visual-Ramblings" element={<PortfolioPage d={itemData.find(d => d.page === "Visual-Ramblings")} />} />
-        <Route path="/portfolio/Visual-Version-Control" element={<PortfolioPage d={itemData.find(d => d.page === "Visual-Version-Control")} />} />
+        <Route path="/portfolio/Visualizing-Version-Control" element={<PortfolioPage d={itemData.find(d => d.page === "Visualizing-Version-Control")} />} />
       </Routes>
     </HashRouter>
   </ThemeProvider>

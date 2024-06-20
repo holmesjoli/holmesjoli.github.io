@@ -369,60 +369,51 @@ export let itemData = [
             //     ]
             // }
     },
-    // {
-    //     title: "Meta", 
-    //     year: 2015, 
-    //     page: "Meta", 
-    //     mainImage: {
-    //         url: "/assets/portfolio/meta/keyboardhands3_slow.gif", 
-    //         alt: "Typing out code with pink fingers"}, 
-    //     tags: ["#data-art", "#data-visualization", "#r"],
-    //     tools: ["R"],
-    //     design: ["Information design"],
-    //     artistStatement: ["The installation pictured below explores the social construction of data and how data can be manipulated through code. The installation shows a snippet of the physical code used to extract RGB values from a corpus of Georgia O'Keefe paintings. I downloaded 60 images of famous O'Keefe paintings and used R to extract the RGB values of each pixel in each painting. I visualized the values as histograms for each painting. The histograms and GIF displayed below were installed at Wesleyan University's Quantitative Analysis Center, the physical space where I utilized the university's resources to learn and practice quantitative analysis. The GIF plays off of a common programming technique known as a loop."],
-    //     designProcess: {
-    //         final: {
-    //             images: [{url: "/assets/portfolio/meta/keyboardhands3_slow.gif",
-    //                 alt: "GIF of hands typing out code with physical code layered in the background",
-    //                 size: "big"},
-    //                 {url:"/assets/portfolio/meta/histograms.jpg",
-    //                 alt: "Image of histogram installation",
-    //                 size: "small"},
-    //                 {url:"/assets/portfolio/meta/histogram_computer.jpg",
-    //                 alt: "Image of additional histograms shown on computer screens",
-    //                 size: "small"},
-    //                 {url:"/assets/portfolio/meta/computer.jpg",
-    //                 alt: "Computers at Wesleyan University's Quantitative Analysis Center",
-    //                 size: "small"}]
-    //             }
-    //         }
-    // },
-    // {   
-    //     title: "Visualizing Version Control", 
-    //     page: "Visual-Version-Control", 
-    //     year: 2021, 
-    //     links: [{
-    //         url: "/assets/portfolio/visual-version-control/Visual Version Control.pdf", text: "Link to PDF"
-    //     }],
-    //     mainImage: {
-    //         url: "/assets/portfolio/visual-version-control/version-control-system.jpg", 
-    //         alt:"Visualizing Version Control"}, 
-    //     tags: ["#graphic-design", "#information-design", "#system-design", "#illustrator"],
-    //     tools: ["Adobe Illustrator"],
-    //     design: ["Information design", "Graphic design"],
-    //     role: ["Information designer"],
-    //     summary: ["This visualization as part of a peer skillshare. Version control for code is a handy tool, but it can be challenging to get started. This visualization aims to help new users of code version control understand the steps involved in the version control cycle."],
-    //     designProcess: {
-    //         final: {
-    //             images: [{
-    //                 url: "/assets/portfolio/visual-version-control/final_design.jpg",
-    //                 alt: "",
-    //                 size: "big"}
-
-    //             ]
-    //         }
-    //     }
-    // },
+    {
+        title: "Meta", 
+        year: 2015, 
+        page: "Meta", 
+        mainImage: {
+            url: "keyboardhands3_slow.gif", 
+            alt: "Typing out code with pink fingers"}, 
+        tags: ["#data-art", "#data-visualization", "#r"],
+        tools: ["#r"],
+        design: ["Data visualization"],
+        designProcess: [{name: 'artist statement', 
+                         descr: ["The installation pictured below explores the social construction of data and how data can be manipulated through code. The installation shows a snippet of the physical code used to extract RGB values from a corpus of Georgia O'Keefe paintings. I downloaded 60 images of famous O'Keefe paintings and used R to extract the RGB values of each pixel in each painting. I visualized the values as histograms for each painting. The histograms and GIF displayed below were installed at Wesleyan University's Quantitative Analysis Center, the physical space where I utilized the university's resources to learn and practice quantitative analysis. The GIF plays off of a common programming technique known as a loop."],
+                         images: [{url: "keyboardhands3_slow.gif",
+                                    alt: "GIF of hands typing out code with physical code layered in the background"},
+                                    {url:"histograms.jpg",
+                                    alt: "Image of histogram installation"},
+                                    {url:"histogram_computer.jpg",
+                                    alt: "Image of additional histograms shown on computer screens"},
+                                    {url:"computer.jpg",
+                                    alt: "Computers at Wesleyan University's Quantitative Analysis Center"}]
+        }]
+    },
+    {   
+        title: "Visualizing Version Control", 
+        page: "Visualizing-Version-Control", 
+        year: 2021, 
+        links: [{
+            url: "Visual Version Control.pdf", text: "Link to PDF"
+        }],
+        mainImage: {
+            url: "version-control-system.jpg", 
+            alt:"Visualizing Version Control"}, 
+        tags: ["#graphic-design", "#information-design", "#system-design", "#illustrator"],
+        tools: ["#illustrator"],
+        design: ["Information design", "Graphic design"],
+        role: ["Information designer"],
+        designProcess: [
+            {name: "summary", 
+             descr: ["Version control for code is a handy tool, but it can be challenging to get started. This visualization aims to help new users of code version control understand the steps involved in the version control cycle."],
+             images: [{
+                    url: "final_design.jpg",
+                    alt: ""}]
+            }
+        ]
+    },
     // {title: "Drawings Collection", 
     // page: "Drawings-Collection", 
     // year: 2014, 
