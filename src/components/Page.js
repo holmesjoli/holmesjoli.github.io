@@ -105,10 +105,10 @@ export function Page({pageData}) {
                                 <div className="Visual-Content">
                                     {datum.images ? 
                                         <div>
-                                            <img src={datum.images[0].url} alt={datum.images[0].alt}/>
+                                            <img src={"/assets/portfolio/" + pageData.page + "/" + datum.images[0].url} alt={datum.images[0].alt}/>
                                             <h5 className="Item-Caption">{datum.images[0].alt}</h5>
                                         </div>: 
-                                        <video playsInline autoPlay muted loop controls src={datum.videos[0].url} type="video/mp4"/> }
+                                        <video playsInline autoPlay muted loop controls src={ "/assets/portfolio/" + pageData.page + "/" +datum.videos[0].url} type="video/mp4"/> }
                                 </div>
                                 <div className="Written-Content">
                                     {datum.descr.map((p, i) => {

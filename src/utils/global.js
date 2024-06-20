@@ -4,7 +4,7 @@ export let itemData = [
      client: {name: "Center for New Data", link: "https://www.newdata.org/"},
      links: [{url: "https://www.figma.com/proto/ZRGxAHYOsZAK0eu4va8yuF/VAM-Design?node-id=1511-52218&t=rhc8ILCeHvvALer8-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1511%3A52218", text: "Explore the prototype"}],
      year: 2024,
-     mainImage: {url: "/assets/portfolio/voting-access-monitor/Ohio_Tooltip.png",
+     mainImage: {url: "Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
      tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#r", "#figma", "#user-interaction",  "#typescript"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
@@ -15,7 +15,7 @@ export let itemData = [
                               "As the lead designer on the project, I sketched, worked with Figma to prototype visualizations, and used design methods (e.g., user interviews, card sorting, cognitive walkthrough, and stakeholder mapping) to reveal insights when interfacing with clients that have guided the design and implementation of the prototype and final product.",
                               "As a developer on the project, I worked with JavaScript libraries React, D3, and Leaflet. I frequently referenced interface heuristics (e.g., visibility of system status, error prevention, etc.) and information visualization heuristics (e.g., details on-demand) to design an interface that is both sophisticated and user-friendly."],
                     videos: [
-                        {url: "/assets/portfolio/voting-access-monitor/InteractionDemo.mp4"}
+                        {url: "InteractionDemo.mp4"}
                     ] },
                      {name: 'user research', 
                      descr: ["Throughout the design process we engaged in card sorting, stakeholder mapping, user interview, and cognitive walkthroughs.",
@@ -24,15 +24,15 @@ export let itemData = [
                              "Additionally, conducting frequent user interviews allowed us to be able to priorize the design and development of certain features over others. For example, our users suggested that they would like to be able to identify census tracts that met certain thresholds. Using this insight from  our interviews I designed and developed a custom feature to allow our users achieve this task."], 
                      images: [
                         {
-                            url: "/assets/portfolio/voting-access-monitor/DesignResearch1.png",
+                            url: "DesignResearch1.png",
                             alt: "Synthesis of stakeholder research. After initial user interviews I grouped stakeholders into three groups to help the team prioritize features."
                         },
                         {
-                            url: "/assets/portfolio/voting-access-monitor/DesignResearch3.png",
+                            url: "DesignResearch3.png",
                             alt: "Moodboard of different images used in the intial research phase"
                         },
                         {
-                            url: "/assets/portfolio/voting-access-monitor/DesignResearch2.png",
+                            url: "DesignResearch2.png",
                             alt: "Outcome of a card sorting activity"
                         }
                     ]},
@@ -40,11 +40,11 @@ export let itemData = [
                     descr: ['I always start by sketching on paper. Sketching on paper has the potential to invite conversation from co-designers such as users, stakeholders, and other team members.'], 
                     images: [
                         {
-                            url: "/assets/portfolio/voting-access-monitor/Sketch1.png",
+                            url: "Sketch1.png",
                             alt: "Sketch of isolating and ranking different geographies"
                         },
                         {
-                            url: "/assets/portfolio/voting-access-monitor/Sketch2.png",
+                            url: "Sketch2.png",
                             alt: "Sketch of ranking a set of geographies across a variety of variables"
                         }
                     ]},
@@ -52,7 +52,7 @@ export let itemData = [
                      descr: ["Designing for a complex, interactive data visualization such as VAM necessitates the development of a database to support this type of visualization. Working with our data engineer, product manager, and partners, I designed the table schemas for the project.",
                              "I also researched data availablity for our data engineer. My previous experience working in public policy and data analytics familiarized me with common publically available data sources such as the American Community Survey and TIGER shape files from the US Census Bureau. I used this knowledge to help guide the data engineer in the development of the database."],
                     images: [{
-                        url: "/assets/portfolio/voting-access-monitor/DatabaseDesign.png",
+                        url: "DatabaseDesign.png",
                         alt: "Relational table schema I designed for VAM. The two tables shown in this image integrate shape file geometries with other variables at a geographic level.",
                     }]},
                     {name: 'prototyping', 
@@ -62,11 +62,11 @@ export let itemData = [
                              "Additionally, I used Figma to create a design system for the project. I created a typographic system, color system, and components and variants that utilized these systems to create a consistent visual language across the application."],  
                      images: [
                         {
-                            url: "/assets/portfolio/voting-access-monitor/VisualSystem1.png",
+                            url: "VisualSystem1.png",
                             alt: "The image shows two types of components, a radio group, and a checkbox group. Four different versions, selected vs. non-selected and enabled vs. disabled start to create a component system."
                         },
                         {
-                            url: "/assets/portfolio/voting-access-monitor/VisualSystem2.png",
+                            url: "VisualSystem2.png",
                             alt: "The image to shows the iterative process of designing a slider component."
                         }
                     ]},
@@ -75,7 +75,7 @@ export let itemData = [
                              "I also engaged in user interface research when we learned that it was challenging for several of our users to navigate back to the main view. During this research step, I researched how other mapping software handled a similar interaction and then proposed both short- and long-term changes to the visualization. As a both a designer and developer, I'm uniquely positioned to be able to assist in the overall planning of a project because I can propose design and development timelines."],
                      images: [
                         {
-                            url: "/assets/portfolio/voting-access-monitor/UXResearch.png",
+                            url: "UXResearch.png",
                             alt: "Proposed changes to a user interaction after receiving feedback from users about how to reset the view. I assembled a short slide deck on how other applications had navigated similar circumstances and the interaction solutions that they employed."
                         }
                     ]}
@@ -90,48 +90,48 @@ export let itemData = [
      tools: ["Illustrator", "Indesign"],
      tags: ["#illustrator", "#indesign", "#information-design", "#graphic-design", "#game-design"],
      mainImage: {
-        url: "/assets/portfolio/vaultbreakers/Assets_Backstab card.png",
+        url: "Assets_Backstab card.png",
         alt: "Vaultbreakers Backstab card. The card shows a character with a knife in their hand and a player can use this card to backstab opponents."
      },
     designProcess: [{
         name: "summary", 
         descr: ["As I consultant on Vaultbreakers, I worked with the game designer to create a series of cards that would be used in the game. The game is a cooperative-competitive card game where players work together to break into a vault and steal the loot inside. The game is designed to be played by 2-4 players and takes about 45 minutes to play.",
                 "I generated sketches for how the information could be displayed on the cards, suggested typographic changes to make the cards readable and consistent, gave feedback on color choices, in addition to creating several components for the printed game."],
-        images: [{url: "/assets/portfolio/vaultbreakers/Assets_Vaultbreakers Example Cards.png",
+        images: [{url: "Assets_Vaultbreakers Example Cards.png",
                   alt: "Vaultbreakers Backstab card. The card shows a character with a knife in their hand and a player can use this card to backstab opponents."}]
     },
     {
         name: "information architecture",
         descr: ["One of my first steps as a consultant on the project was to present multiple ways of displaying the information on the cards. The game designer knew that he would be hiring an illustrator for card, so white boxes represent those spaces."],
-        images: [{url: "/assets/portfolio/vaultbreakers/sketch.png",
+        images: [{url: "sketch.png",
                   alt: "Image shows an initial possible layout for the card."},
-                  {url: "/assets/portfolio/vaultbreakers/sketch2.png",
+                  {url: "sketch2.png",
                   alt: "Image shows an initial possible layout for the card."},
-                  {url: "/assets/portfolio/vaultbreakers/sketch3.png",
+                  {url: "sketch3.png",
                   alt: "Image shows an initial possible layout for the card."},
-                  {url: "/assets/portfolio/vaultbreakers/sketch4.png",
+                  {url: "sketch4.png",
                   alt: "Image shows an initial possible layout for the card."},
-                  {url: "/assets/portfolio/vaultbreakers/sketch5.png",
+                  {url: "sketch5.png",
                   alt: "Image shows an initial possible layout for the card."}
                 ]
         },
         {name: "visual language",
          descr: ["I worked with the game designer to develop a consistent visual language for the game. I worked with the game designer and illustrator to create the color palette for the game",
                  "Throughout the design process, I am always aware of accessibility. The cards are designed to have a high contrast between the text and background so that they are easily readable and the type is set at a point size of 10."],
-         images: [{url: "/assets/portfolio/vaultbreakers/Assets_VBColorPalette.png",
+         images: [{url: "Assets_VBColorPalette.png",
                    alt: "Color palette for the game Vaultbreakers."}]},
         {name: "iteration",
          descr: ["I worked with the game designer to iterate on the information architecture of the cards and develop a consistent visual language for the game.",
                  "When play testing the game revealed that it would be helpful for users to be able to distinguish between two types of action cards, I suggested different ways of visually differentiating the cards.",
                  "The first card design with the exclamation point icon is the final design. I suggested that the game designer use the first design because I feared that the border changes would be too subtle and players would still have a hard time visually differentiating between the two types of actions."],
-         images: [{url: "/assets/portfolio/vaultbreakers/Assets_Iterations of Surprise Actions.png",
+         images: [{url: "Assets_Iterations of Surprise Actions.png",
                    alt: "Three versions of a 'Suprise Action' card. "}]
         },
         {name: "instructional design",
          descr: ["The final deliverable that I produced for this project is the Vaultbreakers instruction manual. I created additional assets for the manual in Illustrator and used Indesign to develop the page spreads.",
                 "While designing the instructions, I discovered the typeface used on the cards, CC Marian Churchill, was only available in uppercase. While uppercase works well for short and simple passages, such as on cards, it is much hard to read in blocks of text that are commonly present in instruction manuals.",
                 "I tested and selected a new typeface, Josefin Sans, size 10, for the body text of the instruction manual. The headers are set in CC Marian Churchill to extend the visual language of the cards to the instruction manual."],
-         images: [{url: "/assets/portfolio/vaultbreakers/VaultbreakersInstructions4.png",
+         images: [{url: "VaultbreakersInstructions4.png",
                    alt: "Page four of the instruction manual for Vaultbreakers."}]
         }
     ]
@@ -140,7 +140,7 @@ export let itemData = [
         title: "Algorithmically Fair?", 
         page: "Algorithmically-Fair", 
         year: 2022, 
-        mainImage: {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
+        mainImage: {url: "image1.jpg",
                     alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"},
         tags: ["#illustrator", "#acrylic", "#public-policy",  "#r", "#data-art", "#data-physicalization", "#data-visualization"],
         tools: ["Adobe Illustrator", "R", "Laser cutter"],
@@ -158,51 +158,54 @@ export let itemData = [
             "Culturally, red is of ten associated with words such as stop, warning, harm, and error. The incorrect predictions, in red, were also printed on translucent acrylic compared to the correct predictions, which were printed on black opaque acrylic.",
             "Light is used in the piece metaphorically and aesthetically. Light plays an interesting role in this piece metaphorically. In Bentham's panopticon, the lighted guard tower encouraged self-policing behaviors. However, in Algorithmically Fair?, light draws the viewer's eye and highlights the frequency of algorithmic error. Additionally, the predominantly black form representing algorithmic inequity makes visual reference to a black box algorithm. Lighting this form from the inside out to elucidate viewers on algorithmic bias symbolically reverses the role of light plays in these panopticon forms."
             ],
-            images: [{url: "/assets/portfolio/algorithmically-fair/image1.jpg",
+            images: [{url: "image1.jpg",
                       alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"}]},
             {name: 'sketching', 
             descr: ["I started by sketching out some initial ideas and design for a physical data visualization. I was interested in play with a cylindrical form because the form is representative in nature of both a database and Bentham's panopticon."],
             images: [
-                {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132923256.jpg",
+                {url:"PXL_20221214_132923256.jpg",
                     alt: "Initial sketch conveying the idea of physical form that represents a database",
                     },
-                    {url:"/assets/portfolio/algorithmically-fair/PXL_20221214_132856202.jpg",
+                    {url:"PXL_20221214_132856202.jpg",
                     alt: "A second sketch conveying the idea of physical form that represents a database",
                    },
-                    {url:"/assets/portfolio/algorithmically-fair/PXL_20221213_220237602.jpg",
+                    {url:"PXL_20221213_220237602.jpg",
                     alt: "Initial sketch showing how a third dimension could be used to show the number of people",
                    }]},
             {name: 'prototyping', 
                 descr: ["Next, I processed and normalized the data in R and started some initial prototype of cylindrical laser cut forms that could be stacked."], 
-            images:  [{url: "/assets/portfolio/algorithmically-fair/PXL_20221214_133321902.jpg",
+            images:  [{url: "PXL_20221214_133321902.jpg",
                        alt: "Initial prototype of layered pie charts",
                        }, 
-                       {url: "/assets/portfolio/algorithmically-fair/PXL_20221202_221919552.jpg",
+                       {url: "PXL_20221202_221919552.jpg",
                         alt: "Initial prototype of light inside a layered pie chart",
                        }]},
             {name: 'final', descr: [],
             images: [
-                // {url: "/assets/portfolio/algorithmically-fair/image1.jpg",
+                // {url: "image1.jpg",
                 // alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates",
                 // size: "big"},
-                {url: "/assets/portfolio/algorithmically-fair/PXL_20221207_173728791.PORTRAIT.jpg",
+                {url: "PXL_20221207_173728791.PORTRAIT.jpg",
                 alt: "Birdseye view of the Algorithmically Fair?",
                 }, 
-                {url: "/assets/portfolio/algorithmically-fair/PXL_20221207_173759492.PORTRAIT.jpg",
+                {url: "PXL_20221207_173759492.PORTRAIT.jpg",
                 alt: "Close-up of one data visualization's physical form on the LED radial light",
                 }]}
             ]
     },
-    // {title: "Intesa SanPaolo Knowledge Network", 
-    // page: "Intesa SanPaolo Knowledge Network", 
-    // client: {name: "Banca Intesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
-    // year: 2022, 
-    // mainImage: {url: "/assets/portfolio/banca-intesa-knowledge-network/analyze-by-area-domain-gender.png", 
-    //             alt: "Image of network analysis across a knowledge network by area, domain, and gender"},
-    // tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#iiba-longlist-2022"],
-    // tools: ["D3.js", "Pixi.js", "React", "Python"],
-    // design: ["Information design", "Interaction design"],
-    // role: ["Data visualization designer", "Data analyst"],
+    {title: "Intesa SanPaolo Knowledge Network", 
+     page: "Intesa-SanPaolo-Knowledge-Network", 
+     client: {name: "Instesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
+     year: 2022, 
+     mainImage: {url: "analyze-by-area-domain-gender.png", 
+                alt: "Image of network analysis across a knowledge network by area, domain, and gender"},
+     tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#iiba-longlist-2022"],
+     tools: ["D3.js", "Pixi.js", "React", "Python"],
+     design: ["Information design", "Interaction design"],
+     role: ["Data visualization designer", "Data visualization developer", "Data analyst"],
+     designProcess: [{name: 'Heuristic evaluation', descr: ["Towards the end of the project, one of the design methods I frequently engage in is heuristic evaluation. Heuristic evaluation is an informal usability test often performed by the design-development team. Heuristics are often referred to as 'rules of thumb' or best practices.",
+                                                            "Design researchers have suggested many different heuristics and heuristic sets. Two heuristics that I frequently use in interface design are 'visibility system status' and 'match between the system and the real world.'",
+                                                            "Data visualization researchers have suggested additional heuristics that are specific to information design such as 'accessible color palettes.'"], images: [{url: "heuristic_evaluation.png", alt: "An image showing data entry of a participant's heuristic evaluation"}]}]
     // brief: [],
     // summary: [],
     // data: [],
@@ -211,7 +214,7 @@ export let itemData = [
     // sketches: [],
     // prototype: [],
     // final: []
-    // },
+    },
     // {title: "Billy", 
     // page: "Billy", 
     // year: 2022, 
@@ -256,13 +259,13 @@ export let itemData = [
     //                 }
     // },
     {
-        title: "Intesa SanPaolo Processes", 
-        page: "Intesa-SanPaolo-Processes", 
+        title: "Intesa SanPaolo Processes Map", 
+        page: "Intesa-SanPaolo-Processes-Map", 
         client: {name: "Banca Intesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
         year: "2024", 
         // links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
         mainImage: {
-            url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-screen.png", 
+            url: "circle-packing-full-screen.png", 
             alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
         tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#javascript"],
         tools: ["D3.js", "Pixi.js", "React", "Python"],
@@ -276,68 +279,68 @@ export let itemData = [
                     //  "The Banca Intesa Processes application was developed over the course of three months with a team of five members. The application was developed using the React framework. Static visualization was designed in Illustrator and Raw Graphs.io. Finally, D3.js and Pixi.js were used to create interactive visualizations for the application."
                 ],
             videos: [
-                {url: "/assets/portfolio/banca-intesa-processes/circlepackingInteraction.mp4"}
+                {url: "circlepackingInteraction.mp4"}
                 ]
             },
             {name: 'visual research',
              descr: ["The Banca Intesa Processes application was developed over the course of three months with a team of five members. The first step was researching and presenting different visual forms to a client user group.",
                     "The team considered other interfaces that relied on forms that show hierarchies within the data such as a treemap."],
              images: [
-                      {url: "/assets/portfolio/banca-intesa-processes/visual-research2.jpg",
+                      {url: "visual-research2.jpg",
                        alt: "Divine Comedy: https://divinecomedy.digital/#/eng/viz"},
-                      {url: "/assets/portfolio/banca-intesa-processes/visual-research1.jpg",
+                      {url: "visual-research1.jpg",
                        alt: "Show your stripes: https://showyourstripes.info/s/globe/"},
-                      {url: "/assets/portfolio/banca-intesa-processes/visual-research3.jpg",
+                      {url: "visual-research3.jpg",
                        alt: "Luciano Baldessari: http://baldessari.densitydesign.org/persone/"}]
             },
             {name: 'static sketching',
              descr: ["The team sketched out different ideas for the on paper and digitally. The team relied on RawGraphs.io to create digital data sketches."],
-             images: [{url: "/assets/portfolio/banca-intesa-processes/sketch1.jpg",
+             images: [{url: "sketch1.jpg",
                        alt: "A sketch of a dendrogram showing hierarchies within the data."},
-                      {url: "/assets/portfolio/banca-intesa-processes/sketch2.jpg",
+                      {url: "sketch2.jpg",
                        alt: "Connections between an actor, the applications the use, and the activities they are in charge of"},
-                      {url: "/assets/portfolio/banca-intesa-processes/sketch3.jpg",
+                      {url: "sketch3.jpg",
                        alt: "A sketch of a circle packing diagram showing hierarchy."},
-                      {url: "/assets/portfolio/banca-intesa-processes/sketch4.jpg",
+                      {url: "sketch4.jpg",
                        alt: "Network showing connections between actors and activities."
                 }]},
             {name: 'data',
              descr: ['The data were stored in an Excel spreadsheet. Each sheet in the Excel document represented a table that was related to other tables in the spreadsheet. The team was not given a data dictionary or documentation, making it challenging to interpret relationships between the tables.',
                     'One of the ways that the team at the Center for Design navigated this challenge was creating diagrams (e.g., ERD) to be able to visually communicate how we were interpreting the relationships.',
                     'Once the data structure was understood, I cleaned the data in Python and exported the data as a JSON object.'],
-             images: [{url: "/assets/portfolio/banca-intesa-processes/Data Model.jpg",
+             images: [{url: "Data Model.jpg",
                         alt: "A Entity-Relationship Diagram (ERD) shows show the Center for Design's interpretation of the relationships between variables in tables."},
-                        {url: "/assets/portfolio/banca-intesa-processes/data_modeling.jpg",
+                        {url: "data_modeling.jpg",
                         alt: "A diagram communicating different interpretations of the data relationships to help clarify the correct relationship."}]
             },
             {name: 'interactive sketching', 
              descr: ['We used Observable notebooks to imagine how a user might interact with a visualization. Using Observable allowed the team to be able to demonstrate several user interactions to our client and get feedback on the usablity and form without investing a large amount of time in the development process.'],
-             videos: [{url: "/assets/portfolio/banca-intesa-processes/sketchinginteractionsobservable.mp4",
+             videos: [{url: "sketchinginteractionsobservable.mp4",
                        alt: "An Observable notebook showing a sketch of a potential visualization for the application."}]}
             ],
             // final: {
             //     images: [
-            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-full-view.png",
+            //         {url: "circle-packing-full-view.png",
             //         alt: "Circle packing diagram in that shows nested level of data hierarchies",
             //         size: "small"
             //         },
-            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-zoomed-in.png",
+            //         {url: "circle-packing-zoomed-in.png",
             //         alt: "A zoomed in version of the circle packing diagram showing the zoom and tooltip capabilities of the application",
             //         size: "small"
             //         },
-            //         {url: "/assets/portfolio/banca-intesa-processes/circle-packing-activities-identified.png",
+            //         {url: "circle-packing-activities-identified.png",
             //         alt: "A zoomed in version of the circle packing diagram showing a feature that allows the user to identify specific data attributes",
             //         size: "small"
             //         },
-            //         {url: "/assets/portfolio/banca-intesa-processes/network-full-screen.png",
+            //         {url: "network-full-screen.png",
             //         alt: "A network visualization showing organizational connections between actors, activities, risks and controls",
             //         size: "small"
             //         },
-            //         {url: "/assets/portfolio/banca-intesa-processes/network-freeze-feature.png",
+            //         {url: "network-freeze-feature.png",
             //         alt: "A network visualization shows how the user can 'freeze' portions of the network and be able to use the tooltip to interact with other parts",
             //         size: "small"
             //         },
-            //         {url: "/assets/portfolio/banca-intesa-processes/network-additional-features-shown.png",
+            //         {url: "network-additional-features-shown.png",
             //         alt: "Additional features such as the ability to change risk type are shown in this visualization",
             //         size: "small"
             //         }
@@ -580,7 +583,7 @@ export let itemData = [
         links: [{url: "https://joliholmes.com/team-migration/", text: "Explore the application"},
                 {url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8", text: "Explore the prototype"}],
         mainImage: {
-            url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
+            url: "path-to-citizenship-papua.jpg",
             alt:"Migration is Natural"}, 
         tags: ["#information-design", "#interaction-design", "#r", "#figma", "#illustrator", "#d3-js", "#svelte", "#typescript"],
         tools: ["R", "Adobe Illustrator", "D3.js", "Svelte", "Figma"],
@@ -594,64 +597,64 @@ export let itemData = [
         designProcess: [{name: "summary", 
                         descr: ["The team developed the final application over the course of the next several weeks. The application was developed using the Svelte framework. Static visualization was designed in Illustrator and dynamic visualization was design in Figma. Finally, D3.js was used to create interactive visualizations for the application.",
                                 ],
-                        images: [{url: "/assets/portfolio/migration-is-natural/path-to-citizenship-papua.jpg",
+                        images: [{url: "path-to-citizenship-papua.jpg",
                                   alt:"Migration is Natural"}]
                         },
                         {name: "design research", descr: [], images: [
                             {
-                                url: "/assets/portfolio/migration-is-natural/moodboard.png",
+                                url: "moodboard.png",
                                 alt: "Moodboard of different images used in the intial research phase of Migration is Natural"
                             },
                             {
-                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration1@2x-100.jpg",
+                                url: "2x/Inspiration1@2x-100.jpg",
                                 alt: "A map showing the migratory patterns of birds"
                             },
                             {
-                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration2@2x-100.jpg",
+                                url: "2x/Inspiration2@2x-100.jpg",
                                 alt: "A map showing the migratory patterns of birds"
                             },
                             {
-                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration3@2x-100.jpg",
+                                url: "2x/Inspiration3@2x-100.jpg",
                                 alt: "A map showing the migratory patterns of whales"
                             },
                             {
-                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration4@2x-100.jpg",
+                                url: "2x/Inspiration4@2x-100.jpg",
                                 alt: "An information visualization showing the different paths to the 2016 presidency"
                             },
                             {
-                                url: "/assets/portfolio/migration-is-natural/2x/Inspiration5@2x-100.jpg",
+                                url: "2x/Inspiration5@2x-100.jpg",
                                 alt: "An information visualization showing path flows"
                             }
                         ]},
                         {name: "sketching", descr: [], images: [
                             {
-                                url: "/assets/portfolio/migration-is-natural/design-process-1.png",
+                                url: "design-process-1.png",
                                 alt: "Initial sketch showing underlying logic to the data"
                             },
                             {
-                                url: "/assets/portfolio/migration-is-natural/design-process-2.png",
+                                url: "design-process-2.png",
                                 alt: "Initial sketch showing how a path could be formed from the data"
                             },
                             {
-                                url: "/assets/portfolio/migration-is-natural/design-process-3.png",
+                                url: "design-process-3.png",
                                 alt: "Initial sketch adding more detail to potential data paths"
                             }
                         ] },
                         {name: "prototyping", descr: [], images: [
                             {
-                                url: "/assets/portfolio/migration-is-natural/design-process-4.png",
+                                url: "design-process-4.png",
                                 alt: ""},
                             {
-                                url: "/assets/portfolio/migration-is-natural/design-process-5.png",
+                                url: "design-process-5.png",
                                 alt: ""},
                             {
-                                url: "/assets/portfolio/migration-is-natural/design-process-6.png",
+                                url: "design-process-6.png",
                                 alt: ""},
                             {
-                                url: "/assets/portfolio/migration-is-natural/design-process-7.png",
+                                url: "design-process-7.png",
                                 alt: ""},
                             {
-                                url: "/assets/portfolio/migration-is-natural/design-process-8.png",
+                                url: "design-process-8.png",
                                 alt: ""},
                             {
                                 url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8",
@@ -758,6 +761,6 @@ export const toolFilters = ["#d3-js", "#figma", "#illustrator", "#indesign", "#j
 
 export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-policy" ];
 
-export const roleFilters = [... new Set(itemData.map(d => d.role).flat())];
+export const roleFilters = [...new Set(itemData.map(d => d.role).flat())];
 
 export const filters = toolFilters.concat(designFilters.concat(mediumFilters));

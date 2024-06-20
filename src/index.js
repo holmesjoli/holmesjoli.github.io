@@ -121,8 +121,8 @@ root.render(
         <Route path="/portfolio/Voting-Access-Monitor" element={<PortfolioPage d={itemData.find(d => d.page === "Voting-Access-Monitor")} />} />
         <Route path="/portfolio/Vaultbreakers" element={<PortfolioPage d={itemData.find(d => d.page === "Vaultbreakers")} />} />
         <Route path="/portfolio/Algorithmically-Fair" element={<PortfolioPage d={itemData.find(d => d.page === "Algorithmically-Fair")} />} />
-        <Route path="/portfolio/Intesa-SanPaolo-Processes" element={<PortfolioPage d={itemData.find(d => d.page === "Intesa-SanPaolo-Processes")} />} />
-        {/* <Route path="/portfolio/Banca-Intesa-Knowledge-Network" element={<PortfolioPage d={itemData.find(d => d.page === "Banca-Intesa-Knowledge-Network")} />} /> */}
+        <Route path="/portfolio/Intesa-SanPaolo-Processes-Map" element={<PortfolioPage d={itemData.find(d => d.page === "Intesa-SanPaolo-Processes-Map")} />} />
+        <Route path="/portfolio/Intesa-SanPaolo-Knowledge-Network" element={<PortfolioPage d={itemData.find(d => d.page === "Intesa-SanPaolo-Knowledge-Network")} />} />
         {/* <Route path="/portfolio/Billy" element={<PortfolioPage d={itemData.find(d => d.page === "Billy")} />} /> */}
         <Route path="/portfolio/Black-Data" element={<PortfolioPage d={itemData.find(d => d.page === "Black-Data")} />} />
         {/* <Route path="/portfolio/Bloom" element={<PortfolioPage d={itemData.find(d => d.page === "Bloom")} />} /> */}
