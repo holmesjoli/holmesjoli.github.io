@@ -4,6 +4,7 @@ export let itemData = [
      client: {name: "Center for New Data", link: "https://www.newdata.org/"},
      links: [{url: "https://www.figma.com/proto/ZRGxAHYOsZAK0eu4va8yuF/VAM-Design?node-id=1511-52218&t=rhc8ILCeHvvALer8-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1511%3A52218", text: "Explore the prototype"}],
      year: 2024,
+     iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: false}],
      mainImage: {url: "Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
      tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#r", "#figma", "#user-interaction",  "#typescript"],
@@ -85,6 +86,7 @@ export let itemData = [
      page: "Vaultbreakers",
      client: {name: "Valentino Mori", link: "https://www.valentinomori.com/"},
      year: 2024,
+     iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: false}],
      role: ["Information designer"],
      design: ["Information design", "Graphic design", "Game design"],
      tools: ["Illustrator", "Indesign"],
@@ -139,7 +141,7 @@ export let itemData = [
     {
         title: "Algorithmically Fair?", 
         page: "Algorithmically-Fair", 
-        year: 2022, 
+        year: 2022,
         mainImage: {url: "image1.jpg",
                     alt: "Three dimensional data visualization comparing black recidivism rates to white recidivism rates"},
         tags: ["#illustrator", "#acrylic", "#public-policy",  "#r", "#data-art", "#data-physicalization", "#data-visualization"],
@@ -148,6 +150,7 @@ export let itemData = [
         medium: ["Acrylic", "Radial LED Light Panel"],
         role: ["Data visualization designer", "Data analyst"],
         summary: ["Algorithmically fair? is a data physicalization project that visualizations disparate rates of a commonly used recidivism algorithm in the United States. Through simple pie charts, the project compares how the error rates of the algorithm differ for Black and White defendants. The physical forms obstruct part of the visualizations; the audience must physically engage with the artifact to reveal the rates. The third dimension, the form's height, indicates the number of people affected by these differing rates. The use of light draws the audience’s attention to the error rate, highlighting the discrepancy between Black and White defendants, and asks the audience to think critically about what it means for an algorithm to be fair."],
+        iiba: [{year: 2023, longlist: true}, {year: 2022, longlist: false}],
         designProcess: [
             {name: 'artist statement', 
             descr: ["This work critiques the use of risk assessment tools in the criminal justice system by asking an audience to reflect on the impacts of the COMPAS recidivism algorithm by engaging with three-dimensional panopticon forms representing disparate impacts. Algorithmically Fair? was inspired by two models of surveillance — the capture model and the surveillance model.",
@@ -197,6 +200,7 @@ export let itemData = [
      page: "Intesa-SanPaolo-Knowledge-Network", 
      client: {name: "Instesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
      year: 2022, 
+     iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: true}],
      mainImage: {url: "analyze-by-area-domain-gender.png", 
                 alt: "Image of network analysis across a knowledge network by area, domain, and gender"},
      tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#iiba-longlist-2022"],
@@ -281,7 +285,8 @@ export let itemData = [
         title: "Intesa SanPaolo Processes Map", 
         page: "Intesa-SanPaolo-Processes-Map", 
         client: {name: "Banca Intesa SanPaolo", link: "https://www.intesasanpaolo.com/"},
-        year: "2024", 
+        year: 2024,
+        iiba: [{year: 2023, longlist: true}, {year: 2022, longlist: false}], 
         // links: [{url: "https://nu-center-for-design.github.io/banca-process/", text: "Explore the application"}],
         mainImage: {
             url: "circle-packing-full-screen.png", 
@@ -599,6 +604,7 @@ export let itemData = [
         title: "Migration is Natural", 
         page: "Migration-is-Natural",
         year: 2022, 
+        iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: false}],
         links: [{url: "https://joliholmes.com/team-migration/", text: "Explore the application"},
                 {url: "https://www.figma.com/proto/NwGNVHkgGHQXyLndwRY8d9/Design-studio-2?node-id=176%3A8&starting-point-node-id=176%3A8", text: "Explore the prototype"}],
         mainImage: {

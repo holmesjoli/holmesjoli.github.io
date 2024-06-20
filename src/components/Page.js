@@ -96,7 +96,6 @@ export function Page({pageData}) {
                     <h2 className="Project-Title">{pageData.title}</h2>
                     <SideBarRight d={pageData}/>
                 </div>
-
                 {designProcess.map((datum, i) => {
                     return(
                         <div className={datum.active ? `item item-${i} active`: `item item-${i}`} id={i} key={i + "-content"}>			

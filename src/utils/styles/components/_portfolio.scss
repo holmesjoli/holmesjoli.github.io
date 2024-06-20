@@ -23,9 +23,10 @@
     background-color: #1c2022;
     border-radius: $appBorderRadius;
     max-height: 65vh;
+    position: relative;
 }
 
-.Portfolio-Item img {
+.Portfolio-Item .Item-Image {
     max-height: 30vh;
     padding: $appPadding;
 }
@@ -73,4 +74,13 @@
     border: 1px solid $appColorFocus;
     color: white;
     font-weight: bold;
+}
+
+.IIB-Award {
+    max-height: 100px;
+    position: absolute; 
+    top: 12%; 
+    left: -5%; 
+    z-index: 1;
+    rotate: -20deg;
 }
