@@ -203,9 +203,28 @@ export let itemData = [
      tools: ["D3.js", "Pixi.js", "React", "Python"],
      design: ["Information design", "Interaction design"],
      role: ["Data visualization designer", "Data visualization developer", "Data analyst"],
-     designProcess: [{name: 'Heuristic evaluation', descr: ["Towards the end of the project, one of the design methods I frequently engage in is heuristic evaluation. Heuristic evaluation is an informal usability test often performed by the design-development team. Heuristics are often referred to as 'rules of thumb' or best practices.",
-                                                            "Design researchers have suggested many different heuristics and heuristic sets. Two heuristics that I frequently use in interface design are 'visibility system status' and 'match between the system and the real world.'",
-                                                            "Data visualization researchers have suggested additional heuristics that are specific to information design such as 'accessible color palettes.'"], images: [{url: "heuristic_evaluation.png", alt: "An image showing data entry of a participant's heuristic evaluation"}]}]
+     designProcess: [{name: "Summary",
+                      descr: ["The Knowledge Networks iteractive visualization was a product created Intesa SanPaolo to help the bank better understand how different knowledge proficiencies were distributed among their employees.",
+                             "The team designed and developed three pages to help the Intesa team better understand knowledge proficiencies and distributions: Explore, Analyze, and Simulate.",
+                             "The Explore page allows users to group by different categories and filter to get a better sense of demographic distributions.",
+                             "The Analyze page allows users to visualize employees in relation to their skill proficiency area.",
+                             "The Simulate page allows users to simulate a scenario, such as a merger or acquisition, where Intesa SanPaolo's employee base expands. The user can select what distribution of age and gender they wish to simulate."],
+                      videos: [{
+                        url: "ClusterByFeature.mp4", alt: "A video showing how the user can cluster by different attributes and the circle packing diagram updates."}]},
+                    {name: "Wireframing",
+                     descr: ["Before starting development, the team created wireframes for each of the different pages. This low-fi wireframe shows how the interface will divided into different regions with specific features and functionalities.",
+                            "Like many other interfaces, a navigational bar across the top allows users to navigate between pages. A query panel on the left-side allows users to be able to filter by specific characteristics and identify specific areas of the visualization. Controls for the visualization are in the lower-right hand corner of the interface and a draggable View By panel is located on the right-hand side of the page."],
+                      images: [{url: "InterfaceSketch.png", alt: "Wireframe of the Explore page."}]},
+                    {name: 'Heuristic evaluation', 
+                     descr: ["Towards the end of the project, one of the design methods I frequently engage in is heuristic evaluation. Heuristic evaluation is an informal usability test often performed by the design-development team. Heuristics are often referred to as 'rules of thumb' or best practices.",
+                             "Design researchers have suggested many different heuristics and heuristic sets. Two heuristics that I frequently use in interface design are 'visibility system status' and 'match between the system and the real world.'",
+                             "Data visualization researchers have suggested additional heuristics that are specific to information design such as 'accessible color palettes.'"], 
+                     images: [{url: "heuristic_evaluation.png", alt: "An image showing data entry of a participant's heuristic evaluation."}]},
+                    {name: "Final design", descr: ["The first video on this page shows some of the different features on the Analyze page. First, a user selectes a specific knowledge area that they are interested in exploring.",
+                                                   "Once a user selects a domain, all the employees that have knowledge within the domain are shown. These employees can be filtered by region, position, age group, gender, and skill.",
+                                                   "The visualization shows the distribution of employee knowledge on a likert scale between one and five. Users can then view other attributes about the employee."], videos: [{
+                        url: "AnalyzePage.mp4", alt: ""
+                    }]}]
     // brief: [],
     // summary: [],
     // data: [],
