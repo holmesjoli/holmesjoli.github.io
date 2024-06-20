@@ -7,7 +7,7 @@ export let itemData = [
      iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: false}],
      mainImage: {url: "Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#r", "#figma", "#user-interaction",  "#typescript"],
+     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#r", "#figma", "#user-experience ",  "#typescript"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
      design: ["Data Visualization", "Interaction design", "UI/UX Design" ],
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
@@ -203,7 +203,7 @@ export let itemData = [
      iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: true}],
      mainImage: {url: "analyze-by-area-domain-gender.png", 
                 alt: "Image of network analysis across a knowledge network by area, domain, and gender"},
-     tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#iiba-longlist-2022"],
+     tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#user-interaction"],
      tools: ["D3.js", "Pixi.js", "React", "Python"],
      design: ["Information design", "Interaction design"],
      role: ["Data visualization designer", "Data visualization developer", "Data analyst"],
@@ -778,7 +778,7 @@ export let itemData = [
 ];
 
 export const designFilters = ["#data-art", "#data-journalism", "#data-physicalization", "#data-visualization", "#information-design",
-"#interaction-design", "#game-design", "#graphic-design", "#system-design", "#service-design", "#user-experience", "#user-interaction" ];
+"#interaction-design", "#game-design", "#graphic-design", "#user-experience", "#user-interaction" ];
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
