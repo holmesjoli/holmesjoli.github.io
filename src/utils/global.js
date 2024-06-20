@@ -257,30 +257,28 @@ export let itemData = [
     // prototype: [],
     // final: []
     // },
-    // {
-    //     title: "Black Data", 
-    //     page: "Black-Data", 
-    //     year: 2020,
-    //     mainImage: {
-    //         url: "/assets/portfolio/black-data/20201122_142250.jpg", 
-    //         alt:"Black cube with machine learning knitting pattern in rainbow yarn"}, 
-    //     tags: ["#data-art", "#data-physicalization", "#ceramics", "#fiber", "#fine-art"],
-    //     medium: ["Yarn", "Beads", "Clay"],
-    //     artistStatement: ["In Black Data, I play with the idea of transparency and reproducibility in machine learning algorithms. The juxtaposition of the black box in contrast to the white box is intended to make viewers question what a white box algorithm would look like and what the research process would entail. Machine learning algorithms are starting to be employed more regularly, especially in public policy settings, but frequently lack transparency and accountability.",
-    //                        "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
-    //     designProcess: {
-    //         final: {
-    //             images: [{url: "/assets/portfolio/black-data/20201122_142017.jpg",
-    //                     alt: "Black cube with machine learning knitting pattern in rainbow yarn",
-    //                     size: "small"}, 
-    //                 {url: "/assets/portfolio/black-data/20201122_142356.jpg",
-    //                     alt: "Black cube with machine learning knitting pattern in rainbow yarn close up",
-    //                     size: "small"}, 
-    //                 {url: "/assets/portfolio/black-data/20201124_173636 edited.jpg",
-    //                     alt: "White cube with knitting pattern in white yarn",
-    //                     size: "small"}]}
-    //                 }
-    // },
+    {
+        page: "Black-Data", 
+        title: "Black Data", 
+        year: 2020,
+        mainImage: {
+            url: "20201122_142250.jpg", 
+            alt:"Black cube with machine learning knitting pattern in rainbow yarn"}, 
+        tags: ["#data-art", "#data-physicalization", "#ceramics", "#fiber", "#fine-art"],
+        iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: false}],
+        medium: ["Yarn", "Beads", "Clay"],
+            designProcess: [{
+            name: "artist statement", 
+            descr: ["In Black Data, I play with the idea of transparency and reproducibility in machine learning algorithms. The juxtaposition of the black box in contrast to the white box is intended to make viewers question what a white box algorithm would look like and what the research process would entail. Machine learning algorithms are starting to be employed more regularly, especially in public policy settings, but frequently lack transparency and accountability.",
+                    "The output of the black box is part of the Sky Knit pattern collection. The Sky Knit patterns were trained using a recurrent neural network — a black box machine learning algorithm. Sky Knit patterns are hard to follow and require a lot of improvisation, making them very challenging to reproduce. In contrast, the output of the white box algorithm is a simple pattern which can be found here. The white box algorithm lacks color and sparkle, but it's basic and straightforward."],
+            images: [{url: "20201122_142017.jpg",
+                alt: "Black cube with machine learning knitting pattern in rainbow yarn"}, 
+            {url: "20201122_142356.jpg",
+                alt: "Black cube with machine learning knitting pattern in rainbow yarn close up"}, 
+            {url: "20201124_173636 edited.jpg",
+                alt: "White cube with knitting pattern in white yarn"}]
+        }]          
+    },
     {
         title: "Intesa SanPaolo Processes Map", 
         page: "Intesa-SanPaolo-Processes-Map", 
