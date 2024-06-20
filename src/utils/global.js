@@ -602,7 +602,7 @@ export let itemData = [
     // },
     {
         title: "Migration is Natural", 
-        page: "Migration-is-Natural",
+        page: "Migration-Is-Natural",
         year: 2022, 
         iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: false}],
         links: [{url: "https://joliholmes.com/team-migration/", text: "Explore the application"},
@@ -778,7 +778,7 @@ export let itemData = [
 ];
 
 export const designFilters = ["#data-art", "#data-journalism", "#data-physicalization", "#data-visualization", "#information-design",
-"#interaction-design", "#graphic-design", "#system-design", "#service-design", "#user-experience", "#user-interaction" ];
+"#interaction-design", "#game-design", "#graphic-design", "#system-design", "#service-design", "#user-experience", "#user-interaction" ];
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 

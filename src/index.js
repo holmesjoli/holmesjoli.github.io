@@ -130,7 +130,7 @@ root.render(
         {/* <Route path="/portfolio/Ceramics-Collection" element={<PortfolioPage />} /> */}
         <Route path="/portfolio/Equitable-Teams" element={<PortfolioPage d={itemData.find(d => d.page === "Equitable-Teams")} />} />
         <Route path="/portfolio/Meta" element={<PortfolioPage d={itemData.find(d => d.page === "Meta")} />} />
-        <Route path="/portfolio/Migration-Is-Natural" element={<PortfolioPage d={itemData.find(d => d.page === "Migration-is-Natural")} />} />
+        <Route path="/portfolio/Migration-Is-Natural" element={<PortfolioPage d={itemData.find(d => d.page === "Migration-Is-Natural")} />} />
         {/* <Route path="/portfolio/Patient-Clinician-Interactions" element={<PortfolioPage d={itemData.find(d => d.page === "Patient-Clinician-Interactions")} />} /> */}
         {/* <Route path="/portfolio/Public-Policy-Collection" element={<PortfolioPage d={itemData.find(d => d.page === "Public-Policy-Collection")} />} /> */}
         {/* <Route path="/portfolio/Risky-Code" element={<PortfolioPage d={itemData.find(d => d.page === "Risky-Code")} />} /> */}

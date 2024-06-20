@@ -30,7 +30,7 @@ export function Slideshow({data, showCase = false}) {
             <div className="Slide">
               <h2 className="Item-Title No-Hover">{d.title}</h2>
               <h3 className="Item-Year">{d.year}</h3>
-              <img className="Item-Image" src={d.mainImage.url} alt={d.mainImage.alt} />
+              <img className="Item-Image" src={"/assets/portfolio/" + d.page + "/" + d.mainImage.url} alt={d.mainImage.alt} />
             </div>
           </NavLink>:
             <div key={index} className="Slide">
