@@ -64,6 +64,7 @@ export default function introAnimation () {
         .attr("r", r)
         .attr("opacity", 1)
         .attr("fill", d => getRandomColor())
+        .attr("stroke", d => getRandomColor())
         .attr('z-index', 100);
 
     dots.transition()
@@ -76,6 +77,7 @@ export default function introAnimation () {
         })
         .attr("cy", d => o*(d.Y + (d.Line - 1)*17))
         .attr("fill", "#ea21ad")
+        .attr("stroke", "#ea21ad")
         .transition()
         .duration(introTransition)
         .attr("r", 0)
