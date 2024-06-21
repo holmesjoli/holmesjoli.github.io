@@ -778,3 +778,5 @@ export const areaFilters = ["#data-journalism", "#fine-art", "#map", "#public-po
 export const roleFilters = [...new Set(itemData.map(d => d.role).flat())];
 
 export const filters = toolFilters.concat(designFilters.concat(mediumFilters));
+
+export const introTransition = 3500;
