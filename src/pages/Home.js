@@ -6,12 +6,12 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { Slideshow } from "../components/Carousel";
 
-import { itemData } from "../utils/global";
+import { itemData, introTransition } from "../utils/global";
 import introAnimation from "../components/AnimatedIntro";
 
 export default function Home() {
 
-    const delay = 5000;
+    const delay = 5000 + introTransition;
 
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);
@@ -43,10 +43,10 @@ export default function Home() {
 
     return(
         <div className="Main">
-            <div id="intro-animation"></div>
             <Navigation />
             <Slideshow data={itemData.sort((a, b) => b.year - a.year)} showCase={true}/>
             <Footer />
+            <div id="intro-animation"></div>
         </div>
     )
 }
