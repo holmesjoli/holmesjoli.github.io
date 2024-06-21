@@ -2,9 +2,25 @@ import * as d3 from 'd3';
 import letters from '../data/GloridotLetterLocations.json';
 import { introTransition } from '../utils/global';
 
-var margin = {top: 20, right: 30, bottom: 50, left: 90},
-width = window.outerWidth - margin.left - margin.right,
-height = window.outerHeight - margin.top - margin.bottom;
+var r, o, width, height, margin;
+
+if (window.outerWidth < 480) {
+    r = 2;
+    margin = {top: 10, right: 10, bottom: 10, left: 10};
+    width = window.innerWidth - margin.left - margin.right;
+    height = window.innerHeight - margin.top - margin.bottom;
+} else {
+    r = 5;
+    margin = {top: 20, right: 20, bottom: 20, left: 20};
+    width = window.innerWidth - margin.left - margin.right;
+    height = window.innerHeight - margin.top - margin.bottom;
+}
+
+if (width > height) {
+    o = height/35;
+} else {
+    o = width/65;
+}
 
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -21,14 +37,6 @@ function getRandomInt(max) {
 
 export default function introAnimation () {
 
-    var xScale = d3.scaleLinear()
-        .domain([1, 9])
-        .range([1, 90]);
-
-    var yScale = d3.scaleLinear()
-        .domain([1, 16])
-        .range([1, 160]);
-
     d3.select("#Main")
         .style("visibility", "hidden")
         .style("z-index", -100)
@@ -41,8 +49,8 @@ export default function introAnimation () {
             .style("z-index", 100)
             .style("visibility", "visible")
         .append("svg")
-            .attr("width", width - margin.left)
-            .attr("height", height - margin.top - margin.bottom)
+            .attr("width", width)
+            .attr("height", height)
         .append("g")
             .attr("transform",
                 "translate(" + margin.left + "," + margin.top + ")");
@@ -53,20 +61,20 @@ export default function introAnimation () {
         .append("circle")
         .attr('cx', d => getRandomInt(width))
         .attr("cy", d => getRandomInt(height))
-        .attr("r", 4)
+        .attr("r", r)
         .attr("opacity", 1)
         .attr("fill", d => getRandomColor())
         .attr('z-index', 100);
 
     dots.transition()
         .duration(introTransition)
-        .attr('cx', function (d, i) {
+        .attr('cx', function (d) {
             let x = letters.filter(e => e.LetterPosition < d.LetterPosition && e.Line === d.Line);
             let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
-            let padding = d3.rollup(x, v => d3.max(v, d => 1), d => d.Letter).values().reduce((a, b) => a + b, 0)*2;
-            return xScale(d.X + startingValue + padding);
+            let padding = d3.rollup(x, v => d3.max(v, d => 1), d => d.Letter).values().reduce((a, b) => a + b, 0);
+            return o*(d.X + startingValue + padding);
         })
-        .attr("cy", d => yScale(d.Y + d.Line*17))
+        .attr("cy", d => o*(d.Y + (d.Line - 1)*17))
         .attr("fill", "#ea21ad")
         .transition()
         .duration(introTransition)
