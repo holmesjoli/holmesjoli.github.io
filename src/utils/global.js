@@ -127,7 +127,7 @@ export let itemData = [
                  "When play testing the game revealed that it would be helpful for users to be able to distinguish between two types of action cards, I suggested different ways of visually differentiating the cards.",
                  "The first card design with the exclamation point icon is the final design. I suggested that the game designer use the first design because I feared that the border changes would be too subtle and players would still have a hard time visually differentiating between the two types of actions."],
          images: [{url: "Assets_Iterations of Surprise Actions.png",
-                   alt: "Three versions of a 'Suprise Action' card. "}]
+                   alt: "Three versions of a 'Suprise Action' card."}]
         },
         {name: "instructional design",
          descr: ["The final deliverable that I produced for this project is the Vaultbreakers instruction manual. I created additional assets for the manual in Illustrator and used Indesign to develop the page spreads.",
