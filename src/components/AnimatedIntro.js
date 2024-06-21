@@ -26,9 +26,11 @@ export default function introAnimation () {
             .style("position", "absolute")
             .style("top", 0)
             .style("left", 0)
+            .style("z-index", 100)
+            .style("visibility", "visible")
         .append("svg")
-            .attr("width", width)
-            .attr("height", height)
+            .attr("width", width - margin.left)
+            .attr("height", height - margin.top - margin.bottom)
         .append("g")
             .attr("transform",
                 "translate(" + margin.left + "," + margin.top + ")");
@@ -53,4 +55,11 @@ export default function introAnimation () {
         })
         .attr("cy", d => yScale(d.Y + d.Line*17))
         .attr('z-index', -100)
+
+
+        d3.select("#intro-animation")
+            .transition()
+            .delay(introTransition + 1000)
+            .style("visibility", "hidden")
+            .style("z-index", -100)
 }
