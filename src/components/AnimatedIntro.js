@@ -5,6 +5,8 @@ var margin = {top: 20, right: 30, bottom: 50, left: 90},
 width = window.outerWidth - margin.left - margin.right,
 height = window.outerHeight - margin.top - margin.bottom;
 
+var padding = 4;
+
 export default function introAnimation () {
 
     var svg = d3.select("#intro-animation")
@@ -15,21 +17,25 @@ export default function introAnimation () {
             .attr("transform",
                 "translate(" + margin.left + "," + margin.top + ")");
 
-    var x = d3.scaleLinear()
-    .domain([1, 6])
-    .range([ 1, 60]);
+    var xScale = d3.scaleLinear()
+    .domain([1, 9])
+    .range([1, 90]);
 
-    var y = d3.scaleLinear()
+    var yScale = d3.scaleLinear()
     .domain([1, 16])
-    .range([ 1, 160]);
-    
+    .range([1, 160]);
 
-    let bars = svg.selectAll("rect")
+    let dots = svg.selectAll("circle")
         .data(letters)
         .enter()
         .append("circle")
-        .attr("cx", d => x(d.X))
-        .attr("cy", d => y(d.Y))
+        .attr('cx', function (d, i) {
+            let x = letters.filter(e => e.LetterPosition < d.LetterPosition);
+            let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
+            let padding = d3.rollup(x, v => d3.max(v, d => 1), d => d.Letter).values().reduce((a, b) => a + b, 0)*2;
+            return xScale(d.X + startingValue + padding);
+        })
+        .attr("cy", d => yScale(d.Y))
         .attr("r", 4)
         .attr("fill", "#ea21ad");
 }
