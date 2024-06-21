@@ -133,7 +133,7 @@ export let itemData = [
          descr: ["The final deliverable that I produced for this project is the Vaultbreakers instruction manual. I created additional assets for the manual in Illustrator and used Indesign to develop the page spreads.",
                 "While designing the instructions, I discovered the typeface used on the cards, CC Marian Churchill, was only available in uppercase. While uppercase works well for short and simple passages, such as on cards, it is much hard to read in blocks of text that are commonly present in instruction manuals.",
                 "I tested and selected a new typeface, Josefin Sans, size 10, for the body text of the instruction manual. The headers are set in CC Marian Churchill to extend the visual language of the cards to the instruction manual."],
-         images: [{url: "VaultbreakersInstructions4.png",
+         images: [{url: "VaultBreakersInstructions4.png",
                    alt: "Page four of the instruction manual for Vaultbreakers."}]
         }
     ]
