@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import { Slideshow } from "../components/Carousel";
 
 import { itemData } from "../utils/global";
+import introAnimation from "../components/AnimatedIntro";
 
 export default function Home() {
 
@@ -36,8 +37,13 @@ export default function Home() {
         };
     }, [index]);
 
+    useEffect(() => {
+        introAnimation();
+    }, []);
+
     return(
         <div className="Main">
+            <div id="intro-animation"></div>
             <Navigation />
             <Slideshow data={itemData.sort((a, b) => b.year - a.year)} showCase={true}/>
             <Footer />
