@@ -42,10 +42,12 @@ export default function Home() {
     }, []);
 
     return(
-        <div className="Main">
-            <Navigation />
-            <Slideshow data={itemData.sort((a, b) => b.year - a.year)} showCase={true}/>
-            <Footer />
+        <div>
+            <div id="Main">
+                <Navigation />
+                <Slideshow data={itemData.sort((a, b) => b.year - a.year)} showCase={true}/>
+                <Footer />
+            </div>
             <div id="intro-animation"></div>
         </div>
     )

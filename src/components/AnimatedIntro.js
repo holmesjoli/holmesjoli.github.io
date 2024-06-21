@@ -22,6 +22,11 @@ export default function introAnimation () {
         .domain([1, 16])
         .range([1, 160]);
 
+    d3.select("#Main")
+        .style("visibility", "hidden")
+        .style("z-index", -100)
+        .style("opacity", 0);
+
     var svg = d3.select("#intro-animation")
             .style("position", "absolute")
             .style("top", 0)
@@ -63,7 +68,16 @@ export default function introAnimation () {
 
         d3.select("#intro-animation")
             .transition()
-            .delay(introTransition + introTransition)
+            .delay(introTransition)
+            .duration(introTransition)
             .style("visibility", "hidden")
             .style("z-index", -100)
+
+        d3.select("#Main")
+            .transition()
+            .delay(introTransition)
+            .duration(introTransition)
+            .style("visibility", "visible")
+            .style("z-index", 100)
+            .style("opacity", 1);
 }
