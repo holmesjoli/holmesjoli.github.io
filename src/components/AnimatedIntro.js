@@ -6,15 +6,14 @@ var r, o, width, height, margin;
 
 if (window.outerWidth < 480) {
     r = 2;
-    margin = {top: 10, right: 10, bottom: 10, left: 10};
-    width = window.innerWidth - margin.left - margin.right;
-    height = window.innerHeight - margin.top - margin.bottom;
+    margin = {top: 10, right: 10, bottom: 10, left: 20};
 } else {
     r = 5;
     margin = {top: 20, right: 20, bottom: 20, left: 20};
-    width = window.innerWidth - margin.left - margin.right;
-    height = window.innerHeight - margin.top - margin.bottom;
 }
+
+width = window.innerWidth - margin.left - margin.right;
+height = window.innerHeight - margin.top - margin.bottom;
 
 if (width > height) {
     o = height/35;
@@ -51,9 +50,10 @@ export default function introAnimation () {
         .append("svg")
             .attr("width", width)
             .attr("height", height)
+            .attr("transform", "translate(" + margin.left + "," + (height/2 - 16*o) + ")")
+            // .attr("transform-origin", "translate(" + width/2 + "," + height/2 + ")")
         .append("g")
-            .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");
+            // .attr("transform", "translate(" + margin.left + "," + (height/2 - 16*o) + ")");
 
     let dots = svg.selectAll("circle")
         .data(letters)
@@ -82,14 +82,14 @@ export default function introAnimation () {
         .duration(introTransition)
         .attr("r", 0)
         .attr("opacity", 0)
-        .attr('z-index', -100)
+        .attr('z-index', -100);
 
         d3.select("#intro-animation")
             .transition()
             .delay(introTransition*2)
             .duration(introTransition)
             .style("visibility", "hidden")
-            .style("z-index", -100)
+            .style("z-index", -100);
 
         d3.select("#Main")
             .transition()
