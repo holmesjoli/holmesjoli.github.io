@@ -41,7 +41,7 @@ export default function introAnimation () {
     dots.transition()
         .duration(3000)
         .attr('cx', function (d, i) {
-            let x = letters.filter(e => e.LetterPosition < d.LetterPosition);
+            let x = letters.filter(e => e.LetterPosition < d.LetterPosition && e.Line === d.Line);
             let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
             let padding = d3.rollup(x, v => d3.max(v, d => 1), d => d.Letter).values().reduce((a, b) => a + b, 0)*2;
             return xScale(d.X + startingValue + padding);
