@@ -6,7 +6,14 @@ var margin = {top: 20, right: 30, bottom: 50, left: 90},
 width = window.outerWidth - margin.left - margin.right,
 height = window.outerHeight - margin.top - margin.bottom;
 
-var padding = 4;
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -48,7 +55,7 @@ export default function introAnimation () {
         .attr("cy", d => getRandomInt(height))
         .attr("r", 4)
         .attr("opacity", 1)
-        .attr("fill", "#ea21ad")
+        .attr("fill", d => getRandomColor())
         .attr('z-index', 100);
 
     dots.transition()
@@ -60,6 +67,7 @@ export default function introAnimation () {
             return xScale(d.X + startingValue + padding);
         })
         .attr("cy", d => yScale(d.Y + d.Line*17))
+        .attr("fill", "#ea21ad")
         .transition()
         .duration(introTransition)
         .attr("r", 0)
@@ -68,14 +76,14 @@ export default function introAnimation () {
 
         d3.select("#intro-animation")
             .transition()
-            .delay(introTransition)
+            .delay(introTransition*2)
             .duration(introTransition)
             .style("visibility", "hidden")
             .style("z-index", -100)
 
         d3.select("#Main")
             .transition()
-            .delay(introTransition)
+            .delay(introTransition*2)
             .duration(introTransition)
             .style("visibility", "visible")
             .style("z-index", 100)
