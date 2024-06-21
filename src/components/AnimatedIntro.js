@@ -7,6 +7,10 @@ height = window.outerHeight - margin.top - margin.bottom;
 
 var padding = 4;
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
 export default function introAnimation () {
 
     var svg = d3.select("#intro-animation")
@@ -29,13 +33,18 @@ export default function introAnimation () {
         .data(letters)
         .enter()
         .append("circle")
+        .attr('cx', d => getRandomInt(100))
+        .attr("cy", d => getRandomInt(100))
+        .attr("r", 4)
+        .attr("fill", "#ea21ad");
+
+    dots.transition()
+        .duration(3000)
         .attr('cx', function (d, i) {
             let x = letters.filter(e => e.LetterPosition < d.LetterPosition);
             let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
             let padding = d3.rollup(x, v => d3.max(v, d => 1), d => d.Letter).values().reduce((a, b) => a + b, 0)*2;
             return xScale(d.X + startingValue + padding);
         })
-        .attr("cy", d => yScale(d.Y))
-        .attr("r", 4)
-        .attr("fill", "#ea21ad");
+        .attr("cy", d => yScale(d.Y + d.Line*17))
 }
