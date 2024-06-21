@@ -41,8 +41,8 @@ const data = [ { title: "patient decision-making in the context of a healthcare 
                  subtitle: "2024",
                  href: "design research society",
                  src: "/assets/design-research/circle-packing.png",
-                 p: "This research uses circle packing and network visualization to show how risks are distributed across the Intesa San Paolo Financial Institution.",
-                 year: 2023
+                 p: "Designers are often positioned as mediators or interpreters, working to translate between disciplines and stakeholders to frame and address problems. We argue the primary that information visualization is method that can assist this process.",
+                 year: 2024
                 }]
 
 function ResearchItem({d}) {
