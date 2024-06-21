@@ -11,7 +11,7 @@ import introAnimation from "../components/AnimatedIntro";
 
 export default function Home() {
 
-    const delay = 5000 + introTransition;
+    const delay = 5000 + introTransition*2;
 
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);

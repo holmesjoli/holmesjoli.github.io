@@ -42,6 +42,7 @@ export default function introAnimation () {
         .attr('cx', d => getRandomInt(width))
         .attr("cy", d => getRandomInt(height))
         .attr("r", 4)
+        .attr("opacity", 1)
         .attr("fill", "#ea21ad")
         .attr('z-index', 100);
 
@@ -54,12 +55,15 @@ export default function introAnimation () {
             return xScale(d.X + startingValue + padding);
         })
         .attr("cy", d => yScale(d.Y + d.Line*17))
+        .transition()
+        .duration(introTransition)
+        .attr("r", 0)
+        .attr("opacity", 0)
         .attr('z-index', -100)
-
 
         d3.select("#intro-animation")
             .transition()
-            .delay(introTransition + 1000)
+            .delay(introTransition + introTransition)
             .style("visibility", "hidden")
             .style("z-index", -100)
 }
