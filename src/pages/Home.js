@@ -6,34 +6,34 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { Slideshow } from "../components/Carousel";
 
-import { itemData, introTransition } from "../utils/global";
+import { itemData } from "../utils/global";
 import introAnimation from "../components/AnimatedIntro";
 
 export default function Home() {
 
-    const delay = 5000 + introTransition*2;
+    const delay = 5000;
 
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(-1);
     const timeoutRef = useRef(null);
 
     function resetTimeout() {
         if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
+            clearTimeout(timeoutRef.current);
         }
     }
 
     useEffect(() => {
         resetTimeout();
         timeoutRef.current = setTimeout(
-        () =>
-            setIndex((prevIndex) =>
-            prevIndex === itemData.length - 1 ? 0 : prevIndex + 1
-            ),
-        delay
+            () =>
+                setIndex((prevIndex) =>
+                prevIndex === itemData.length - 1 ? 0 : prevIndex + 1
+                ),
+            delay
         );
 
         return () => {
-        resetTimeout();
+            resetTimeout();
         };
     }, [index]);
 

@@ -83,7 +83,7 @@ export default function introAnimation () {
 
         d3.select("#Main")
             .transition()
-            .delay(introTransition*2)
+            .delay(introTransition*1.5)
             .duration(introTransition)
             .style("visibility", "visible")
             .style("z-index", 100)
