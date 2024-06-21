@@ -50,7 +50,7 @@ export default function introAnimation () {
         .append("svg")
             .attr("width", width)
             .attr("height", height)
-            .attr("transform", "translate(" + margin.left + "," + (height/2 - 16*o) + ")")
+            // .attr("transform", "translate(" + margin.left + "," + (height/2 - 16*o) + ")")
             // .attr("transform-origin", "translate(" + width/2 + "," + height/2 + ")")
         .append("g")
             // .attr("transform", "translate(" + margin.left + "," + (height/2 - 16*o) + ")");
@@ -59,8 +59,8 @@ export default function introAnimation () {
         .data(letters)
         .enter()
         .append("circle")
-        .attr('cx', d => getRandomInt(width))
-        .attr("cy", d => getRandomInt(height))
+        .attr('cx', d => getRandomInt(window.outerWidth))
+        .attr("cy", d => getRandomInt(window.outerHeight))
         .attr("r", r)
         .attr("opacity", 1)
         .attr("fill", d => getRandomColor())
@@ -73,9 +73,9 @@ export default function introAnimation () {
             let x = letters.filter(e => e.LetterPosition < d.LetterPosition && e.Line === d.Line);
             let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
             let padding = d3.rollup(x, v => d3.max(v, d => 1), d => d.Letter).values().reduce((a, b) => a + b, 0);
-            return o*(d.X + startingValue + padding);
+            return o*(d.X + startingValue + padding) + margin.left;
         })
-        .attr("cy", d => o*(d.Y + (d.Line - 1)*17))
+        .attr("cy", d => (height/2 - 16*o) + o*(d.Y + (d.Line - 1)*17))
         .attr("fill", "#ea21ad")
         .attr("stroke", "#ea21ad")
         .transition()
