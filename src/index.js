@@ -1,5 +1,5 @@
 // React dependencies
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   Routes,
@@ -103,10 +103,19 @@ const theme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>
+);
+
+export default function App() { 
+
+  const [count, setCount] = useState(0);
+
+  return(
     <HashRouter>
       <Routes>
         {/* Navigation routes */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home count={count} setCount={setCount}/>} />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Research" element={<Research />} />
         <Route path="/About" element={<About />} />
@@ -139,5 +148,5 @@ root.render(
         <Route path="/portfolio/Visualizing-Version-Control" element={<PortfolioPage d={itemData.find(d => d.page === "Visualizing-Version-Control")} />} />
       </Routes>
     </HashRouter>
-  </ThemeProvider>
-);
+  );
+}

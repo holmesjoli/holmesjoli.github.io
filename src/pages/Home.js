@@ -9,11 +9,13 @@ import { Slideshow } from "../components/Carousel";
 import { itemData } from "../utils/global";
 import introAnimation from "../components/AnimatedIntro";
 
-export default function Home() {
+export default function Home({count, setCount}) {
 
     const delay = 5000;
 
     const [index, setIndex] = useState(-1);
+
+    console.log(count);
     const timeoutRef = useRef(null);
 
     function resetTimeout() {
@@ -38,7 +40,10 @@ export default function Home() {
     }, [index]);
 
     useEffect(() => {
-        introAnimation();
+        if (count < 1) {
+            introAnimation();
+        }
+        setCount(count + 1);
     }, []);
 
     return(
