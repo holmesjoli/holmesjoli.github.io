@@ -16,7 +16,6 @@ export default function Home({count, setCount}) {
 
     const [index, setIndex] = useState(-1);
 
-    console.log(count);
     const timeoutRef = useRef(null);
 
     function resetTimeout() {
