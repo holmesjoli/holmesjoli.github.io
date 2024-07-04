@@ -1,5 +1,6 @@
 // Libraries
 import { useState, useRef, useEffect } from "react";
+import * as d3 from 'd3';
 
 // Components
 import Navigation from "../components/Navigation";
@@ -42,8 +43,14 @@ export default function Home({count, setCount}) {
     useEffect(() => {
         if (count < 1) {
             introAnimation();
+        } else {
+            d3.select("#Main")
+            .style("visibility", "visible")
+            .style("z-index", 100)
+            .style("opacity", 1);
         }
         setCount(count + 1);
+
     }, []);
 
     return(

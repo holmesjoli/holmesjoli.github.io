@@ -50,8 +50,6 @@ export default function introAnimation () {
         .append("svg")
             .attr("width", width)
             .attr("height", height)
-            // .attr("transform", "translate(" + margin.left + "," + (height/2 - 16*o) + ")")
-            // .attr("transform-origin", "translate(" + width/2 + "," + height/2 + ")")
         .append("g")
             // .attr("transform", "translate(" + margin.left + "," + (height/2 - 16*o) + ")");
 
