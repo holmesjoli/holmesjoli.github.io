@@ -78,6 +78,7 @@ export default function introAnimation () {
         .attr("stroke", "#ea21ad")
         .transition()
         .duration(introTransition)
+        .ease(d3.easeCircleOut)
         .attr("r", 0)
         .attr("opacity", 0)
         .attr('z-index', -100);
@@ -91,8 +92,9 @@ export default function introAnimation () {
 
         d3.select("#Main")
             .transition()
-            .delay(introTransition*1)
+            .delay(introTransition/2)
             .duration(introTransition)
+            .ease(d3.easeCircleIn)
             .style("visibility", "visible")
             .style("z-index", 100)
             .style("opacity", 1);
