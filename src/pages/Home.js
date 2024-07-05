@@ -73,8 +73,7 @@ export default function Home({count, setCount}) {
                 <h2>I perform tasks that check boxes in each of those categories</h2>
                 <h2>So what I am?</h2>
 
-                <div id="intro-animation"></div>
-                <h2>I am a</h2>
+                
                 <h2>storyteller</h2>
                 <h2>data wrangler</h2>
                 <h2>information designer</h2>
@@ -82,6 +81,9 @@ export default function Home({count, setCount}) {
                 <h2>interface developer</h2>
                 <h2>data visualization specialist</h2>
                 <h2>human-centered thinker</h2>
+
+                <h2>I am</h2>
+                <div id="intro-animation"></div>
 
                 <h2>Let me help you with your next data story</h2>
             </div>

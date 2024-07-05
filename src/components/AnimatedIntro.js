@@ -47,9 +47,10 @@ export default function introAnimation () {
             .style("left", 0)
             .style("z-index", 100)
             .style("visibility", "visible")
+            .style("overflow", "hidden")
         .append("svg")
             .attr("width", window.innerWidth)
-            .attr("height", window.innerWidth)
+            .attr("height", window.innerHeight)
             .style("overflow", "hidden")
         .append("g");
 
@@ -67,7 +68,7 @@ export default function introAnimation () {
 
     dots.transition()
         .duration(introTransition)
-        .delay(41000)
+        .delay(43000)
         .attr('cx', function (d) {
             let x = letters.filter(e => e.LetterPosition < d.LetterPosition && e.Line === d.Line);
             let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
