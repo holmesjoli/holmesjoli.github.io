@@ -118,7 +118,7 @@ export default function App() {
         <Route path="/" element={<Home count={count} setCount={setCount}/>} />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Research" element={<Research />} />
-        <Route path="/About" element={<About />} />
+        {/* <Route path="/About" element={<About />} /> */}
 
         {/* Portfolio routes */}
         {/* {

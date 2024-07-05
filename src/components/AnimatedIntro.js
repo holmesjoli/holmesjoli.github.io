@@ -48,17 +48,17 @@ export default function introAnimation () {
             .style("z-index", 100)
             .style("visibility", "visible")
         .append("svg")
-            .attr("width", width)
-            .attr("height", height)
-        .append("g")
-            // .attr("transform", "translate(" + margin.left + "," + (height/2 - 16*o) + ")");
+            .attr("width", window.innerWidth)
+            .attr("height", window.innerWidth)
+            .style("overflow", "hidden")
+        .append("g");
 
     let dots = svg.selectAll("circle")
         .data(letters)
         .enter()
         .append("circle")
-        .attr('cx', d => getRandomInt(window.outerWidth))
-        .attr("cy", d => getRandomInt(window.outerHeight))
+        .attr('cx', d => getRandomInt(window.innerWidth))
+        .attr("cy", d => getRandomInt(window.innerHeight))
         .attr("r", r)
         .attr("opacity", 1)
         .attr("fill", d => getRandomColor())
@@ -67,6 +67,7 @@ export default function introAnimation () {
 
     dots.transition()
         .duration(introTransition)
+        .delay(41000)
         .attr('cx', function (d) {
             let x = letters.filter(e => e.LetterPosition < d.LetterPosition && e.Line === d.Line);
             let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
@@ -85,14 +86,14 @@ export default function introAnimation () {
 
         d3.select("#intro-animation")
             .transition()
-            .delay(introTransition*2)
+            .delay(46000)
             .duration(introTransition)
             .style("visibility", "hidden")
             .style("z-index", -100);
 
         d3.select("#Main")
             .transition()
-            .delay(introTransition/2)
+            .delay(46000)
             .duration(introTransition)
             .ease(d3.easeCircleIn)
             .style("visibility", "visible")

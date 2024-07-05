@@ -96,29 +96,29 @@ export default function About() {
         <div className="Main">
             <Navigation />
             <div className="Body">
-                <h2 className="step1">I'm Joli Holmes!</h2>
-                <h2 className="step2">Most technology job applications want applicants to be able to check a box.</h2> 
-                <h2 className="step3">Define yourself as one of the following: </h2>
-                <h2 className="step4">UI designer</h2>
-                <h2 className="step5">data analyst</h2>
-                <h2 className="step6">developer</h2>
-                <h2 className="step7">UX researcher</h2>
-                <h2 className="step8">product designer</h2>
-                <h2 className="step9">data scientist</h2>
-                <h2 className="step10">Having worked mostly at start-ups, this has always been a confounding question.</h2>
-                <h2 className="step11">I perform tasks that check boxes in each of those categories</h2>
-                <h2 className="step12">So what I am?</h2>
+                <h2>Most technology job applications want applicants to be able to check a box.</h2> 
+                <h2>Define yourself as one of the following: </h2>
+                <h2>UI designer</h2>
+                <h2>data analyst</h2>
+                <h2>developer</h2>
+                <h2>UX researcher</h2>
+                <h2>product designer</h2>
+                <h2>data scientist</h2>
+                <h2>Having worked mostly at start-ups, this has always been a confounding question.</h2>
+                <h2>I perform tasks that check boxes in each of those categories</h2>
+                <h2>So what I am?</h2>
 
-                <h2 className="step13">I am a</h2>
-                <h2 className="step14">storyteller</h2>
-                <h2 className="step15">data wrangler</h2>
-                <h2 className="step16">information designer</h2>
-                <h2 className="step17">data visualiztion engineer</h2>
-                <h2 className="step18">interface developer</h2>
-                <h2 className="step19">data visualization specialist</h2>
-                <h2 className="step20">human-centered thinker</h2>
+                <h2>I am a</h2>
+                <h2>storyteller</h2>
+                <h2>data wrangler</h2>
+                <h2>information designer</h2>
+                <h2>data visualization engineer</h2>
+                <h2>interface developer</h2>
+                <h2>data visualization specialist</h2>
+                <h2>human-centered thinker</h2>
 
-                <h2 className="step21">Let me help you with your next data story</h2>
+                <h2>I'm Joli Holmes!</h2>
+                <h2>Let me help you with your next data story</h2>
                 
             </div>
             <Footer />
