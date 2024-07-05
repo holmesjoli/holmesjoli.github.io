@@ -68,7 +68,7 @@ export default function introAnimation () {
 
     dots.transition()
         .duration(introTransition)
-        .delay(43000)
+        .delay(40000)
         .attr('cx', function (d) {
             let x = letters.filter(e => e.LetterPosition < d.LetterPosition && e.Line === d.Line);
             let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
@@ -87,14 +87,14 @@ export default function introAnimation () {
 
         d3.select("#intro-animation")
             .transition()
-            .delay(46000)
+            .delay(47000)
             .duration(introTransition)
             .style("visibility", "hidden")
             .style("z-index", -100);
 
         d3.select("#Main")
             .transition()
-            .delay(46000)
+            .delay(47000)
             .duration(introTransition)
             .ease(d3.easeCircleIn)
             .style("visibility", "visible")
