@@ -59,8 +59,7 @@ export default function Home({count, setCount}) {
                 <Slideshow data={itemData.sort((a, b) => b.year - a.year)} showCase={true}/>
                 <Footer />
             </div>
-            <div>
-            <div className="Body">
+            <div className="Intro">
                 <div><h2>Most technology job applications want applicants to be able to check a box.</h2> </div>
                 <div><h2>Define yourself as one of the following: </h2></div>
                 <div><h2>UI designer</h2></div>
@@ -85,8 +84,7 @@ export default function Home({count, setCount}) {
                 <div><h2>I am</h2></div>
                 <div><h2>Let me help you with your next data story</h2></div>
                 </div>
-                <div id="intro-animation"></div>
-            </div>
+                <div id="Data-Animation"></div>
         </div>
     )
 }

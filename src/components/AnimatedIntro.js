@@ -41,16 +41,18 @@ export default function introAnimation () {
         .style("z-index", -100)
         .style("opacity", 0);
 
-    var svg = d3.select("#intro-animation")
+    var svg = d3.select("#Data-Animation")
             .style("position", "absolute")
             .style("top", 0)
             .style("left", 0)
             .style("z-index", 100)
             .style("visibility", "visible")
             .style("overflow", "hidden")
+            // .attr("width", window.innerWidth)
+            // .attr("height", window.innerHeight)
         .append("svg")
             .attr("width", window.innerWidth)
-            .attr("height", window.innerHeight)
+            .attr("height", window.innerHeight - 7)
             .style("overflow", "hidden")
         .append("g");
 
