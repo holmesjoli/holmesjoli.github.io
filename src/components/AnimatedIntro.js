@@ -68,6 +68,31 @@ export default function introAnimation () {
         .attr("stroke", d => getRandomColor())
         .attr('z-index', 100);
 
+        let xScale = d3.scaleLinear()
+        .domain(d3.extent(letters, d => d.X))
+        .range([margin.left, width - margin.right]);
+
+    let yScale = d3.scaleLinear()
+        .domain(d3.extent(letters, d => d.Y))
+        .range([height - margin.top, margin.bottom]);
+
+    d3.forceSimulation(letters)
+        .force('charge', d3.forceManyBody().strength(-17))
+        .force('collide', d3.forceCollide().strength(2).radius(r))
+        .force('x', d3.forceX().x(d => xScale(d.X)).strength(.05))
+        .force('y', d3.forceY().y(d => yScale(d.Y)).strength(.05))
+        // .on('tick', ticked);
+
+        function ticked() {
+            dots
+                .attr('cx', function (d) {
+                    return d.x
+                })
+                .attr('cy', function (d) {
+                    return d.y
+                });
+        };
+
     dots.transition()
         .duration(introTransition)
         .delay(40000)
