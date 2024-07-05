@@ -29,65 +29,116 @@
 // adapted from https://codepen.io/SitePoint/pen/YzxKGpa?editors=0100
  
 .Body h2 {
-    overflow: hidden;
-    border-right: .15em solid $appColor;
-    white-space: nowrap; 
-    width: 0;
+    width: 33%;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     animation: 
-      typing 3s steps(25, end) forwards;
+      typing 2s steps(25, end) forwards;
 }
 
 .Body h2:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.Body h2:nth-child(3) {
     animation-delay: 2s;
 }
 
-.Body h2:nth-child(4) {
-    animation-delay: 3s;
-}
-
-.Body h2:nth-child(5) {
+.Body h2:nth-child(3) {
     animation-delay: 4s;
 }
 
-.Body h2:nth-child(6) {
-    animation-delay: 5s;
-}
-
-.Body h2:nth-child(7) {
+.Body h2:nth-child(4) {
     animation-delay: 6s;
 }
 
-.Body h2:nth-child(8) {
-    animation-delay: 7s;
-}
-
-.Body h2:nth-child(9) {
+.Body h2:nth-child(5) {
     animation-delay: 8s;
 }
 
-.Body h2:nth-child(10) {
-    animation-delay: 9s;
-}
-
-.Body h2:nth-child(11) {
+.Body h2:nth-child(6) {
     animation-delay: 10s;
 }
 
+.Body h2:nth-child(7) {
+    animation-delay: 12s;
+}
+
+.Body h2:nth-child(8) {
+    animation-delay: 14s;
+}
+
+.Body h2:nth-child(9) {
+    animation-delay: 16s;
+}
+
+.Body h2:nth-child(10) {
+    animation-delay: 18s;
+}
+
+.Body h2:nth-child(11) {
+    animation-delay: 20s;
+}
+
 .Body h2:nth-child(12) {
-    animation-delay: 13s;
+    animation-delay: 24s;
+}
+
+.Body h2:nth-child(13) {
+    animation-delay: 27s;
+}
+
+.Body h2:nth-child(14) {
+    animation-delay: 29s;
+}
+
+.Body h2:nth-child(15) {
+    animation-delay: 31s;
+}
+
+.Body h2:nth-child(16) {
+    animation-delay: 33s;
+}
+
+.Body h2:nth-child(17) {
+    animation-delay: 35s;
+}
+
+.Body h2:nth-child(18) {
+    animation-delay: 37s;
+}
+
+.Body h2:nth-child(19) {
+    animation-delay: 39s;
+}
+
+.Body h2:nth-child(20) {
+    animation-delay: 41s;
+}
+
+.Body h2:nth-child(21) {
+    animation-delay: 43s;
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100%; opacity: 0 }
+    // from { width: 0 }
+    // to { width: 100%; opacity: 0; z-index: -100; }
+
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-@keyframes blink {
-    from { border-color: transparent }
-    to { border-color: $appColor; 
-            opacity: 0;}
-}
