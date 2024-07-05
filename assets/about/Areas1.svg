@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.7 274.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d53f95;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: Hind-SemiBold, Hind;
+        font-size: 20.58px;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        fill: #3893d0;
+      }
+
+      .cls-4 {
+        fill: rgba(56, 147, 208, .2);
+        stroke: #3893d0;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: rgba(213, 63, 149, .2);
+        stroke: #d53f95;
+      }
+
+      .cls-6 {
+        fill: rgba(151, 201, 60, .2);
+        stroke: #97c93c;
+      }
+
+      .cls-3 {
+        fill: #97c93c;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Areas1">
+      <polygon class="cls-5" points="74.56 38.44 139.14 1.15 203.71 38.44 203.71 113 139.14 150.28 74.56 113 74.56 38.44"/>
+      <polygon class="cls-6" points="144.69 158.04 211.19 119.64 277.7 158.04 277.7 234.84 211.19 273.24 144.69 234.84 144.69 158.04"/>
+      <polygon class="cls-4" points="1 158.04 67.51 119.64 134.02 158.04 134.02 234.84 67.51 273.23 1 234.84 1 158.04"/>
+      <text class="cls-1" transform="translate(117.86 79.34)"><tspan x="0" y="0">Data</tspan></text>
+      <text class="cls-2" transform="translate(9.12 200.05)"><tspan x="0" y="0">Visualization</tspan></text>
+      <text class="cls-3" transform="translate(180.05 200.05)"><tspan x="0" y="0">Design</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304.18 415.66">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #adadad;
+        font-family: Hind-Medium, Hind;
+        font-weight: 500;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-10 {
+        fill: none;
+      }
+
+      .cls-5, .cls-8 {
+        stroke: #3893d0;
+      }
+
+      .cls-11, .cls-4 {
+        font-size: 8px;
+      }
+
+      .cls-2, .cls-12, .cls-7, .cls-9 {
+        opacity: .35;
+      }
+
+      .cls-2, .cls-13, .cls-3 {
+        font-size: 9px;
+      }
+
+      .cls-6, .cls-10 {
+        stroke: #383838;
+      }
+
+      .cls-7, .cls-9 {
+        stroke: #d53f95;
+      }
+
+      .cls-8 {
+        fill: rgba(56, 147, 208, .2);
+        stroke-width: 1.29px;
+      }
+
+      .cls-9 {
+        fill: rgba(213, 63, 149, .2);
+        stroke-width: 1.23px;
+      }
+
+      .cls-10 {
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Timeline7">
+      <g class="cls-12">
+        <text class="cls-1" transform="translate(184.53 359.69)"><tspan class="cls-13"><tspan x="0" y="0">Northeastern University</tspan></tspan><tspan class="cls-11"><tspan x="0" y="9.6">Center for Design</tspan></tspan></text>
+      </g>
+      <text class="cls-1" transform="translate(184.53 225.08)"><tspan class="cls-13"><tspan x="0" y="0">Rice University </tspan></tspan><tspan class="cls-11"><tspan x="0" y="9.6">Texas Policy Lab</tspan></tspan></text>
+      <g class="cls-12">
+        <text class="cls-1" transform="translate(184.53 135.34)"><tspan class="cls-13"><tspan x="0" y="0">Mathematical Policy Research</tspan></tspan><tspan class="cls-11"><tspan x="0" y="9.6">Healthcare Policy Team</tspan></tspan></text>
+      </g>
+      <text class="cls-2" transform="translate(184.53 7.56)"><tspan x="0" y="0">Wesleyan University</tspan></text>
+      <line class="cls-6" x1="150.29" y1="50.73" x2="176.43" y2="50.73"/>
+      <line class="cls-6" x1="150.29" y1="5.86" x2="176.43" y2="5.86"/>
+      <line class="cls-6" x1="150.29" y1="275.08" x2="176.43" y2="275.08"/>
+      <line class="cls-6" x1="150.29" y1="230.21" x2="176.43" y2="230.21"/>
+      <line class="cls-6" x1="150.29" y1="185.34" x2="176.43" y2="185.34"/>
+      <line class="cls-6" x1="150.29" y1="140.47" x2="176.43" y2="140.47"/>
+      <line class="cls-6" x1="150.29" y1="95.6" x2="176.43" y2="95.6"/>
+      <line class="cls-6" x1="150.29" y1="319.95" x2="176.43" y2="319.95"/>
+      <line class="cls-6" x1="150.29" y1="364.82" x2="176.43" y2="364.82"/>
+      <line class="cls-10" x1="163.36" y1="5.86" x2="163.36" y2="409.69"/>
+      <line class="cls-6" x1="150.29" y1="409.69" x2="176.43" y2="409.69"/>
+      <g>
+        <text class="cls-2" transform="translate(126.21 7.66)"><tspan x="0" y="0">2014</tspan></text>
+        <text class="cls-2" transform="translate(126.24 52.53)"><tspan x="0" y="0">2015</tspan></text>
+        <text class="cls-2" transform="translate(126.22 97.4)"><tspan x="0" y="0">2016</tspan></text>
+        <g class="cls-12">
+          <text class="cls-3" transform="translate(126.2 142.27)"><tspan x="0" y="0">2017</tspan></text>
+        </g>
+        <g class="cls-12">
+          <text class="cls-3" transform="translate(126.23 187.14)"><tspan x="0" y="0">2018</tspan></text>
+        </g>
+        <text class="cls-3" transform="translate(126.2 232.01)"><tspan x="0" y="0">2019</tspan></text>
+        <text class="cls-3" transform="translate(126.3 276.88)"><tspan x="0" y="0">2020</tspan></text>
+        <text class="cls-3" transform="translate(126.23 321.75)"><tspan x="0" y="0">2021</tspan></text>
+        <g class="cls-12">
+          <text class="cls-3" transform="translate(126.29 366.62)"><tspan x="0" y="0">2022</tspan></text>
+        </g>
+        <g class="cls-12">
+          <text class="cls-3" transform="translate(126.28 411.49)"><tspan x="0" y="0">2023</tspan></text>
+        </g>
+      </g>
+      <path class="cls-9" d="M163.32,205.2c-.9-.12-1.58-.47-2.02-1.15-.63-.99-.64-2,.02-3.01.44-.66.94-1.25,1.81-.98,1.12.35,2.13.88,2.64,2.05.31.73-.04,1.86-.81,2.33-.51.31-1.09.51-1.64.76Z"/>
+      <g class="cls-12">
+        <text class="cls-4" transform="translate(23.75 198.34)"><tspan x="0" y="0">The Transforming Clinical </tspan><tspan x=".67" y="9.6">Practice Initiative Impact</tspan><tspan x="-9.33" y="19.2">Evaluation: Interim Findings</tspan></text>
+      </g>
+      <g class="cls-12">
+        <text class="cls-4" transform="translate(17.81 156.78)"><tspan x="0" y="0">Youth Football Concussion </tspan><tspan x="56.73" y="9.6">Evaluation</tspan></text>
+      </g>
+      <path class="cls-9" d="M163,156.33c-.9-.12-1.58-.47-2.02-1.15-.63-.99-.64-2,.02-3.01.44-.66.94-1.25,1.81-.98,1.12.35,2.13.88,2.64,2.05.31.73-.04,1.86-.81,2.33-.51.31-1.09.51-1.64.76Z"/>
+      <path class="cls-7" d="M115.1,161.26c1.69-2.78,6.19-9.31,14.68-12.84,15.19-6.33,29.38,2.67,30.73,3.55"/>
+      <path class="cls-7" d="M113.58,208.23c1.68-2.47,7.29-10.02,17.73-13.15,14.86-4.45,28.39,4.83,30.01,5.96"/>
+      <text class="cls-4" transform="translate(7.06 294.58)"><tspan x="0" y="0">Texas School District COVID-19 </tspan><tspan x="28.77" y="9.6">Monitoring dashboard</tspan></text>
+      <path class="cls-8" d="M161.33,330.11c.14-.7.18-1.22.36-1.69.4-1.04,1.42-1.4,2.47-.69.77.52,1.41,1.3,1.93,2.08.47.71.34,1.59-.21,2.23-.67.8-1.57,1.37-2.67,1.07-.44-.12-.94-.5-1.16-.9-.37-.69-.53-1.49-.73-2.11Z"/>
+      <path class="cls-8" d="M161.33,296.95c.14-.7.18-1.22.36-1.69.4-1.04,1.42-1.4,2.47-.69.77.52,1.41,1.3,1.93,2.08.47.71.34,1.59-.21,2.23-.67.8-1.57,1.37-2.67,1.07-.44-.12-.94-.5-1.16-.9-.37-.69-.53-1.49-.73-2.11Z"/>
+      <text class="cls-4" transform="translate(7.71 330.32)"><tspan x="0" y="0">Identification of best practices </tspan><tspan x="-1.5" y="9.6">for county-level data reporting </tspan><tspan x="20.02" y="19.2">on COVID-19 dashboards</tspan></text>
+      <path class="cls-5" d="M115.92,337.55c4.38-2.48,10.73-5.43,18.8-7.18,10.66-2.32,20.93-1.19,26.6-.25"/>
+      <path class="cls-5" d="M115.62,298.11c3.15-2.43,9.54-6.66,18.65-8.1,13.65-2.17,24.17,3.37,27.42,5.25"/>
+    </g>
+  </g>
+</svg>

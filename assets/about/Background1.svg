@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.2 274.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d53f95;
+        font-family: Hind-SemiBold, Hind;
+        font-size: 20.58px;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        fill: rgba(213, 63, 149, .2);
+        stroke: #d53f95;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #383838;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Areas2">
+      <polygon class="cls-2" points="74.31 38.44 138.89 1.15 203.46 38.44 203.46 113 138.89 150.28 74.31 113 74.31 38.44"/>
+      <polygon class="cls-3" points="144.44 158.04 210.94 119.64 277.45 158.04 277.45 234.84 210.94 273.24 144.44 234.84 144.44 158.04"/>
+      <polygon class="cls-3" points=".75 158.04 67.26 119.64 133.77 158.04 133.77 234.84 67.26 273.23 .75 234.84 .75 158.04"/>
+      <text class="cls-1" transform="translate(117.61 79.34)"><tspan x="0" y="0">Data</tspan></text>
+    </g>
+  </g>
+</svg>
