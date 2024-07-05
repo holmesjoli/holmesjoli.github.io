@@ -81,7 +81,7 @@ export default function introAnimation () {
         .force('collide', d3.forceCollide().strength(2).radius(r))
         .force('x', d3.forceX().x(d => xScale(d.X)).strength(.05))
         .force('y', d3.forceY().y(d => yScale(d.Y)).strength(.05))
-        // .on('tick', ticked);
+        .on('tick', ticked);
 
         function ticked() {
             dots
