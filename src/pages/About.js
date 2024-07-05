@@ -96,14 +96,24 @@ export default function About() {
         <div className="Main">
             <Navigation />
             <div className="Body">
-            <p>I'm Joli! I'm a<br></br>
-                <div class="c1"><div class="type">Web Developer</div></div>
-                <div class="c2"><div class="type2">Web Designer</div></div>
-                <div class="c3"><div class="type3">UI/UX Designer</div></div>
-                </p>
-                {/* <p>Hi I'm <span className="Name"> Joli Holmes </span>!</p> */}
-                {/* <p>Most technology job applications want applicants to be able to check a box.</p>  */}
-                {/* <p>Define yourself as one of the following: </p>
+                <h2>I'm Joli Holmes!</h2>
+                <h2>Most technology job applications want applicants to be able to check a box.</h2> 
+                <h2>Define yourself as one of the following: </h2>
+                <h2>UI designer</h2>
+                <h2>data analyst</h2>
+                <h2>developer</h2>
+                <h2>UX researcher</h2>
+                <h2>product designer</h2>
+                <h2>data scientist</h2>
+                <h2>Having worked mostly at start-ups, this has always been a confounding question.</h2>
+                <h2>As a data visualization designer and developer I perform tasks that check boxes in each of those categories, leaving me to question</h2>
+                <h2>So what I am?</h2>
+                
+                {/* <div class="type1">Web Developer</div>
+                <div class="type2">Web Designer</div>
+                <div class="type3">UI/UX Designer</div> */}
+              
+                {/* 
                 <ul>
                     <li>UI designer</li>
                     <li>UX researcher</li>
