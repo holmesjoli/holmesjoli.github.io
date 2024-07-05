@@ -1,52 +1,9 @@
-.Position {
-    color: white;
-}
-
-.Employeer {
-    font-style: italic;
-}
-
-.TimePeriod {
-    float: right;
-}
-
-.Text {
-    max-width: 500px;
-}
-
 .Body {
     display: grid;
     grid-gap: .75rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 30vw));
     padding: $appPadding;
     margin: $appMargin;
-}
-
-// .Body2 {
-//     height: auto;
-//     display: grid;
-//     grid-gap: 1rem;
-//     grid-template-columns: repeat(3, 1fr);
-// }
-
-// .Research {
-//     display: flex;
-//     flex-direction: column;
-//     padding: 1rem;
-//     justify-content: space-between;
-// }
-
-// .Research img {
-//     height: 100px;
-//     width: 100%;
-//     margin: $appMargin;
-// }
-
-.Body2 {
-    height: auto;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .visual {
@@ -67,14 +24,54 @@
     max-height: 50vh;
 }
 
-h3 {
-    margin: 0
-}
-
-@media screen and (max-width: 480px) {
-
-    .Body {
-        display: flex;
-        flex-direction: column;
-    }
-}
+// https://css-tricks.com/snippets/css/typewriter-effect/
+.c1{
+    display: inline-block;
+  }
+  .c2{
+    display: inline-block;
+  }
+  .c3{
+    display: inline-block;
+  }
+  .c4{
+    display: inline-block;
+  }
+ 
+  p .type{
+      font-size: 2.5rem;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 1s steps(25, end) forwards;
+  }
+  p .type2{
+      font-size: 2.5rem; 
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 1s steps(25, end) forwards;
+      animation-delay: 1s;
+  }
+  p .type3{
+      font-size: 2.5rem; 
+      overflow: hidden;
+      border-right: .15em solid orange; 
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 1s steps(25, end) forwards;
+      animation-delay: 2s;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+  }

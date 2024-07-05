@@ -96,37 +96,24 @@ export default function About() {
         <div className="Main">
             <Navigation />
             <div className="Body">
-                <div className="Text">
-                    <h3>background</h3>
-                    <p>My interest in data science and analytics started as an undergraduate at Wesleyan University. I never planned to fall in love with data, but working in Wesleyan University's Quantitative Analysis Center (QAC) changed everything. Wesleyan did not just teach me how to code and use statistical methods, but how to think critically and apply an interdisciplinary lens to all research projects.
-                    </p>
-                    <p>My first position was at Mathematica Policy Research. At Mathematica, I worked on traditional public policy evaluations, built web applications in R, and automated web testing in Python. My next position was at the Texas Policy Lab at Rice University. At the lab, I frequently developed web applications to help our government partners visualize trends in their data. 
-                        Currently, I am a Data Visualization Designer at Northeastern University's Center for Design.</p>
-                    <p>Originally, I'm from Bainbridge Island, Washington, but have lived in six states in the US and Melbourne, Australia. I identify as a member of the LGBTQ+ community and am very interested in data issues such as privacy and data collection that are particularly sensitive to this community.</p>
-                    <p>In 2020, I adopted my adorable cat Beanie, who demands playtime during all waking hours. In my spare time I throw ceramics on the wheel, play ultimate frisbee, and try to get outside as much as possible.</p>
-                </div>
-                <div className="Resume-Brief">
-                    <div className="Container">
-                        <h3>experience</h3>
-                        <ul>
-                            <li><span className="Position">Data Visualization Designer</span> | <span className="Employeer">Northeastern University</span><span className="TimePeriod">Dec 2021 – Current</span></li>
-                            <li><span className="Position">Data Scientist</span> | <span className="Employeer">Rice University</span><span className="TimePeriod">Jan 2019 – Aug 2021</span></li>
-                            <li><span className="Position">Statistical Programmer</span> | <span className="Employeer">Mathematica Policy Research</span><span className="TimePeriod">Sept 2017 – Jan 2019</span></li>
-                        </ul>
-                        {/* <p><a className="active" href="resume.html">Link to resume</a></p> */}
-                    </div>
-                    <div className="Container">
-                        <h3>education</h3>
-                        <ul>
-                            <li><span className="Position">MFA in Information Design and Data Visualization</span> | <span className="Employeer">Northeastern University</span><span className="TimePeriod">2023</span></li>
-                            <li><span className="Position">BA in Economics</span> | <span className="Employeer">Wesleyan University</span><span className="TimePeriod">2017</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="Tools">
-                    <h3>tools</h3>
-                    <div id="visualization"></div>
-                </div>
+            <p>I'm Joli! I'm a<br></br><div class="c1"><div class="type">Web Developer</div></div>
+
+                <div class="c2"><div class="type2">Web Designer</div></div>
+                <div class="c3"><div class="type3">UI/UX Designer</div></div>
+                </p>
+                {/* <p>Hi I'm <span className="Name"> Joli Holmes </span>!</p> */}
+                {/* <p>Most technology job applications want applicants to be able to check a box.</p>  */}
+                {/* <p>Define yourself as one of the following: </p>
+                <ul>
+                    <li>UI designer</li>
+                    <li>UX researcher</li>
+                    <li>developer</li>
+                    <li>product designer</li>
+                    <li>data scientist</li>
+                    <li>data analyst</li>
+                </ul> 
+                <p>Having worked mostly at start-ups, this has always been a confounding question. </p>
+                <p>As a data visualization designer and developer I perform tasks that check boxes in each of those categories, leaving me to question, so what I am?</p> */}
             </div>
             <Footer />
         </div>
