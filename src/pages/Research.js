@@ -39,7 +39,7 @@ const data = [ { title: "patient decision-making in the context of a healthcare 
                 },
                 {title: "harnessing information visualization as a vehicle for translational design",
                  subtitle: "2024",
-                 href: "design research society",
+                 href: "https://dl.designresearchsociety.org/drs-conference-papers/drs2024/researchpapers/178/",
                  src: "/assets/design-research/circle-packing.png",
                  p: "Designers are often positioned as mediators or interpreters, working to translate between disciplines and stakeholders to frame and address problems. We argue the primary that information visualization is method that can assist this process.",
                  year: 2024
