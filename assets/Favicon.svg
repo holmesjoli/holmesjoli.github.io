@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.7 274.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(56, 147, 208, .2);
+        stroke: #3893d0;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: rgba(213, 63, 149, .2);
+        stroke: #d53f95;
+      }
+
+      .cls-3 {
+        fill: rgba(151, 201, 60, .2);
+        stroke: #97c93c;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Areas1">
+      <g>
+        <polygon class="cls-2" points="74.56 38.44 139.14 1.15 203.71 38.44 203.71 113 139.14 150.28 74.56 113 74.56 38.44"/>
+        <polygon class="cls-3" points="144.69 158.04 211.19 119.64 277.7 158.04 277.7 234.84 211.19 273.24 144.69 234.84 144.69 158.04"/>
+        <polygon class="cls-1" points="1 158.04 67.51 119.64 134.02 158.04 134.02 234.84 67.51 273.23 1 234.84 1 158.04"/>
+      </g>
+    </g>
+  </g>
+</svg>
