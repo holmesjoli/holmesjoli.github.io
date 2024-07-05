@@ -96,8 +96,8 @@ export default function About() {
         <div className="Main">
             <Navigation />
             <div className="Body">
-            <p>I'm Joli! I'm a<br></br><div class="c1"><div class="type">Web Developer</div></div>
-
+            <p>I'm Joli! I'm a<br></br>
+                <div class="c1"><div class="type">Web Developer</div></div>
                 <div class="c2"><div class="type2">Web Designer</div></div>
                 <div class="c3"><div class="type3">UI/UX Designer</div></div>
                 </p>

@@ -25,23 +25,14 @@
 }
 
 // https://css-tricks.com/snippets/css/typewriter-effect/
-.c1{
-    display: inline-block;
-  }
-  .c2{
-    display: inline-block;
-  }
-  .c3{
-    display: inline-block;
-  }
-  .c4{
+  .c1, .c2, .c3, .c4{
     display: inline-block;
   }
  
   p .type{
       font-size: 2.5rem;
       overflow: hidden;
-      border-right: .15em solid orange;
+      border-right: .15em solid $appColor;
       white-space: nowrap; 
       width: 0;
       animation: 
@@ -50,7 +41,7 @@
   p .type2{
       font-size: 2.5rem; 
       overflow: hidden;
-      border-right: .15em solid orange;
+      border-right: .15em solid $appColor;
       white-space: nowrap; 
       width: 0;
       animation: 
@@ -60,7 +51,7 @@
   p .type3{
       font-size: 2.5rem; 
       overflow: hidden;
-      border-right: .15em solid orange; 
+      border-right: .15em solid $appColor;
       white-space: nowrap; 
       width: 0;
       animation: 
@@ -73,5 +64,5 @@
   }
   @keyframes blink {
     from { border-color: transparent }
-    to { border-color: orange; }
+    to { border-color: $appColor; }
   }
