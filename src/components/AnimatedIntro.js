@@ -118,7 +118,7 @@ export default function introAnimation () {
         .attr("opacity", 0)
         .attr('z-index', -100);
 
-        d3.select("#intro-animation")
+        d3.select("#Data-Animation")
             .transition()
             .delay(47000)
             .duration(introTransition)
