@@ -93,7 +93,13 @@ export default function introAnimation () {
                 });
         };
 
-    dots.transition()
+    dots
+    // .transition()
+    //     .duration(introTransition)
+    //     .delay(25000)
+    //     .attr('cx', d => d.x)
+    //     .attr('cy', d => d.y)
+    .transition()
         .duration(introTransition)
         .delay(40000)
         .attr('cx', function (d) {

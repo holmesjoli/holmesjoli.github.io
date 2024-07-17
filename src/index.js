@@ -128,6 +128,7 @@ export default function App() {
         } */}
 
         <Route path="/portfolio/Voting-Access-Monitor" element={<PortfolioPage d={itemData.find(d => d.page === "Voting-Access-Monitor")} />} />
+        <Route path="/portfolio/High-Ground-Design-Conversations" element={<PortfolioPage d={itemData.find(d => d.page === "High-Ground-Design-Conversations")} />} />
         <Route path="/portfolio/Vaultbreakers" element={<PortfolioPage d={itemData.find(d => d.page === "Vaultbreakers")} />} />
         <Route path="/portfolio/Algorithmically-Fair" element={<PortfolioPage d={itemData.find(d => d.page === "Algorithmically-Fair")} />} />
         <Route path="/portfolio/Intesa-SanPaolo-Processes-Map" element={<PortfolioPage d={itemData.find(d => d.page === "Intesa-SanPaolo-Processes-Map")} />} />

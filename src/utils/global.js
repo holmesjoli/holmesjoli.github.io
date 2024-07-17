@@ -1,4 +1,27 @@
 export let itemData = [
+    {title: "High Ground Design Conversations",
+     page: "High-Ground-Design-Conversations",
+     client: {name: "High Ground Design Conversations Conference", link: "https://highgrounddesignconversations.com"},
+     links: [{url: "https://highgrounddesignconversations.com", text: "Explore the website"}],
+     year: 2024,
+     mainImage: {url: "mainImage.png",
+                 alt: "The landing page for the High Ground Design Conversations Conference."},
+     tags: ["#react", "#javascript", "#web-design"],
+     tools: ["React", "Material-UI"],
+     design: ["Web Design", "UI Design"],
+     designProcess: [{name: 'summary', 
+                      descr: ["The High Ground Design Conversations conference contracted me to digitize their conference materials.", 
+                              "Using paper handouts from previous years, I translated the printed documents to a digital experience. Careful attention was paid to the typography and visually hierarchy as many of the attendees are graphic designers by trade.",
+                              "I chose to build the website from scratch instead of using a website template builder to preserve the visual identity the conference had used in the past. The website was developed using React and Material-UI.",
+                              "Data were stored in created a simple database in Googlesheets to store the conference schedule and speaker information. This simple and lightweight solutions makes updates fast and effortless."],
+                      images: [
+                        {
+                            url: "mainImage.png",
+                            alt: "The landing page for the High Ground Design Conversations Conference."
+                        }]
+                    }
+                ]
+    },
     {title: "Voting Access Monitor",
      page: "Voting-Access-Monitor",
      client: {name: "Center for New Data", link: "https://www.newdata.org/"},
@@ -767,7 +790,7 @@ export let itemData = [
 ];
 
 export const designFilters = ["#data-art", "#data-journalism", "#data-physicalization", "#data-visualization", "#information-design",
-"#interaction-design", "#game-design", "#graphic-design", "#user-experience", "#user-interaction" ];
+"#interaction-design", "#game-design", "#graphic-design", "#user-experience", "#user-interaction" , "#web-development"];
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
