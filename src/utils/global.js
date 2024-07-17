@@ -1,27 +1,4 @@
 export let itemData = [
-    {title: "High Ground Design Conversations",
-     page: "High-Ground-Design-Conversations",
-     client: {name: "High Ground Design Conversations Conference", link: "https://highgrounddesignconversations.com"},
-     links: [{url: "https://highgrounddesignconversations.com", text: "Explore the website"}],
-     year: 2024,
-     mainImage: {url: "mainImage.png",
-                 alt: "The landing page for the High Ground Design Conversations Conference."},
-     tags: ["#react", "#javascript", "#web-design"],
-     tools: ["React", "Material-UI"],
-     design: ["Web Design", "UI Design"],
-     designProcess: [{name: 'summary', 
-                      descr: ["The High Ground Design Conversations conference contracted me to digitize their conference materials.", 
-                              "Using paper handouts from previous years, I translated the printed documents to a digital experience. Careful attention was paid to the typography and visually hierarchy as many of the attendees are graphic designers by trade.",
-                              "I chose to build the website from scratch instead of using a website template builder to preserve the visual identity the conference had used in the past. The website was developed using React and Material-UI.",
-                              "Data were stored in created a simple database in Googlesheets to store the conference schedule and speaker information. This simple and lightweight solutions makes updates fast and effortless."],
-                      images: [
-                        {
-                            url: "mainImage.png",
-                            alt: "The landing page for the High Ground Design Conversations Conference."
-                        }]
-                    }
-                ]
-    },
     {title: "Voting Access Monitor",
      page: "Voting-Access-Monitor",
      client: {name: "Center for New Data", link: "https://www.newdata.org/"},
@@ -30,7 +7,7 @@ export let itemData = [
      iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: false}],
      mainImage: {url: "Ohio_Tooltip.png",
                  alt: "A data visualization of the State of Georgia and how polling locations have changed over the last several years."},
-     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#r", "#figma", "#user-experience ",  "#typescript"],
+     tags: ["#react", "#leaflet-js", "#d3-js", "#data-visualization", "#r", "#figma", "#user-experience ", "#interface-design", "#typescript"],
      tools: ["D3.js", "Leaflet.js", "React", "R", "Figma"],
      design: ["Data Visualization", "Interaction design", "UI/UX Design" ],
      role: ["Data visualization designer", "Data visualization developer", "UI/UX designer", "Data analyst"],
@@ -161,6 +138,29 @@ export let itemData = [
         }
     ]
     },
+    {title: "High Ground Design Conversations",
+     page: "High-Ground-Design-Conversations",
+     client: {name: "High Ground Design Conversations Conference", link: "https://highgrounddesignconversations.com"},
+     links: [{url: "https://highgrounddesignconversations.com", text: "Explore the website"}],
+     year: 2024,
+     mainImage: {url: "mainImage.png",
+               alt: "The landing page for the High Ground Design Conversations Conference."},
+     tags: ["#react", "#javascript", "#web-design", "#web-development"],
+     tools: ["React", "Material-UI"],
+     design: ["Web Design", "UI Design"],
+     designProcess: [{name: 'summary', 
+                    descr: ["The High Ground Design Conversations conference contracted me to digitize their conference materials.", 
+                            "Using paper handouts from previous years, I translated the printed documents to a digital experience. Careful attention was paid to the typography and visually hierarchy as many of the attendees are graphic designers by trade.",
+                            "I chose to build the website from scratch instead of using a website template builder to preserve the visual identity the conference had used in the past. The website was developed using React and Material-UI.",
+                            "Data were stored in created a simple database in Googlesheets to store the conference schedule and speaker information. This simple and lightweight solutions makes updates fast and effortless."],
+                    images: [
+                      {
+                          url: "mainImage.png",
+                          alt: "The landing page for the High Ground Design Conversations Conference."
+                      }]
+                  }
+              ]
+    },
     {
         title: "Algorithmically Fair?", 
         page: "Algorithmically-Fair", 
@@ -226,7 +226,7 @@ export let itemData = [
      iiba: [{year: 2023, longlist: false}, {year: 2022, longlist: true}],
      mainImage: {url: "analyze-by-area-domain-gender.png", 
                 alt: "Image of network analysis across a knowledge network by area, domain, and gender"},
-     tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#user-interaction"],
+     tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interface-design", "#interaction-design", "#python", "#user-interaction"],
      tools: ["D3.js", "Pixi.js", "React", "Python"],
      design: ["Information design", "Interaction design"],
      role: ["Data visualization designer", "Data visualization developer", "Data analyst"],
@@ -312,7 +312,7 @@ export let itemData = [
         mainImage: {
             url: "circle-packing-full-screen.png", 
             alt: "A data visualization showing multiple levels of organizational hierarchy."}, 
-        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#python", "#javascript"],
+        tags: ["#d3-js", "#pixi-js", "#react", "#data-visualization", "#interaction-design", "#interface-design", "#python", "#javascript"],
         tools: ["D3.js", "Pixi.js", "React", "Python"],
         design: ["Information design", "Interaction design"],
         role: ["Data visualization designer", "Data visualization developer", "Project manager", "Data engineer"],
@@ -790,7 +790,7 @@ export let itemData = [
 ];
 
 export const designFilters = ["#data-art", "#data-journalism", "#data-physicalization", "#data-visualization", "#information-design",
-"#interaction-design", "#game-design", "#graphic-design", "#user-experience", "#user-interaction" , "#web-development"];
+"#interaction-design", "#interface-design", "#game-design", "#graphic-design", "#user-experience", "#user-interaction" , "#web-design", "#web-development"];
 
 export const mediumFilters = ["#acrylic", "#ceramics", "#charcoal", "#conte", "#fiber"];
 
