@@ -146,7 +146,7 @@ export default function introAnimation () {
             .force("collide", null)
             .force('x', d3.forceX().x(d => xScale(d)).strength(1))
             .force('y', d3.forceY().y(d => yScale(d)).strength(1));
-    }, 37000);
+    }, 36200);
 
     let rScale = d3.scaleOrdinal()
         .domain([...new Set(letters.map(d => d.X))])
@@ -168,7 +168,7 @@ export default function introAnimation () {
             .attr("stroke", d => yColorScale(d.Y))
         .transition()
             .duration(1000)
-            .delay(500)
+            // .delay(500)
             .attr("opacity", 0)
         .transition()
             // .delay(1000)
@@ -181,7 +181,7 @@ export default function introAnimation () {
             .attr("opacity", 1)
         .transition()
             .duration(2000)
-            .delay(1500)
+            .delay(2000)
             .ease(d3.easeCircleOut)
             .attr("r", 0)
             .attr("opacity", 0)
@@ -189,7 +189,7 @@ export default function introAnimation () {
 
     d3.select("#Data-Animation")
         .transition()
-        .delay(44300)
+        .delay(44500)
         .duration(introTransition)
         .style("visibility", "hidden")
         .style("z-index", -100);
