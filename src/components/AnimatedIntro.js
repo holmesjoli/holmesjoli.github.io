@@ -63,8 +63,8 @@ export default function introAnimation () {
         .data(letters)
         .enter()
         .append("circle")
-        // .attr('cx', function() { return getRandomInt(window.innerWidth)})
-        // .attr("cy", function() { return getRandomInt(window.innerHeight)})
+        .attr('cx', function() { return getRandomInt(window.innerWidth)})
+        .attr("cy", function() { return getRandomInt(window.innerHeight)})
         .attr("r", r)
         .attr("opacity", 1)
         .attr("fill", d => getRandomColor())
@@ -80,6 +80,7 @@ export default function introAnimation () {
                 return d.y
             });
     };
+
     let simulation = d3.forceSimulation(letters)
         // .force('charge', d3.forceManyBody().strength(-17))
         .force('collide', d3.forceCollide().strength(15).radius(r))
@@ -114,7 +115,7 @@ export default function introAnimation () {
             .force("center", null)
             .force('x', d3.forceX().x(d => xScale(d.X)).strength(1))
             .force('y', d3.forceY().y(d => xScale(d.Y)).strength(1));
-    },28000);
+    },27000);
 
     setTimeout(function() {
 
@@ -143,43 +144,43 @@ export default function introAnimation () {
         .domain(letters.map(d => d.Letter))
         .range(letters.map(d => getRandomColor()));
 
-
     dots
+    // .transition()
+    //     .duration(introTransition)
+    //     .delay(25000)
+    //     .attr('cx', d => d.x)
+    //     .attr('cy', d => d.y)
     .transition()
-        .duration(introTransition)
-        .delay(25000)
-        .attr('cx', d => d.x)
-        .attr('cy', d => d.y)
-    .transition()
-        .duration(introTransition)
-        .delay(31000)
+        .duration(1000)
+        .delay(29000)
         .attr("fill", d => xColorScale(d.Letter))
-        // .attr("stroke", "#ea21ad")
+        // .attr("stroke", d => xColorScale(d.Letter))
     .transition()
-        .duration(introTransition)
-        .delay(40000)
+        .duration(1000)
+        .delay(9700)
         .attr("fill", "#ea21ad")
         .attr("stroke", "#ea21ad")
     .transition()
-        .duration(4000)
+        .duration(2000)
+        .delay(2000)
         .ease(d3.easeCircleOut)
         .attr("r", 0)
         .attr("opacity", 0)
         .attr('z-index', -100);
 
-        d3.select("#Data-Animation")
-            .transition()
-            .delay(47000)
-            .duration(introTransition)
-            .style("visibility", "hidden")
-            .style("z-index", -100);
+    d3.select("#Data-Animation")
+        .transition()
+        .delay(45000)
+        .duration(introTransition)
+        .style("visibility", "hidden")
+        .style("z-index", -100);
 
-        d3.select("#Main")
-            .transition()
-            .delay(47000)
-            .duration(introTransition)
-            .ease(d3.easeCircleIn)
-            .style("visibility", "visible")
-            .style("z-index", 100)
-            .style("opacity", 1);
+    d3.select("#Main")
+        .transition()
+        .delay(45000)
+        .duration(introTransition)
+        .ease(d3.easeCircleIn)
+        .style("visibility", "visible")
+        .style("z-index", 100)
+        .style("opacity", 1);
 }
