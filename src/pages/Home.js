@@ -12,7 +12,7 @@ import introAnimation from "../components/AnimatedIntro";
 
 export default function Home({count, setCount}) {
 
-    const delay = 5000;
+    const delay = 21000;
 
     const [index, setIndex] = useState(-1);
 
@@ -47,6 +47,9 @@ export default function Home({count, setCount}) {
             .style("visibility", "visible")
             .style("z-index", 100)
             .style("opacity", 1);
+
+            d3.selectAll(".Intro div").remove();
+            d3.select("#Data-Animation").remove();
         }
         setCount(count + 1);
 
