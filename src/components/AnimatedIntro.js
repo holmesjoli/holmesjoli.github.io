@@ -82,29 +82,39 @@ export default function introAnimation () {
     };
     let simulation = d3.forceSimulation(letters)
         // .force('charge', d3.forceManyBody().strength(-17))
-        .force('collide', d3.forceCollide().strength(3).radius(r))
+        .force('collide', d3.forceCollide().strength(15).radius(r))
         .force('x', d3.forceX().x(function() { return getRandomInt(window.innerWidth)}).strength(.05))
         .force('y', d3.forceY().y(function() { return getRandomInt(window.innerHeight)}).strength(.05))
         .on('tick', ticked);
     
     setTimeout(function() {
-        simulation.restart();
-        simulation.force('charge', d3.forceManyBody().strength(-17));
+        simulation
+            .alpha(1)
+            .restart()
+            .force("x", null)
+            .force("y", null)
+            .force('charge', d3.forceManyBody().strength(-17))
+            .force('center', d3.forceCenter())
+            .force('collide', d3.forceCollide().strength(3).radius(r));
     },25000);
 
     setTimeout(function() {
 
         let xScale = d3.scaleLinear()
             .domain(d3.extent(letters, d => d.X))
-            .range([margin.left, width - margin.right]);
+            .range([margin.left*2, width - margin.right*2]);
 
         let yScale = d3.scaleLinear()
             .domain(d3.extent(letters, d => d.Y))
             .range([height - margin.top, margin.bottom]);
 
-        simulation.alpha(1).restart().force('x', d3.forceX().x(d => xScale(d.X)).strength(1));
-    },29000);
-
+        simulation
+            .alpha(1)
+            .restart()
+            .force("center", null)
+            .force('x', d3.forceX().x(d => xScale(d.X)).strength(1))
+            .force('y', d3.forceY().y(d => xScale(d.Y)).strength(1));
+    },28000);
 
     setTimeout(function() {
 
@@ -123,7 +133,8 @@ export default function introAnimation () {
             .alpha(1)
             .restart()
             .force("charge", null)
-            .force("collide", null).force('x', d3.forceX().x(d => xScale(d)).strength(1))
+            .force("collide", null)
+            .force('x', d3.forceX().x(d => xScale(d)).strength(1))
             .force('y', d3.forceY().y(d => yScale(d)).strength(1));
     },40000);
 
@@ -140,7 +151,7 @@ export default function introAnimation () {
         .attr("fill", "#ea21ad")
         .attr("stroke", "#ea21ad")
         .transition()
-        .duration(introTransition)
+        .duration(4000)
         .ease(d3.easeCircleOut)
         .attr("r", 0)
         .attr("opacity", 0)
