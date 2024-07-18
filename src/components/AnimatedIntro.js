@@ -99,12 +99,12 @@ export default function introAnimation () {
 
     },23500);
 
-    let xScale = d3.scaleLinear()
-        .domain(d3.extent(letters, d => d.X))
+    let xScale = d3.scaleBand()
+        .domain([...new Set(letters.map(d => d.X))])
         .range([margin.left*2, width - margin.right*2]);
 
-    let yScale = d3.scaleLinear()
-        .domain(d3.extent(letters, d => d.Y))
+    let yScale = d3.scaleBand()
+        .domain([...new Set(letters.map(d => d.Y))])
         .range([height - margin.top*2, margin.bottom*2]);
 
     setTimeout(function() {
@@ -113,8 +113,8 @@ export default function introAnimation () {
             .alpha(1)
             .restart()
             .force("collide", null)
-            .force('x', d3.forceX().x(d => xScale(d.X)).strength(1))
-            .force('y', d3.forceY().y(d => yScale(d.Y)).strength(1));
+            .force('x', d3.forceX().x(d => xScale(d.X) + margin.left*3).strength(1))
+            .force('y', d3.forceY().y(d => yScale(d.Y) + margin.top*2).strength(1));
     },27000);
 
     setTimeout(function() {
@@ -181,7 +181,7 @@ export default function introAnimation () {
             .attr("opacity", 1)
         .transition()
             .duration(2000)
-            .delay(2000)
+            .delay(1500)
             .ease(d3.easeCircleOut)
             .attr("r", 0)
             .attr("opacity", 0)
@@ -189,14 +189,14 @@ export default function introAnimation () {
 
     d3.select("#Data-Animation")
         .transition()
-        .delay(44500)
+        .delay(44300)
         .duration(introTransition)
         .style("visibility", "hidden")
         .style("z-index", -100);
 
     d3.select("#Main")
         .transition()
-        .delay(44500)
+        .delay(44300)
         .duration(introTransition)
         .ease(d3.easeCircleIn)
         .style("visibility", "visible")
