@@ -97,17 +97,17 @@ export default function introAnimation () {
             .force("x", d3.forceX(window.innerWidth/2).strength(0.1))
             .force("y", d3.forceY(window.innerHeight/2).strength(0.1));
 
-    },24000);
+    },23500);
+
+    let xScale = d3.scaleLinear()
+        .domain(d3.extent(letters, d => d.X))
+        .range([margin.left*2, width - margin.right*2]);
+
+    let yScale = d3.scaleLinear()
+        .domain(d3.extent(letters, d => d.Y))
+        .range([height - margin.top*2, margin.bottom*2]);
 
     setTimeout(function() {
-
-        let xScale = d3.scaleLinear()
-            .domain(d3.extent(letters, d => d.X))
-            .range([margin.left*2, width - margin.right*2]);
-
-        let yScale = d3.scaleLinear()
-            .domain(d3.extent(letters, d => d.Y))
-            .range([height - margin.top, margin.bottom]);
 
         simulation
             .alpha(1)
@@ -121,7 +121,9 @@ export default function introAnimation () {
         simulation
             .alpha(1)
             .restart()
-            .force('charge', d3.forceManyBody().strength(-20));
+            .force('charge', d3.forceManyBody().strength(-20))
+            // .force('x', d3.forceX().x(d => xScale(d.X)).strength(.1))
+            // .force('y', d3.forceY().y(d => yScale(d.Y)).strength(.1));
     },29000);
 
     setTimeout(function() {
@@ -144,14 +146,14 @@ export default function introAnimation () {
             .force("collide", null)
             .force('x', d3.forceX().x(d => xScale(d)).strength(1))
             .force('y', d3.forceY().y(d => yScale(d)).strength(1));
-    }, 38000);
+    }, 37000);
 
     let rScale = d3.scaleOrdinal()
-        .domain(d3.extent(letters, d => d.X))
-        .range(d3.extent(letters, d => d.X).reverse());
+        .domain([...new Set(letters.map(d => d.X))])
+        .range([...new Set(letters.map(d => d.X))]);
 
-    let xColorScale = d3.scaleOrdinal()
-        .domain(letters.map(d => d.Letter))
+    let yColorScale = d3.scaleOrdinal()
+        .domain([...new Set(letters.map(d => d.Y))])
         .range(letters.map(d => getRandomColor()));
 
     dots
@@ -162,8 +164,8 @@ export default function introAnimation () {
         .transition()
             .duration(1000)
             .delay(2000)
-            .attr("fill", d => xColorScale(d.Letter))
-            .attr("stroke", d => xColorScale(d.Letter))
+            .attr("fill", d => yColorScale(d.Y))
+            .attr("stroke", d => yColorScale(d.Y))
         .transition()
             .duration(1000)
             .delay(500)
@@ -187,14 +189,14 @@ export default function introAnimation () {
 
     d3.select("#Data-Animation")
         .transition()
-        .delay(43500)
+        .delay(44500)
         .duration(introTransition)
         .style("visibility", "hidden")
         .style("z-index", -100);
 
     d3.select("#Main")
         .transition()
-        .delay(43500)
+        .delay(44500)
         .duration(introTransition)
         .ease(d3.easeCircleIn)
         .style("visibility", "visible")
