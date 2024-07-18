@@ -36,6 +36,11 @@ function getRandomInt(max) {
 
 export default function introAnimation () {
 
+    letters.forEach(d => {
+        d.x = window.innerWidth/2;
+        d.y = window.innerHeight/2;
+    });
+
     d3.select("#Main")
         .style("visibility", "hidden")
         .style("z-index", -100)
@@ -48,8 +53,6 @@ export default function introAnimation () {
             .style("z-index", 100)
             .style("visibility", "visible")
             .style("overflow", "hidden")
-            // .attr("width", window.innerWidth)
-            // .attr("height", window.innerHeight)
         .append("svg")
             .attr("width", window.innerWidth)
             .attr("height", window.innerHeight - 7)
@@ -60,55 +63,80 @@ export default function introAnimation () {
         .data(letters)
         .enter()
         .append("circle")
-        .attr('cx', d => getRandomInt(window.innerWidth))
-        .attr("cy", d => getRandomInt(window.innerHeight))
+        // .attr('cx', function() { return getRandomInt(window.innerWidth)})
+        // .attr("cy", function() { return getRandomInt(window.innerHeight)})
         .attr("r", r)
         .attr("opacity", 1)
         .attr("fill", d => getRandomColor())
         .attr("stroke", d => getRandomColor())
         .attr('z-index', 100);
+    
+    function ticked() {
+        dots
+            .attr('cx', function (d) {
+                return d.x
+            })
+            .attr('cy', function (d) {
+                return d.y
+            });
+    };
+    let simulation = d3.forceSimulation(letters)
+        // .force('charge', d3.forceManyBody().strength(-17))
+        .force('collide', d3.forceCollide().strength(3).radius(r))
+        .force('x', d3.forceX().x(function() { return getRandomInt(window.innerWidth)}).strength(.05))
+        .force('y', d3.forceY().y(function() { return getRandomInt(window.innerHeight)}).strength(.05))
+        .on('tick', ticked);
+    
+    setTimeout(function() {
+        simulation.restart();
+        simulation.force('charge', d3.forceManyBody().strength(-17));
+    },25000);
+
+    setTimeout(function() {
 
         let xScale = d3.scaleLinear()
-        .domain(d3.extent(letters, d => d.X))
-        .range([margin.left, width - margin.right]);
+            .domain(d3.extent(letters, d => d.X))
+            .range([margin.left, width - margin.right]);
 
-    let yScale = d3.scaleLinear()
-        .domain(d3.extent(letters, d => d.Y))
-        .range([height - margin.top, margin.bottom]);
+        let yScale = d3.scaleLinear()
+            .domain(d3.extent(letters, d => d.Y))
+            .range([height - margin.top, margin.bottom]);
 
-    d3.forceSimulation(letters)
-        .force('charge', d3.forceManyBody().strength(-17))
-        .force('collide', d3.forceCollide().strength(2).radius(r))
-        .force('x', d3.forceX().x(d => xScale(d.X)).strength(.05))
-        .force('y', d3.forceY().y(d => yScale(d.Y)).strength(.05))
-        .on('tick', ticked);
+        simulation.alpha(1).restart().force('x', d3.forceX().x(d => xScale(d.X)).strength(1));
+    },29000);
 
-        function ticked() {
-            dots
-                .attr('cx', function (d) {
-                    return d.x
-                })
-                .attr('cy', function (d) {
-                    return d.y
-                });
-        };
 
-    dots
-    // .transition()
-    //     .duration(introTransition)
-    //     .delay(25000)
-    //     .attr('cx', d => d.x)
-    //     .attr('cy', d => d.y)
-    .transition()
-        .duration(introTransition)
-        .delay(40000)
-        .attr('cx', function (d) {
+    setTimeout(function() {
+
+        function xScale (d) {
             let x = letters.filter(e => e.LetterPosition < d.LetterPosition && e.Line === d.Line);
             let startingValue = d3.rollup(x, v => d3.max(v, d => d.X), d => d.Letter).values().reduce((a, b) => a + b, 0);
             let padding = d3.rollup(x, v => d3.max(v, d => 1), d => d.Letter).values().reduce((a, b) => a + b, 0);
             return o*(d.X + startingValue + padding) + margin.left;
-        })
-        .attr("cy", d => (height/2 - 16*o) + o*(d.Y + (d.Line - 1)*17))
+        }
+
+        function yScale (d) {
+            return (height/2 - 16*o) + o*(d.Y + (d.Line - 1)*17);
+        }
+
+        simulation
+            .alpha(1)
+            .restart()
+            .force("charge", null)
+            .force("collide", null).force('x', d3.forceX().x(d => xScale(d)).strength(1))
+            .force('y', d3.forceY().y(d => yScale(d)).strength(1));
+    },40000);
+
+    dots
+    .transition()
+        .duration(introTransition)
+        .delay(25000)
+        .attr('cx', d => d.x)
+        .attr('cy', d => d.y);
+
+    dots.transition()
+        .duration(introTransition)
+        .delay(40000)
         .attr("fill", "#ea21ad")
         .attr("stroke", "#ea21ad")
         .transition()
