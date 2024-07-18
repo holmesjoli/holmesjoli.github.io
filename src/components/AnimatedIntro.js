@@ -93,7 +93,7 @@ export default function introAnimation () {
             .restart()
             .force("x", null)
             .force("y", null)
-            .force('charge', d3.forceManyBody().strength(-17))
+            .force('charge', d3.forceManyBody().strength(-10))
             .force('center', d3.forceCenter())
             .force('collide', d3.forceCollide().strength(3).radius(r));
     },25000);
@@ -138,19 +138,29 @@ export default function introAnimation () {
             .force('y', d3.forceY().y(d => yScale(d)).strength(1));
     },40000);
 
+
+    let xColorScale = d3.scaleOrdinal()
+        .domain(letters.map(d => d.Letter))
+        .range(letters.map(d => getRandomColor()));
+
+
     dots
     .transition()
         .duration(introTransition)
         .delay(25000)
         .attr('cx', d => d.x)
-        .attr('cy', d => d.y);
-
-    dots.transition()
+        .attr('cy', d => d.y)
+    .transition()
+        .duration(introTransition)
+        .delay(31000)
+        .attr("fill", d => xColorScale(d.Letter))
+        // .attr("stroke", "#ea21ad")
+    .transition()
         .duration(introTransition)
         .delay(40000)
         .attr("fill", "#ea21ad")
         .attr("stroke", "#ea21ad")
-        .transition()
+    .transition()
         .duration(4000)
         .ease(d3.easeCircleOut)
         .attr("r", 0)

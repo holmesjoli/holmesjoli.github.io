@@ -9,11 +9,15 @@
 @import "components/carousel";
 @import "components/page";
 
+// Pages
+
 // Base
 @import "typography";
 @import "layout";
 @import "mui";
 
 // Main pages
-@import "about";
-@import "research";
+@import "pages/research";
+@import "pages/home";
+@import "pages/about";
+
