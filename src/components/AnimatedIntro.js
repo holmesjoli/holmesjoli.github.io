@@ -89,24 +89,6 @@ export default function introAnimation () {
         .on('tick', ticked);
     
     setTimeout(function() {
-        // // simulation
-        //     // .alpha(1)
-        //     // .restart()
-        //     // .force("x", null)
-        //     // .force("y", null)
-        //     // .force('charge', d3.forceManyBody().strength(-10))
-        //     // .force('center', d3.forceCenter())
-        //     // .force('collide', d3.forceCollide().strength(3).radius(r));
-        // simulation
-        //     .force('x', d3.forceX().strength(0.05).x(d => d.x))
-        //     .force('y', d3.forceY().strength(0.05).y(d => d.y))
-        //     .force('charge', d3.forceManyBody().strength(-0.5).theta(0.9))
-        //     .alpha(1)
-        //     .restart()
-        //     .alphaDecay(0.01)
-        //     .alphaMin(0.25)
-        //     .velocityDecay(0.4)
-        //     .stop();
 
         simulation
             .alpha(1)
@@ -116,10 +98,6 @@ export default function introAnimation () {
             .force("y", d3.forceY(window.innerHeight/2).strength(0.1));
 
     },24000);
-
-    let rScale = d3.scaleOrdinal()
-        .domain(d3.extent(letters, d => d.X))
-        .range(d3.extent(letters, d => d.X).reverse());
 
     setTimeout(function() {
 
@@ -136,7 +114,7 @@ export default function introAnimation () {
             .restart()
             .force("collide", null)
             .force('x', d3.forceX().x(d => xScale(d.X)).strength(1))
-            .force('y', d3.forceY().y(d => xScale(d.Y)).strength(1));
+            .force('y', d3.forceY().y(d => yScale(d.Y)).strength(1));
     },27000);
 
     setTimeout(function() {
@@ -166,7 +144,11 @@ export default function introAnimation () {
             .force("collide", null)
             .force('x', d3.forceX().x(d => xScale(d)).strength(1))
             .force('y', d3.forceY().y(d => yScale(d)).strength(1));
-    }, 40500);
+    }, 38000);
+
+    let rScale = d3.scaleOrdinal()
+        .domain(d3.extent(letters, d => d.X))
+        .range(d3.extent(letters, d => d.X).reverse());
 
     let xColorScale = d3.scaleOrdinal()
         .domain(letters.map(d => d.Letter))
@@ -176,18 +158,25 @@ export default function introAnimation () {
         .transition()
             .duration(1000)
             .delay(31000)
-            .attr("r", d => rScale(d.Y))
+            .attr("r", d => rScale(d.X))
         .transition()
             .duration(1000)
             .delay(2000)
             .attr("fill", d => xColorScale(d.Letter))
             .attr("stroke", d => xColorScale(d.Letter))
         .transition()
-            .duration(1500)
-            .delay(5700)
-            .attr("r", r)
+            .duration(1000)
+            .delay(500)
+            .attr("opacity", 0)
+        .transition()
+            // .delay(1000)
             .attr("fill", "#ea21ad")
             .attr("stroke", "#ea21ad")
+            .attr("r", r)
+        .transition()
+            .duration(2000)
+            .delay(1000)
+            .attr("opacity", 1)
         .transition()
             .duration(2000)
             .delay(2000)
@@ -198,14 +187,14 @@ export default function introAnimation () {
 
     d3.select("#Data-Animation")
         .transition()
-        .delay(45000)
+        .delay(43500)
         .duration(introTransition)
         .style("visibility", "hidden")
         .style("z-index", -100);
 
     d3.select("#Main")
         .transition()
-        .delay(45000)
+        .delay(43500)
         .duration(introTransition)
         .ease(d3.easeCircleIn)
         .style("visibility", "visible")

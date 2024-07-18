@@ -76,7 +76,7 @@ export default function Home({count, setCount}) {
                 <div><h2>storyteller</h2></div>
                 <div><h2>data visualization specialist</h2></div>
                 <div><h2>information designer</h2></div>
-                <div><h2>data wrangler</h2></div>
+                {/* <div><h2>data wrangler</h2></div> */}
                 <div><h2>creative technologist</h2></div>
                 <div><h2>interface developer</h2></div>
                 <div><h2>human-centered thinker</h2></div>
