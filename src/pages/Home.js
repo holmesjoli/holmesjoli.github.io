@@ -69,18 +69,17 @@ export default function Home({count, setCount}) {
                 <div><h2>product designer</h2></div>
                 <div><h2>data scientist</h2></div>
                 <div><h2>Having worked mostly at start-ups, this has always been a confounding question.</h2></div>
-                <div><h2>I perform tasks that check boxes in each of those categories</h2></div>
+                <div><h2>I perform tasks that check boxes </h2><span><h2 className="No-Bold">&#x2611; &#x2611; &#x2611;</h2></span><h2>in each of those categories</h2></div>
                 <div><h2>So what I am?</h2></div>
 
                 <div><h2>I am a</h2></div>
                 <div><h2>storyteller</h2></div>
-                <div><h2>data wrangler</h2></div>
+                <div><h2>data visualization specialist</h2></div>
                 <div><h2>information designer</h2></div>
+                <div><h2>data wrangler</h2></div>
                 <div><h2>creative technologist</h2></div>
                 <div><h2>interface developer</h2></div>
-                <div><h2>data visualization specialist</h2></div>
                 <div><h2>human-centered thinker</h2></div>
-
                 <div><h2>I am</h2></div>
                 <div><h2>Let me help you with your next data story</h2></div>
                 </div>

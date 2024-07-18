@@ -89,15 +89,37 @@ export default function introAnimation () {
         .on('tick', ticked);
     
     setTimeout(function() {
+        // // simulation
+        //     // .alpha(1)
+        //     // .restart()
+        //     // .force("x", null)
+        //     // .force("y", null)
+        //     // .force('charge', d3.forceManyBody().strength(-10))
+        //     // .force('center', d3.forceCenter())
+        //     // .force('collide', d3.forceCollide().strength(3).radius(r));
+        // simulation
+        //     .force('x', d3.forceX().strength(0.05).x(d => d.x))
+        //     .force('y', d3.forceY().strength(0.05).y(d => d.y))
+        //     .force('charge', d3.forceManyBody().strength(-0.5).theta(0.9))
+        //     .alpha(1)
+        //     .restart()
+        //     .alphaDecay(0.01)
+        //     .alphaMin(0.25)
+        //     .velocityDecay(0.4)
+        //     .stop();
+
         simulation
             .alpha(1)
             .restart()
-            .force("x", null)
-            .force("y", null)
-            .force('charge', d3.forceManyBody().strength(-10))
-            .force('center', d3.forceCenter())
-            .force('collide', d3.forceCollide().strength(3).radius(r));
-    },25000);
+            .force("collide", d3.forceCollide().radius(d => 1 + d.r))
+            .force("x", d3.forceX(window.innerWidth/2).strength(0.1))
+            .force("y", d3.forceY(window.innerHeight/2).strength(0.1));
+
+    },24000);
+
+    let rScale = d3.scaleOrdinal()
+        .domain(d3.extent(letters, d => d.X))
+        .range(d3.extent(letters, d => d.X).reverse());
 
     setTimeout(function() {
 
@@ -112,10 +134,17 @@ export default function introAnimation () {
         simulation
             .alpha(1)
             .restart()
-            .force("center", null)
+            .force("collide", null)
             .force('x', d3.forceX().x(d => xScale(d.X)).strength(1))
             .force('y', d3.forceY().y(d => xScale(d.Y)).strength(1));
     },27000);
+
+    setTimeout(function() {
+        simulation
+            .alpha(1)
+            .restart()
+            .force('charge', d3.forceManyBody().strength(-20));
+    },29000);
 
     setTimeout(function() {
 
@@ -137,36 +166,35 @@ export default function introAnimation () {
             .force("collide", null)
             .force('x', d3.forceX().x(d => xScale(d)).strength(1))
             .force('y', d3.forceY().y(d => yScale(d)).strength(1));
-    },40000);
-
+    }, 40500);
 
     let xColorScale = d3.scaleOrdinal()
         .domain(letters.map(d => d.Letter))
         .range(letters.map(d => getRandomColor()));
 
     dots
-    // .transition()
-    //     .duration(introTransition)
-    //     .delay(25000)
-    //     .attr('cx', d => d.x)
-    //     .attr('cy', d => d.y)
-    .transition()
-        .duration(1000)
-        .delay(29000)
-        .attr("fill", d => xColorScale(d.Letter))
-        // .attr("stroke", d => xColorScale(d.Letter))
-    .transition()
-        .duration(1000)
-        .delay(9700)
-        .attr("fill", "#ea21ad")
-        .attr("stroke", "#ea21ad")
-    .transition()
-        .duration(2000)
-        .delay(2000)
-        .ease(d3.easeCircleOut)
-        .attr("r", 0)
-        .attr("opacity", 0)
-        .attr('z-index', -100);
+        .transition()
+            .duration(1000)
+            .delay(31000)
+            .attr("r", d => rScale(d.Y))
+        .transition()
+            .duration(1000)
+            .delay(2000)
+            .attr("fill", d => xColorScale(d.Letter))
+            .attr("stroke", d => xColorScale(d.Letter))
+        .transition()
+            .duration(1500)
+            .delay(5700)
+            .attr("r", r)
+            .attr("fill", "#ea21ad")
+            .attr("stroke", "#ea21ad")
+        .transition()
+            .duration(2000)
+            .delay(2000)
+            .ease(d3.easeCircleOut)
+            .attr("r", 0)
+            .attr("opacity", 0)
+            .attr('z-index', -100);
 
     d3.select("#Data-Animation")
         .transition()
