@@ -60,7 +60,7 @@ export default function Home({count, setCount}) {
                 <Footer />
             </div>
             <div className="Intro">
-                <div><h2>Most technology job applications want applicants to be able to check a box.</h2> </div>
+                {/* <div><h2>Most technology job applications want applicants to be able to check a box.</h2> </div>
                 <div><h2>Define yourself as one of the following: </h2></div>
                 <div><h2>UI designer</h2></div>
                 <div><h2>data analyst</h2></div>
@@ -70,13 +70,12 @@ export default function Home({count, setCount}) {
                 <div><h2>data scientist</h2></div>
                 <div><h2>Having worked mostly at start-ups, this has always been a confounding question.</h2></div>
                 <div><h2>I perform tasks that check boxes </h2><span><h2 className="No-Bold">&#x2611; &#x2611; &#x2611;</h2></span><h2>in each of those categories</h2></div>
-                <div><h2>So what I am?</h2></div>
+                <div><h2>So what I am?</h2></div> */}
 
                 <div><h2>I am a</h2></div>
                 <div><h2>storyteller</h2></div>
                 <div><h2>data visualization specialist</h2></div>
                 <div><h2>information designer</h2></div>
-                {/* <div><h2>data wrangler</h2></div> */}
                 <div><h2>creative technologist</h2></div>
                 <div><h2>interface developer</h2></div>
                 <div><h2>human-centered thinker</h2></div>

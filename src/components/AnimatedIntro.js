@@ -97,7 +97,7 @@ export default function introAnimation () {
             .force("x", d3.forceX(window.innerWidth/2).strength(0.1))
             .force("y", d3.forceY(window.innerHeight/2).strength(0.1));
 
-    },23500);
+    },1500);
 
     let xScale = d3.scaleBand()
         .domain([...new Set(letters.map(d => d.X))])
@@ -115,7 +115,7 @@ export default function introAnimation () {
             .force("collide", null)
             .force('x', d3.forceX().x(d => xScale(d.X) + margin.left*3).strength(1))
             .force('y', d3.forceY().y(d => yScale(d.Y) + margin.top*2).strength(1));
-    },27000);
+    }, 3500);
 
     setTimeout(function() {
         simulation
@@ -124,7 +124,7 @@ export default function introAnimation () {
             .force('charge', d3.forceManyBody().strength(-20))
             // .force('x', d3.forceX().x(d => xScale(d.X)).strength(.1))
             // .force('y', d3.forceY().y(d => yScale(d.Y)).strength(.1));
-    },29000);
+    }, 6500);
 
     setTimeout(function() {
 
@@ -146,7 +146,7 @@ export default function introAnimation () {
             .force("collide", null)
             .force('x', d3.forceX().x(d => xScale(d)).strength(1))
             .force('y', d3.forceY().y(d => yScale(d)).strength(1));
-    }, 36200);
+    }, 14500);
 
     let rScale = d3.scaleOrdinal()
         .domain([...new Set(letters.map(d => d.X))])
@@ -159,7 +159,7 @@ export default function introAnimation () {
     dots
         .transition()
             .duration(1000)
-            .delay(31000)
+            .delay(8500)
             .attr("r", d => rScale(d.X))
         .transition()
             .duration(1000)
@@ -189,14 +189,14 @@ export default function introAnimation () {
 
     d3.select("#Data-Animation")
         .transition()
-        .delay(44500)
+        .delay(22000)
         .duration(introTransition)
         .style("visibility", "hidden")
         .style("z-index", -100);
 
     d3.select("#Main")
         .transition()
-        .delay(44300)
+        .delay(22000)
         .duration(introTransition)
         .ease(d3.easeCircleIn)
         .style("visibility", "visible")
