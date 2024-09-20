@@ -145,6 +145,7 @@ export default function App() {
         {/* <Route path="/portfolio/Public-Policy-Collection" element={<PortfolioPage d={itemData.find(d => d.page === "Public-Policy-Collection")} />} /> */}
         {/* <Route path="/portfolio/Risky-Code" element={<PortfolioPage d={itemData.find(d => d.page === "Risky-Code")} />} /> */}
         {/* <Route path="/portfolio/Tutor-Match" element={<PortfolioPage d={itemData.find(d => d.page === "Tutor-Match")} />} /> */}
+        <Route path="/portfolio/Data-Reporting" element={<PortfolioPage d={itemData.find(d => d.page === "Data-Reporting")} />} />
         <Route path="/portfolio/Visual-Ramblings" element={<PortfolioPage d={itemData.find(d => d.page === "Visual-Ramblings")} />} />
         <Route path="/portfolio/Visualizing-Version-Control" element={<PortfolioPage d={itemData.find(d => d.page === "Visualizing-Version-Control")} />} />
       </Routes>

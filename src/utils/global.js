@@ -392,6 +392,30 @@ export let itemData = [
             //     ]
             // }
     },
+    {title: "Data Reporting",
+     page: "Data-Reporting",
+     year: 2021,
+     links: [{
+        url: "https://tplapps.rice.edu/shiny/HCJPD-longitudinal-analysis/", text: "Link to analysis"
+     }],
+     client: {name: "Harris County Juvenile Probation Department", link: "https://hcjpd.harriscountytx.gov/"},
+     mainImage: {
+        url: "HCJPDSample.png",
+        alt: "An image showing how different cohorts and samples were included in the analysis."
+     },
+     tags: ["#graphic-design", "#information-design", "#system-design", "#illustrator"],
+     tools: ["R", "Rstudio", "Rshiny", "HTML", "CSS"],
+     tags: ["#information-design", "#data-visualization"],
+     design: ["Data visualization"],
+     designProcess: [
+        {name: "summary", 
+         descr: ["As a data visualization developer, I designed and developed this descriptive data reporting tool for the Harris County Juvenile Probation Department.", "The dashboard was developed using R, Rshiny, shinydashboard, and customized using HTML, CSS, and JS."],
+         images: [{
+                url: "Dashboard.png",
+                alt: "Image of a dashboard designed for the Harris County Juvenile Probation Department. The dashboard is a descriptive report how the number of ways youths interact with the Harris County Juvenile Justice System."}]
+        }
+    ]
+    },
     {
         title: "Meta", 
         year: 2015, 
@@ -422,7 +446,7 @@ export let itemData = [
             url: "Visual Version Control.pdf", text: "Link to PDF"
         }],
         mainImage: {
-            url: "version-control-system.jpg", 
+            url: "square.png", 
             alt:"Visualizing Version Control"}, 
         tags: ["#graphic-design", "#information-design", "#system-design", "#illustrator"],
         tools: ["#illustrator"],
