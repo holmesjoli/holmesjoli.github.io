@@ -71,6 +71,9 @@ export default function introAnimation () {
         .attr("stroke", d => getRandomColor())
         .attr('z-index', 100);
     
+    d3.select("#Skip")
+        .style("visibility", "visible");
+
     function ticked() {
         dots
             .attr('cx', function (d) {
@@ -193,6 +196,12 @@ export default function introAnimation () {
         .duration(introTransition)
         .style("visibility", "hidden")
         .style("z-index", -100);
+
+    d3.select("#Skip")
+        .transition()
+        .delay(22000)
+        .duration(introTransition)
+        .style("visibility", "hidden");
 
     d3.select("#Main")
         .transition()
