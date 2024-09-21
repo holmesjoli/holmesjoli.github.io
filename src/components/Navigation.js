@@ -15,7 +15,7 @@ export default function Navigation() {
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>home</h3></NavLink>
                 <NavLink to="/Portfolio" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>portfolio</h3></NavLink>
                 <NavLink to="/Research" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>research</h3></NavLink>
-                <NavLink to="/About" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>about</h3></NavLink>
+                {/* <NavLink to="/About" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>about</h3></NavLink> */}
             </div>
         </div>
     )
