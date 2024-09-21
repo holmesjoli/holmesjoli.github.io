@@ -47,6 +47,22 @@ const theme = createTheme({
         },
       },
     },
+    MuiDialogTitle: {
+      styleOverrides: {
+        root: {
+          fontSize: "1rem"
+        }
+      }
+    },
+    MuiDialogContentText :{
+      styleOverrides: {
+        root: {
+          color: "#FFFFFF",
+          fontSize: "1rem",
+          padding: 0
+        }
+      }
+    },
     MuiCheckbox: {
       styleOverrides: {
         root: {
