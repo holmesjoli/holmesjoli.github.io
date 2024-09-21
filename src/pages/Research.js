@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import ContactMe from "../components/ContactMe";
 
 const data = [ { title: "patient decision-making in the context of a healthcare system",
                  subtitle: "relating systems thinking and design (rsd) symposium 2023",
@@ -68,6 +69,7 @@ export default function Research() {
                     })
                 }
             </div>
+            <ContactMe />
             <Footer />
         </div>
     );

@@ -15,6 +15,7 @@
 #ContactMe {
     position: sticky;
     // float: right;
+    margin-bottom: $appPadding*2;
     bottom: $appPadding*2;
     left: $appPadding*2;
     z-index: 110;

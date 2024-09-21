@@ -1,15 +1,15 @@
 // Library
 import { useEffect, useState } from "react";
-import Button from '@mui/material/Button';
+
 
 // Components
-import { contactMe } from "../utils/global";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { PortfolioItem } from "../components/PortfolioItem";
 import FilterPortfolio from "../components/FilterPortfolio";
 
 import { itemData, toolFilters, designFilters, roleFilters } from "../utils/global";
+import ContactMe from "../components/ContactMe";
 
 function filterData(selected, d) {
     let selectedInList = [];
@@ -69,7 +69,7 @@ export default function Portfolio() {
                         }
                     </div>
                 </div>
-                <Button id="ContactMe" variant="contained" onClick={contactMe}>Get in Touch</Button>
+                <ContactMe />
             </div>
             <Footer />
         </div>

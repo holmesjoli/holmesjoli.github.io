@@ -9,8 +9,9 @@ import { Slideshow } from "../components/Carousel";
 
 
 import introAnimation from "../components/AnimatedIntro";
-import { itemData, contactMe } from "../utils/global";
+import { itemData } from "../utils/global";
 import Button from '@mui/material/Button';
+import ContactMe from "../components/ContactMe";
 
 export default function Home({count, setCount}) {
 
@@ -76,7 +77,7 @@ export default function Home({count, setCount}) {
             <div id="Main">
                 <Navigation />
                 <Slideshow data={itemData.sort((a, b) => b.year - a.year)} showCase={true}/>
-                <Button id="ContactMe" variant="contained" onClick={contactMe}>Get in Touch</Button>
+                <ContactMe />
                 <Footer />
             </div>
             <div>
