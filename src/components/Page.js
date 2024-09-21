@@ -5,6 +5,8 @@ import SideBarRight from "./SideBarRight";
 import * as d3 from 'd3';
 
 import { useEffect } from "react";
+import {contactMe } from "../utils/global";
+import Button from '@mui/material/Button';
 
 // Update current placement of all navigation items based on current active item
 // TODO: persistent rotational direction
@@ -131,8 +133,8 @@ export function PortfolioPage({d}) {
         <div className="Main">
             <Navigation />
             <Page pageData={d}/>
+            <Button id="ContactMe" variant="contained" onClick={contactMe}>Get in Touch</Button>
             <Footer/>
         </div>
     )
 }
-

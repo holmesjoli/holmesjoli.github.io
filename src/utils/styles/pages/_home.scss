@@ -1,3 +1,25 @@
+
+#Home {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+#Skip {
+    position: absolute;
+    bottom: $appPadding*2;
+    right: $appPadding*2;
+    visibility: hidden;
+    z-index: 110;
+}
+
+#ContactMe {
+    position: sticky;
+    // float: right;
+    bottom: $appPadding*2;
+    left: $appPadding*2;
+    z-index: 110;
+}
+
 .Intro div h2 {
     font-size: 2.5rem;
 }

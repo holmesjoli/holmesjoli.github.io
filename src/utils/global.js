@@ -1,3 +1,5 @@
+import Dialog from '@mui/material/Dialog';
+
 export let itemData = [
     {title: "Voting Access Monitor",
      page: "Voting-Access-Monitor",
@@ -827,3 +829,7 @@ export const roleFilters = [...new Set(itemData.map(d => d.role).flat())];
 export const filters = toolFilters.concat(designFilters.concat(mediumFilters));
 
 export const introTransition = 3500;
+
+export const contactMe = () => {
+
+}
