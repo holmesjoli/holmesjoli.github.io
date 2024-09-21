@@ -9,7 +9,7 @@ export default function Navigation() {
         <div className="Navigation">
             <div className="Navigation_branding">
                 <h1><NavLink to="/">Joli Holmes</NavLink></h1>
-                <h3>information designer | data visualization designer + developer </h3>
+                <h3>information designer | data storyteller | data visualization developer | ui/ux product designer </h3>
             </div>
             <div className="Navigation_links">
                 <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}><h3>home</h3></NavLink>
