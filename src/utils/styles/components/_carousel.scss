@@ -26,12 +26,14 @@
 /* Buttons */
 
 .default-nav {
-    background: $appColorFocus!important;
+    border: 1px solid $appColorFocus!important;
+    background: transparent!important;
     width: 20px!important;
     height: 20px!important;
 }
 
 button.nav > svg {
     padding: 5px!important;
+    fill: $appColorFocus!important;
 }
 
